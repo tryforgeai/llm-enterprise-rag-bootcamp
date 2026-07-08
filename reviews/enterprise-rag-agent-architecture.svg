@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Trustworthy Enterprise RAG and AI Agent Architecture</title>
+  <desc id="desc">A layered enterprise architecture showing identity and intent, an agent control plane, permitted document retrieval and tools, and a full-width observability and evaluation layer.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B2238"/>
+      <stop offset="1" stop-color="#153A56"/>
+    </linearGradient>
+    <linearGradient id="tealBand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0B8F87"/>
+      <stop offset="1" stop-color="#31B8AB"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="180%">
+      <feDropShadow dx="0" dy="10" stdDeviation="13" flood-color="#061522" flood-opacity=".24"/>
+    </filter>
+    <marker id="arrowTeal" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0L12 6L0 12Z" fill="#2EC4B6"/>
+    </marker>
+    <marker id="arrowGold" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0L12 6L0 12Z" fill="#EDA93B"/>
+    </marker>
+    <style>
+      .display { font-family: "Avenir Next Condensed", "Arial Narrow", sans-serif; font-weight: 800; }
+      .body { font-family: "Avenir Next", "Helvetica Neue", sans-serif; }
+      .label { font-family: "Avenir Next", "Helvetica Neue", sans-serif; font-weight: 700; letter-spacing: 1.8px; }
+      .small { font-size: 16px; fill: #91B0C4; }
+      .muted { fill: #698AA0; }
+      .white { fill: #FFFFFF; }
+      .ink { fill: #102A43; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#background)"/>
+  <circle cx="1515" cy="-30" r="205" fill="#0B8F87" opacity=".92"/>
+  <circle cx="1515" cy="-30" r="150" fill="none" stroke="#91E0D8" stroke-width="1.5" opacity=".35"/>
+  <path d="M0 690C240 620 385 750 625 694S1035 608 1600 707V900H0Z" fill="#071C2D" opacity=".48"/>
+
+  <g transform="translate(70 58)">
+    <text class="label" x="0" y="0" font-size="14" fill="#52D6C9">ENTERPRISE AI ENGINEERING</text>
+    <text class="display white" x="0" y="54" font-size="48">TRUSTWORTHY ENTERPRISE RAG</text>
+    <text class="display white" x="0" y="102" font-size="48">&amp; AI AGENT ARCHITECTURE</text>
+    <text class="body" x="0" y="140" font-size="19" fill="#B8D2E1">RAG is the evidence layer inside an observable, policy-aware agent system.</text>
+  </g>
+
+  <!-- Layer labels -->
+  <g transform="translate(70 238)">
+    <rect width="230" height="38" rx="19" fill="#DDF5F2"/>
+    <text class="label ink" x="18" y="25" font-size="13">01 · EXPERIENCE LAYER</text>
+  </g>
+  <g transform="translate(70 350)">
+    <rect width="238" height="38" rx="19" fill="#DDEBFA"/>
+    <text class="label ink" x="18" y="25" font-size="13">02 · AGENT CONTROL</text>
+  </g>
+  <g transform="translate(70 548)">
+    <rect width="238" height="38" rx="19" fill="#FDEAC8"/>
+    <text class="label ink" x="18" y="25" font-size="13">03 · DATA &amp; ACTION PLANE</text>
+  </g>
+
+  <!-- Experience layer -->
+  <g filter="url(#shadow)">
+    <rect x="330" y="215" width="340" height="94" rx="18" fill="#FFFFFF"/>
+    <circle cx="380" cy="262" r="24" fill="#DDF5F2"/>
+    <circle cx="380" cy="253" r="8" fill="#0B8F87"/>
+    <path d="M365 279c4-13 26-13 30 0" fill="none" stroke="#0B8F87" stroke-width="5" stroke-linecap="round"/>
+    <text class="display ink" x="422" y="252" font-size="22">INTENT + IDENTITY</text>
+    <text class="body muted" x="422" y="279" font-size="15">Question · role · tenant · context</text>
+
+    <rect x="1000" y="215" width="480" height="94" rx="18" fill="#FFFFFF"/>
+    <circle cx="1050" cy="262" r="24" fill="#FDEAC8"/>
+    <path d="M1039 262l8 8 16-18" fill="none" stroke="#D28A1F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="display ink" x="1091" y="252" font-size="22">GROUNDED ANSWER OR SAFE ACTION</text>
+    <text class="body muted" x="1091" y="279" font-size="15">Answer · ask · abstain · refuse · escalate · act</text>
+  </g>
+  <line x1="672" y1="262" x2="798" y2="262" stroke="#2EC4B6" stroke-width="5" marker-end="url(#arrowTeal)"/>
+  <line x1="872" y1="262" x2="996" y2="262" stroke="#2EC4B6" stroke-width="5" marker-end="url(#arrowTeal)"/>
+  <g transform="translate(805 225)">
+    <circle cx="32" cy="37" r="37" fill="#0B8F87"/>
+    <path d="M18 39h28M33 24l15 15-15 15" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Control plane -->
+  <rect x="330" y="333" width="1150" height="174" rx="22" fill="#EDF4F8" stroke="#6E91A8" stroke-width="1.5"/>
+  <text class="body" x="360" y="374" font-size="14" font-weight="700" fill="#3973B9">POLICY-AWARE ORCHESTRATION</text>
+
+  <g filter="url(#shadow)">
+    <g transform="translate(360 396)">
+      <rect width="158" height="78" rx="13" fill="#FFFFFF" stroke="#B6CCDA"/>
+      <rect width="158" height="8" rx="4" fill="#3973B9"/>
+      <text class="display ink" x="16" y="39" font-size="17">1 · CLASSIFY</text>
+      <text class="body muted" x="16" y="61" font-size="13">Intent + risk</text>
+    </g>
+    <g transform="translate(542 396)">
+      <rect width="158" height="78" rx="13" fill="#FFFFFF" stroke="#B6CCDA"/>
+      <rect width="158" height="8" rx="4" fill="#0B8F87"/>
+      <text class="display ink" x="16" y="39" font-size="17">2 · AUTHORIZE</text>
+      <text class="body muted" x="16" y="61" font-size="13">Scope knowledge</text>
+    </g>
+    <g transform="translate(724 396)">
+      <rect width="158" height="78" rx="13" fill="#FFFFFF" stroke="#B6CCDA"/>
+      <rect width="158" height="8" rx="4" fill="#0B8F87"/>
+      <text class="display ink" x="16" y="39" font-size="17">3 · RETRIEVE</text>
+      <text class="body muted" x="16" y="61" font-size="13">Plan evidence</text>
+    </g>
+    <g transform="translate(906 396)">
+      <rect width="158" height="78" rx="13" fill="#FFF8E8" stroke="#DBB56A"/>
+      <rect width="158" height="8" rx="4" fill="#EDA93B"/>
+      <text class="display ink" x="16" y="39" font-size="17">4 · DECIDE</text>
+      <text class="body muted" x="16" y="61" font-size="13">Choose next step</text>
+    </g>
+    <g transform="translate(1088 396)">
+      <rect width="158" height="78" rx="13" fill="#FFFFFF" stroke="#B6CCDA"/>
+      <rect width="158" height="8" rx="4" fill="#3973B9"/>
+      <text class="display ink" x="16" y="39" font-size="17">5 · GENERATE</text>
+      <text class="body muted" x="16" y="61" font-size="13">Grounded response</text>
+    </g>
+    <g transform="translate(1270 396)">
+      <rect width="180" height="78" rx="13" fill="#FFFFFF" stroke="#B6CCDA"/>
+      <rect width="180" height="8" rx="4" fill="#27896F"/>
+      <text class="display ink" x="16" y="39" font-size="17">6 · VERIFY + GUARD</text>
+      <text class="body muted" x="16" y="61" font-size="13">Support · safety · fallback</text>
+    </g>
+  </g>
+  <g stroke="#6E91A8" stroke-width="2.2" marker-end="url(#arrowTeal)">
+    <line x1="519" y1="435" x2="537" y2="435"/>
+    <line x1="701" y1="435" x2="719" y2="435"/>
+    <line x1="883" y1="435" x2="901" y2="435"/>
+    <line x1="1065" y1="435" x2="1083" y2="435"/>
+    <line x1="1247" y1="435" x2="1265" y2="435"/>
+  </g>
+
+  <!-- Data and action plane -->
+  <g filter="url(#shadow)">
+    <g transform="translate(330 532)">
+      <rect width="340" height="132" rx="18" fill="#FFFFFF"/>
+      <rect width="10" height="132" rx="5" fill="#3973B9"/>
+      <text class="label" x="28" y="34" font-size="12" fill="#3973B9">DOCUMENT PIPELINE</text>
+      <text class="display ink" x="28" y="67" font-size="21">PRESERVE MEANING</text>
+      <text class="body muted" x="28" y="94" font-size="14">Parse · structure · metadata · versions</text>
+      <text class="body muted" x="28" y="116" font-size="14">tables · provenance · deletion</text>
+    </g>
+    <g transform="translate(720 532)">
+      <rect width="340" height="132" rx="18" fill="#FFFFFF"/>
+      <rect width="10" height="132" rx="5" fill="#0B8F87"/>
+      <text class="label" x="28" y="34" font-size="12" fill="#0B8F87">PERMITTED RETRIEVAL</text>
+      <text class="display ink" x="28" y="67" font-size="21">FIND FIT EVIDENCE</text>
+      <text class="body muted" x="28" y="94" font-size="14">Sparse + dense · filters · freshness</text>
+      <text class="body muted" x="28" y="116" font-size="14">authority · ranking · no-match</text>
+    </g>
+    <g transform="translate(1110 532)">
+      <rect width="370" height="132" rx="18" fill="#FFFFFF"/>
+      <rect width="10" height="132" rx="5" fill="#EDA93B"/>
+      <text class="label" x="28" y="34" font-size="12" fill="#D28A1F">APPROVED TOOLS &amp; WORKFLOWS</text>
+      <text class="display ink" x="28" y="67" font-size="21">ACT WITH BOUNDARIES</text>
+      <text class="body muted" x="28" y="94" font-size="14">Search · CRM · ticketing · notifications</text>
+      <text class="body muted" x="28" y="116" font-size="14">human approval for consequential actions</text>
+    </g>
+  </g>
+  <path d="M622 532C628 501 748 501 778 477" fill="none" stroke="#3973B9" stroke-width="3" marker-end="url(#arrowTeal)"/>
+  <path d="M890 532V482" fill="none" stroke="#0B8F87" stroke-width="3" marker-end="url(#arrowTeal)"/>
+  <path d="M1278 532C1265 510 1198 497 1168 478" fill="none" stroke="#EDA93B" stroke-width="3" marker-end="url(#arrowGold)"/>
+
+  <!-- Observability layer -->
+  <g transform="translate(70 715)">
+    <rect width="1410" height="106" rx="22" fill="url(#tealBand)"/>
+    <text class="label white" x="28" y="31" font-size="13">04 · OBSERVABILITY &amp; IMPROVEMENT · ACROSS EVERY STAGE</text>
+
+    <g transform="translate(30 49)">
+      <rect width="300" height="38" rx="19" fill="#FFFFFF" opacity=".96"/>
+      <text class="display ink" x="18" y="25" font-size="16">TRACE · evidence + decisions</text>
+    </g>
+    <g transform="translate(350 49)">
+      <rect width="300" height="38" rx="19" fill="#FFFFFF" opacity=".96"/>
+      <text class="display ink" x="18" y="25" font-size="16">EVALUATE · quality + safety</text>
+    </g>
+    <g transform="translate(670 49)">
+      <rect width="320" height="38" rx="19" fill="#FFFFFF" opacity=".96"/>
+      <text class="display ink" x="18" y="25" font-size="16">HUMAN REVIEW · consequential acts</text>
+    </g>
+    <g transform="translate(1010 49)">
+      <rect width="370" height="38" rx="19" fill="#FFFFFF" opacity=".96"/>
+      <text class="display ink" x="18" y="25" font-size="16">IMPROVE · measured failures choose architecture</text>
+    </g>
+  </g>
+
+  <g transform="translate(70 860)">
+    <text class="display white" font-size="18">ROSSO HAN</text>
+    <text class="body" x="122" y="0" font-size="14" fill="#91B0C4">Engineering Leadership · Enterprise RAG · AI Agents · Distributed Systems</text>
+    <text class="body" x="1410" y="0" text-anchor="end" font-size="14" fill="#52D6C9">linkedin.com/in/rossohan</text>
+  </g>
+</svg>

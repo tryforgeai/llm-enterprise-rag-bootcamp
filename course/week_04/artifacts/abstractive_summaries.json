@@ -1,0 +1,213 @@
+{
+  "created": "2026-06-27",
+  "artifact_type": "abstractive_summaries",
+  "generation_mode": "manual_local_first_draft",
+  "note": "These are course-study summaries drafted from the extracted local Markdown sources. They are intended as high-level retrieval targets, not citations.",
+  "summaries": [
+    {
+      "summary_id": "sum_prml_ch2_overview",
+      "source_id": "prml_ch2",
+      "level": "source",
+      "title": "PRML Chapter 2 overview: probability distributions",
+      "source_pointer": "course/week_04/prml_chapter_02_probability_distributions.md",
+      "summary": "Chapter 2 builds the probabilistic vocabulary used throughout PRML. It introduces common discrete and continuous distributions, shows how likelihood and Bayesian updates estimate parameters, develops Gaussian conditioning and marginalization, then extends to mixtures, exponential-family distributions, conjugate priors, and nonparametric density estimates.",
+      "key_concepts": [
+        "probability distributions",
+        "Bernoulli",
+        "beta distribution",
+        "multinomial",
+        "Dirichlet",
+        "Gaussian",
+        "maximum likelihood",
+        "Bayesian inference",
+        "mixtures",
+        "exponential family",
+        "kernel density"
+      ],
+      "retrieval_use": "Use this summary for broad questions about what PRML Chapter 2 teaches, why probability distributions matter, or how Bayesian and maximum-likelihood estimation connect."
+    },
+    {
+      "summary_id": "sum_prml_ch2_beta_dirichlet",
+      "source_id": "prml_ch2",
+      "level": "section_cluster",
+      "title": "Discrete variables and conjugate priors",
+      "source_pointer": "course/week_04/prml_chapter_02_probability_distributions.md#2.1-2.2",
+      "summary": "The early part of Chapter 2 explains how binary and categorical outcomes are modeled with Bernoulli, binomial, categorical, and multinomial distributions. The beta distribution acts as a conjugate prior for Bernoulli/binomial parameters, while the Dirichlet distribution plays the same role for multinomial probabilities.",
+      "key_concepts": [
+        "Bernoulli",
+        "binomial",
+        "categorical",
+        "multinomial",
+        "beta prior",
+        "Dirichlet prior",
+        "conjugacy"
+      ],
+      "retrieval_use": "Use this summary for questions about binary variables, count data, categorical outcomes, and why beta or Dirichlet priors are useful."
+    },
+    {
+      "summary_id": "sum_prml_ch2_gaussian",
+      "source_id": "prml_ch2",
+      "level": "section_cluster",
+      "title": "Gaussian distributions and Bayesian parameter estimation",
+      "source_pointer": "course/week_04/prml_chapter_02_probability_distributions.md#2.3",
+      "summary": "The Gaussian section covers univariate and multivariate normal distributions, covariance and precision matrices, marginal and conditional Gaussian distributions, maximum-likelihood estimates, sequential estimation, Bayesian inference over Gaussian parameters, Student's t-distribution, periodic variables, and mixtures of Gaussians.",
+      "key_concepts": [
+        "Gaussian distribution",
+        "multivariate normal",
+        "covariance",
+        "precision",
+        "marginal distribution",
+        "conditional distribution",
+        "Student t distribution",
+        "mixture of Gaussians"
+      ],
+      "retrieval_use": "Use this summary for questions about Gaussian math, conditioning, marginalization, covariance, precision, or mixture models."
+    },
+    {
+      "summary_id": "sum_prml_ch2_exp_nonparametric",
+      "source_id": "prml_ch2",
+      "level": "section_cluster",
+      "title": "Exponential family and nonparametric density estimation",
+      "source_pointer": "course/week_04/prml_chapter_02_probability_distributions.md#2.4-2.5",
+      "summary": "The final part of Chapter 2 generalizes many distributions into the exponential-family form, emphasizing natural parameters, sufficient statistics, maximum likelihood, conjugate priors, and noninformative priors. It then contrasts parametric modeling with nonparametric methods such as kernel density estimation and nearest-neighbor density estimates.",
+      "key_concepts": [
+        "exponential family",
+        "natural parameter",
+        "sufficient statistic",
+        "conjugate prior",
+        "noninformative prior",
+        "kernel density estimation",
+        "nearest neighbor"
+      ],
+      "retrieval_use": "Use this summary for questions about exponential-family structure, sufficient statistics, or nonparametric density estimation."
+    },
+    {
+      "summary_id": "sum_prml_ch3_overview",
+      "source_id": "prml_ch3",
+      "level": "source",
+      "title": "PRML Chapter 3 overview: linear models for regression",
+      "source_pointer": "course/week_04/prml_chapter_03_linear_models_for_regression.md",
+      "summary": "Chapter 3 turns probabilistic modeling into supervised regression. It studies linear-in-the-parameters basis-function models, derives least squares from maximum likelihood, introduces regularization and the bias-variance tradeoff, then develops Bayesian linear regression through posterior weights, predictive distributions, equivalent kernels, model evidence, and evidence approximation.",
+      "key_concepts": [
+        "linear regression",
+        "basis functions",
+        "least squares",
+        "regularization",
+        "bias variance",
+        "Bayesian linear regression",
+        "predictive distribution",
+        "model evidence",
+        "evidence approximation"
+      ],
+      "retrieval_use": "Use this summary for broad questions about what PRML Chapter 3 teaches or how regression connects maximum likelihood and Bayesian inference."
+    },
+    {
+      "summary_id": "sum_prml_ch3_basis_least_squares",
+      "source_id": "prml_ch3",
+      "level": "section_cluster",
+      "title": "Linear basis functions and least squares",
+      "source_pointer": "course/week_04/prml_chapter_03_linear_models_for_regression.md#3.1",
+      "summary": "The chapter begins with models that are linear in their weights but can be nonlinear in the input through basis functions. Maximum likelihood under Gaussian noise leads to least squares, and the geometric view explains fitting as projection onto the space spanned by basis functions. The section also covers sequential learning, regularized least squares, and multiple-output regression.",
+      "key_concepts": [
+        "basis function",
+        "linear in parameters",
+        "Gaussian noise",
+        "least squares",
+        "projection",
+        "regularized least squares",
+        "multiple outputs"
+      ],
+      "retrieval_use": "Use this summary for questions about basis functions, least squares, and why linear models can represent nonlinear input transformations."
+    },
+    {
+      "summary_id": "sum_prml_ch3_bayesian_evidence",
+      "source_id": "prml_ch3",
+      "level": "section_cluster",
+      "title": "Bayesian regression, model comparison, and evidence",
+      "source_pointer": "course/week_04/prml_chapter_03_linear_models_for_regression.md#3.3-3.6",
+      "summary": "The Bayesian part of Chapter 3 treats model weights as uncertain variables. A prior and likelihood produce a posterior over weights, and predictions integrate over that posterior. Model evidence supports comparison between models and hyperparameters; evidence approximation estimates regularization strength and the effective number of parameters. The chapter closes by noting limitations of fixed basis functions.",
+      "key_concepts": [
+        "Bayesian linear regression",
+        "posterior over weights",
+        "predictive distribution",
+        "equivalent kernel",
+        "model evidence",
+        "hyperparameter selection",
+        "effective number of parameters",
+        "fixed basis limitations"
+      ],
+      "retrieval_use": "Use this summary for questions about Bayesian regression, posterior prediction, model evidence, and why fixed basis functions can be limiting."
+    },
+    {
+      "summary_id": "sum_dense_x_overview",
+      "source_id": "dense_x",
+      "level": "source",
+      "title": "Dense-X overview: retrieval granularity",
+      "source_pointer": "course/week_04/dense_x_retrieval_granularity.md",
+      "summary": "Dense-X Retrieval studies what unit should be indexed for dense retrieval. Instead of indexing only passages or sentences, the paper proposes propositions: atomic, self-contained, minimal factoids. The main claim is that retrieval quality depends heavily on granularity, and proposition-level indexing can reduce distractors while preserving precise evidence for question answering.",
+      "key_concepts": [
+        "dense retrieval",
+        "retrieval granularity",
+        "proposition",
+        "factoid",
+        "passage retrieval",
+        "sentence retrieval",
+        "open-domain question answering",
+        "FactoidWiki"
+      ],
+      "retrieval_use": "Use this summary for questions about the Dense-X paper, proposition-level retrieval, or why retrieval unit size matters."
+    },
+    {
+      "summary_id": "sum_dense_x_proposition_unit",
+      "source_id": "dense_x",
+      "level": "section_cluster",
+      "title": "Proposition as a retrieval unit",
+      "source_pointer": "course/week_04/dense_x_retrieval_granularity.md#2",
+      "summary": "A proposition is treated as a self-contained atomic expression that preserves one meaning. The paper positions propositions between sentences and passages: smaller than many sentences when a sentence has multiple facts, but more meaningful than arbitrary text fragments because the proposition keeps context needed for independent interpretation.",
+      "key_concepts": [
+        "atomic fact",
+        "self-contained meaning",
+        "proposition",
+        "sentence splitting",
+        "passage splitting",
+        "retrieval unit"
+      ],
+      "retrieval_use": "Use this summary for questions asking what a proposition is, why a proposition differs from a sentence, or how proposition indexing helps retrieval."
+    },
+    {
+      "summary_id": "sum_dense_x_factoidwiki_eval",
+      "source_id": "dense_x",
+      "level": "section_cluster",
+      "title": "FactoidWiki and evaluation setup",
+      "source_pointer": "course/week_04/dense_x_retrieval_granularity.md#3-4",
+      "summary": "The paper builds FactoidWiki by processing Wikipedia into different granularities such as passages, sentences, and propositions. It evaluates those index choices using open-domain QA datasets and dense retrievers, comparing whether finer-grained retrieval improves passage recall and downstream answer accuracy under a fixed retrieval budget.",
+      "key_concepts": [
+        "FactoidWiki",
+        "Wikipedia",
+        "granularity comparison",
+        "dense retriever",
+        "open-domain QA",
+        "retrieval budget",
+        "passage recall"
+      ],
+      "retrieval_use": "Use this summary for questions about the paper's dataset, evaluation method, and how it compares passage, sentence, and proposition indexes."
+    },
+    {
+      "summary_id": "sum_dense_x_results",
+      "source_id": "dense_x",
+      "level": "section_cluster",
+      "title": "Dense-X results and lesson",
+      "source_pointer": "course/week_04/dense_x_retrieval_granularity.md#5-8",
+      "summary": "The paper reports that proposition-level retrieval often improves retrieval and open-domain QA compared with coarser units. The practical lesson is that chunking is not just a preprocessing detail: index objects should match the granularity of user questions and preserve enough context to be independently useful.",
+      "key_concepts": [
+        "retrieval performance",
+        "question answering",
+        "fine-grained index",
+        "context budget",
+        "chunking strategy",
+        "retrieval artifact"
+      ],
+      "retrieval_use": "Use this summary for questions about what Dense-X found and how its findings apply to RAG chunking strategy."
+    }
+  ]
+}

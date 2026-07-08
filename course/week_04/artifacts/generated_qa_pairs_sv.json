@@ -1,0 +1,203 @@
+{
+  "created": "2026-06-27T14:39:43-0700",
+  "artifact_type": "sv_generated_qa_pairs",
+  "chat_endpoint": "http://10.0.10.51:8000/v1/chat/completions",
+  "chat_model": "openai/gpt-oss-20b",
+  "qa_pairs": [
+    {
+      "qa_id": "svqa_raw_prml_ch2_001_1",
+      "source_id": "prml_ch2",
+      "question": "What topics are covered in Chapter 2 of the PRML book?",
+      "answer": "Chapter 2 introduces probability distributions for discrete and continuous variables, then uses maximum likelihood and Bayesian inference to estimate their parameters. The chapter builds from Bernoulli and multinomial variables to Gaussian distributions, mixtures, exponential-family models, and nonparametric methods.",
+      "keywords": [
+        "probability distributions",
+        "discrete variables",
+        "continuous variables",
+        "maximum likelihood",
+        "Bayesian inference",
+        "Bernoulli",
+        "multinomial",
+        "Gaussian",
+        "mixtures",
+        "exponential-family",
+        "nonparametric methods"
+      ],
+      "source_pointer": "course/week_04/prml_chapter_02_probability_distributions.md",
+      "source_chunk_id": "raw_prml_ch2_001",
+      "generated_by": "openai/gpt-oss-20b"
+    },
+    {
+      "qa_id": "svqa_raw_prml_ch2_001_2",
+      "source_id": "prml_ch2",
+      "question": "How does Chapter 2 approach parameter estimation for probability distributions?",
+      "answer": "Chapter 2 uses maximum likelihood and Bayesian inference to estimate the parameters of the probability distributions it introduces.",
+      "keywords": [
+        "parameter estimation",
+        "maximum likelihood",
+        "Bayesian inference",
+        "probability distributions"
+      ],
+      "source_pointer": "course/week_04/prml_chapter_02_probability_distributions.md",
+      "source_chunk_id": "raw_prml_ch2_001",
+      "generated_by": "openai/gpt-oss-20b"
+    },
+    {
+      "qa_id": "svqa_raw_prml_ch2_002_1",
+      "source_id": "prml_ch2",
+      "question": "Why is the Gaussian distribution considered central in statistical modeling?",
+      "answer": "The Gaussian distribution is central because it supports tractable conditioning, marginalization, maximum‑likelihood estimation, Bayesian parameter inference, and mixture modeling.",
+      "keywords": [
+        "Gaussian distribution",
+        "central",
+        "tractable conditioning",
+        "marginalization",
+        "maximum‑likelihood estimation",
+        "Bayesian inference",
+        "mixture modeling"
+      ],
+      "source_pointer": "course/week_04/prml_chapter_02_probability_distributions.md#2.3",
+      "source_chunk_id": "raw_prml_ch2_002",
+      "generated_by": "openai/gpt-oss-20b"
+    },
+    {
+      "qa_id": "svqa_raw_prml_ch2_002_2",
+      "source_id": "prml_ch2",
+      "question": "How does the multivariate Gaussian describe relationships between variables?",
+      "answer": "In the multivariate case, relationships between variables are described using covariance or precision matrices.",
+      "keywords": [
+        "multivariate Gaussian",
+        "covariance",
+        "precision",
+        "relationships between variables"
+      ],
+      "source_pointer": "course/week_04/prml_chapter_02_probability_distributions.md#2.3",
+      "source_chunk_id": "raw_prml_ch2_002",
+      "generated_by": "openai/gpt-oss-20b"
+    },
+    {
+      "qa_id": "svqa_raw_prml_ch3_001_1",
+      "source_id": "prml_ch3",
+      "question": "What type of regression models does Chapter 3 focus on?",
+      "answer": "Chapter 3 studies supervised regression with models that are linear in their adjustable parameters.",
+      "keywords": [
+        "supervised regression",
+        "linear models",
+        "adjustable parameters"
+      ],
+      "source_pointer": "course/week_04/prml_chapter_03_linear_models_for_regression.md",
+      "source_chunk_id": "raw_prml_ch3_001",
+      "generated_by": "openai/gpt-oss-20b"
+    },
+    {
+      "qa_id": "svqa_raw_prml_ch3_001_2",
+      "source_id": "prml_ch3",
+      "question": "What topics are covered in Chapter 3 regarding regression?",
+      "answer": "It connects Gaussian‑noise maximum likelihood to least squares, adds regularization and bias‑variance analysis, and then develops Bayesian linear regression and model evidence.",
+      "keywords": [
+        "Gaussian‑noise maximum likelihood",
+        "least squares",
+        "regularization",
+        "bias‑variance analysis",
+        "Bayesian linear regression",
+        "model evidence"
+      ],
+      "source_pointer": "course/week_04/prml_chapter_03_linear_models_for_regression.md",
+      "source_chunk_id": "raw_prml_ch3_001",
+      "generated_by": "openai/gpt-oss-20b"
+    },
+    {
+      "qa_id": "svqa_raw_prml_ch3_002_1",
+      "source_id": "prml_ch3",
+      "question": "What does it mean that a linear basis function model is linear in its weights but nonlinear in the input variables?",
+      "answer": "It means that the model’s output is a linear combination of basis functions, so the weights appear linearly, but the basis functions themselves can be nonlinear functions of the input, allowing the model to capture curved relationships in the input space.",
+      "keywords": [
+        "linear basis function model",
+        "weights",
+        "nonlinear input",
+        "basis functions",
+        "curved relationships"
+      ],
+      "source_pointer": "course/week_04/prml_chapter_03_linear_models_for_regression.md#3.1",
+      "source_chunk_id": "raw_prml_ch3_002",
+      "generated_by": "openai/gpt-oss-20b"
+    },
+    {
+      "qa_id": "svqa_raw_prml_ch3_002_2",
+      "source_id": "prml_ch3",
+      "question": "Why is the linearity in weights useful for linear algebra and probabilistic treatment?",
+      "answer": "Because the model is linear in its weights, simple linear algebra techniques can be applied and the weights can be treated probabilistically (e.g., with Gaussian priors), while still enabling the model to represent nonlinear relationships in the input space.",
+      "keywords": [
+        "linearity in weights",
+        "linear algebra",
+        "probabilistic treatment",
+        "weights",
+        "nonlinear input"
+      ],
+      "source_pointer": "course/week_04/prml_chapter_03_linear_models_for_regression.md#3.1",
+      "source_chunk_id": "raw_prml_ch3_002",
+      "generated_by": "openai/gpt-oss-20b"
+    },
+    {
+      "qa_id": "svqa_raw_dense_x_001_1",
+      "source_id": "dense_x",
+      "question": "What textual units does Dense-X Retrieval compare for indexing?",
+      "answer": "Dense-X Retrieval compares coarse passages, sentences, and proposition-level factoids as the units to index.",
+      "keywords": [
+        "Dense-X Retrieval",
+        "indexing",
+        "textual units",
+        "passages",
+        "sentences",
+        "factoids"
+      ],
+      "source_pointer": "course/week_04/dense_x_retrieval_granularity.md",
+      "source_chunk_id": "raw_dense_x_001",
+      "generated_by": "openai/gpt-oss-20b"
+    },
+    {
+      "qa_id": "svqa_raw_dense_x_001_2",
+      "source_id": "dense_x",
+      "question": "How does the granularity of retrieval affect Dense-X Retrieval?",
+      "answer": "The granularity of retrieval influences both the accuracy of retrieval and the performance of downstream question answering.",
+      "keywords": [
+        "retrieval granularity",
+        "accuracy",
+        "downstream question answering",
+        "Dense-X"
+      ],
+      "source_pointer": "course/week_04/dense_x_retrieval_granularity.md",
+      "source_chunk_id": "raw_dense_x_001",
+      "generated_by": "openai/gpt-oss-20b"
+    },
+    {
+      "qa_id": "svqa_raw_dense_x_002_1",
+      "source_id": "dense_x",
+      "question": "What is a proposition in the context of retrieval units?",
+      "answer": "A proposition is an atomic and self-contained unit of meaning.",
+      "keywords": [
+        "proposition",
+        "atomic",
+        "self-contained",
+        "unit of meaning"
+      ],
+      "source_pointer": "course/week_04/dense_x_retrieval_granularity.md#2",
+      "source_chunk_id": "raw_dense_x_002",
+      "generated_by": "openai/gpt-oss-20b"
+    },
+    {
+      "qa_id": "svqa_raw_dense_x_002_2",
+      "source_id": "dense_x",
+      "question": "What is the goal of proposition-level retrieval?",
+      "answer": "Proposition-level retrieval tries to remove unnecessary context while keeping the fact complete enough to be useful to a downstream answer generator.",
+      "keywords": [
+        "proposition-level retrieval",
+        "remove unnecessary context",
+        "complete fact",
+        "downstream answer generator"
+      ],
+      "source_pointer": "course/week_04/dense_x_retrieval_granularity.md#2",
+      "source_chunk_id": "raw_dense_x_002",
+      "generated_by": "openai/gpt-oss-20b"
+    }
+  ]
+}

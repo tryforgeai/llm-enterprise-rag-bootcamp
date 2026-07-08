@@ -1,0 +1,56 @@
+{
+  "created": "2026-06-27",
+  "artifact_type": "raw_chunks_sample",
+  "generation_mode": "manual_representative_samples",
+  "note": "Representative evidence chunks for the local retrieval demo. These preserve local context more than propositions or summaries, but are intentionally short study samples rather than a full production chunk index.",
+  "chunks": [
+    {
+      "chunk_id": "raw_prml_ch2_001",
+      "source_id": "prml_ch2",
+      "title": "Chapter 2 probability distribution overview",
+      "source_pointer": "course/week_04/prml_chapter_02_probability_distributions.md",
+      "chunk_text": "Chapter 2 introduces probability distributions for discrete and continuous variables, then uses maximum likelihood and Bayesian inference to estimate their parameters. The chapter builds from Bernoulli and multinomial variables to Gaussian distributions, mixtures, exponential-family models, and nonparametric methods.",
+      "keywords": ["probability distributions", "maximum likelihood", "Bayesian inference", "Gaussian", "exponential family"]
+    },
+    {
+      "chunk_id": "raw_prml_ch2_002",
+      "source_id": "prml_ch2",
+      "title": "Gaussian section study chunk",
+      "source_pointer": "course/week_04/prml_chapter_02_probability_distributions.md#2.3",
+      "chunk_text": "The Gaussian distribution is central because it supports tractable conditioning, marginalization, maximum-likelihood estimation, Bayesian parameter inference, and mixture modeling. The multivariate case uses covariance or precision to describe relationships between variables.",
+      "keywords": ["Gaussian", "conditioning", "marginalization", "covariance", "precision", "mixture"]
+    },
+    {
+      "chunk_id": "raw_prml_ch3_001",
+      "source_id": "prml_ch3",
+      "title": "Chapter 3 regression overview",
+      "source_pointer": "course/week_04/prml_chapter_03_linear_models_for_regression.md",
+      "chunk_text": "Chapter 3 studies supervised regression with models that are linear in their adjustable parameters. It connects Gaussian-noise maximum likelihood to least squares, adds regularization and bias-variance analysis, and then develops Bayesian linear regression and model evidence.",
+      "keywords": ["linear regression", "least squares", "regularization", "bias variance", "Bayesian linear regression", "evidence"]
+    },
+    {
+      "chunk_id": "raw_prml_ch3_002",
+      "source_id": "prml_ch3",
+      "title": "Basis function study chunk",
+      "source_pointer": "course/week_04/prml_chapter_03_linear_models_for_regression.md#3.1",
+      "chunk_text": "A linear basis function model is linear in its weights but can be nonlinear in the original input variables. This allows simple linear algebra and probabilistic treatment of weights while still representing curved relationships in the input space.",
+      "keywords": ["basis function", "linear in weights", "nonlinear input", "probabilistic weights"]
+    },
+    {
+      "chunk_id": "raw_dense_x_001",
+      "source_id": "dense_x",
+      "title": "Dense-X retrieval granularity overview",
+      "source_pointer": "course/week_04/dense_x_retrieval_granularity.md",
+      "chunk_text": "Dense-X Retrieval asks what textual unit should be indexed by a dense retriever. It compares coarse passages, sentences, and proposition-level factoids, arguing that retrieval granularity affects both retrieval accuracy and downstream question answering.",
+      "keywords": ["Dense-X", "retrieval granularity", "dense retriever", "passages", "sentences", "propositions"]
+    },
+    {
+      "chunk_id": "raw_dense_x_002",
+      "source_id": "dense_x",
+      "title": "Propositions as retrieval units",
+      "source_pointer": "course/week_04/dense_x_retrieval_granularity.md#2",
+      "chunk_text": "A proposition is an atomic and self-contained unit of meaning. Proposition-level retrieval tries to remove unnecessary context while keeping the fact complete enough to be useful to a downstream answer generator.",
+      "keywords": ["proposition", "atomic", "self-contained", "retrieval unit", "answer generator"]
+    }
+  ]
+}

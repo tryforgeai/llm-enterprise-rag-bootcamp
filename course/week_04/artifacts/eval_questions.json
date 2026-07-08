@@ -1,0 +1,56 @@
+{
+  "created": "2026-06-27",
+  "artifact_type": "retrieval_eval_questions",
+  "purpose": "First-pass eval set for comparing raw chunks, abstractive summaries, propositions, and QA pairs in the Week 04 retrieval artifact experiment.",
+  "eval_questions": [
+    {
+      "eval_id": "eval_w04_001",
+      "question": "What is a proposition in Dense-X?",
+      "target_source": "dense_x",
+      "expected_artifact_behavior": "A QA-pair record or proposition record should rank highest because the user question matches the exact query-shaped object and the atomic definition.",
+      "expected_records": ["qa_dense_x_002", "prop_dense_x_002", "sum_dense_x_proposition_unit"]
+    },
+    {
+      "eval_id": "eval_w04_002",
+      "question": "Why can proposition-level retrieval help RAG?",
+      "target_source": "dense_x",
+      "expected_artifact_behavior": "A QA pair or abstractive summary should rank high because the question asks for a causal explanation, not just an atomic definition.",
+      "expected_records": ["qa_dense_x_003", "sum_dense_x_results", "raw_dense_x_002"]
+    },
+    {
+      "eval_id": "eval_w04_003",
+      "question": "What is FactoidWiki?",
+      "target_source": "dense_x",
+      "expected_artifact_behavior": "A proposition or QA pair should rank high because FactoidWiki is a named entity with a compact definition.",
+      "expected_records": ["prop_dense_x_007", "qa_dense_x_004", "sum_dense_x_factoidwiki_eval"]
+    },
+    {
+      "eval_id": "eval_w04_004",
+      "question": "What does PRML Chapter 2 teach?",
+      "target_source": "prml_ch2",
+      "expected_artifact_behavior": "An abstractive chapter summary should rank highest because the query is broad and asks for a chapter-level overview.",
+      "expected_records": ["sum_prml_ch2_overview", "qa_prml_ch2_001", "raw_prml_ch2_001"]
+    },
+    {
+      "eval_id": "eval_w04_005",
+      "question": "What is the beta distribution used for in PRML Chapter 2?",
+      "target_source": "prml_ch2",
+      "expected_artifact_behavior": "A QA pair should rank high because the query asks a direct fact; the discrete-variable summary should also appear.",
+      "expected_records": ["qa_prml_ch2_002", "sum_prml_ch2_beta_dirichlet"]
+    },
+    {
+      "eval_id": "eval_w04_006",
+      "question": "Why can a linear model represent nonlinear input patterns?",
+      "target_source": "prml_ch3",
+      "expected_artifact_behavior": "A QA pair should rank highest because the wording closely matches the generated question; the basis-function chunk and summary should follow.",
+      "expected_records": ["qa_prml_ch3_002", "raw_prml_ch3_002", "sum_prml_ch3_basis_least_squares"]
+    },
+    {
+      "eval_id": "eval_w04_007",
+      "question": "How does model evidence help Bayesian linear regression?",
+      "target_source": "prml_ch3",
+      "expected_artifact_behavior": "A QA pair and Bayesian-evidence summary should rank high because the query asks for the role of evidence in model comparison.",
+      "expected_records": ["qa_prml_ch3_003", "sum_prml_ch3_bayesian_evidence"]
+    }
+  ]
+}

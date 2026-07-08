@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QA Pair Embedding Search Demo</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Week 03 retrieval artifact</p>
+        <h1>QA Pair Indexing Lab</h1>
+        <p>
+          A tiny demo showing how one Berlin paragraph becomes factoids, QA pairs,
+          embedding index records, cosine search results, and source-grounded evidence.
+        </p>
+      </section>
+
+      <section class="grid">
+        <article class="panel source-panel">
+          <div class="panel-heading">
+            <span>01</span>
+            <h2>Source Chunk</h2>
+          </div>
+          <p class="chunk-label">chunk_berlin_001</p>
+          <blockquote id="sourceChunk"></blockquote>
+          <div class="warning">
+            QA pairs help retrieval, but final answers should still return to this source chunk.
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-heading">
+            <span>02</span>
+            <h2>Factoids</h2>
+          </div>
+          <div id="factoids" class="factoid-list"></div>
+        </article>
+
+        <article class="panel wide">
+          <div class="panel-heading">
+            <span>03</span>
+            <h2>QA Pairs Generated From The Chunk</h2>
+          </div>
+          <div id="qaPairs" class="qa-grid"></div>
+        </article>
+
+        <article class="panel wide">
+          <div class="panel-heading">
+            <span>04</span>
+            <h2>Index Records</h2>
+          </div>
+          <p class="muted">
+            The vector store indexes query-shaped text, while metadata keeps a pointer
+            back to <code>chunk_berlin_001</code>.
+          </p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Indexed Text</th>
+                  <th>Evidence Pointer</th>
+                </tr>
+              </thead>
+              <tbody id="indexRows"></tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="panel search-panel">
+          <div class="panel-heading">
+            <span>05</span>
+            <h2>Embedding Search</h2>
+          </div>
+          <label for="queryInput">User question</label>
+          <textarea id="queryInput" rows="3"></textarea>
+          <div class="quick-row" id="quickQueries"></div>
+          <button id="searchButton" type="button">Run cosine search</button>
+          <p class="model-note">
+            Demo mode uses a transparent keyword-feature embedding so it works offline.
+            The SV cluster payload is shown below for the same records.
+          </p>
+        </article>
+
+        <article class="panel results-panel">
+          <div class="panel-heading">
+            <span>06</span>
+            <h2>Similarity Ranking</h2>
+          </div>
+          <div class="split-results">
+            <div>
+              <h3>QA-pair index</h3>
+              <div id="qaResults" class="result-list"></div>
+            </div>
+            <div>
+              <h3>Whole paragraph baseline</h3>
+              <div id="paragraphResult" class="result-list"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel evidence-panel wide">
+          <div class="panel-heading">
+            <span>07</span>
+            <h2>Retrieved Evidence</h2>
+          </div>
+          <div id="evidence"></div>
+        </article>
+
+        <article class="panel code-panel wide">
+          <div class="panel-heading">
+            <span>08</span>
+            <h2>How To Use SV Cluster Embeddings</h2>
+          </div>
+          <pre><code id="apiSnippet"></code></pre>
+        </article>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

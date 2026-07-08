@@ -1,0 +1,57 @@
+{
+  "created": "2026-06-27",
+  "purpose": "Week 04 abstractive summarization and retrieval-granularity experiment source inventory.",
+  "sources": [
+    {
+      "source_id": "prml_ch2",
+      "title": "PRML Chapter 2: Probability Distributions",
+      "source_type": "textbook_chapter",
+      "path": "course/week_04/prml_chapter_02_probability_distributions.md",
+      "original_pdf": "course/week_03/data/PRML.pdf",
+      "book_pages": "67-136",
+      "pdf_pages": [
+        86,
+        155
+      ],
+      "planned_artifacts": [
+        "raw_chunks",
+        "abstractive_summaries",
+        "qa_pairs"
+      ]
+    },
+    {
+      "source_id": "prml_ch3",
+      "title": "PRML Chapter 3: Linear Models for Regression",
+      "source_type": "textbook_chapter",
+      "path": "course/week_04/prml_chapter_03_linear_models_for_regression.md",
+      "original_pdf": "course/week_03/data/PRML.pdf",
+      "book_pages": "137-177",
+      "pdf_pages": [
+        156,
+        196
+      ],
+      "planned_artifacts": [
+        "raw_chunks",
+        "abstractive_summaries",
+        "qa_pairs"
+      ]
+    },
+    {
+      "source_id": "dense_x",
+      "title": "Dense X Retrieval: What Retrieval Granularity Should We Use?",
+      "source_type": "research_paper",
+      "path": "course/week_04/dense_x_retrieval_granularity.md",
+      "original_pdf": "course/week_04/2312.06648v3.pdf",
+      "pdf_pages": [
+        1,
+        19
+      ],
+      "planned_artifacts": [
+        "raw_chunks",
+        "abstractive_summaries",
+        "propositions",
+        "qa_pairs"
+      ]
+    }
+  ]
+}

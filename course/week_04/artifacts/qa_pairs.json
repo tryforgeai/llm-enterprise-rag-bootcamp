@@ -1,0 +1,98 @@
+{
+  "created": "2026-06-27",
+  "artifact_type": "qa_pairs",
+  "generation_mode": "manual_local_first_draft",
+  "note": "These QA pairs are query-shaped index artifacts. Each answer is short and points back to a source artifact or source text.",
+  "qa_pairs": [
+    {
+      "qa_id": "qa_prml_ch2_001",
+      "source_id": "prml_ch2",
+      "question": "What does PRML Chapter 2 teach?",
+      "answer": "PRML Chapter 2 teaches probability distributions, parameter estimation, Bayesian updates, Gaussian models, exponential-family structure, and nonparametric density estimation.",
+      "source_pointer": "course/week_04/prml_chapter_02_probability_distributions.md",
+      "artifact_pointer": "sum_prml_ch2_overview",
+      "keywords": ["PRML", "Chapter 2", "probability distributions", "Bayesian", "Gaussian"]
+    },
+    {
+      "qa_id": "qa_prml_ch2_002",
+      "source_id": "prml_ch2",
+      "question": "What is the beta distribution used for in Chapter 2?",
+      "answer": "The beta distribution is used as a conjugate prior for Bernoulli or binomial probability parameters.",
+      "source_pointer": "course/week_04/prml_chapter_02_probability_distributions.md#2.1",
+      "artifact_pointer": "sum_prml_ch2_beta_dirichlet",
+      "keywords": ["beta distribution", "Bernoulli", "binomial", "conjugate prior"]
+    },
+    {
+      "qa_id": "qa_prml_ch2_003",
+      "source_id": "prml_ch2",
+      "question": "How are Gaussian distributions used in PRML Chapter 2?",
+      "answer": "Gaussian distributions are used to model continuous variables, study covariance and precision, derive conditional and marginal distributions, and introduce maximum-likelihood and Bayesian parameter estimation.",
+      "source_pointer": "course/week_04/prml_chapter_02_probability_distributions.md#2.3",
+      "artifact_pointer": "sum_prml_ch2_gaussian",
+      "keywords": ["Gaussian", "covariance", "precision", "conditional", "marginal", "Bayesian"]
+    },
+    {
+      "qa_id": "qa_prml_ch3_001",
+      "source_id": "prml_ch3",
+      "question": "What does PRML Chapter 3 teach?",
+      "answer": "PRML Chapter 3 teaches linear models for regression, including basis functions, least squares, regularization, bias-variance, Bayesian linear regression, and model evidence.",
+      "source_pointer": "course/week_04/prml_chapter_03_linear_models_for_regression.md",
+      "artifact_pointer": "sum_prml_ch3_overview",
+      "keywords": ["PRML", "Chapter 3", "linear regression", "basis functions", "Bayesian regression"]
+    },
+    {
+      "qa_id": "qa_prml_ch3_002",
+      "source_id": "prml_ch3",
+      "question": "Why can a linear model represent nonlinear input patterns?",
+      "answer": "A linear model can be linear in its weights while using nonlinear basis functions of the input, so the model remains analytically convenient but can fit nonlinear relationships.",
+      "source_pointer": "course/week_04/prml_chapter_03_linear_models_for_regression.md#3.1",
+      "artifact_pointer": "sum_prml_ch3_basis_least_squares",
+      "keywords": ["linear model", "basis functions", "nonlinear input", "linear in parameters"]
+    },
+    {
+      "qa_id": "qa_prml_ch3_003",
+      "source_id": "prml_ch3",
+      "question": "What is model evidence used for in Bayesian linear regression?",
+      "answer": "Model evidence is used to compare models or hyperparameters by measuring how well a model explains the data after accounting for uncertainty over its parameters.",
+      "source_pointer": "course/week_04/prml_chapter_03_linear_models_for_regression.md#3.4-3.5",
+      "artifact_pointer": "sum_prml_ch3_bayesian_evidence",
+      "keywords": ["model evidence", "Bayesian linear regression", "model comparison", "hyperparameters"]
+    },
+    {
+      "qa_id": "qa_dense_x_001",
+      "source_id": "dense_x",
+      "question": "What is Dense-X Retrieval about?",
+      "answer": "Dense-X Retrieval is about choosing the right retrieval granularity for dense retrievers, especially comparing passages, sentences, and proposition-level factoids.",
+      "source_pointer": "course/week_04/dense_x_retrieval_granularity.md",
+      "artifact_pointer": "sum_dense_x_overview",
+      "keywords": ["Dense-X", "retrieval granularity", "dense retrieval", "propositions"]
+    },
+    {
+      "qa_id": "qa_dense_x_002",
+      "source_id": "dense_x",
+      "question": "What is a proposition in Dense-X?",
+      "answer": "A proposition is an atomic, self-contained statement that captures one meaning and can be indexed as a fine-grained retrieval unit.",
+      "source_pointer": "course/week_04/dense_x_retrieval_granularity.md#2",
+      "artifact_pointer": "prop_dense_x_002",
+      "keywords": ["proposition", "atomic", "self-contained", "retrieval unit"]
+    },
+    {
+      "qa_id": "qa_dense_x_003",
+      "source_id": "dense_x",
+      "question": "Why can proposition-level retrieval help RAG?",
+      "answer": "Proposition-level retrieval can help RAG by returning compact evidence with fewer distractors, so the generator receives information closer to the question's actual fact need.",
+      "source_pointer": "course/week_04/dense_x_retrieval_granularity.md#5-8",
+      "artifact_pointer": "sum_dense_x_results",
+      "keywords": ["proposition-level retrieval", "RAG", "compact evidence", "distractors"]
+    },
+    {
+      "qa_id": "qa_dense_x_004",
+      "source_id": "dense_x",
+      "question": "What is FactoidWiki?",
+      "answer": "FactoidWiki is a Wikipedia-derived dataset used in Dense-X to compare passage, sentence, and proposition retrieval units.",
+      "source_pointer": "course/week_04/dense_x_retrieval_granularity.md#3",
+      "artifact_pointer": "prop_dense_x_007",
+      "keywords": ["FactoidWiki", "Wikipedia", "dataset", "retrieval units"]
+    }
+  ]
+}

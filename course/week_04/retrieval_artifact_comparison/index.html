@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 04 Retrieval Artifact Comparison</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Week 04 Task 1</p>
+          <h1>Retrieval Artifact Comparison</h1>
+        </div>
+        <p class="hero-copy">
+          Compare raw chunks, abstractive summaries, Dense-X propositions, and QA pairs
+          over PRML Chapters 2-3 plus the Dense-X paper.
+        </p>
+      </section>
+
+      <section class="workbench">
+        <article class="query-panel">
+          <div class="mode-line">
+            <span id="modeBadge">Checking server</span>
+            <span id="indexBadge">No real index yet</span>
+          </div>
+          <label for="queryInput">Question</label>
+          <textarea id="queryInput" rows="4"></textarea>
+          <div id="quickQueries" class="quick-row"></div>
+          <div class="button-row">
+            <button id="generateQaButton" class="secondary-button" type="button">Generate QA pairs</button>
+            <button id="buildButton" class="secondary-button" type="button">Build SV index</button>
+            <button id="runButton" type="button">Search</button>
+            <button id="answerButton" type="button">Synthesize answer</button>
+          </div>
+          <p class="note">
+            SV-only mode. QA generation uses <code>/v1/chat/completions</code>;
+            retrieval uses <code>/embed-text/v1/embeddings</code>; answer synthesis uses chat again.
+          </p>
+          <pre class="status-log" id="statusLog"></pre>
+        </article>
+
+        <article class="answer-panel">
+          <div class="section-title">
+            <span>Best Match</span>
+            <strong id="bestScore">0.000</strong>
+          </div>
+          <h2 id="bestTitle">Run a query</h2>
+          <p id="bestText"></p>
+          <dl class="metadata">
+            <div>
+              <dt>Artifact</dt>
+              <dd id="bestType">-</dd>
+            </div>
+            <div>
+              <dt>Source</dt>
+              <dd id="bestSource">-</dd>
+            </div>
+          </dl>
+        </article>
+      </section>
+
+      <section class="rag-answer">
+        <div class="section-title">
+          <span>RAG Evidence Answer</span>
+          <strong id="answerMode">offline baseline</strong>
+        </div>
+        <pre id="ragAnswer"></pre>
+      </section>
+
+      <section class="columns" aria-label="Results by artifact type">
+        <article>
+          <h2>Raw Chunk</h2>
+          <div id="raw_chunk" class="result-list"></div>
+        </article>
+        <article>
+          <h2>Summary</h2>
+          <div id="abstractive_summary" class="result-list"></div>
+        </article>
+        <article>
+          <h2>Proposition</h2>
+          <div id="proposition" class="result-list"></div>
+        </article>
+        <article>
+          <h2>QA Pair</h2>
+          <div id="qa_pair" class="result-list"></div>
+        </article>
+      </section>
+
+      <section class="pipeline">
+        <h2>What This Demo Implements</h2>
+        <div class="flow">
+          <span>sources</span>
+          <span>SV chat QA pairs</span>
+          <span>SV vectors</span>
+          <span>cosine ranking</span>
+          <span>SV chat answer</span>
+        </div>
+        <pre><code id="svSnippet"></code></pre>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

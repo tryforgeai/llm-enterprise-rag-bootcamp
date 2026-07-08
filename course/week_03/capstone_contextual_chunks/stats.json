@@ -1,0 +1,13 @@
+{
+  "pdf": "/Users/rosso.han/Downloads/rag-capstone-projects (1).pdf",
+  "document_title": "Capstone Project Briefs Enterprise RAG: Building What You Have Learned \u2014 Seventeen Capstone Journeys Asif Qamar",
+  "pages": 213,
+  "non_empty_pages": 203,
+  "characters": 334955,
+  "chunk_size": 1800,
+  "overlap": 250,
+  "chunks": 266,
+  "regular_chunks": "/Users/rosso.han/Documents/Obsidian Vault/Projects/LLM and Enterprise RAG Bootcamp/course/week_03/capstone_contextual_chunks/regular_chunks.jsonl",
+  "contextual_chunks": "/Users/rosso.han/Documents/Obsidian Vault/Projects/LLM and Enterprise RAG Bootcamp/course/week_03/capstone_contextual_chunks/contextual_chunks.jsonl",
+  "preview": "/Users/rosso.han/Documents/Obsidian Vault/Projects/LLM and Enterprise RAG Bootcamp/course/week_03/capstone_contextual_chunks/preview.md"
+}

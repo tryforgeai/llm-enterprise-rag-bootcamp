@@ -1,0 +1,387 @@
+:root {
+  --ink: #1f1b17;
+  --muted: #71695f;
+  --paper: #f6efe4;
+  --paper-strong: #fffaf0;
+  --line: #d7c7ad;
+  --blue: #214f8f;
+  --blue-soft: #d8e8f5;
+  --green: #35735a;
+  --green-soft: #dbe9d6;
+  --red: #b3503b;
+  --red-soft: #f3d5c8;
+  --gold: #d1992a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    linear-gradient(90deg, rgba(31, 27, 23, 0.04) 1px, transparent 1px) 0 0 / 34px 34px,
+    linear-gradient(rgba(31, 27, 23, 0.035) 1px, transparent 1px) 0 0 / 34px 34px,
+    radial-gradient(circle at 12% 0%, rgba(209, 153, 42, 0.28), transparent 34rem),
+    radial-gradient(circle at 86% 10%, rgba(33, 79, 143, 0.16), transparent 28rem),
+    var(--paper);
+  font-family: "Source Serif 4", Georgia, serif;
+}
+
+.page {
+  width: min(1220px, calc(100vw - 32px));
+  margin: 0 auto;
+  padding: 30px 0 48px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 460px);
+  gap: 28px;
+  align-items: end;
+  margin-bottom: 22px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--blue);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fraunces", Georgia, serif;
+  letter-spacing: 0;
+}
+
+h1 {
+  margin-bottom: 18px;
+  font-size: clamp(4.2rem, 10vw, 9.5rem);
+  line-height: 0.88;
+}
+
+h2 {
+  margin-bottom: 14px;
+  font-size: clamp(2rem, 4vw, 4.5rem);
+  line-height: 0.95;
+}
+
+h3 {
+  margin-bottom: 8px;
+  font-size: 1.35rem;
+  line-height: 1.02;
+}
+
+.dek {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+  line-height: 1.38;
+}
+
+.review-brief {
+  border: 1px solid var(--line);
+  border-left: 9px solid var(--gold);
+  background: rgba(255, 250, 240, 0.9);
+  padding: 20px;
+  box-shadow: 0 22px 60px rgba(63, 46, 21, 0.12);
+  font-size: 1.08rem;
+  line-height: 1.42;
+}
+
+.review-brief span,
+.thesis-strip span,
+.flow-grid span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--red);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.thesis-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.thesis-strip div,
+.text-block,
+.system-diagram,
+.flow-grid article,
+.review-panel {
+  border: 1px solid var(--line);
+  background: rgba(255, 250, 240, 0.9);
+  box-shadow: 0 15px 42px rgba(63, 46, 21, 0.08);
+}
+
+.thesis-strip div {
+  padding: 17px 18px;
+}
+
+.thesis-strip strong {
+  display: block;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.28rem;
+  line-height: 1.08;
+}
+
+.thesis-strip .thesis-main {
+  background: var(--ink);
+  color: var(--paper-strong);
+}
+
+.thesis-strip .thesis-main span {
+  color: var(--gold);
+}
+
+.spread {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.text-block {
+  padding: 26px;
+}
+
+.text-block p,
+.text-block li,
+.system-diagram figcaption,
+.flow-grid p,
+.review-panel li {
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.48;
+}
+
+.text-block.tinted {
+  background: var(--green-soft);
+}
+
+.text-block.dark {
+  background: var(--ink);
+  color: var(--paper-strong);
+}
+
+.text-block.dark .eyebrow {
+  color: var(--gold);
+}
+
+.text-block.dark li,
+.text-block.dark p {
+  color: #eadfcf;
+}
+
+ul,
+ol {
+  padding-left: 1.25rem;
+}
+
+.diagram-section,
+.flow-section {
+  margin-bottom: 22px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: end;
+  margin-bottom: 14px;
+}
+
+.section-heading h2 {
+  max-width: 790px;
+}
+
+.system-diagram {
+  margin: 0;
+  padding: 16px;
+}
+
+.system-diagram svg {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--line);
+  background: #fffdf7;
+}
+
+.grid-fill {
+  fill: url("#grid");
+  stroke: var(--line);
+}
+
+#grid path {
+  fill: none;
+  stroke: rgba(33, 79, 143, 0.1);
+  stroke-width: 1;
+}
+
+.loom-thread {
+  fill: none;
+  stroke-width: 22;
+  stroke-linecap: round;
+  opacity: 0.2;
+}
+
+.loom-thread.gold {
+  stroke: var(--gold);
+}
+
+.loom-thread.blue {
+  stroke: var(--blue);
+}
+
+.loom-thread.green {
+  stroke: var(--green);
+}
+
+.node rect {
+  stroke: var(--ink);
+  stroke-width: 2.2;
+}
+
+.node text {
+  fill: var(--ink);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 18px;
+  font-weight: 600;
+  text-anchor: middle;
+}
+
+.node text + text {
+  fill: var(--muted);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.blue-node rect {
+  fill: var(--blue-soft);
+}
+
+.green-node rect {
+  fill: var(--green-soft);
+}
+
+.red-node rect {
+  fill: var(--red-soft);
+}
+
+.gold-node rect {
+  fill: #f1dfb6;
+}
+
+.arrow-line {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 3;
+  marker-end: url("#arrow");
+}
+
+#arrow path {
+  fill: var(--ink);
+}
+
+.system-diagram figcaption {
+  margin-top: 12px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+}
+
+.flow-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.flow-grid article {
+  min-height: 220px;
+  border-top: 6px solid var(--blue);
+  padding: 16px;
+}
+
+.flow-grid article:nth-child(2) {
+  border-color: var(--green);
+}
+
+.flow-grid article:nth-child(3) {
+  border-color: var(--gold);
+}
+
+.flow-grid article:nth-child(4) {
+  border-color: var(--red);
+}
+
+.flow-grid article:nth-child(5) {
+  border-color: var(--ink);
+}
+
+.review-panel {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.7fr) minmax(0, 1.3fr);
+  gap: 20px;
+  padding: 26px;
+}
+
+.review-panel ol {
+  margin: 0;
+}
+
+.review-panel li + li {
+  margin-top: 10px;
+}
+
+@media (max-width: 980px) {
+  .hero,
+  .spread,
+  .review-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .thesis-strip,
+  .flow-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flow-grid article {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    width: min(100vw - 20px, 620px);
+    padding-top: 20px;
+  }
+
+  h1 {
+    font-size: clamp(3rem, 17vw, 4.6rem);
+  }
+
+  .text-block,
+  .review-panel {
+    padding: 18px;
+  }
+
+  .system-diagram {
+    padding: 9px;
+  }
+}

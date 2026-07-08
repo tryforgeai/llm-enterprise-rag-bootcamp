@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum Weaver Lite Proposal Review</title>
+    <link rel="icon" href="data:," />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,650;9..144,800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="proposal-review.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero" aria-label="Proposal overview">
+        <div class="hero-copy">
+          <p class="eyebrow">Course project proposal</p>
+          <h1>Curriculum Weaver Lite</h1>
+          <p class="dek">
+            A pedagogy-first RAG tutor that teaches self-attention by modeling the learner,
+            ordering prerequisites, attaching source-grounded lessons, and updating mastery
+            after quiz feedback.
+          </p>
+        </div>
+
+        <div class="review-brief" aria-label="Review brief">
+          <span>Review goal</span>
+          Decide whether the project thesis is clear enough for the capstone:
+          a student needs the next teachable concept, not merely the nearest chunk.
+        </div>
+      </section>
+
+      <section class="thesis-strip" aria-label="Old pattern versus proposed pattern">
+        <div>
+          <span>Common RAG pattern</span>
+          <strong>documents -> chunks -> embeddings -> answer</strong>
+        </div>
+        <div class="thesis-main">
+          <span>Curriculum Weaver thesis</span>
+          <strong>goal -> learner model -> prerequisite path -> grounded lesson</strong>
+        </div>
+        <div>
+          <span>Course value</span>
+          <strong>RAG + memory + eval + trace in one visible learning loop</strong>
+        </div>
+      </section>
+
+      <section class="spread problem-spread" aria-label="Problem and hypothesis">
+        <article class="text-block">
+          <p class="eyebrow">Problem</p>
+          <h2>Similarity is not the same as teachability.</h2>
+          <p>
+            A semantic search system can retrieve passages about self-attention, but it may skip
+            the missing ideas that make the explanation understandable: vectors, dot products,
+            matrix multiplication, softmax, and Query/Key/Value.
+          </p>
+        </article>
+        <article class="text-block tinted">
+          <p class="eyebrow">Hypothesis</p>
+          <h2>A prerequisite-aware learner model creates a better learning path.</h2>
+          <p>
+            The system first estimates what the learner already knows, then traverses a concept
+            graph and retrieves material only after the next teachable concept is selected.
+          </p>
+        </article>
+      </section>
+
+      <section class="diagram-section" aria-label="System diagram">
+        <div class="section-heading">
+          <p class="eyebrow">Architecture sketch</p>
+          <h2>How the tutor weaves learning context</h2>
+        </div>
+
+        <figure class="system-diagram">
+          <svg viewBox="0 0 1100 620" role="img" aria-labelledby="systemTitle systemDesc">
+            <title id="systemTitle">Curriculum Weaver Lite system architecture</title>
+            <desc id="systemDesc">
+              A flow from learner goal to learner model, concept graph, source cards, lesson studio,
+              quiz evaluator, mastery update, and trace dashboard.
+            </desc>
+            <defs>
+              <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M0 0 L10 5 L0 10 z" />
+              </marker>
+              <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+                <path d="M34 0H0V34" />
+              </pattern>
+            </defs>
+
+            <rect class="grid-fill" x="18" y="18" width="1064" height="584" rx="18" />
+            <path class="loom-thread gold" d="M120 170 C260 68 365 94 484 166 S740 280 958 156" />
+            <path class="loom-thread blue" d="M132 440 C285 318 412 536 564 416 S760 302 960 428" />
+            <path class="loom-thread green" d="M118 300 C300 286 398 348 538 310 S798 206 958 304" />
+
+            <g class="node blue-node">
+              <rect x="62" y="92" width="176" height="104" rx="10" />
+              <text x="150" y="132">Student goal</text>
+              <text x="150" y="162">learn self-attention</text>
+            </g>
+
+            <g class="node green-node">
+              <rect x="334" y="72" width="210" height="132" rx="10" />
+              <text x="439" y="122">Learner model</text>
+              <text x="439" y="154">mastery estimates</text>
+              <text x="439" y="180">weak concepts</text>
+            </g>
+
+            <g class="node red-node">
+              <rect x="646" y="82" width="214" height="124" rx="10" />
+              <text x="753" y="128">Concept graph</text>
+              <text x="753" y="160">prerequisite order</text>
+            </g>
+
+            <g class="node red-node">
+              <rect x="84" y="374" width="214" height="126" rx="10" />
+              <text x="191" y="420">Source cards</text>
+              <text x="191" y="452">citation + depth</text>
+            </g>
+
+            <g class="node blue-node">
+              <rect x="406" y="340" width="220" height="150" rx="10" />
+              <text x="516" y="392">Lesson studio</text>
+              <text x="516" y="426">explanation</text>
+              <text x="516" y="456">code sketch</text>
+            </g>
+
+            <g class="node gold-node">
+              <rect x="734" y="352" width="190" height="126" rx="10" />
+              <text x="829" y="404">Quiz evaluator</text>
+              <text x="829" y="436">mastery signal</text>
+            </g>
+
+            <g class="node green-node">
+              <rect x="908" y="238" width="138" height="102" rx="10" />
+              <text x="977" y="280">Trace</text>
+              <text x="977" y="310">why this path</text>
+            </g>
+
+            <path class="arrow-line" d="M238 144 H334" />
+            <path class="arrow-line" d="M544 138 H646" />
+            <path class="arrow-line" d="M753 206 C720 276 660 337 626 384" />
+            <path class="arrow-line" d="M298 437 H406" />
+            <path class="arrow-line" d="M626 415 H734" />
+            <path class="arrow-line" d="M829 352 C814 258 633 218 451 206" />
+            <path class="arrow-line" d="M860 144 C948 150 986 186 982 238" />
+          </svg>
+          <figcaption>
+            The Step 1 demo uses static data for this loop. Step 2 replaces static source cards
+            and mastery updates with real ingestion, hybrid retrieval, memory, LLM synthesis, and evaluation.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="flow-section" aria-label="Visible demo flow">
+        <div class="section-heading">
+          <p class="eyebrow">Visible demo flow</p>
+          <h2>What the reviewer can inspect</h2>
+        </div>
+        <div class="flow-grid">
+          <article>
+            <span>01</span>
+            <h3>Choose learner</h3>
+            <p>Beginner, intermediate, or advanced profile sets initial mastery estimates.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Diagnose gaps</h3>
+            <p>The UI shows strong, developing, and weak prerequisites before planning.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Order path</h3>
+            <p>The concept graph removes mastered concepts and orders missing prerequisites.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Teach with sources</h3>
+            <p>Each lesson includes why it comes next, source cards, code sketch, and quiz.</p>
+          </article>
+          <article>
+            <span>05</span>
+            <h3>Update mastery</h3>
+            <p>A quiz answer changes the learner model, making memory visible.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="spread" aria-label="Scope and evaluation plan">
+        <article class="text-block">
+          <p class="eyebrow">Step 1 scope</p>
+          <h2>Static intelligence, real interaction.</h2>
+          <ul>
+            <li>Self-attention concept graph</li>
+            <li>Three learner profiles</li>
+            <li>Curated source cards and citations</li>
+            <li>Lesson, code, quiz, trace, and mastery update</li>
+          </ul>
+        </article>
+
+        <article class="text-block dark">
+          <p class="eyebrow">Step 2 plan</p>
+          <h2>Replace static pieces with real AI modules.</h2>
+          <ul>
+            <li>Course-material ingestion into teaching units</li>
+            <li>Hybrid retrieval with metadata filters</li>
+            <li>Learner memory and knowledge tracing</li>
+            <li>LLM lesson synthesis with source-grounding</li>
+            <li>Quiz evaluation and trace dashboard</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="review-panel" aria-label="Review questions">
+        <div>
+          <p class="eyebrow">Review questions</p>
+          <h2>What feedback I want</h2>
+        </div>
+        <ol>
+          <li>Is the pedagogy-first thesis clear enough for the capstone?</li>
+          <li>Does the first demo prove the learning loop before adding infrastructure?</li>
+          <li>Which Step 2 module should be implemented first: ingestion, retrieval, memory, LLM synthesis, or eval?</li>
+          <li>What should the first evaluation measure: path quality, source grounding, quiz improvement, or trace usefulness?</li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>

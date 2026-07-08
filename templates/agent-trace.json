@@ -1,0 +1,17 @@
+{
+  "trace_id": "",
+  "date": "",
+  "question": "",
+  "intent": "",
+  "risk_level": "",
+  "retrieved_evidence": [],
+  "memory_used": [],
+  "decision": "",
+  "response_or_action": "",
+  "safety_notes": "",
+  "retrieval_good": null,
+  "decision_good": null,
+  "safety_good": null,
+  "tone_good": null,
+  "follow_up": ""
+}

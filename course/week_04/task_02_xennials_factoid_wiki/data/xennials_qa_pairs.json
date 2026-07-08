@@ -1,0 +1,1417 @@
+{
+  "created": "2026-06-27T15:12:13-0700",
+  "artifact_type": "qa_pairs",
+  "source_url": "https://en.wikipedia.org/wiki/Xennials",
+  "qa_pairs": [
+    {
+      "qa_id": "qa_fact_xennials_lead_01_01_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_lead_01_01",
+      "source_chunk_id": "xennials_lead_01",
+      "section": "Lead",
+      "question": "What is a Xennial?",
+      "answer": "Xennials are a social cohort born on the cusp of or during the later years of Generation X and early years of Millennials",
+      "keywords": [
+        "Xennials",
+        "Generation X",
+        "Millennials"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_lead_01_02_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_lead_01_02",
+      "source_chunk_id": "xennials_lead_01",
+      "section": "Lead",
+      "question": "What are the typical birth years for Xennials?",
+      "answer": "Many researchers and media define Xennials as born between 1977 and 1983, though some extend the range",
+      "keywords": [
+        "Xennials",
+        "birth years"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_lead_01_03_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_lead_01_03",
+      "source_chunk_id": "xennials_lead_01",
+      "section": "Lead",
+      "question": "What childhood and young adulthood experiences define Xennials?",
+      "answer": "Xennials are described as having an analog childhood and a digital young adulthood",
+      "keywords": [
+        "Xennials",
+        "analog childhood",
+        "digital young adulthood"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_lead_01_04_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_lead_01_04",
+      "source_chunk_id": "xennials_lead_01",
+      "section": "Lead",
+      "question": "Who are the parents of most Xennials?",
+      "answer": "Xennials are almost exclusively the children of baby boomers",
+      "keywords": [
+        "Xennials",
+        "baby boomers"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_lead_01_05_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_lead_01_05",
+      "source_chunk_id": "xennials_lead_01",
+      "section": "Lead",
+      "question": "When did Xennials come of age?",
+      "answer": "Xennials came of age during the rapidly changing 1990s",
+      "keywords": [
+        "Xennials",
+        "1990s"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_lead_01_06_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_lead_01_06",
+      "source_chunk_id": "xennials_lead_01",
+      "section": "Lead",
+      "question": "When was \"Xennial\" added to the Oxford Dictionary?",
+      "answer": "Xennial was added to the Oxford Dictionary of English in 2020, and officially in 2021",
+      "keywords": [
+        "Xennial",
+        "Oxford Dictionary",
+        "2020",
+        "2021"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_lead_01_07_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_lead_01_07",
+      "source_chunk_id": "xennials_lead_01",
+      "section": "Lead",
+      "question": "What is the Oxford Dictionary definition of Xennial?",
+      "answer": "Xennial is defined as a person born between late 1970s and early 1980s, exhibiting traits of both Gen X and Millennials",
+      "keywords": [
+        "Xennial",
+        "Generation X",
+        "Millennials",
+        "traits"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_etymology_and_birth_years_01_01_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_etymology_and_birth_years_01_01",
+      "source_chunk_id": "xennials_etymology_and_birth_years_01",
+      "section": "Etymology and birth years",
+      "question": "What is the origin of the term \"Xennials\"?",
+      "answer": "Xennials is a portmanteau of Generation X and Millennials",
+      "keywords": [
+        "Xennials",
+        "Generation X",
+        "Millennials"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Etymology_and_birth_years",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_etymology_and_birth_years_01_02_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_etymology_and_birth_years_01_02",
+      "source_chunk_id": "xennials_etymology_and_birth_years_01",
+      "section": "Etymology and birth years",
+      "question": "What are the birth years associated with Xennials?",
+      "answer": "Xennials describe people born between the mid- to late 1970s and the early to mid-1980s",
+      "keywords": [
+        "Xennials",
+        "birth years"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Etymology_and_birth_years",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_etymology_and_birth_years_01_03_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_etymology_and_birth_years_01_03",
+      "source_chunk_id": "xennials_etymology_and_birth_years_01",
+      "section": "Etymology and birth years",
+      "question": "Who coined the term Xennials and when?",
+      "answer": "The term Xennials was coined by Sarah Stankorb and Jed Oelbaum in a 2014 GOOD magazine article",
+      "keywords": [
+        "Xennials",
+        "Sarah Stankorb",
+        "Jed Oelbaum"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Etymology_and_birth_years",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_etymology_and_birth_years_01_04_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_etymology_and_birth_years_01_04",
+      "source_chunk_id": "xennials_etymology_and_birth_years_01",
+      "section": "Etymology and birth years",
+      "question": "How does GOOD magazine characterize Xennials?",
+      "answer": "GOOD magazine describes Xennials as a micro-generation bridging Gen X disaffection and Millennial optimism",
+      "keywords": [
+        "Xennials",
+        "GOOD magazine",
+        "Generation X",
+        "Millennials"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Etymology_and_birth_years",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_etymology_and_birth_years_01_05_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_etymology_and_birth_years_01_05",
+      "source_chunk_id": "xennials_etymology_and_birth_years_01",
+      "section": "Etymology and birth years",
+      "question": "Who helped popularize the term Xennials and how?",
+      "answer": "Dan Woodman inadvertently helped popularize Xennials after being asked about generation boundaries",
+      "keywords": [
+        "Xennials",
+        "Dan Woodman",
+        "Melbourne University"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Etymology_and_birth_years",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_etymology_and_birth_years_01_06_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_etymology_and_birth_years_01_06",
+      "source_chunk_id": "xennials_etymology_and_birth_years_01",
+      "section": "Etymology and birth years",
+      "question": "Who coined the term \"Oregon Trail Generation\"?",
+      "answer": "The term \"Oregon Trail Generation\" was coined by Anna Garvey in a 2015 Social Media Week article",
+      "keywords": [
+        "Oregon Trail Generation",
+        "Anna Garvey",
+        "Social Media Week"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Etymology_and_birth_years",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_etymology_and_birth_years_01_07_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_etymology_and_birth_years_01_07",
+      "source_chunk_id": "xennials_etymology_and_birth_years_01",
+      "section": "Etymology and birth years",
+      "question": "What is the defining trait of the Oregon Trail Generation?",
+      "answer": "Anna Garvey defined the Oregon Trail Generation as those who played The Oregon Trail before widespread internet use",
+      "keywords": [
+        "Oregon Trail Generation",
+        "Anna Garvey",
+        "The Oregon Trail",
+        "internet"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Etymology_and_birth_years",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_etymology_and_birth_years_01_08_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_etymology_and_birth_years_01_08",
+      "source_chunk_id": "xennials_etymology_and_birth_years_01",
+      "section": "Etymology and birth years",
+      "question": "What is \"Generation Catalano\" and who coined it?",
+      "answer": "Doree Shafrir coined \"Generation Catalano\" referencing Jordan Catalano from My So-Called Life",
+      "keywords": [
+        "Generation Catalano",
+        "Doree Shafrir",
+        "Jordan Catalano",
+        "My So-Called Life"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Etymology_and_birth_years",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_etymology_and_birth_years_02_01_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_etymology_and_birth_years_02_01",
+      "source_chunk_id": "xennials_etymology_and_birth_years_02",
+      "section": "Etymology and birth years",
+      "question": "What are the birth years associated with the term \"xennials\" according to The Guardian?",
+      "answer": "Xennials are defined as those born between 1977 and 1983, based on the release years of the original three Star Wars films",
+      "keywords": [
+        "xennials",
+        "Star Wars",
+        "birth years"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Etymology_and_birth_years",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_etymology_and_birth_years_02_02_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_etymology_and_birth_years_02_02",
+      "source_chunk_id": "xennials_etymology_and_birth_years_02",
+      "section": "Etymology and birth years",
+      "question": "Who defined Xennials as those born between 1977 and 1985 who don’t identify with either Gen X or Millennials?",
+      "answer": "Xennials are people who don't feel like Generation Xers or Millennials and were born between 1977 and 1985",
+      "keywords": [
+        "xennials",
+        "Generation X",
+        "Millennials",
+        "birth years"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Etymology_and_birth_years",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_etymology_and_birth_years_02_03_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_etymology_and_birth_years_02_03",
+      "source_chunk_id": "xennials_etymology_and_birth_years_02",
+      "section": "Etymology and birth years",
+      "question": "Which author used the same birth years to define Xennials as The Guardian and Business Insider?",
+      "answer": "Author Dan Russell defined Xennials using the same birth years as The Guardian and Business Insider",
+      "keywords": [
+        "Dan Russell",
+        "xennials",
+        "birth years"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Etymology_and_birth_years",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_etymology_and_birth_years_02_04_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_etymology_and_birth_years_02_04",
+      "source_chunk_id": "xennials_etymology_and_birth_years_02",
+      "section": "Etymology and birth years",
+      "question": "What birth years does Alastair Greener use to define Xennials in his 2025 book?",
+      "answer": "Alastair Greener defines Xennials as those born between 1979 and 1982 in his 2025 book Generationally Speaking",
+      "keywords": [
+        "Alastair Greener",
+        "2025",
+        "Generationally Speaking",
+        "birth years"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Etymology_and_birth_years",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_etymology_and_birth_years_02_05_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_etymology_and_birth_years_02_05",
+      "source_chunk_id": "xennials_etymology_and_birth_years_02",
+      "section": "Etymology and birth years",
+      "question": "Who defined Gen X/Millennial cuspers as those born between 1976 and 1982?",
+      "answer": "Hannah Ubl, Lisa Walden, and Debra Arbit define Gen X/Millennial cuspers as those born between 1976 and 1982",
+      "keywords": [
+        "Gen X/Millennial cuspers",
+        "Hannah Ubl",
+        "Lisa Walden",
+        "Debra Arbit",
+        "birth years"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Etymology_and_birth_years",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_etymology_and_birth_years_02_06_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_etymology_and_birth_years_02_06",
+      "source_chunk_id": "xennials_etymology_and_birth_years_02",
+      "section": "Etymology and birth years",
+      "question": "Why do different sources provide varying birth year ranges for Xennials?",
+      "answer": "Xennials are sometimes defined with slightly different birth year ranges depending on the source",
+      "keywords": [
+        "xennials",
+        "birth years",
+        "definitions"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Etymology_and_birth_years",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_etymology_and_birth_years_02_07_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_etymology_and_birth_years_02_07",
+      "source_chunk_id": "xennials_etymology_and_birth_years_02",
+      "section": "Etymology and birth years",
+      "question": "Where does the term \"xennials\" originate according to the text?",
+      "answer": "The term \"xennials\" is rooted in internet folklore and popular media definitions",
+      "keywords": [
+        "xennials",
+        "internet folklore",
+        "popular media"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Etymology_and_birth_years",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_etymology_and_birth_years_02_08_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_etymology_and_birth_years_02_08",
+      "source_chunk_id": "xennials_etymology_and_birth_years_02",
+      "section": "Etymology and birth years",
+      "question": "What demographic group do Xennials represent?",
+      "answer": "Xennials are a demographic group that bridges Generation X and Millennials",
+      "keywords": [
+        "xennials",
+        "Generation X",
+        "Millennials"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Etymology_and_birth_years",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_01_01_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_01_01",
+      "source_chunk_id": "xennials_characteristics_and_traits_01",
+      "section": "Characteristics and traits",
+      "question": "What traits do Xennials share with both Generation X and Millennials?",
+      "answer": "Many Xennials do not fit neatly into either Generation X or Millennial categories but instead share traits of both",
+      "keywords": [
+        "Xennials",
+        "Generation X",
+        "Millennials"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_01_02_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_01_02",
+      "source_chunk_id": "xennials_characteristics_and_traits_01",
+      "section": "Characteristics and traits",
+      "question": "Why might not every person in a generation have its typical traits?",
+      "answer": "Researchers at Eindhoven University of Technology found that not every person in a major generation has the traits typical of that generation",
+      "keywords": [
+        "Eindhoven University of Technology",
+        "generational traits"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_01_03_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_01_03",
+      "source_chunk_id": "xennials_characteristics_and_traits_01",
+      "section": "Characteristics and traits",
+      "question": "What is \"generational fuzziness\"?",
+      "answer": "People born on the cusp of two generational cohorts may have overlapping traits from both, a phenomenon called \"generational fuzziness\"",
+      "keywords": [
+        "cusp",
+        "generational fuzziness"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_01_04_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_01_04",
+      "source_chunk_id": "xennials_characteristics_and_traits_01",
+      "section": "Characteristics and traits",
+      "question": "How does \"generational fuzziness\" lead to a \"microgeneration\"?",
+      "answer": "\"Generational fuzziness\" can lead to the identification of a \"microgeneration\"",
+      "keywords": [
+        "generational fuzziness",
+        "microgeneration"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_01_05_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_01_05",
+      "source_chunk_id": "xennials_characteristics_and_traits_01",
+      "section": "Characteristics and traits",
+      "question": "What did Melissa Kempf Taylor say about the Xennial personality?",
+      "answer": "Melissa Kempf Taylor of the University of Louisville wrote that the Xennial generation has its own collective personality",
+      "keywords": [
+        "Melissa Kempf Taylor",
+        "Xennial",
+        "collective personality"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_01_06_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_01_06",
+      "source_chunk_id": "xennials_characteristics_and_traits_01",
+      "section": "Characteristics and traits",
+      "question": "What is a \"cusp generation\"?",
+      "answer": "A \"cusp generation\" is formed by individuals who fall between two major generations, bridging the divide between them",
+      "keywords": [
+        "cusp generation",
+        "major generations"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_01_07_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_01_07",
+      "source_chunk_id": "xennials_characteristics_and_traits_01",
+      "section": "Characteristics and traits",
+      "question": "What did Cynthia Cheng call the Xennial cohort?",
+      "answer": "Cynthia Cheng called the Xennial cohort \"Bridges\" in her 2004 Toronto Star article",
+      "keywords": [
+        "Cynthia Cheng",
+        "Bridges",
+        "2004"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_01_08_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_01_08",
+      "source_chunk_id": "xennials_characteristics_and_traits_01",
+      "section": "Characteristics and traits",
+      "question": "How does Esther Walker describe Xennials' position between Gen Xers and Millennials?",
+      "answer": "Esther Walker described Xennials as occupying a precarious space between Gen Xers and Millennials, noting differences in upbringing and lifestyle",
+      "keywords": [
+        "Esther Walker",
+        "Xennials",
+        "Gen Xers",
+        "Millennials"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_02_01_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_02_01",
+      "source_chunk_id": "xennials_characteristics_and_traits_02",
+      "section": "Characteristics and traits",
+      "question": "What era do Xennials recall before the digital age?",
+      "answer": "Xennials remember a time before the digital age, but barely",
+      "keywords": [
+        "Xennials",
+        "digital age"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_02_02_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_02_02",
+      "source_chunk_id": "xennials_characteristics_and_traits_02",
+      "section": "Characteristics and traits",
+      "question": "What combination of traits define Xennials’ outlook?",
+      "answer": "Xennials have a mix of Gen X grunge cynicism and Millennial optimism",
+      "keywords": [
+        "Xennials",
+        "Gen X",
+        "Millennials"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_02_03_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_02_03",
+      "source_chunk_id": "xennials_characteristics_and_traits_02",
+      "section": "Characteristics and traits",
+      "question": "How do Xennials interact with technology?",
+      "answer": "Xennials relate to both analog and digital technology",
+      "keywords": [
+        "Xennials",
+        "analog",
+        "digital technology"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_02_04_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_02_04",
+      "source_chunk_id": "xennials_characteristics_and_traits_02",
+      "section": "Characteristics and traits",
+      "question": "How do Xennials differ from Gen X and Millennials in upbringing?",
+      "answer": "Xennials are not truly grunge but not as helicopter-parented as Millennials",
+      "keywords": [
+        "Xennials",
+        "grunge",
+        "Millennials",
+        "helicopter parenting"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_02_05_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_02_05",
+      "source_chunk_id": "xennials_characteristics_and_traits_02",
+      "section": "Characteristics and traits",
+      "question": "Which generations do Xennials resemble?",
+      "answer": "Xennials born in late 1970s and early 1980s share traits with both Gen X and Millennials",
+      "keywords": [
+        "Xennials",
+        "Gen X",
+        "Millennials"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_02_06_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_02_06",
+      "source_chunk_id": "xennials_characteristics_and_traits_02",
+      "section": "Characteristics and traits",
+      "question": "What major events shaped early 1980s Xennials’ adulthood?",
+      "answer": "Early 1980s-born Xennials had adulthoods affected by 9/11 and Iraq War",
+      "keywords": [
+        "Xennials",
+        "9/11",
+        "Iraq War"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_02_07_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_02_07",
+      "source_chunk_id": "xennials_characteristics_and_traits_02",
+      "section": "Characteristics and traits",
+      "question": "How does Xennials’ cynicism compare to Gen X?",
+      "answer": "Xennials are described as “never cynical enough to be truly grunge”",
+      "keywords": [
+        "Xennials",
+        "grunge",
+        "cynicism"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_02_08_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_02_08",
+      "source_chunk_id": "xennials_characteristics_and_traits_02",
+      "section": "Characteristics and traits",
+      "question": "How do Xennials compare to Millennials in parenting context?",
+      "answer": "Xennials are described as “not nearly as cheerfully helicopter-parented as millennial participation-trophy kids”",
+      "keywords": [
+        "Xennials",
+        "Millennials",
+        "helicopter parenting"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_03_01_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_03_01",
+      "source_chunk_id": "xennials_characteristics_and_traits_03",
+      "section": "Characteristics and traits",
+      "question": "How did Xennials typically start dating before social media?",
+      "answer": "Xennials often formed relationships pre-social media, using landline phones instead of apps like Tinder or Grindr",
+      "keywords": [
+        "Xennials",
+        "pre-social media",
+        "landline phones"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_03_02_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_03_02",
+      "source_chunk_id": "xennials_characteristics_and_traits_03",
+      "section": "Characteristics and traits",
+      "question": "What term do sociologists use to describe Xennials?",
+      "answer": "Xennials are described as a “cross-over generation” due to their position between Baby Boomers and Millennials",
+      "keywords": [
+        "Xennials",
+        "cross-over generation"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_03_03_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_03_03",
+      "source_chunk_id": "xennials_characteristics_and_traits_03",
+      "section": "Characteristics and traits",
+      "question": "Who originally proposed the “cross-over generation” concept?",
+      "answer": "Dan Woodman credits the “cross-over generation” idea to journalists writing about cusp-born individuals",
+      "keywords": [
+        "Dan Woodman",
+        "cross-over generation",
+        "journalists"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_03_04_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_03_04",
+      "source_chunk_id": "xennials_characteristics_and_traits_03",
+      "section": "Characteristics and traits",
+      "question": "Why does Woodman criticize traditional generational categorizations?",
+      "answer": "Woodman argues that generational divisions are often arbitrary and imported from North America without much thought",
+      "keywords": [
+        "generational divisions",
+        "arbitrary",
+        "North America"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_03_05_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_03_05",
+      "source_chunk_id": "xennials_characteristics_and_traits_03",
+      "section": "Characteristics and traits",
+      "question": "Do all members of a generation share the same traits?",
+      "answer": "Woodman warns that no single cohort shares identical characteristics or experiences",
+      "keywords": [
+        "Xennials",
+        "generational cohorts",
+        "unique experiences"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_03_06_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_03_06",
+      "source_chunk_id": "xennials_characteristics_and_traits_03",
+      "section": "Characteristics and traits",
+      "question": "Why does the Xennials concept appeal to some people?",
+      "answer": "Woodman notes that the Xennials concept resonates with people who felt left out by standard generational labels",
+      "keywords": [
+        "Xennials",
+        "generational labels",
+        "feeling left out"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_03_07_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_03_07",
+      "source_chunk_id": "xennials_characteristics_and_traits_03",
+      "section": "Characteristics and traits",
+      "question": "How does Woodman describe the influence of one’s era on identity?",
+      "answer": "Woodman paraphrases José Ortega y Gasset, stating that people are shaped by the time they live in, especially their youth experiences",
+      "keywords": [
+        "José Ortega y Gasset",
+        "youth experiences",
+        "shaping identity"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_03_08_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_03_08",
+      "source_chunk_id": "xennials_characteristics_and_traits_03",
+      "section": "Characteristics and traits",
+      "question": "How does technology influence generational experiences?",
+      "answer": "Sociologist Almudena Moreno notes that access to technology creates a shared living context across generations",
+      "keywords": [
+        "Almudena Moreno",
+        "technology",
+        "shared context"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_04_01_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_04_01",
+      "source_chunk_id": "xennials_characteristics_and_traits_04",
+      "section": "Characteristics and traits",
+      "question": "What traits do Xennials share with Gen X and Millennials?",
+      "answer": "Xennials have the cynicism of Gen Xers but also the positivity of millennials",
+      "keywords": [
+        "Xennials",
+        "Gen X",
+        "Millennials"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_04_02_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_04_02",
+      "source_chunk_id": "xennials_characteristics_and_traits_04",
+      "section": "Characteristics and traits",
+      "question": "How did Xennials’ parenting style evolve?",
+      "answer": "Xennials often felt controlled by helicopter parents and became “drone parents”",
+      "keywords": [
+        "Xennials",
+        "helicopter parents",
+        "drone parents"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_04_03_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_04_03",
+      "source_chunk_id": "xennials_characteristics_and_traits_04",
+      "section": "Characteristics and traits",
+      "question": "What major events influenced Xennials?",
+      "answer": "Events like the 1993 WTC bombing, Columbine shootings, and Princess Diana’s death shaped Xennials",
+      "keywords": [
+        "Xennials",
+        "1993 WTC bombing",
+        "Columbine",
+        "Princess Diana"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_04_04_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_04_04",
+      "source_chunk_id": "xennials_characteristics_and_traits_04",
+      "section": "Characteristics and traits",
+      "question": "How did Jonathan Heaf characterize Xennials?",
+      "answer": "Jonathan Heaf described Xennials as born too early for millennials and too late for Gen X",
+      "keywords": [
+        "Xennials",
+        "Jonathan Heaf",
+        "Gen X",
+        "Millennials"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_04_05_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_04_05",
+      "source_chunk_id": "xennials_characteristics_and_traits_04",
+      "section": "Characteristics and traits",
+      "question": "What pop culture and historical moments defined Xennials?",
+      "answer": "Christopher Dwyer described Xennials as Hulkamaniacs who became teenagers during Spice Girls era and entered adulthood during 9/11",
+      "keywords": [
+        "Xennials",
+        "Christopher Dwyer",
+        "Spice Girls",
+        "9/11"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_04_06_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_04_06",
+      "source_chunk_id": "xennials_characteristics_and_traits_04",
+      "section": "Characteristics and traits",
+      "question": "How do Xennials differ emotionally from older generations?",
+      "answer": "Xennials tend to display emotions more than elders and value fighting for women’s rights",
+      "keywords": [
+        "Xennials",
+        "emotions",
+        "women’s rights"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_characteristics_and_traits_04_07_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_characteristics_and_traits_04_07",
+      "source_chunk_id": "xennials_characteristics_and_traits_04",
+      "section": "Characteristics and traits",
+      "question": "Which generations share more traits according to Bobby Duffy?",
+      "answer": "Bobby Duffy noted young Gen Xers and old Millennials share more traits than young and old Millennials do",
+      "keywords": [
+        "Bobby Duffy",
+        "Gen X",
+        "Millennials"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Characteristics_and_traits",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_political_activity_01_01_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_political_activity_01_01",
+      "source_chunk_id": "xennials_political_activity_01",
+      "section": "Political activity",
+      "question": "Who is Rishi Sunak and what generation does he belong to?",
+      "answer": "Rishi Sunak and his staffers are classified as Xennials",
+      "keywords": [
+        "Rishi Sunak",
+        "Xennial"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Political_activity",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_political_activity_01_02_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_political_activity_01_02",
+      "source_chunk_id": "xennials_political_activity_01",
+      "section": "Political activity",
+      "question": "When were Xennials politically forming in relation to Margaret Thatcher’s tenure?",
+      "answer": "Xennials were still children during Margaret Thatcher’s time as prime minister",
+      "keywords": [
+        "Margaret Thatcher",
+        "Xennial",
+        "political formative years"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Political_activity",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_political_activity_01_03_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_political_activity_01_03",
+      "source_chunk_id": "xennials_political_activity_01",
+      "section": "Political activity",
+      "question": "When did Thatcher leave office relative to Xennial political development?",
+      "answer": "Thatcher had left office by the time Xennials reached their mid-to-late teens and early 20s",
+      "keywords": [
+        "Margaret Thatcher",
+        "Xennial",
+        "political formative years"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Political_activity",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_political_activity_01_04_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_political_activity_01_04",
+      "source_chunk_id": "xennials_political_activity_01",
+      "section": "Political activity",
+      "question": "What did Esther Walker say about Jacinda Ardern’s resignation in relation to Xennials?",
+      "answer": "Jacinda Ardern’s resignation was called the “most Xennial thing ever” by journalist Esther Walker",
+      "keywords": [
+        "Jacinda Ardern",
+        "Xennial",
+        "resignation"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Political_activity",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_political_activity_01_05_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_political_activity_01_05",
+      "source_chunk_id": "xennials_political_activity_01",
+      "section": "Political activity",
+      "question": "How did Generation X typically behave in political roles according to Esther Walker?",
+      "answer": "Generation X would have stayed in office until dragged out, with no excuses",
+      "keywords": [
+        "Generation X",
+        "political resilience"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Political_activity",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_political_activity_01_06_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_political_activity_01_06",
+      "source_chunk_id": "xennials_political_activity_01",
+      "section": "Political activity",
+      "question": "How did Esther Walker describe Millennials’ political behavior compared to Xennials?",
+      "answer": "Millennials would have been too freaked out by the internet to act in similar fashion",
+      "keywords": [
+        "Millennials",
+        "internet",
+        "political action"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Political_activity",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_political_activity_01_07_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_political_activity_01_07",
+      "source_chunk_id": "xennials_political_activity_01",
+      "section": "Political activity",
+      "question": "How did Xennials’ political formative years differ from those of Gen X?",
+      "answer": "Xennials are described as having a different political formative experience than Gen X",
+      "keywords": [
+        "Xennial",
+        "Gen X",
+        "political formation"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Political_activity",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_political_activity_01_08_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_political_activity_01_08",
+      "source_chunk_id": "xennials_political_activity_01",
+      "section": "Political activity",
+      "question": "What traits distinguish Xennials’ political behavior from Gen X and Millennials?",
+      "answer": "Xennials are associated with a blend of resilience and adaptability, contrasting with Gen X’s “no excuses” and Millennials’ internet-induced hesitation",
+      "keywords": [
+        "Xennial",
+        "Gen X",
+        "Millennial",
+        "political behavior"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Political_activity",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_economic_activity_01_01_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_economic_activity_01_01",
+      "source_chunk_id": "xennials_economic_activity_01",
+      "section": "Economic activity",
+      "question": "What is the current economic status of Xennial shoppers?",
+      "answer": "Xennial shoppers are in or near their peak earning potential",
+      "keywords": [
+        "Xennial",
+        "economic activity"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Economic_activity",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_economic_activity_01_02_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_economic_activity_01_02",
+      "source_chunk_id": "xennials_economic_activity_01",
+      "section": "Economic activity",
+      "question": "What major responsibilities do Xennial shoppers currently face?",
+      "answer": "Xennial shoppers have peak responsibilities including caregiving, homeownership, and work demands",
+      "keywords": [
+        "Xennial",
+        "responsibilities"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Economic_activity",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_economic_activity_01_03_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_economic_activity_01_03",
+      "source_chunk_id": "xennials_economic_activity_01",
+      "section": "Economic activity",
+      "question": "Why are Xennial shoppers considered a key demographic bridge?",
+      "answer": "Xennial shoppers are a crucial demographic connection point between other generations",
+      "keywords": [
+        "Xennial",
+        "demographics"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Economic_activity",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_economic_activity_01_04_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_economic_activity_01_04",
+      "source_chunk_id": "xennials_economic_activity_01",
+      "section": "Economic activity",
+      "question": "What shopping behaviors distinguish Xennial shoppers?",
+      "answer": "Xennial shoppers have higher basket sizes and greater brand loyalty than other groups",
+      "keywords": [
+        "Xennial",
+        "shopping behavior"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Economic_activity",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_economic_activity_01_05_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_economic_activity_01_05",
+      "source_chunk_id": "xennials_economic_activity_01",
+      "section": "Economic activity",
+      "question": "How does Katherine Power use Xennial shoppers in her marketing strategy?",
+      "answer": "Katherine Power targets Xennial female shoppers to reach both younger and older generations",
+      "keywords": [
+        "Katherine Power",
+        "Xennial",
+        "marketing"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Economic_activity",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_economic_activity_01_06_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_economic_activity_01_06",
+      "source_chunk_id": "xennials_economic_activity_01",
+      "section": "Economic activity",
+      "question": "What are the defining mental traits of Xennial shoppers?",
+      "answer": "Xennials have a millennial mindset but also Gen X nostalgia",
+      "keywords": [
+        "Xennial",
+        "mindset"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Economic_activity",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_economic_activity_01_07_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_economic_activity_01_07",
+      "source_chunk_id": "xennials_economic_activity_01",
+      "section": "Economic activity",
+      "question": "What economic advantage did Xennials have upon graduation?",
+      "answer": "Xennials were the last generation to graduate with little or no student debt into a booming economy",
+      "keywords": [
+        "Xennial",
+        "education",
+        "economy"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Economic_activity",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_economic_activity_01_08_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_economic_activity_01_08",
+      "source_chunk_id": "xennials_economic_activity_01",
+      "section": "Economic activity",
+      "question": "What was the pre-2008 employment situation for Xennials?",
+      "answer": "Xennials had stable jobs and careers before the 2008 financial crash",
+      "keywords": [
+        "Xennial",
+        "employment",
+        "2008 crash"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Economic_activity",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_technology_01_01_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_technology_01_01",
+      "source_chunk_id": "xennials_technology_01",
+      "section": "Technology",
+      "question": "When did Xennials typically get regular internet access at home?",
+      "answer": "Xennials did not have regular internet access at home until around age 18",
+      "keywords": [
+        "Xennials",
+        "internet access",
+        "age 18"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Technology",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_technology_01_02_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_technology_01_02",
+      "source_chunk_id": "xennials_technology_01",
+      "section": "Technology",
+      "question": "How did Xennials influence workplaces despite limited early tech exposure?",
+      "answer": "Xennials were young enough to adapt to technology-driven workplaces and often drove workplace change",
+      "keywords": [
+        "Xennials",
+        "workplace",
+        "technology adoption"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Technology",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_technology_01_03_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_technology_01_03",
+      "source_chunk_id": "xennials_technology_01",
+      "section": "Technology",
+      "question": "When did social media become a major part of Xennials’ lives?",
+      "answer": "Social media did not arrive in Xennials’ young adult years; they were embedded in it later",
+      "keywords": [
+        "Xennials",
+        "social media",
+        "young adulthood"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Technology",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_technology_01_04_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_technology_01_04",
+      "source_chunk_id": "xennials_technology_01",
+      "section": "Technology",
+      "question": "What music technology did Xennials use in early childhood?",
+      "answer": "Xennials listened to music on Walkman with cassette tapes in early childhood",
+      "keywords": [
+        "Xennials",
+        "Walkman",
+        "cassette tapes"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Technology",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_technology_01_05_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_technology_01_05",
+      "source_chunk_id": "xennials_technology_01",
+      "section": "Technology",
+      "question": "What music formats did Xennials use during adolescence?",
+      "answer": "During adolescence, Xennials used compact discs and MiniDisc",
+      "keywords": [
+        "Xennials",
+        "compact discs",
+        "MiniDisc"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Technology",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_technology_01_06_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_technology_01_06",
+      "source_chunk_id": "xennials_technology_01",
+      "section": "Technology",
+      "question": "What was a major digital music behavior among Xennials in university?",
+      "answer": "Xennials were among the first to illegally download MP3 files from Napster in university",
+      "keywords": [
+        "Xennials",
+        "Napster",
+        "MP3 downloads"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Technology",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_technology_01_07_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_technology_01_07",
+      "source_chunk_id": "xennials_technology_01",
+      "section": "Technology",
+      "question": "What characterized the adolescence of US Xennials?",
+      "answer": "US Xennials had an “AOL adolescence” and lived before sexting and Facebook shaming",
+      "keywords": [
+        "Xennials",
+        "AOL",
+        "social media",
+        "sexting",
+        "Facebook shaming"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Technology",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_technology_01_08_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_technology_01_08",
+      "source_chunk_id": "xennials_technology_01",
+      "section": "Technology",
+      "question": "Which graduating class was the last without social media in college?",
+      "answer": "Xennials were the last graduating class to finish college without social media being part of the experience",
+      "keywords": [
+        "Xennials",
+        "college graduation",
+        "social media"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Technology",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_technology_01_09_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_technology_01_09",
+      "source_chunk_id": "xennials_technology_01",
+      "section": "Technology",
+      "question": "What major tech transition did Xennials witness as children?",
+      "answer": "Xennials witnessed the switch from no Internet to dial-up as kids and early teens",
+      "keywords": [
+        "Xennials",
+        "dial-up",
+        "Internet adoption"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Technology",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_technology_01_10_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_technology_01_10",
+      "source_chunk_id": "xennials_technology_01",
+      "section": "Technology",
+      "question": "How did Xennials’ upbringing and tech fluency differ?",
+      "answer": "Xennials had an analogue upbringing but evolved to be fluent(-ish) in digital technology",
+      "keywords": [
+        "Xennials",
+        "analogue upbringing",
+        "digital fluency"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Technology",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_technology_02_01_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_technology_02_01",
+      "source_chunk_id": "xennials_technology_02",
+      "section": "Technology",
+      "question": "What challenge did Xennials face in their formative years?",
+      "answer": "Xennials bridged the divide between analog childhood and digital adulthood",
+      "keywords": [
+        "Xennials",
+        "analog",
+        "digital"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Technology",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_technology_02_02_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_technology_02_02",
+      "source_chunk_id": "xennials_technology_02",
+      "section": "Technology",
+      "question": "How did Xennials’ educational tools differ from later generations?",
+      "answer": "Xennials are described as straddling the worlds of the ballpoint pen and the computer mouse",
+      "keywords": [
+        "Xennials",
+        "pre-service teachers",
+        "digital technology"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Technology",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_technology_02_03_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_technology_02_03",
+      "source_chunk_id": "xennials_technology_02",
+      "section": "Technology",
+      "question": "Who characterized Xennials as digital immigrants?",
+      "answer": "Australian researchers Fluck and Dowden characterized Xennials as the youngest digital immigrants",
+      "keywords": [
+        "Xennials",
+        "digital immigrants",
+        "Fluck",
+        "Dowden"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Technology",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_technology_02_04_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_technology_02_04",
+      "source_chunk_id": "xennials_technology_02",
+      "section": "Technology",
+      "question": "What was Xennials’ experience with digital technology in school?",
+      "answer": "Most Xennials had little to no exposure to digital ICT during schooling",
+      "keywords": [
+        "Xennials",
+        "digital ICT",
+        "schooling"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Technology",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_technology_02_05_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_technology_02_05",
+      "source_chunk_id": "xennials_technology_02",
+      "section": "Technology",
+      "question": "How do Xennials compare to earlier digital immigrants in tech comfort?",
+      "answer": "Xennials are relatively comfortable using digital technology as working adults",
+      "keywords": [
+        "Xennials",
+        "digital technology",
+        "working adults"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Technology",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_technology_02_06_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_technology_02_06",
+      "source_chunk_id": "xennials_technology_02",
+      "section": "Technology",
+      "question": "Which generation are Xennials compared to in terms of digital adoption?",
+      "answer": "Xennials are younger than previous digital immigrant generations",
+      "keywords": [
+        "Xennials",
+        "digital immigrants",
+        "generations"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Technology",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_technology_02_07_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_technology_02_07",
+      "source_chunk_id": "xennials_technology_02",
+      "section": "Technology",
+      "question": "What kind of technological experience do Xennials have?",
+      "answer": "Xennials are described as having a hybrid experience with analog and digital tools",
+      "keywords": [
+        "Xennials",
+        "analog",
+        "digital",
+        "hybrid"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Technology",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    },
+    {
+      "qa_id": "qa_fact_xennials_technology_02_08_1",
+      "source_id": "xennials_wikipedia",
+      "factoid_id": "fact_xennials_technology_02_08",
+      "source_chunk_id": "xennials_technology_02",
+      "section": "Technology",
+      "question": "How do Xennials compare to earlier digital immigrants in digital proficiency?",
+      "answer": "Xennials are noted for being more digitally comfortable than earlier digital immigrants",
+      "keywords": [
+        "Xennials",
+        "digital comfort",
+        "earlier generations"
+      ],
+      "source_url": "https://en.wikipedia.org/wiki/Xennials#Technology",
+      "generated_by": "Qwen/Qwen3-VL-8B-Instruct"
+    }
+  ]
+}

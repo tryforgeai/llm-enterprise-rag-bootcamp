@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1040" viewBox="0 0 1400 1040">
+  <rect width="1400" height="1040" fill="#faf8f5"/>
+  <style>
+    .title { font: 700 30px Arial, sans-serif; fill: #3f2632; }
+    .subtitle { font: 16px Arial, sans-serif; fill: #6d5a62; }
+    .panel-title { font: 700 21px Arial, sans-serif; fill: #3f2632; }
+    .axis { stroke: #5f4b53; stroke-width: 1.5; }
+    .grid { stroke: #ded5d8; stroke-width: 1; }
+    .tick { font: 12px Arial, sans-serif; fill: #6d5a62; }
+    .xlabel { font: 12px Arial, sans-serif; fill: #4b3941; text-anchor: middle; }
+    .note { font: 14px Arial, sans-serif; fill: #7b656e; }
+    .bar { fill: #6b3d50; }
+    .peak { fill: #b55f49; }
+  </style>
+
+  <text x="700" y="45" text-anchor="middle" class="title">Softmax Probability at Different Temperatures</text>
+  <text x="700" y="73" text-anchor="middle" class="subtitle">Same logits, different T: low T sharpens; high T flattens</text>
+
+  <!-- T = 0.01 -->
+  <g transform="translate(60,105)">
+    <rect width="620" height="270" rx="14" fill="#fff" stroke="#d8cdd1"/>
+    <text x="310" y="30" text-anchor="middle" class="panel-title">T = 0.01</text>
+    <line x1="55" y1="65" x2="590" y2="65" class="grid"/>
+    <line x1="55" y1="145" x2="590" y2="145" class="grid"/>
+    <line x1="55" y1="225" x2="590" y2="225" class="axis"/>
+    <line x1="55" y1="65" x2="55" y2="225" class="axis"/>
+    <text x="46" y="69" text-anchor="end" class="tick">100%</text>
+    <text x="46" y="149" text-anchor="end" class="tick">50%</text>
+    <text x="46" y="229" text-anchor="end" class="tick">0%</text>
+    <rect x="75" y="225" width="35" height="0" class="bar"/>
+    <rect x="124" y="225" width="35" height="0" class="bar"/>
+    <rect x="173" y="225" width="35" height="0" class="bar"/>
+    <rect x="222" y="225" width="35" height="0" class="bar"/>
+    <rect x="271" y="225" width="35" height="0" class="bar"/>
+    <rect x="320" y="225" width="35" height="0" class="bar"/>
+    <rect x="369" y="225" width="35" height="0" class="bar"/>
+    <rect x="418" y="65" width="35" height="160" class="peak"/>
+    <rect x="467" y="225" width="35" height="0" class="bar"/>
+    <rect x="516" y="225" width="35" height="0" class="bar"/>
+    <g class="xlabel">
+      <text x="92" y="245">x1</text><text x="141" y="245">x2</text>
+      <text x="190" y="245">x3</text><text x="239" y="245">x4</text>
+      <text x="288" y="245">x5</text><text x="337" y="245">x6</text>
+      <text x="386" y="245">x7</text><text x="435" y="245">x8</text>
+      <text x="484" y="245">x9</text><text x="533" y="245">x10</text>
+    </g>
+    <text x="310" y="264" text-anchor="middle" class="note">x8 ≈ 100%: almost argmax</text>
+  </g>
+
+  <!-- T = 0.1 -->
+  <g transform="translate(720,105)">
+    <rect width="620" height="270" rx="14" fill="#fff" stroke="#d8cdd1"/>
+    <text x="310" y="30" text-anchor="middle" class="panel-title">T = 0.1</text>
+    <line x1="55" y1="65" x2="590" y2="65" class="grid"/>
+    <line x1="55" y1="145" x2="590" y2="145" class="grid"/>
+    <line x1="55" y1="225" x2="590" y2="225" class="axis"/>
+    <line x1="55" y1="65" x2="55" y2="225" class="axis"/>
+    <text x="46" y="69" text-anchor="end" class="tick">100%</text>
+    <text x="46" y="149" text-anchor="end" class="tick">50%</text>
+    <text x="46" y="229" text-anchor="end" class="tick">0%</text>
+    <rect x="75" y="225" width="35" height="0" class="bar"/>
+    <rect x="124" y="225" width="35" height="0" class="bar"/>
+    <rect x="173" y="225" width="35" height="0" class="bar"/>
+    <rect x="222" y="225" width="35" height="0" class="bar"/>
+    <rect x="271" y="225" width="35" height="0" class="bar"/>
+    <rect x="320" y="225" width="35" height="0" class="bar"/>
+    <rect x="369" y="225" width="35" height="0" class="bar"/>
+    <rect x="418" y="65" width="35" height="160" class="peak"/>
+    <rect x="467" y="225" width="35" height="0" class="bar"/>
+    <rect x="516" y="225" width="35" height="0" class="bar"/>
+    <g class="xlabel">
+      <text x="92" y="245">x1</text><text x="141" y="245">x2</text>
+      <text x="190" y="245">x3</text><text x="239" y="245">x4</text>
+      <text x="288" y="245">x5</text><text x="337" y="245">x6</text>
+      <text x="386" y="245">x7</text><text x="435" y="245">x8</text>
+      <text x="484" y="245">x9</text><text x="533" y="245">x10</text>
+    </g>
+    <text x="310" y="264" text-anchor="middle" class="note">x8 ≈ 100%: extremely concentrated</text>
+  </g>
+
+  <!-- T = 1 -->
+  <g transform="translate(60,400)">
+    <rect width="620" height="270" rx="14" fill="#fff" stroke="#d8cdd1"/>
+    <text x="310" y="30" text-anchor="middle" class="panel-title">T = 1</text>
+    <line x1="55" y1="65" x2="590" y2="65" class="grid"/>
+    <line x1="55" y1="145" x2="590" y2="145" class="grid"/>
+    <line x1="55" y1="225" x2="590" y2="225" class="axis"/>
+    <line x1="55" y1="65" x2="55" y2="225" class="axis"/>
+    <text x="46" y="69" text-anchor="end" class="tick">100%</text>
+    <text x="46" y="149" text-anchor="end" class="tick">50%</text>
+    <text x="46" y="229" text-anchor="end" class="tick">0%</text>
+    <rect x="75" y="224.1" width="35" height="0.9" class="bar"/>
+    <rect x="124" y="200.0" width="35" height="25.0" class="bar"/>
+    <rect x="173" y="222.7" width="35" height="2.3" class="bar"/>
+    <rect x="222" y="221.5" width="35" height="3.5" class="bar"/>
+    <rect x="271" y="224.6" width="35" height="0.4" class="bar"/>
+    <rect x="320" y="223.6" width="35" height="1.4" class="bar"/>
+    <rect x="369" y="224.7" width="35" height="0.3" class="bar"/>
+    <rect x="418" y="100.8" width="35" height="124.2" class="peak"/>
+    <rect x="467" y="223.8" width="35" height="1.2" class="bar"/>
+    <rect x="516" y="224.2" width="35" height="0.8" class="bar"/>
+    <g class="xlabel">
+      <text x="92" y="245">x1</text><text x="141" y="245">x2</text>
+      <text x="190" y="245">x3</text><text x="239" y="245">x4</text>
+      <text x="288" y="245">x5</text><text x="337" y="245">x6</text>
+      <text x="386" y="245">x7</text><text x="435" y="245">x8</text>
+      <text x="484" y="245">x9</text><text x="533" y="245">x10</text>
+    </g>
+    <text x="310" y="264" text-anchor="middle" class="note">x8 = 77.64%, x2 = 15.60%</text>
+  </g>
+
+  <!-- T = 10 -->
+  <g transform="translate(720,400)">
+    <rect width="620" height="270" rx="14" fill="#fff" stroke="#d8cdd1"/>
+    <text x="310" y="30" text-anchor="middle" class="panel-title">T = 10</text>
+    <line x1="55" y1="65" x2="590" y2="65" class="grid"/>
+    <line x1="55" y1="145" x2="590" y2="145" class="grid"/>
+    <line x1="55" y1="225" x2="590" y2="225" class="axis"/>
+    <line x1="55" y1="65" x2="55" y2="225" class="axis"/>
+    <text x="46" y="69" text-anchor="end" class="tick">100%</text>
+    <text x="46" y="149" text-anchor="end" class="tick">50%</text>
+    <text x="46" y="229" text-anchor="end" class="tick">0%</text>
+    <rect x="75" y="210.6" width="35" height="14.4" class="bar"/>
+    <rect x="124" y="205.0" width="35" height="20.0" class="bar"/>
+    <rect x="173" y="209.3" width="35" height="15.7" class="bar"/>
+    <rect x="222" y="208.6" width="35" height="16.4" class="bar"/>
+    <rect x="271" y="211.7" width="35" height="13.3" class="bar"/>
+    <rect x="320" y="210.1" width="35" height="14.9" class="bar"/>
+    <rect x="369" y="212.1" width="35" height="12.9" class="bar"/>
+    <rect x="418" y="201.5" width="35" height="23.5" class="peak"/>
+    <rect x="467" y="210.3" width="35" height="14.7" class="bar"/>
+    <rect x="516" y="210.8" width="35" height="14.2" class="bar"/>
+    <g class="xlabel">
+      <text x="92" y="245">x1</text><text x="141" y="245">x2</text>
+      <text x="190" y="245">x3</text><text x="239" y="245">x4</text>
+      <text x="288" y="245">x5</text><text x="337" y="245">x6</text>
+      <text x="386" y="245">x7</text><text x="435" y="245">x8</text>
+      <text x="484" y="245">x9</text><text x="533" y="245">x10</text>
+    </g>
+    <text x="310" y="264" text-anchor="middle" class="note">Probabilities flatten: about 8%–15%</text>
+  </g>
+
+  <!-- T = 100 -->
+  <g transform="translate(390,695)">
+    <rect width="620" height="270" rx="14" fill="#fff" stroke="#d8cdd1"/>
+    <text x="310" y="30" text-anchor="middle" class="panel-title">T = 100</text>
+    <line x1="55" y1="65" x2="590" y2="65" class="grid"/>
+    <line x1="55" y1="145" x2="590" y2="145" class="grid"/>
+    <line x1="55" y1="225" x2="590" y2="225" class="axis"/>
+    <line x1="55" y1="65" x2="55" y2="225" class="axis"/>
+    <text x="46" y="69" text-anchor="end" class="tick">100%</text>
+    <text x="46" y="149" text-anchor="end" class="tick">50%</text>
+    <text x="46" y="229" text-anchor="end" class="tick">0%</text>
+    <rect x="75" y="209.1" width="35" height="15.9" class="bar"/>
+    <rect x="124" y="208.6" width="35" height="16.4" class="bar"/>
+    <rect x="173" y="209.0" width="35" height="16.0" class="bar"/>
+    <rect x="222" y="208.9" width="35" height="16.1" class="bar"/>
+    <rect x="271" y="209.3" width="35" height="15.7" class="bar"/>
+    <rect x="320" y="209.1" width="35" height="15.9" class="bar"/>
+    <rect x="369" y="209.3" width="35" height="15.7" class="bar"/>
+    <rect x="418" y="208.4" width="35" height="16.6" class="peak"/>
+    <rect x="467" y="209.1" width="35" height="15.9" class="bar"/>
+    <rect x="516" y="209.2" width="35" height="15.8" class="bar"/>
+    <g class="xlabel">
+      <text x="92" y="245">x1</text><text x="141" y="245">x2</text>
+      <text x="190" y="245">x3</text><text x="239" y="245">x4</text>
+      <text x="288" y="245">x5</text><text x="337" y="245">x6</text>
+      <text x="386" y="245">x7</text><text x="435" y="245">x8</text>
+      <text x="484" y="245">x9</text><text x="533" y="245">x10</text>
+    </g>
+    <text x="310" y="264" text-anchor="middle" class="note">Almost uniform: each token ≈ 10%</text>
+  </g>
+
+  <text x="700" y="1005" text-anchor="middle" class="subtitle">Softmax(x/T): temperature changes confidence, but x8 remains the highest-ranked token</text>
+</svg>

@@ -1,0 +1,69 @@
+{
+  "created": "2026-06-27",
+  "artifact_type": "propositions",
+  "source_id": "dense_x",
+  "generation_mode": "manual_local_first_draft",
+  "note": "These propositions are self-contained study factoids distilled from the Dense-X paper for retrieval-granularity experiments.",
+  "propositions": [
+    {
+      "proposition_id": "prop_dense_x_001",
+      "source_pointer": "course/week_04/dense_x_retrieval_granularity.md#abstract",
+      "text": "Dense-X Retrieval studies which text granularity should be used as the retrieval unit in dense retrieval systems.",
+      "keywords": ["Dense-X", "retrieval granularity", "dense retrieval", "retrieval unit"]
+    },
+    {
+      "proposition_id": "prop_dense_x_002",
+      "source_pointer": "course/week_04/dense_x_retrieval_granularity.md#abstract",
+      "text": "A proposition is an atomic expression in text that is intended to carry one self-contained meaning.",
+      "keywords": ["proposition", "atomic", "self-contained", "meaning"]
+    },
+    {
+      "proposition_id": "prop_dense_x_003",
+      "source_pointer": "course/week_04/dense_x_retrieval_granularity.md#1",
+      "text": "Dense retrievers can retrieve passages that contain both useful evidence and distracting irrelevant content.",
+      "keywords": ["dense retriever", "passage", "distractor", "irrelevant content"]
+    },
+    {
+      "proposition_id": "prop_dense_x_004",
+      "source_pointer": "course/week_04/dense_x_retrieval_granularity.md#1",
+      "text": "The paper argues that retrieval granularity is an overlooked design choice in retrieval-augmented question answering.",
+      "keywords": ["retrieval granularity", "design choice", "RAG", "question answering"]
+    },
+    {
+      "proposition_id": "prop_dense_x_005",
+      "source_pointer": "course/week_04/dense_x_retrieval_granularity.md#2",
+      "text": "A sentence can contain multiple propositions, so sentence-level retrieval can still mix several facts into one index object.",
+      "keywords": ["sentence", "multiple propositions", "index object", "granularity"]
+    },
+    {
+      "proposition_id": "prop_dense_x_006",
+      "source_pointer": "course/week_04/dense_x_retrieval_granularity.md#2",
+      "text": "A proposition-level index aims to retrieve compact evidence that is easier for a downstream answer generator to use.",
+      "keywords": ["proposition-level index", "compact evidence", "answer generation"]
+    },
+    {
+      "proposition_id": "prop_dense_x_007",
+      "source_pointer": "course/week_04/dense_x_retrieval_granularity.md#3",
+      "text": "FactoidWiki is a Wikipedia-derived dataset used to compare retrieval units such as passages, sentences, and propositions.",
+      "keywords": ["FactoidWiki", "Wikipedia", "passages", "sentences", "propositions"]
+    },
+    {
+      "proposition_id": "prop_dense_x_008",
+      "source_pointer": "course/week_04/dense_x_retrieval_granularity.md#4",
+      "text": "The Dense-X experiments evaluate retrieval granularity with open-domain question answering datasets and dense retrieval models.",
+      "keywords": ["evaluation", "open-domain QA", "dense retrieval models", "retrieval granularity"]
+    },
+    {
+      "proposition_id": "prop_dense_x_009",
+      "source_pointer": "course/week_04/dense_x_retrieval_granularity.md#5",
+      "text": "Fine-grained retrieval can improve passage recall because several proposition hits may point back to the same relevant source passage.",
+      "keywords": ["fine-grained retrieval", "passage recall", "source passage", "proposition hits"]
+    },
+    {
+      "proposition_id": "prop_dense_x_010",
+      "source_pointer": "course/week_04/dense_x_retrieval_granularity.md#8",
+      "text": "The practical lesson of Dense-X is that chunking should be treated as an experimental retrieval-design choice, not as a fixed preprocessing step.",
+      "keywords": ["chunking", "retrieval design", "preprocessing", "Dense-X lesson"]
+    }
+  ]
+}

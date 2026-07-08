@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600">
+  <rect width="1000" height="600" fill="#faf8f5"/>
+  <text x="500" y="42" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#3f2632">X Array (Logits)</text>
+  <text x="500" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#6d5a62">Positive and negative raw model scores before Softmax</text>
+
+  <g stroke="#ddd4d8" stroke-width="1">
+    <line x1="70" y1="90" x2="960" y2="90"/>
+    <line x1="70" y1="170" x2="960" y2="170"/>
+    <line x1="70" y1="250" x2="960" y2="250"/>
+    <line x1="70" y1="330" x2="960" y2="330"/>
+    <line x1="70" y1="410" x2="960" y2="410"/>
+    <line x1="70" y1="490" x2="960" y2="490"/>
+    <line x1="70" y1="570" x2="960" y2="570"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="13" fill="#65565c" text-anchor="end">
+    <text x="60" y="95">4</text>
+    <text x="60" y="175">3</text>
+    <text x="60" y="255">2</text>
+    <text x="60" y="335">1</text>
+    <text x="60" y="415">0</text>
+    <text x="60" y="495">-1</text>
+    <text x="60" y="575">-2</text>
+  </g>
+
+  <line x1="70" y1="410" x2="960" y2="410" stroke="#3f2632" stroke-width="2"/>
+  <line x1="70" y1="80" x2="70" y2="570" stroke="#3f2632" stroke-width="2"/>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="91" y="410" width="56" height="13.2" fill="#b56b55"/>
+    <text x="119" y="440" text-anchor="middle" font-size="12" fill="#3f2632">-0.1649</text>
+
+    <rect x="177" y="160.0" width="56" height="250.0" fill="#6b3d50"/>
+    <text x="205" y="150" text-anchor="middle" font-size="12" fill="#3f2632">3.1249</text>
+
+    <rect x="263" y="351.0" width="56" height="59.0" fill="#6b3d50"/>
+    <text x="291" y="341" text-anchor="middle" font-size="12" fill="#3f2632">0.7379</text>
+
+    <rect x="349" y="316.8" width="56" height="93.2" fill="#6b3d50"/>
+    <text x="377" y="307" text-anchor="middle" font-size="12" fill="#3f2632">1.1653</text>
+
+    <rect x="435" y="410" width="56" height="75.0" fill="#b56b55"/>
+    <text x="463" y="502" text-anchor="middle" font-size="12" fill="#3f2632">-0.9371</text>
+
+    <rect x="521" y="392.5" width="56" height="17.5" fill="#6b3d50"/>
+    <text x="549" y="382" text-anchor="middle" font-size="12" fill="#3f2632">0.2187</text>
+
+    <rect x="607" y="410" width="56" height="101.7" fill="#b56b55"/>
+    <text x="635" y="529" text-anchor="middle" font-size="12" fill="#3f2632">-1.2715</text>
+
+    <rect x="693" y="31.6" width="56" height="378.4" fill="#6b3d50"/>
+    <text x="721" y="24" text-anchor="middle" font-size="12" fill="#3f2632">4.7300</text>
+
+    <rect x="779" y="404.1" width="56" height="5.9" fill="#6b3d50"/>
+    <text x="807" y="394" text-anchor="middle" font-size="12" fill="#3f2632">0.0736</text>
+
+    <rect x="865" y="410" width="56" height="25.1" fill="#b56b55"/>
+    <text x="893" y="452" text-anchor="middle" font-size="12" fill="#3f2632">-0.3137</text>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="14" fill="#3f2632" text-anchor="middle">
+    <text x="119" y="590">x1</text>
+    <text x="205" y="590">x2</text>
+    <text x="291" y="590">x3</text>
+    <text x="377" y="590">x4</text>
+    <text x="463" y="590">x5</text>
+    <text x="549" y="590">x6</text>
+    <text x="635" y="590">x7</text>
+    <text x="721" y="590">x8</text>
+    <text x="807" y="590">x9</text>
+    <text x="893" y="590">x10</text>
+  </g>
+</svg>

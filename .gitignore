@@ -1,0 +1,38 @@
+.DS_Store
+Thumbs.db
+
+# Local secrets and machine-specific environment
+.env
+.env.*
+!.env.example
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# JavaScript dependencies and build output
+node_modules/
+dist/
+build/
+
+# Notebook and tool caches
+.ipynb_checkpoints/
+.cache/
+.superpowers/
+.claude/settings.local.json
+
+# Logs and local runtime output
+*.log
+tmp/
+temp/
+
+# Generated lab artifacts
+course/**/data/pages/
+course/**/data/indices/
+course/**/.git/
+course/**/.git.nested-backup-*/

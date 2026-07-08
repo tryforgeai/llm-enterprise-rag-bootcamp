@@ -1,0 +1,458 @@
+:root {
+  --ink: #1e1a16;
+  --muted: #6f675d;
+  --paper: #f7f0e4;
+  --paper-strong: #fff9ed;
+  --line: #d7c7ad;
+  --blue: #214f8f;
+  --blue-soft: #d8e8f5;
+  --green: #35735a;
+  --green-soft: #dbe9d6;
+  --red: #b3503b;
+  --red-soft: #f3d5c8;
+  --gold: #d1992a;
+  --shadow: 0 24px 70px rgba(63, 46, 21, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    linear-gradient(90deg, rgba(30, 26, 22, 0.04) 1px, transparent 1px) 0 0 / 34px 34px,
+    linear-gradient(rgba(30, 26, 22, 0.035) 1px, transparent 1px) 0 0 / 34px 34px,
+    radial-gradient(circle at top left, rgba(209, 153, 42, 0.26), transparent 31rem),
+    var(--paper);
+  font-family: "Source Serif 4", Georgia, serif;
+}
+
+button,
+textarea {
+  font: inherit;
+}
+
+.shell {
+  width: min(1480px, calc(100vw - 32px));
+  margin: 0 auto;
+  padding: 28px 0 36px;
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 520px);
+  gap: 24px;
+  align-items: end;
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  color: var(--blue);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.73rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 0.96;
+}
+
+h1 {
+  max-width: 850px;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(3.4rem, 8vw, 7.9rem);
+  letter-spacing: 0;
+}
+
+h2 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.35rem;
+  letter-spacing: 0;
+}
+
+h3 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.25rem;
+}
+
+.mission {
+  border: 1px solid var(--line);
+  border-left: 8px solid var(--gold);
+  background: rgba(255, 249, 237, 0.84);
+  padding: 18px 20px;
+  box-shadow: var(--shadow);
+  font-size: 1.05rem;
+}
+
+.mission span {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "IBM Plex Mono", monospace;
+  color: var(--red);
+  font-size: 0.76rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: 310px minmax(250px, 0.8fr) minmax(340px, 1.08fr) minmax(410px, 1.22fr) 290px;
+  gap: 14px;
+  align-items: stretch;
+}
+
+.panel {
+  min-height: 680px;
+  border: 1px solid var(--line);
+  background: rgba(255, 249, 237, 0.9);
+  box-shadow: 0 16px 42px rgba(63, 46, 21, 0.09);
+  padding: 18px;
+  overflow: hidden;
+}
+
+.panel-heading {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 16px;
+}
+
+.step-mark {
+  display: grid;
+  place-items: center;
+  flex: 0 0 42px;
+  height: 42px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  color: var(--blue);
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+}
+
+.segmented {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.segment,
+.primary-action,
+.quiz-button {
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  background: var(--paper-strong);
+  color: var(--ink);
+  cursor: pointer;
+  transition: transform 180ms ease, background 180ms ease, box-shadow 180ms ease;
+}
+
+.segment {
+  padding: 10px 12px;
+  text-align: left;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.84rem;
+}
+
+.segment:hover,
+.primary-action:hover,
+.quiz-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.segment.active {
+  background: var(--ink);
+  color: var(--paper-strong);
+}
+
+.field-label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.76rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  border: 1px solid var(--line);
+  background: #fffdf7;
+  color: var(--ink);
+  padding: 12px;
+  line-height: 1.35;
+}
+
+.profile-card,
+.trace-card,
+.source-card,
+.quiz-box {
+  border: 1px solid var(--line);
+  background: rgba(247, 240, 228, 0.7);
+}
+
+.profile-card {
+  margin: 16px 0;
+  padding: 14px;
+}
+
+.profile-card strong {
+  display: block;
+  margin-bottom: 8px;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.3rem;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.tag {
+  border: 1px solid var(--line);
+  background: #fffdf7;
+  padding: 4px 7px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.7rem;
+}
+
+.primary-action {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 13px;
+  background: var(--gold);
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+}
+
+.primary-action svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.diagnostic-list,
+.path-list,
+.trace-log {
+  display: grid;
+  gap: 10px;
+}
+
+.diagnostic-item {
+  border-left: 6px solid var(--line);
+  background: #fffdf7;
+  padding: 12px;
+}
+
+.diagnostic-item.strong {
+  border-color: var(--green);
+}
+
+.diagnostic-item.medium {
+  border-color: var(--gold);
+}
+
+.diagnostic-item.weak {
+  border-color: var(--red);
+}
+
+.diagnostic-item span,
+.path-card .meta,
+.trace-card span {
+  display: block;
+  margin-top: 6px;
+  color: var(--muted);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.meter {
+  height: 8px;
+  margin-top: 10px;
+  background: rgba(30, 26, 22, 0.1);
+}
+
+.meter-fill {
+  height: 100%;
+  background: var(--blue);
+}
+
+.path-card {
+  position: relative;
+  border: 1px solid var(--line);
+  background: #fffdf7;
+  padding: 13px 12px 13px 52px;
+  cursor: pointer;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.path-card:hover,
+.path-card.active {
+  transform: translateX(3px);
+  border-color: var(--ink);
+  box-shadow: 5px 5px 0 rgba(30, 26, 22, 0.88);
+}
+
+.path-card .number {
+  position: absolute;
+  left: 12px;
+  top: 13px;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--ink);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+}
+
+.path-card h3 {
+  margin-bottom: 8px;
+}
+
+.lesson-body {
+  display: grid;
+  gap: 15px;
+  line-height: 1.45;
+}
+
+.empty-state {
+  min-height: 420px;
+  place-items: center;
+  color: var(--muted);
+  text-align: center;
+  padding: 30px;
+  border: 1px dashed var(--line);
+}
+
+.lesson-section {
+  border: 1px solid var(--line);
+  background: #fffdf7;
+  padding: 15px;
+}
+
+.lesson-section h3 {
+  margin-bottom: 8px;
+}
+
+.code-block {
+  overflow-x: auto;
+  margin: 0;
+  border: 1px solid var(--ink);
+  background: #1f1b17;
+  color: #f8eacb;
+  padding: 14px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.source-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.source-card {
+  padding: 12px;
+}
+
+.source-card strong {
+  display: block;
+  color: var(--blue);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.76rem;
+}
+
+.quiz-box {
+  padding: 14px;
+}
+
+.quiz-options {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.quiz-button {
+  padding: 9px 10px;
+  text-align: left;
+  font-size: 0.94rem;
+}
+
+.quiz-button.correct {
+  background: var(--green-soft);
+  border-color: var(--green);
+}
+
+.quiz-button.incorrect {
+  background: var(--red-soft);
+  border-color: var(--red);
+}
+
+.trace-card {
+  padding: 12px;
+}
+
+.trace-card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-family: "IBM Plex Mono", monospace;
+  color: var(--blue);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1280px) {
+  .workspace {
+    grid-template-columns: 300px 1fr 1fr;
+  }
+
+  .lesson-panel,
+  .trace-panel {
+    grid-column: span 3;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 860px) {
+  .shell {
+    width: min(100vw - 20px, 760px);
+  }
+
+  .masthead,
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .panel,
+  .lesson-panel,
+  .trace-panel {
+    grid-column: auto;
+    min-height: auto;
+  }
+
+  h1 {
+    font-size: clamp(3rem, 16vw, 5rem);
+  }
+}
