@@ -59,6 +59,39 @@ The repository can now support reviewable changes and commits. `.env`, `.DS_Stor
 - `tasks/T018-initialize-git-version-control.md`
 - `tasks/index.md`
 
+## 2026-07-08 — Keep Secrets Out Of Git
+
+Status: Accepted
+
+### Context
+
+The project now has a Git repository, and course labs use API keys, access tokens, and local machine-specific environment values.
+
+### Decision
+
+Use the ignored root `.env` file as the only place for real local secrets and machine-specific values. Commit `.env.example` with variable names only. Source code must read credentials from environment variables rather than hardcoding key or token values.
+
+### Rationale
+
+Secrets committed to Git can leak through normal pushes, clones, or history. Keeping real values in ignored local files preserves reproducibility without exposing credentials.
+
+### Consequences
+
+`.env`, `.env.*`, private key files, service account JSON, credential JSON, `.envrc`, and local security reports remain ignored. The SV cluster OpenAI-compatible helper reads `SV_OPENAI_API_KEY` or `OPENAI_API_KEY` from the environment. Agents must run a secret check before committing credential-related changes.
+
+### Affected Docs
+
+- `.gitignore`
+- `.env.example`
+- `.env` (ignored local file)
+- `AGENTS.md`
+- `README.md`
+- `labs/sv_ray_cluster_access/src/ray_cluster_access/sv_cluster_access_api.py`
+- `labs/sv_ray_cluster_access/.env.example`
+- `course/week_04/chunking_pipeline/.env.example`
+- `decisions/2026-07-08-keep-secrets-out-of-git.md`
+- `tasks/T019-keep-secrets-out-of-git.md`
+
 ## 2026-06-01 — Make The Bootcamp Project Agent-First
 
 Status: Accepted

@@ -29,6 +29,12 @@ Every class note should answer five questions:
 4. What evidence, memory, tool, or eval does the agent need?
 5. How does it apply to Avaloka AI or another real project?
 
+## Secret Handling
+
+Real API keys, access tokens, passwords, private certificates, service account files, and machine-specific paths belong in the ignored root `.env` file.
+
+Use [.env.example](.env.example) as the committed template. Do not commit real secret values.
+
 ## Folder Structure
 
 - `AGENTS.md` - operating rules for agents working in this project

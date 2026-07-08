@@ -32,6 +32,20 @@ If context gets compacted or the work starts to drift, reread this file and `PRO
 - Avaloka mappings: `avaloka-applications/`
 - Historical material: `archive/`
 
+## Secret Handling
+
+Never commit API keys, access tokens, passwords, private certificates, service account files, or machine-specific `.env` files.
+
+Use the root `.env` file for real secret values and local machine paths. Keep `.env.example` committed with variable names only. If a lab needs credentials, read them from environment variables loaded from `.env`; do not hardcode placeholder keys in source code.
+
+Before committing, run a secret check:
+
+```bash
+git status --short
+git ls-files '*.env' '.env.*' '**/.env' '**/.env.*'
+git grep -n -E 'AKIA|sk-[A-Za-z0-9_-]{20,}|ghp_|github_pat_|xox[baprs]-|api_key\s*=\s*["'\''][^"'\'']+["'\'']|token\s*=\s*["'\''][^"'\'']+["'\'']' -- ':!*.md' ':!*.json' ':!*.lock' ':!*.ipynb'
+```
+
 ## Agent-First Loop
 
 Use this loop as the default frame:

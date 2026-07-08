@@ -5,6 +5,14 @@ Thumbs.db
 .env
 .env.*
 !.env.example
+.envrc
+*.pem
+*.key
+*.p12
+*.pfx
+*_key.json
+*service-account*.json
+*credentials*.json
 
 # Python caches and environments
 __pycache__/
@@ -23,6 +31,7 @@ build/
 # Notebook and tool caches
 .ipynb_checkpoints/
 .cache/
+.gstack/
 .superpowers/
 .claude/settings.local.json
 

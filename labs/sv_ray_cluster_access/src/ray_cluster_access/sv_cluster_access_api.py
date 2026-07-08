@@ -48,10 +48,17 @@ DEFAULT_COLBERT_MODEL = "lightonai/GTE-ModernColBERT-v1"
 # ColPali-style multi-vector image/text embeddings (late interaction over visual tokens).
 DEFAULT_COLPALI_MODEL = "TomoroAI/tomoro-colqwen3-embed-4b"
 chat_api_base_url = f"{chat_base_url}/v1"
-_sv_openai_client = OpenAI(
-    base_url=chat_api_base_url,
-    api_key="sv-openai-api-key",
-)
+_sv_openai_client: OpenAI | None = None
+
+
+def _sv_openai_api_key() -> str:
+    api_key = os.environ.get("SV_OPENAI_API_KEY") or os.environ.get("OPENAI_API_KEY")
+    if not api_key:
+        raise RuntimeError(
+            "SV_OPENAI_API_KEY or OPENAI_API_KEY is required. "
+            "Put real keys in the ignored root .env file, not in git-tracked files."
+        )
+    return api_key
 
 
 def _is_http_url(image_source: str) -> bool:
@@ -222,10 +229,15 @@ def get_sv_openai_client() -> OpenAI:
     Pass `model` to `sv_openai_completion` (e.g. `DEFAULT_TEXT_CHAT_MODEL`,
     `ALTERNATIVE_TEXT_CHAT_MODEL`, or `DEFAULT_VL_CHAT_MODEL`).
     """
+    global _sv_openai_client
+    if _sv_openai_client is None:
+        _sv_openai_client = OpenAI(
+            base_url=chat_api_base_url,
+            api_key=_sv_openai_api_key(),
+        )
     return _sv_openai_client
 
 
-@wraps(_sv_openai_client.chat.completions.create)
 def sv_openai_completion(*, model: str = DEFAULT_TEXT_CHAT_MODEL, **kwargs):
     """Chat completion via the OpenAI client (vLLM, OpenAI-compatible API).
 
@@ -236,7 +248,7 @@ def sv_openai_completion(*, model: str = DEFAULT_TEXT_CHAT_MODEL, **kwargs):
         **kwargs: Passed to `chat.completions.create` (e.g. `messages`, `max_tokens`).
     """
     kwargs.pop("model", None)
-    return _sv_openai_client.chat.completions.create(model=model, **kwargs)
+    return get_sv_openai_client().chat.completions.create(model=model, **kwargs)
 
 
 @wraps(completion)
@@ -255,7 +267,7 @@ def sv_completion(*, model: str = DEFAULT_TEXT_CHAT_MODEL, **kwargs):
     return completion(
         model="openai/" + model,
         api_base=chat_api_base_url,
-        api_key="sv-openai-api-key",
+        api_key=_sv_openai_api_key(),
         **kwargs,
     )
 
