@@ -31,7 +31,15 @@ The course is useful when each concept becomes at least one of:
 
 ## Near-Term Milestone
 
-Complete the Week 01 learning capture, then build and understand one minimal agentic RAG loop.
+Close v0.1 after bringing course capture through Week 06 into one inspectable agentic RAG baseline.
+
+Immediate sequence:
+
+1. Create the first 10 agentic RAG eval cases.
+2. Define Avaloka memory scopes and use rules.
+3. Build the minimal runnable loop and save at least one canonical trace.
+4. Benchmark Avaloka Memory Reader V0.
+5. Use measured failures to choose the smallest justified retrieval upgrade.
 
 Minimum loop:
 
@@ -73,6 +81,8 @@ The project is working when:
 - evals test behavior and safety, not only retrieval correctness
 - decisions explain why directions changed
 - Avaloka mappings show what the course unlocks in the real product
+
+Current v0.1 exit authority lives in `docs/product/version-roadmap.md`; later-week experiments do not substitute for missing trace, eval, and memory-policy evidence.
 
 ## Operating Rhythm
 

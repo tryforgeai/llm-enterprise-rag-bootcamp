@@ -20,7 +20,7 @@ The project is now structurally agent-first. The remaining work is content execu
 Command:
 
 ```bash
-node ~/.codex/skills/agent-first-project-bootstrap/scripts/agent-first.mjs audit "/Users/rosso.han/Documents/Obsidian Vault/Projects/LLM and Enterprise RAG Bootcamp"
+node "${CODEX_HOME:-$HOME/.codex}/skills/agent-first-project-bootstrap/scripts/agent-first.mjs" audit .
 ```
 
 Result:

@@ -6,9 +6,9 @@ Date: 2026-06-01
 
 ## Context
 
-The local directory `/Users/rosso.han/Documents/Obsidian Vault/Projects/agent-first-project-bootstrap` contains a valid Codex skill with `SKILL.md`, scripts, templates, and OpenAI metadata.
+The local `agent-first-project-bootstrap` source directory contains a valid Codex skill with `SKILL.md`, scripts, templates, and OpenAI metadata.
 
-The same skill is already installed at `/Users/rosso.han/.codex/skills/agent-first-project-bootstrap`. The installed copy passes `validate-skill`.
+The same skill is already installed in the user-level Codex skills directory. The installed copy passes `validate-skill`.
 
 The current bootcamp project had a custom lightweight agent-first scaffold, but not the skill's standard `docs/` governance layout.
 

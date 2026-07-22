@@ -49,13 +49,13 @@ For each meaningful change:
 Run the installed skill audit:
 
 ```bash
-node /Users/rosso.han/.codex/skills/agent-first-project-bootstrap/scripts/agent-first.mjs audit "/Users/rosso.han/Documents/Obsidian Vault/Projects/LLM and Enterprise RAG Bootcamp"
+node "${CODEX_HOME:-$HOME/.codex}/skills/agent-first-project-bootstrap/scripts/agent-first.mjs" audit .
 ```
 
 Run document gardening in report-only mode:
 
 ```bash
-node /Users/rosso.han/.codex/skills/agent-first-project-bootstrap/scripts/agent-first.mjs garden "/Users/rosso.han/Documents/Obsidian Vault/Projects/LLM and Enterprise RAG Bootcamp"
+node "${CODEX_HOME:-$HOME/.codex}/skills/agent-first-project-bootstrap/scripts/agent-first.mjs" garden .
 ```
 
 ## Do Not Do

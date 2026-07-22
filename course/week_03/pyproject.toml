@@ -1,0 +1,18 @@
+[project]
+name = "week-03-representation-tournament"
+version = "0.1.0"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "numpy==2.3.2",
+  "openai==1.99.9",
+  "pillow==11.3.0",
+  "streamlit==1.48.1",
+]
+
+[dependency-groups]
+dev = [
+  "pytest==8.4.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

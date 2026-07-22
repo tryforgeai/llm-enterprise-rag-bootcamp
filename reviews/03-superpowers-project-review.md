@@ -56,7 +56,7 @@ The project has an audit command in `docs/engineering/harness-engineering-setup.
 Recommended milestone verification:
 
 ```bash
-node ~/.codex/skills/agent-first-project-bootstrap/scripts/agent-first.mjs audit "/Users/rosso.han/Documents/Obsidian Vault/Projects/LLM and Enterprise RAG Bootcamp"
+node "${CODEX_HOME:-$HOME/.codex}/skills/agent-first-project-bootstrap/scripts/agent-first.mjs" audit .
 find evals -type f | wc -l
 find traces -type f | wc -l
 test -f avaloka-applications/02-memory-scope-policy.md

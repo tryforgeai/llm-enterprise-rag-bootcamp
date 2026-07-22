@@ -9,15 +9,37 @@ This document defines current and future versions. If it conflicts with older pl
 | Field | Value |
 |---|---|
 | Version | v0.1 agent-first bootcamp scaffold |
-| Stage | active course / Week 03 |
+| Stage | active course / Week 06; governance catch-up in progress |
 | Target user | Rosso building Avaloka AI with future agent assistance |
 | First use case | Minimal agentic RAG loop for Avaloka course learning |
-| Success criteria | Active docs exist, agent startup path is clear, first lab has trace and eval requirements, and next tasks are explicit. |
+| Success criteria | Active docs and course artifacts are current through Week 06, while the first reusable trace, eval set, and Avaloka memory policy close the v0.1 agent-first loop. |
+
+### Current Progress Snapshot
+
+Course execution has advanced beyond the original scaffold scope, but the version remains v0.1 because its agent-first exit criteria are not yet complete.
+
+Completed or materially demonstrated:
+
+- Week 01 through Week 06 learning capture, with Week 02 and Week 06 eval follow-ups still open.
+- Week 03 representation experiments covering chunking, contextual chunks, page-image retrieval, text retrieval, and comparison tests.
+- Week 04 derived retrieval artifacts covering raw chunks, propositions, QA pairs, summaries, embeddings, and the Xennials FactoidWiki demo.
+- Week 05 graph-shaped learning artifacts.
+- Week 06 request rails, ACL-bound retrieval, indirect-injection defenses, response grounding, abstention, and a runnable mocked Project Atlas pipeline.
+- Curriculum Weaver Lite Step 1 static pedagogy-first UI demo.
+- Clone-portable locked verification for Week 03 Python tests and the Curriculum Weaver browser smoke test.
+
+Still required to close v0.1:
+
+- Create the first 10 agentic RAG eval cases.
+- Define Avaloka memory scopes and use rules.
+- Save at least one canonical agent trace under `traces/`.
+- Turn the minimal agentic RAG plan into a runnable trace-and-eval loop.
+- Benchmark Avaloka Memory Reader V0 before selecting a retrieval upgrade.
 
 ### In Scope
 
 - Agent-readable project scaffold.
-- Week 01, Week 02, and Week 03 lecture, code, question, and application capture.
+- Week 01 through Week 06 lecture, code, question, and application capture, including explicit follow-ups where live-class or eval evidence is incomplete.
 - Verified SupportVectors Python classroom environment.
 - Product vision and version governance.
 - Decision log and document gardening rules.
@@ -25,6 +47,11 @@ This document defines current and future versions. If it conflicts with older pl
 - Trace and eval templates.
 - First tasks for evals, memory scope policy, and demo implementation.
 - Audit of existing Avaloka capabilities against Week 01 concepts.
+- Week 03 representation and retrieval experiments.
+- Week 04 derived-artifact retrieval experiments.
+- Week 05 graph-shaped learning artifacts.
+- Week 06 guardrail, grounding, refusal, and humility architecture walkthroughs.
+- Curriculum Weaver Lite Step 1 UI demo and Step 2 proposal.
 
 ### Out of Scope
 
@@ -48,7 +75,7 @@ This document defines current and future versions. If it conflicts with older pl
 |---|---|
 | Version | v0.2 first runnable agentic RAG loop |
 | Goal | Run a small Avaloka question through intent classification, retrieval, decision, response, trace, and eval. |
-| Entry criteria | v0.1 scaffold is coherent and eval cases are drafted. |
+| Entry criteria | v0.1 governance is current, the first 10 eval cases and memory-scope policy exist, and at least one canonical trace demonstrates the full loop. |
 | Major risks | Overbuilding infrastructure, skipping evals, or using memory without explicit scope rules. |
 
 ## Future Versions

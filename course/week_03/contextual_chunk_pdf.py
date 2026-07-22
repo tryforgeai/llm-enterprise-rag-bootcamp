@@ -23,9 +23,20 @@ from pathlib import Path
 from typing import Iterable
 
 
-DEFAULT_PDF = Path("/Users/rosso.han/Downloads/rag-capstone-projects (1).pdf")
-DEFAULT_OUT_DIR = Path(__file__).resolve().parent / "capstone_contextual_chunks"
+SCRIPT_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = SCRIPT_DIR.parents[1]
+DEFAULT_PDF = SCRIPT_DIR / "data" / "rag-capstone-projects.pdf"
+DEFAULT_OUT_DIR = SCRIPT_DIR / "capstone_contextual_chunks"
 MIN_CHUNK_CHARS = 120
+
+
+def metadata_path(path: Path) -> str:
+    """Return a portable path label without recording a machine location."""
+    resolved = path.resolve()
+    try:
+        return resolved.relative_to(PROJECT_ROOT).as_posix()
+    except ValueError:
+        return f"external-source/{resolved.name}"
 
 STOPWORDS = {
     "about",
@@ -344,7 +355,7 @@ def main() -> None:
     write_preview(args.out_dir / "preview.md", regular, contextual, args.preview_limit)
 
     stats = {
-        "pdf": str(args.pdf),
+        "pdf": metadata_path(args.pdf),
         "document_title": title,
         "pages": len(pages),
         "non_empty_pages": sum(1 for p in pages if p.text.strip()),
@@ -352,9 +363,9 @@ def main() -> None:
         "chunk_size": args.chunk_size,
         "overlap": args.overlap,
         "chunks": len(regular),
-        "regular_chunks": str(args.out_dir / "regular_chunks.jsonl"),
-        "contextual_chunks": str(args.out_dir / "contextual_chunks.jsonl"),
-        "preview": str(args.out_dir / "preview.md"),
+        "regular_chunks": metadata_path(args.out_dir / "regular_chunks.jsonl"),
+        "contextual_chunks": metadata_path(args.out_dir / "contextual_chunks.jsonl"),
+        "preview": metadata_path(args.out_dir / "preview.md"),
     }
     (args.out_dir / "stats.json").write_text(json.dumps(stats, indent=2), encoding="utf-8")
     print(json.dumps(stats, indent=2))

@@ -56,3 +56,15 @@ python3 -m http.server 4177
 ```
 
 Then open `http://127.0.0.1:4177`.
+
+## Portable Smoke Test
+
+From the repository root:
+
+```bash
+npm ci
+npx playwright install chromium
+npm run test:curriculum
+```
+
+The test resolves Playwright from the repository lockfile, launches its managed Chromium build, starts an ephemeral local server, and writes results under the operating system's temporary directory. It does not depend on a particular username, clone location, browser installation, or port.

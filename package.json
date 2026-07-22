@@ -1,0 +1,13 @@
+{
+  "name": "llm-enterprise-rag-bootcamp",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Portable browser verification for bootcamp artifacts",
+  "scripts": {
+    "test:curriculum": "node labs/curriculum-weaver-lite/scripts/smoke-test.cjs",
+    "test": "npm run test:curriculum"
+  },
+  "devDependencies": {
+    "playwright": "^1.61.1"
+  }
+}

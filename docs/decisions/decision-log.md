@@ -92,6 +92,83 @@ Secrets committed to Git can leak through normal pushes, clones, or history. Kee
 - `decisions/2026-07-08-keep-secrets-out-of-git.md`
 - `tasks/T019-keep-secrets-out-of-git.md`
 
+## 2026-07-18 — Align Governance With Week 06 Without Advancing The Product Version
+
+Status: Accepted
+
+### Context
+
+Course work has advanced through Week 06 and now includes representation experiments, derived retrieval artifacts, graph-shaped learning artifacts, a pedagogy-first UI demo, and a runnable mocked guardrailed RAG pipeline. The root roadmap still described the project as active Week 03, while several foundational v0.1 exit criteria remain incomplete.
+
+### Decision
+
+Update the active stage and scope to reflect Week 06, close T014 because all of its stated criteria are satisfied, and keep T011, T015, and T020 active because their eval, feedback, or implementation criteria remain open. Keep the product version at v0.1 until the first 10 eval cases, Avaloka memory policy, canonical trace, and minimal trace-and-eval loop exist.
+
+### Rationale
+
+Course chronology and product maturity measure different things. Governance should accurately reflect completed learning artifacts without implying that the agent-first product loop has reached v0.2 readiness.
+
+### Consequences
+
+- The roadmap now reports active course / Week 06.
+- v0.1 scope records the Week 03 through Week 06 artifacts already created.
+- T014 is done; T011, T015, and T020 remain doing.
+- The immediate product focus remains evals, memory scope, canonical traces, the minimal runnable loop, and the Memory Reader V0 benchmark.
+- `docs/knowledge/` now holds active gotchas and important fix evidence for future agents.
+- `README.md`, `AGENTS.md`, and `PROJECT_PLAN.md` now point agents at the Week 06 governance state and current v0.1 milestone.
+
+### Affected Docs
+
+- `docs/product/version-roadmap.md`
+- `tasks/index.md`
+- `tasks/T014-week-03-class-capture.md`
+- `docs/decisions/decision-log.md`
+- `decisions/2026-07-18-align-governance-with-week-06.md`
+- `README.md`
+- `AGENTS.md`
+- `PROJECT_PLAN.md`
+- `docs/knowledge/gotchas.md`
+- `docs/knowledge/fix-log.md`
+
+## 2026-07-18 — Require Clone-Portable Repository Verification
+
+Status: Accepted
+
+### Context
+
+Week 03 tests depended on globally available Python packages, browser scripts imported Playwright and Chrome from one machine, and several committed records contained user-specific absolute paths.
+
+### Decision
+
+Use repository-relative paths in committed code and metadata. Lock Week 03 test dependencies with `uv`; lock browser verification dependencies at the repository root with npm; use Playwright-managed Chromium; and make the Curriculum Weaver smoke test start its own ephemeral local server.
+
+### Rationale
+
+A Git repository is not reproducible when successful verification depends on the original author's username, clone directory, global packages, browser installation, or fixed local port.
+
+### Consequences
+
+- `uv sync --frozen && uv run pytest` is the Week 03 verification path.
+- `npm ci`, `npx playwright install chromium`, and `npm test` are the browser verification path.
+- Generated metadata must use repository-relative labels and must not persist machine locations.
+- Local dependency directories and temporary test outputs remain ignored.
+
+### Affected Docs
+
+- `README.md`
+- `course/week_03/README.md`
+- `course/week_03/pyproject.toml`
+- `course/week_03/uv.lock`
+- `package.json`
+- `package-lock.json`
+- `labs/curriculum-weaver-lite/README.md`
+- `labs/curriculum-weaver-lite/scripts/smoke-test.cjs`
+- `scripts/render_architecture_png.mjs`
+- `docs/knowledge/gotchas.md`
+- `docs/knowledge/fix-log.md`
+- `tasks/T022-portable-repository-verification.md`
+- `decisions/2026-07-18-clone-portable-verification.md`
+
 ## 2026-06-01 — Make The Bootcamp Project Agent-First
 
 Status: Accepted

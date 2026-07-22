@@ -1,6 +1,6 @@
 # T014 Week 03 Class Capture
 
-Status: doing
+Status: done
 
 Date: 2026-06-20
 
@@ -171,7 +171,7 @@ Inspected `course/week_03/week-03-in-person-lab`:
 
 ## 2026-06-20 Capstone Contextual Chunking
 
-Created `course/week_03/contextual_chunk_pdf.py` and processed `/Users/rosso.han/Downloads/rag-capstone-projects (1).pdf`:
+Created `course/week_03/contextual_chunk_pdf.py` and processed a local capstone source PDF (not committed):
 
 - extracted 213 PDF pages, with text on 203 pages
 - generated 266 regular overlapping chunks
@@ -214,3 +214,7 @@ Extracted full PRML chapter text into Week 04 Markdown files:
 - Chapter 2 extraction covers PDF pages 86-155 with 70 page markers
 - Chapter 3 extraction covers PDF pages 156-196 with 41 page markers
 - each file preserves source metadata and `## PDF Page ...` boundaries for later chunking and summarization
+
+## 2026-07-18 Governance Closeout
+
+Marked this task done because every stated done criterion is satisfied. Week 03 has durable notes, code experiments, representation comparisons, tests, an eval artifact, Avaloka implications, and follow-up questions. Later Week 04 work remains tracked separately rather than keeping the Week 03 capture task artificially open.

@@ -35,11 +35,35 @@ Real API keys, access tokens, passwords, private certificates, service account f
 
 Use [.env.example](.env.example) as the committed template. Do not commit real secret values.
 
+## Portable Setup
+
+Clone the repository into any directory. Project code and committed metadata use repository-relative paths; no user-specific filesystem layout is required.
+
+Prerequisites:
+
+- Git
+- Node.js 20 or newer
+- `uv` with Python 3.11 through 3.13
+
+Install and run the portable verification suites:
+
+```bash
+npm ci
+npx playwright install chromium
+npm test
+
+cd course/week_03
+uv sync --frozen
+uv run pytest
+```
+
+The browser smoke test starts its own temporary local server and writes screenshots to the operating system's temporary directory. Local dependencies (`node_modules/`, `.venv/`) and runtime outputs are ignored by Git.
+
 ## Folder Structure
 
 - `AGENTS.md` - operating rules for agents working in this project
 - `PROJECT_PLAN.md` - source-of-truth project plan and operating rhythm
-- `docs/` - active governance docs for product vision, version roadmap, decisions, validation, quality, and maintenance
+- `docs/` - active governance docs for product vision, version roadmap, decisions, team memory, validation, quality, and maintenance
 - `course/` - course overview, syllabus, schedule, and weekly notes
 - `prep/` - pre-course preparation plans and mini labs
 - `avaloka-applications/` - mappings from course concepts to Avaloka AI
@@ -77,21 +101,21 @@ For agents:
 2. `docs/product/product-vision.md`
 3. `docs/product/version-roadmap.md`
 4. `docs/decisions/decision-log.md`
-5. `tasks/index.md`
+5. `docs/knowledge/gotchas.md`
+6. `docs/knowledge/fix-log.md`
+7. `tasks/index.md`
 
 ## Current Learning Priority
 
-The course started on June 6, 2026. The current priority is to turn each live class into reusable agent capability:
+The course started on June 6, 2026 and is active in Week 06. The current priority is to close the v0.1 agent-first loop while continuing to turn each live class into reusable capability:
 
 ```text
-live class
--> capture concepts and code
--> identify one agent capability
--> add one Avaloka application
--> create or update one eval case
--> choose the next concrete lab task
+live class -> capture -> capability -> Avaloka mapping
+                          |
+                          v
+intent -> retrieve -> decide -> respond -> trace -> evaluate
 ```
 
-Use `course/week-01.md` during or immediately after the first class.
+Immediate v0.1 work is defined in `docs/product/version-roadmap.md` and `tasks/index.md`: first eval cases, Avaloka memory scope, a canonical trace, the minimal runnable loop, and the Memory Reader V0 benchmark.
 
-Chinese version: `course/week-01.zh.md`.
+Current course capture: `course/week-06.zh.md`.

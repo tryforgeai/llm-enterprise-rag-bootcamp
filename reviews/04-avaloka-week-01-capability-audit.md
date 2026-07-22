@@ -6,7 +6,7 @@ Date: 2026-06-06
 
 Avaloka repository reviewed:
 
-`/Users/rosso.han/Documents/Obsidian Vault/Projects/Avaloka AI`
+the separate local Avaloka AI repository
 
 ## Executive Verdict
 
@@ -211,4 +211,3 @@ Only compare an embedding or hybrid reader after this baseline exists. Promote t
 - Active Avaloka source, product, research, engineering, prompt, test, and eval files were inspected.
 - `npm run content:check` passed on 2026-06-06.
 - The full Vitest suite could not be rerun because Vitest needed to write a temporary file inside the Avaloka repository, which is outside the current workspace's writable boundary. The required approval was unavailable during this run.
-

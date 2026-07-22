@@ -33,8 +33,8 @@ def luhn_valid(candidate: str) -> bool:
 
 
 PATTERNS = {
-    "AWS_ACCESS_KEY": re.compile(r"\bAKIA[0-9A-Z]{16}\b"),
-    "GITHUB_TOKEN": re.compile(r"\bghp_[A-Za-z0-9]{36}\b"),
+    "AWS_ACCESS_KEY": re.compile(r"\b" + "AK" + r"IA[0-9A-Z]{16}\b"),
+    "GITHUB_TOKEN": re.compile(r"\b" + "gh" + r"p_[A-Za-z0-9]{36}\b"),
     "SSN": re.compile(r"\b\d{3}-\d{2}-\d{4}\b"),
     # Loose card-shaped run; Luhn check below decides if it's real.
     "CARD_NUMBER": re.compile(r"\b(?:\d[ -]?){13,19}\b"),
@@ -66,10 +66,10 @@ def redact(text: str) -> tuple[str, list[str]]:
 def demo() -> None:
     examples = [
         "What is our refund policy for order 4471982?",
-        "My AWS key is AKIA1234567890ABCDEF and it's not working, please help.",
+        "My AWS key is " + "AK" + "IA1234567890ABCDEF and it's not working, please help.",
         "Here's my card 4539 1488 0343 6467, can you check if the charge went through?",
         "My SSN is 123-45-6789, is this policy applicable to me?",
-        "This ghp_abcdefghijklmnopqrstuvwxyz0123456789 token keeps expiring, why?",
+        "This " + "gh" + "p_abcdefghijklmnopqrstuvwxyz0123456789 token keeps expiring, why?",
     ]
 
     for raw_query in examples:

@@ -10,9 +10,10 @@ At the start of a session:
 2. Read `docs/product/product-vision.md`.
 3. Read `docs/product/version-roadmap.md`.
 4. Read `docs/decisions/decision-log.md`.
-5. Read `PROJECT_PLAN.md` for the working plan.
-6. Read `tasks/index.md` before proposing or doing new work.
-7. Inspect the specific course, lab, eval, trace, or application files related to the current task.
+5. Read `docs/knowledge/gotchas.md` and `docs/knowledge/fix-log.md`.
+6. Read `PROJECT_PLAN.md` for the working plan.
+7. Read `tasks/index.md` before proposing or doing new work.
+8. Inspect the specific course, lab, eval, trace, or application files related to the current task.
 
 If context gets compacted or the work starts to drift, reread this file and `PROJECT_PLAN.md`.
 
@@ -24,6 +25,7 @@ If context gets compacted or the work starts to drift, reread this file and `PRO
 - Working plan: `PROJECT_PLAN.md`
 - Operating rules: `AGENTS.md`
 - Detailed decisions: `decisions/`
+- Active gotchas and important fixes: `docs/knowledge/`
 - Work queue: `tasks/`
 - Course notes: `course/`
 - Labs and implementation plans: `labs/`

@@ -1,5 +1,5 @@
 import { pathToFileURL } from "node:url";
-import { chromium } from "/Users/rosso.han/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs";
+import { chromium } from "playwright";
 
 const [inputPath, outputPath] = process.argv.slice(2);
 
@@ -8,11 +8,7 @@ if (!inputPath || !outputPath) {
   process.exit(1);
 }
 
-const browser = await chromium.launch({
-  headless: true,
-  executablePath:
-    "/Users/rosso.han/Library/Caches/ms-playwright/chromium-1208/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing",
-});
+const browser = await chromium.launch({ headless: true });
 
 try {
   const page = await browser.newPage({

@@ -26,7 +26,7 @@ Use `~/.codex/AGENTS.md` as the global Codex rule file for this machine and add 
 
 ## Affected Files
 
-- `/Users/rosso.han/.codex/AGENTS.md`
+- the user-level Codex `AGENTS.md`
 - `docs/decisions/decision-log.md`
 - `decisions/2026-06-01-global-codex-agent-first-default.md`
 

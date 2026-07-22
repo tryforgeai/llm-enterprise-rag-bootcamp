@@ -1,6 +1,6 @@
 # PRML
 
-Source PDF: `/Users/rosso.han/Documents/Obsidian Vault/Projects/LLM and Enterprise RAG Bootcamp/course/week_03/PRML.pdf`
+Source PDF: `course/week_03/PRML.pdf`
 
 Parser engine: `pypdf`
 
