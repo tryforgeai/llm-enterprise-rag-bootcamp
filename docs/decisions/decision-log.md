@@ -4,6 +4,48 @@ This file records accepted product, architecture, process, safety, and project-g
 
 If documents conflict, follow the newest accepted decision here, then update affected docs. Detailed decision files may also live in the root `decisions/` folder.
 
+## 2026-07-26 — Create A Cross-Project Method Toolkit
+
+Status: Accepted
+
+### Context
+
+Reusable methods were distributed across weekly notes, notebooks, labs, and
+implementation-specific README files, making adoption by another project depend
+on knowledge of the bootcamp's internal history.
+
+### Decision
+
+Create `toolkit/` as a provider-neutral, repository-relative method layer. Give
+methods stable IDs and record their problem, selection conditions, measurements,
+failure signals, evidence, and maturity. Require cross-project adoption to state
+a baseline, trace contract, safety boundary, evaluation plan, and removal
+criterion.
+
+### Rationale
+
+The original artifacts should preserve learning history and implementation
+evidence, while future projects need a compact interface for choosing and
+reimplementing methods without copying local infrastructure or restricted source.
+
+### Consequences
+
+- `course/`, `labs/`, and `resources/` remain the evidence layer.
+- `toolkit/` becomes the reusable selection and adoption layer.
+- Toolkit inclusion does not imply production validation.
+- New methods must preserve provenance, portability, and evidence-driven
+  escalation.
+
+### Affected Docs
+
+- `toolkit/`
+- `README.md`
+- `docs/product/product-vision.md`
+- `docs/product/version-roadmap.md`
+- `PROJECT_PLAN.md`
+- `decisions/2026-07-26-create-cross-project-method-toolkit.md`
+- `tasks/T023-create-cross-project-method-toolkit.md`
+
 ## 2026-07-25 — Advance Governance Stage To Week 07 Evaluation
 
 Status: Accepted

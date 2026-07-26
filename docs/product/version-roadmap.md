@@ -28,6 +28,9 @@ Completed or materially demonstrated:
 - Week 07 evaluation capture plus runnable nDCG, precision-recall, and reranking evaluation demos.
 - Curriculum Weaver Lite Step 1 static pedagogy-first UI demo.
 - Clone-portable locked verification for Week 03 Python tests and the Curriculum Weaver browser smoke test.
+- Cross-project method toolkit covering all methods taught or demonstrated
+  through Week 07, with stable IDs, evidence links, maturity labels, and an
+  adoption template.
 
 Still required to close v0.1:
 
@@ -53,6 +56,7 @@ Still required to close v0.1:
 - Week 05 graph-shaped learning artifacts.
 - Week 06 guardrail, grounding, refusal, and humility architecture walkthroughs.
 - Week 07 retrieval and generation evaluation methods and runnable metric demos.
+- Portable method catalog and project-adoption template.
 - Curriculum Weaver Lite Step 1 UI demo and Step 2 proposal.
 
 ### Out of Scope

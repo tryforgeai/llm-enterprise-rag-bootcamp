@@ -28,6 +28,11 @@ The course is useful when each concept becomes at least one of:
 - trace field
 - implementation experiment
 - instructor question
+- reusable method card for another project
+
+Cross-project method authority lives in `toolkit/`. Original course notes and
+labs remain the evidence layer; the toolkit is the stable selection and adoption
+interface.
 
 ## Near-Term Milestone
 

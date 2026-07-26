@@ -70,6 +70,7 @@ The browser smoke test starts its own temporary local server and writes screensh
 - `labs/` - coding lab notes, commands, and experiment logs
 - `questions/` - questions to ask instructors or TAs
 - `resources/` - links, papers, glossary, and reading notes
+- `toolkit/` - reusable cross-project method catalog, selection guidance, and adoption template
 - `reviews/` - periodic project reviews and next actions
 - `decisions/` - durable records of important direction, architecture, eval, memory, and safety decisions
 - `tasks/` - lightweight task queue for agent-ready work
@@ -119,3 +120,16 @@ intent -> retrieve -> decide -> respond -> trace -> evaluate
 Immediate v0.1 work is defined in `docs/product/version-roadmap.md` and `tasks/index.md`: first eval cases, Avaloka memory scope, a canonical trace, the minimal runnable loop, and the Memory Reader V0 benchmark.
 
 Current course capture: `course/week-07.zh.md`.
+
+## Reusable Method Toolkit
+
+The course's reusable methods are indexed in
+[`toolkit/method-catalog.md`](toolkit/method-catalog.md). It covers foundations,
+document representation, retrieval, query processing, graph retrieval,
+guardrails, response grounding, evaluation, and observable agent loops.
+
+For another project, start with [`toolkit/README.md`](toolkit/README.md) and copy
+[`toolkit/project-adoption-template.md`](toolkit/project-adoption-template.md)
+into that project's planning or decision history. Original course and lab code
+remain linked as evidence; the toolkit itself avoids dependence on one provider,
+database, model, or filesystem location.

@@ -8,7 +8,10 @@ LLM and Enterprise RAG Bootcamp
 
 Use the SupportVectors LLM and Enterprise RAG Bootcamp to turn Avaloka AI into an agent-first system that can retrieve evidence, use memory safely, choose bounded next steps, save traces, and improve through evaluation.
 
-The course is not only a learning archive. It is the project operating system for extracting reusable agent capabilities from every lecture, lab, reading, and instructor question.
+The course is not only a learning archive. It is the project operating system
+for extracting reusable agent capabilities from every lecture, lab, reading,
+and instructor question, and for publishing those capabilities as a portable
+method toolkit that can be adopted by future projects.
 
 ## Long-Term Target User
 
@@ -72,3 +75,6 @@ Avaloka-related work must preserve warmth while staying bounded:
 - At least 10 eval cases cover retrieval, decision, memory, safety, and tone.
 - Memory scopes are explicit before richer memory retrieval.
 - Active project direction can be recovered from `README.md`, `AGENTS.md`, and `docs/`.
+- Future projects can select and adopt course methods through `toolkit/` without
+  depending on this repository's machine paths, secrets, vendors, or application
+  assumptions.
