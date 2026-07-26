@@ -4,6 +4,36 @@ This file records accepted product, architecture, process, safety, and project-g
 
 If documents conflict, follow the newest accepted decision here, then update affected docs. Detailed decision files may also live in the root `decisions/` folder.
 
+## 2026-07-25 — Advance Governance Stage To Week 07 Evaluation
+
+Status: Accepted
+
+### Context
+
+The remote course history added Week 07 evaluation notes and runnable metric demos after the Week 06 governance and portability work was created locally.
+
+### Decision
+
+Advance the active course stage to Week 07 while retaining product version v0.1. Make the immediate milestone a real retrieval-evaluation baseline that connects Week 07 metrics to T002 eval cases and T008 Memory Reader benchmarking.
+
+### Rationale
+
+Week 07 adds the measurement vocabulary needed to close the existing v0.1 evidence gaps, but pre-class notes and metric demonstrations do not yet satisfy the required canonical eval set, trace, memory policy, or Avaloka baseline.
+
+### Consequences
+
+- README, roadmap, and project plan now identify Week 07 as current.
+- T021 remains doing until live discussion, a real baseline artifact, and concrete Avaloka evaluation design are captured.
+- v0.1 remains active.
+
+### Affected Docs
+
+- `README.md`
+- `PROJECT_PLAN.md`
+- `docs/product/version-roadmap.md`
+- `tasks/T021-week-07-class-capture.md`
+- `decisions/2026-07-25-week-07-evaluation-stage.md`
+
 ## Decision Template
 
 ```md

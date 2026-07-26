@@ -31,15 +31,16 @@ The course is useful when each concept becomes at least one of:
 
 ## Near-Term Milestone
 
-Close v0.1 after bringing course capture through Week 06 into one inspectable agentic RAG baseline.
+Close v0.1 after bringing course capture through Week 07 into one inspectable, measurable agentic RAG baseline.
 
 Immediate sequence:
 
-1. Create the first 10 agentic RAG eval cases.
-2. Define Avaloka memory scopes and use rules.
-3. Build the minimal runnable loop and save at least one canonical trace.
-4. Benchmark Avaloka Memory Reader V0.
-5. Use measured failures to choose the smallest justified retrieval upgrade.
+1. Complete the Week 07 capture and turn its metric demos into one real retrieval baseline.
+2. Create the first 10 agentic RAG eval cases.
+3. Define Avaloka memory scopes and use rules.
+4. Build the minimal runnable loop and save at least one canonical trace.
+5. Benchmark Avaloka Memory Reader V0.
+6. Use measured failures to choose the smallest justified retrieval upgrade.
 
 Minimum loop:
 

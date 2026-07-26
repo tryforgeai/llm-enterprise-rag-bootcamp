@@ -107,7 +107,7 @@ For agents:
 
 ## Current Learning Priority
 
-The course started on June 6, 2026 and is active in Week 06. The current priority is to close the v0.1 agent-first loop while continuing to turn each live class into reusable capability:
+The course started on June 6, 2026 and is active in Week 07. The current priority is to close the v0.1 agent-first loop while turning the evaluation curriculum into the baseline evidence required for architecture decisions:
 
 ```text
 live class -> capture -> capability -> Avaloka mapping
@@ -118,4 +118,4 @@ intent -> retrieve -> decide -> respond -> trace -> evaluate
 
 Immediate v0.1 work is defined in `docs/product/version-roadmap.md` and `tasks/index.md`: first eval cases, Avaloka memory scope, a canonical trace, the minimal runnable loop, and the Memory Reader V0 benchmark.
 
-Current course capture: `course/week-06.zh.md`.
+Current course capture: `course/week-07.zh.md`.
