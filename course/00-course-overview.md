@@ -17,6 +17,18 @@ Week 02 notes:
 
 - [中文](week-02.zh.md)
 
+Week 03 notes:
+
+- [中文](week-03.zh.md)
+
+Week 06 notes:
+
+- [中文](week-06.zh.md)
+
+Week 07 notes:
+
+- [中文](week-07.zh.md)
+
 ## Main Topics
 
 - Introduction to language models

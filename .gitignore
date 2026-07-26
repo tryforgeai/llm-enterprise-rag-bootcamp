@@ -45,3 +45,10 @@ course/**/data/pages/
 course/**/data/indices/
 course/**/.git/
 course/**/.git.nested-backup-*/
+
+# Downloaded lab archives (large binaries, regenerable)
+labs/*.tar.gz
+labs/*.zip
+
+# Nested tool config inside lab folders
+course/**/.claude/
