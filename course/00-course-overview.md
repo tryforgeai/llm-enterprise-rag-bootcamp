@@ -29,6 +29,10 @@ Week 07 notes:
 
 - [中文](week-07.zh.md)
 
+Week 08 notes:
+
+- [中文](week-08.zh.md)
+
 ## Main Topics
 
 - Introduction to language models
