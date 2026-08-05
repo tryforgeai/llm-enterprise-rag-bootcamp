@@ -4,6 +4,39 @@ This file records accepted product, architecture, process, safety, and project-g
 
 If documents conflict, follow the newest accepted decision here, then update affected docs. Detailed decision files may also live in the root `decisions/` folder.
 
+## 2026-08-01 — Make Avaloka Calibration R1 The Next Execution Slice
+
+Status: Accepted
+
+### Context
+
+Week 06 established Avaloka's trust-boundary vocabulary, and Week 07/08 established the measurement discipline needed to prove whether retrieval, grounding, refusal, and humility actually work. The project already had decisions to treat existing Avaloka behavior as the baseline and benchmark Memory Reader V0 before adding advanced retrieval infrastructure.
+
+### Decision
+
+Make Avaloka Calibration R1 the next execution slice: build the first Care Card / Memory Reader gold eval scaffold, unknown/abstention cases, Baifa / Dharma boundary cases, and a calibration trace contract before embeddings, reranking, RAPTOR, GraphRAG, vector databases, or fine-tuning.
+
+### Rationale
+
+Avaloka's highest-risk failure is not low novelty; it is unsupported certainty over personal memory. Calibration requires domain-specific gold cases, retrieval metrics, claim grounding, and abstention measurement rather than model self-reported confidence or public benchmarks.
+
+### Consequences
+
+- T008 becomes the active anchor for measurable retrieval work.
+- T002 receives the first eval-case structure needed by the benchmark.
+- Advanced retrieval components remain deferred until measured failures justify them.
+- `templates/calibration-agent-trace.json` records the minimum evidence needed to diagnose answerability and failure class.
+
+### Affected Docs
+
+- `decisions/2026-08-01-avaloka-calibration-r1.md`
+- `PROJECT_PLAN.md`
+- `tasks/index.md`
+- `evals/avaloka-memory-reader-v0/`
+- `evals/avaloka-unknown-calibration-v0/`
+- `evals/avaloka-baifa-dharma-boundary-v0/`
+- `templates/calibration-agent-trace.json`
+
 ## 2026-07-26 — Create A Cross-Project Method Toolkit
 
 Status: Accepted

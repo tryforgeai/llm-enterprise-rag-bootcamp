@@ -1,0 +1,44 @@
+[project]
+name = "guardrails"
+version = "0.1.0"
+description = "guardrails"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "detoxify>=0.5.2",
+    "nltk>=3.9.3",
+    "ollama>=0.6.1",
+    "rag-to-riches",
+    "relevance-detector",
+    "spellchecker>=0.4",
+    "svlearn-bootcamp>=0.1.7",
+    "textblob>=0.19.0",
+    "wordfreq>=3.1.1",
+    "en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl",
+    "pyspellchecker>=0.9.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+# If you also build sdists and want data included:
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src",
+    "/tests",
+    # ... other includes like README, pyproject.toml, etc.
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/guardrails"]
+
+[tool.uv.sources]
+rag-to-riches = { path = "../../rag_to_riches", editable = true }
+relevance-detector = { path = "../relevance_detector", editable = true }

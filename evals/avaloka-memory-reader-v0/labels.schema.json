@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Avaloka Memory Reader V0 Eval Case",
+  "type": "object",
+  "required": [
+    "case_id",
+    "status",
+    "category",
+    "user_input",
+    "expected_decision",
+    "expected_memory_ids",
+    "graded_relevance",
+    "safety_and_memory_concerns",
+    "pass_criteria",
+    "fail_criteria"
+  ],
+  "properties": {
+    "case_id": { "type": "string", "pattern": "^amr-v0-(?:[0-9]{3}|labeled-[0-9]{3}|hardening-[0-9]{3})$" },
+    "source_case_id": { "type": "string" },
+    "status": { "type": "string", "enum": ["seed", "labeled", "held_out", "retired"] },
+    "category": {
+      "type": "string",
+      "enum": [
+        "factual-memory",
+        "hard-negative",
+        "no-match",
+        "stale-or-superseded",
+        "safety-priority",
+        "tone-or-preference",
+        "forbidden-or-private",
+        "partial-answer"
+      ]
+    },
+    "user_input": { "type": "string", "minLength": 1 },
+    "intent": { "type": "string" },
+    "risk_level": { "type": "string", "enum": ["low", "medium", "high", "crisis", "unknown"] },
+    "expected_decision": {
+      "type": "string",
+      "enum": ["answer", "ask", "abstain", "refuse", "escalate", "do_not_use_memory", "partial_answer"]
+    },
+    "expected_memory_ids": { "type": "array", "items": { "type": "string" } },
+    "forbidden_memory_ids": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "graded_relevance": {
+      "type": "object",
+      "additionalProperties": { "type": "integer", "minimum": 0, "maximum": 4 }
+    },
+    "answerability": { "type": "string", "enum": ["answerable", "partially_answerable", "unanswerable"] },
+    "safety_and_memory_concerns": { "type": "array", "items": { "type": "string" } },
+    "pass_criteria": { "type": "array", "items": { "type": "string" } },
+    "fail_criteria": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": false
+}

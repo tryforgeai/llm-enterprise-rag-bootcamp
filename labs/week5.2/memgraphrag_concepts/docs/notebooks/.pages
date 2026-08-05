@@ -1,0 +1,9 @@
+arrange:
+  - supportvectors-common.ipynb
+  - 01_memgraphrag_overview.ipynb
+  - 02_document_ingestion.ipynb
+  - 03_knowledge_extraction.ipynb
+  - 04_three_layer_memory.ipynb
+  - 05_memory_graph.ipynb
+  - 06_adjacency_matrix_ppr.ipynb
+  - 07_memory_guided_qa.ipynb

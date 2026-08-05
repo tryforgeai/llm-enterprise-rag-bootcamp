@@ -41,10 +41,10 @@ Close v0.1 after bringing course capture through Week 07 into one inspectable, m
 Immediate sequence:
 
 1. Complete the Week 07 capture and turn its metric demos into one real retrieval baseline.
-2. Create the first 10 agentic RAG eval cases.
-3. Define Avaloka memory scopes and use rules.
-4. Build the minimal runnable loop and save at least one canonical trace.
-5. Benchmark Avaloka Memory Reader V0.
+2. Execute **Avaloka Calibration R1**: build the first gold eval scaffold, unknown/abstention cases, and calibration trace contract.
+3. Benchmark Avaloka Memory Reader V0 against the labeled set.
+4. Define Avaloka memory scopes and use rules.
+5. Build the minimal runnable loop and save at least one canonical trace.
 6. Use measured failures to choose the smallest justified retrieval upgrade.
 
 Minimum loop:
@@ -57,6 +57,19 @@ question
 -> generate response
 -> save trace
 -> evaluate retrieval, decision, safety, and tone
+```
+
+Calibration R1 loop:
+
+```text
+Care Card eval case
+-> retrieve with Memory Reader V0
+-> score Recall@5 / MRR / nDCG@5
+-> decide answer / ask / abstain / refuse / escalate
+-> check Baifa / Dharma boundary expectations when relevant
+-> check claim grounding and unsupported personal-memory claims
+-> compute nonconformity signals
+-> trace the failure class before proposing architecture changes
 ```
 
 ## Non-Goals For Now

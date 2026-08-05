@@ -1,0 +1,96 @@
+{
+  "trace_schema": "avaloka-calibration-agent-trace-v0",
+  "trace_id": "",
+  "date": "",
+  "input": {
+    "user_text": "",
+    "redaction_status": "raw|redacted|synthetic",
+    "source": "manual_eval|fixture|production_sample"
+  },
+  "classification": {
+    "intent": "",
+    "risk_level": "low|medium|high|crisis|unknown",
+    "baifa_or_mind_state": [],
+    "dharma_boundary": [],
+    "memory_scope_allowed": "none|public|user_approved_care|sensitive_private|unknown",
+    "reason_codes": []
+  },
+  "retrieval": {
+    "query_text": "",
+    "reader_version": "memory-reader-v0",
+    "candidate_count": 0,
+    "selected_count": 0,
+    "candidates": [
+      {
+        "memory_id": "",
+        "rank": null,
+        "score": null,
+        "status": "active|stale|superseded|forbidden|unknown",
+        "scope": "public|user_approved_care|sensitive_private|forbidden|unknown",
+        "evidence_id": "",
+        "redacted_summary": ""
+      }
+    ],
+    "gold_labels_available": false,
+    "metrics": {
+      "recall_at_5": null,
+      "mrr": null,
+      "ndcg_at_5": null,
+      "no_match_precision": null,
+      "stale_retrieval_count": null,
+      "unsafe_or_private_retrieval_count": null,
+      "latency_ms": null
+    }
+  },
+  "decision": {
+    "action": "answer|ask|abstain|refuse|escalate|partial_answer|use_tool|unknown",
+    "reason_codes": [],
+    "expected_action": "",
+    "decision_good": null
+  },
+  "grounding": {
+    "claims": [
+      {
+        "claim_id": "",
+        "claim_text_redacted": "",
+        "claim_type": "personal_memory|factual|safety|preference|inference|other",
+        "support_status": "grounded|inferred|unknown|unsupported|contradicted",
+        "supporting_evidence_ids": [],
+        "max_entailment_score": null,
+        "notes": ""
+      }
+    ],
+    "unsupported_claim_count": 0,
+    "contradiction_count": 0,
+    "unsupported_personal_memory_claim_count": 0
+  },
+  "calibration": {
+    "nonconformity_score": null,
+    "threshold_version": "",
+    "answerability_bucket": "answerable|partially_answerable|unanswerable|unknown",
+    "signals": {
+      "retrieval_thinness": null,
+      "low_top_evidence_score": null,
+      "small_score_gap": null,
+      "unsupported_claim_ratio": null,
+      "stale_or_superseded_penalty": null,
+      "permission_scope_penalty": null,
+      "risk_level_penalty": null,
+      "contradiction_penalty": null
+    }
+  },
+  "output": {
+    "response_text_redacted": "",
+    "surface": "answer|helpful_abstention|safety_refusal|permission_refusal|escalation|clarifying_question",
+    "tone_good": null,
+    "privacy_good": null
+  },
+  "eval": {
+    "retrieval_good": null,
+    "decision_good": null,
+    "grounding_good": null,
+    "calibration_good": null,
+    "safety_good": null,
+    "follow_up": ""
+  }
+}
