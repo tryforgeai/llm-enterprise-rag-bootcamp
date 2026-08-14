@@ -58,3 +58,6 @@ course/**/.claude/
 
 # Week 09 OKF practice-card archives (extracted copies are committed)
 course/**/*.zip
+
+# Superseded drafts the author marked for deletion
+course/**/_to_delete/
