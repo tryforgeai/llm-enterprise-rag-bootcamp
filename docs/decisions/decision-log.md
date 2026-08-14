@@ -5,6 +5,7 @@ This file records accepted product, architecture, process, safety, and project-g
 If documents conflict, follow the newest accepted decision here, then update affected docs. Detailed decision files may also live in the root `decisions/` folder.
 
 ## 2026-08-01 — Make Avaloka Calibration R1 The Next Execution Slice
+## 2026-08-14 — Establish The First Measured Eval Baseline With A Deliberately Weak Retriever
 
 Status: Accepted
 
@@ -36,6 +37,62 @@ Avaloka's highest-risk failure is not low novelty; it is unsupported certainty o
 - `evals/avaloka-unknown-calibration-v0/`
 - `evals/avaloka-baifa-dharma-boundary-v0/`
 - `templates/calibration-agent-trace.json`
+
+Weeks 07, 08, and 09 taught retrieval evaluation, generator evaluation, and governed-corpus design across three full class sessions. Meanwhile `evals/` and `traces/` were still empty, and every remaining v0.1 exit criterion was blocked behind the missing eval set. The project was accumulating evaluation theory while having nothing of its own to evaluate.
+
+The architecture escalation rule in `PROJECT_PLAN.md` requires a named failure and a comparison baseline before any component is added. Without a baseline, that rule was unenforceable: no upgrade could be justified or refused on evidence.
+
+### Decision
+
+Build the first 10 agentic RAG eval cases against the existing Week 04 Xennials FactoidWiki index, and score them with a standard-library-only runner and a deliberately weak agent: BM25 retrieval and a rule-based decision function.
+
+Reject three tempting alternatives:
+
+- Waiting for a good retriever before writing evals. That inverts the dependency; the evals are what tell us which retriever is good.
+- Using dense retrieval as the baseline. It requires the classroom endpoint at `10.0.10.51`, which makes the baseline unreproducible off the course network.
+- Using BM25 score as the confidence signal. It is unbounded and corpus-relative, so it cannot be thresholded across cases. Use the fraction of question terms covered by the best retrieved record instead: bounded, interpretable, checkable by hand, and — as EV-006 proves — wrong in an instructive way.
+
+### Rationale
+
+A weak baseline that runs everywhere is worth more than a strong one that runs only in class. The value of the first baseline is not its score but the failures it names.
+
+### Consequences
+
+- Mean recall@5 0.333, nDCG@5 0.377, MRR 0.600, decision accuracy 0.900, safety pass rate 0.900, NRR 0.667, with 6 of 10 cases passing. These are now the numbers any upgrade must beat.
+- Three of the four failures are retrieval failures, which fixes the upgrade order: retrieval first, and still not GraphRAG. Dense retrieval is the first experiment to run, because the Week 04 index already carries the vectors and only the query-side endpoint is missing.
+- A verification pass caught two bugs before the numbers were trusted: an nDCG normalization error, and a label leak where the decision policy read the case file's own `min_distinct_evidence` field. Numeric pass bars are now enforced fields rather than prose, which moved the headline from 7 of 10 to 6 of 10. An eval harness gets evaluated too.
+- `traces/` is no longer empty. Each run writes one trace per case, satisfying that v0.1 exit criterion mechanically rather than by hand.
+- Generated text is still not scored. Week 08's FActScore, ECE, and RAGAS faithfulness need a model in the loop and remain unimplemented.
+- EV-009 stands in for Avaloka memory scoping but is not a substitute for T003.
+
+### Affected Docs
+
+- `evals/`
+- `traces/`
+- `README.md`, `PROJECT_PLAN.md`, `docs/product/version-roadmap.md`
+- `tasks/index.md`, `tasks/T002-first-agentic-rag-evals.md`, `tasks/T025`, `tasks/T026`
+
+## 2026-08-14 — Advance Governance Stage To Week 09
+
+Status: Accepted
+
+### Context
+
+`README.md`, `PROJECT_PLAN.md`, and `docs/product/version-roadmap.md` all described the course as active in Week 07 while Week 08 and Week 09 had already been taught and captured. Week 09's own material argues that a knowledge object which has changed since it was last verified is a governance failure; the project's governance docs were exactly that.
+
+### Decision
+
+Advance the stated stage to Week 09 without advancing the product version. v0.1 remains open because its agent-first exit criteria — memory scope policy, the runnable loop, and the Memory Reader benchmark — are still incomplete.
+
+### Consequences
+
+- Course capture and product version are explicitly decoupled, as they were for the Week 06 alignment decision.
+- The Week 04 and Week 05 note gap is now recorded in the roadmap rather than silently absent (T027).
+- Remaining v0.1 work shrinks to three items: T003 memory scopes, T004 runnable loop, T008 Memory Reader benchmark.
+
+### Affected Docs
+
+- `README.md`, `PROJECT_PLAN.md`, `docs/product/version-roadmap.md`, `tasks/index.md`
 
 ## 2026-07-26 — Create A Cross-Project Method Toolkit
 

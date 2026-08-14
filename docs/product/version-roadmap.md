@@ -9,10 +9,10 @@ This document defines current and future versions. If it conflicts with older pl
 | Field | Value |
 |---|---|
 | Version | v0.1 agent-first bootcamp scaffold |
-| Stage | active course / Week 07; evaluation baseline in progress |
+| Stage | active course / Week 09; first eval baseline measured |
 | Target user | Rosso building Avaloka AI with future agent assistance |
 | First use case | Minimal agentic RAG loop for Avaloka course learning |
-| Success criteria | Active docs and course artifacts are current through Week 07, while the first reusable trace, eval set, retrieval baseline, and Avaloka memory policy close the v0.1 agent-first loop. |
+| Success criteria | Active docs and course artifacts are current through Week 09, while the first reusable trace, eval set, retrieval baseline, and Avaloka memory policy close the v0.1 agent-first loop. |
 
 ### Current Progress Snapshot
 
@@ -20,7 +20,7 @@ Course execution has advanced beyond the original scaffold scope, but the versio
 
 Completed or materially demonstrated:
 
-- Week 01 through Week 07 learning capture, with Week 02, Week 06, and Week 07 follow-ups still open.
+- Week 01 through Week 09 learning capture, with Week 02, Week 06, Week 07, Week 08, and Week 09 lab follow-ups still open. Week 04 and Week 05 have artifacts but no written class note.
 - Week 03 representation experiments covering chunking, contextual chunks, page-image retrieval, text retrieval, and comparison tests.
 - Week 04 derived retrieval artifacts covering raw chunks, propositions, QA pairs, summaries, embeddings, and the Xennials FactoidWiki demo.
 - Week 05 graph-shaped learning artifacts.
@@ -31,10 +31,14 @@ Completed or materially demonstrated:
 - Cross-project method toolkit covering all methods taught or demonstrated
   through Week 07, with stable IDs, evidence links, maturity labels, and an
   adoption template.
+- Week 08 generator-evaluation capture (judge bias, FActScore, ECE, NRR, RAGAS faithfulness).
+- Week 09 Open Knowledge Format capture, OKF practice cards, and enterprise entitlement-pipeline notes.
+- First 10 agentic RAG eval cases plus a runnable, dependency-free baseline
+  runner measuring recall@5, nDCG@5, MRR, decision correctness, and safety
+  behavior over the Xennials FactoidWiki index (`evals/`).
 
 Still required to close v0.1:
 
-- Create the first 10 agentic RAG eval cases.
 - Define Avaloka memory scopes and use rules.
 - Save at least one canonical agent trace under `traces/`.
 - Turn the minimal agentic RAG plan into a runnable trace-and-eval loop.
@@ -43,7 +47,7 @@ Still required to close v0.1:
 ### In Scope
 
 - Agent-readable project scaffold.
-- Week 01 through Week 07 lecture, code, question, and application capture, including explicit follow-ups where live-class or eval evidence is incomplete.
+- Week 01 through Week 09 lecture, code, question, and application capture, including explicit follow-ups where live-class or eval evidence is incomplete.
 - Verified SupportVectors Python classroom environment.
 - Product vision and version governance.
 - Decision log and document gardening rules.
@@ -56,6 +60,9 @@ Still required to close v0.1:
 - Week 05 graph-shaped learning artifacts.
 - Week 06 guardrail, grounding, refusal, and humility architecture walkthroughs.
 - Week 07 retrieval and generation evaluation methods and runnable metric demos.
+- Week 08 generator evaluation and judge-calibration methods.
+- Week 09 Open Knowledge Format, governed corpus, and entitlement-pipeline methods.
+- First agentic RAG eval set and baseline runner.
 - Portable method catalog and project-adoption template.
 - Curriculum Weaver Lite Step 1 UI demo and Step 2 proposal.
 

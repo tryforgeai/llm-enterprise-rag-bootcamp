@@ -36,7 +36,7 @@ interface.
 
 ## Near-Term Milestone
 
-Close v0.1 after bringing course capture through Week 07 into one inspectable, measurable agentic RAG baseline.
+Close v0.1 after bringing course capture through Week 09 into one inspectable, measurable agentic RAG baseline.
 
 Immediate sequence:
 
@@ -45,7 +45,12 @@ Immediate sequence:
 3. Benchmark Avaloka Memory Reader V0 against the labeled set.
 4. Define Avaloka memory scopes and use rules.
 5. Build the minimal runnable loop and save at least one canonical trace.
-6. Use measured failures to choose the smallest justified retrieval upgrade.
+6. ~~Complete the Week 07/08/09 capture and turn the metric demos into one real retrieval baseline.~~ Done: `evals/` runs recall@5, nDCG@5, and MRR over the Xennials FactoidWiki index.
+7. ~~Create the first 10 agentic RAG eval cases.~~ Done: `evals/cases/`.
+8. Define Avaloka memory scopes and use rules.
+9. Build the minimal runnable loop and save at least one canonical trace.
+10. Benchmark Avaloka Memory Reader V0 against the same runner contract.
+11. Use measured failures to choose the smallest justified retrieval upgrade.
 
 Minimum loop:
 

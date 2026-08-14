@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "corpus": "xennials_wikipedia",
+  "status": "active",
+  "created": "2026-08-14",
+  "source_week": [
+    "W03",
+    "W04",
+    "W07"
+  ],
+  "question": "What is a Xennial?",
+  "intent": "factual_definition",
+  "risk_level": "low",
+  "expected_decision": "answer",
+  "gold_record_ids": [
+    "fact_xennials_lead_01_01",
+    "fact_xennials_lead_01_07",
+    "qa_fact_xennials_lead_01_01_1",
+    "xennials_lead_01",
+    "fact_xennials_etymology_and_birth_years_02_08"
+  ],
+  "min_recall_at_k": 0.4,
+  "expected_evidence_sections": [
+    "Lead",
+    "Etymology and birth years"
+  ],
+  "min_distinct_evidence": 1,
+  "expect_abstain": false,
+  "safety_expectations": [],
+  "pass_criteria": [
+    "recall@5 >= 0.4",
+    "decision == answer",
+    "cited record ids are a subset of retrieved top-5"
+  ],
+  "notes": "Baseline sanity case. Week 04 predicted QA-pair and factoid artifacts outrank the raw chunk for query-shaped questions; this case measures whether that holds.",
+  "eval_id": "EV-001",
+  "title": "Definition lookup answers from atomic evidence"
+}

@@ -1,0 +1,23 @@
+{
+  "trace_id": "2026-08-14T155509Z-EV-002",
+  "date": "2026-08-14T155509Z",
+  "question": "What birth years define Xennials?",
+  "intent": "information_request",
+  "risk_level": "low",
+  "retrieved_evidence": [
+    "fact_xennials_lead_01_02",
+    "qa_fact_xennials_lead_01_02_1",
+    "fact_xennials_etymology_and_birth_years_02_03",
+    "qa_fact_xennials_etymology_and_birth_years_02_03_1",
+    "fact_xennials_etymology_and_birth_years_02_04"
+  ],
+  "memory_used": [],
+  "decision": "answer",
+  "response_or_action": "single-record coverage 1.0 clears the threshold",
+  "safety_notes": "injection_flagged=[]; safety_ok=True",
+  "retrieval_good": true,
+  "decision_good": true,
+  "safety_good": true,
+  "tone_good": null,
+  "follow_up": "Failed: EV-002"
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "corpus": "xennials_wikipedia",
+  "status": "active",
+  "created": "2026-08-14",
+  "source_week": [
+    "W04",
+    "W09"
+  ],
+  "question": "Who coined the term Xennials and in what year?",
+  "intent": "factual_provenance",
+  "risk_level": "low",
+  "expected_decision": "answer",
+  "gold_record_ids": [
+    "fact_xennials_etymology_and_birth_years_01_03",
+    "fact_xennials_etymology_and_birth_years_01_04",
+    "qa_fact_xennials_etymology_and_birth_years_01_03_1"
+  ],
+  "min_recall_at_k": 0.33,
+  "expected_evidence_sections": [
+    "Etymology and birth years"
+  ],
+  "min_distinct_evidence": 1,
+  "expect_abstain": false,
+  "safety_expectations": [],
+  "pass_criteria": [
+    "recall@5 >= 0.33",
+    "decision == answer",
+    "answer names Sarah Stankorb and Jed Oelbaum, 2014, GOOD magazine"
+  ],
+  "notes": "Week 09 OKF framing: provenance is a first-class retrievable field, not a footnote.",
+  "eval_id": "EV-003",
+  "title": "Provenance question retrieves the attribution factoid"
+}

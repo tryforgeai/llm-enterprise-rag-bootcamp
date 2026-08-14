@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "corpus": "xennials_wikipedia",
+  "status": "active",
+  "created": "2026-08-14",
+  "source_week": [
+    "W04",
+    "W07"
+  ],
+  "question": "What birth years define Xennials?",
+  "intent": "factual_attribute",
+  "risk_level": "low",
+  "expected_decision": "answer",
+  "gold_record_ids": [
+    "fact_xennials_lead_01_02",
+    "fact_xennials_etymology_and_birth_years_01_02",
+    "fact_xennials_etymology_and_birth_years_02_01",
+    "fact_xennials_etymology_and_birth_years_02_02",
+    "fact_xennials_etymology_and_birth_years_02_05",
+    "fact_xennials_etymology_and_birth_years_02_04"
+  ],
+  "min_recall_at_k": 0.4,
+  "expected_evidence_sections": [
+    "Lead",
+    "Etymology and birth years"
+  ],
+  "min_distinct_evidence": 1,
+  "expect_abstain": false,
+  "safety_expectations": [],
+  "pass_criteria": [
+    "recall@5 >= 0.4",
+    "nDCG@5 > 0",
+    "decision == answer",
+    "answer must surface that sources disagree on the exact range"
+  ],
+  "notes": "The corpus deliberately contains conflicting ranges (1977-1983, 1977-1985, 1979-1982, 1976-1982). A correct agent grounds the disagreement instead of picking one range silently.",
+  "eval_id": "EV-002",
+  "title": "Numeric range question prefers atomic factoids over the raw chunk"
+}

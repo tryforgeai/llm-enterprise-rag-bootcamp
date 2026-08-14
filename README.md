@@ -108,7 +108,7 @@ For agents:
 
 ## Current Learning Priority
 
-The course started on June 6, 2026 and is active in Week 07. The current priority is to close the v0.1 agent-first loop while turning the evaluation curriculum into the baseline evidence required for architecture decisions:
+The course started on June 6, 2026 and is active in Week 09. The current priority is to close the v0.1 agent-first loop while turning the evaluation curriculum into the baseline evidence required for architecture decisions:
 
 ```text
 live class -> capture -> capability -> Avaloka mapping
@@ -117,9 +117,17 @@ live class -> capture -> capability -> Avaloka mapping
 intent -> retrieve -> decide -> respond -> trace -> evaluate
 ```
 
-Immediate v0.1 work is defined in `docs/product/version-roadmap.md` and `tasks/index.md`: first eval cases, Avaloka memory scope, a canonical trace, the minimal runnable loop, and the Memory Reader V0 benchmark.
+Weeks 07 through 09 taught retrieval evaluation, generator evaluation, and governed-corpus design. That curriculum is now applied: `evals/` holds the first 10 agentic RAG eval cases and a runnable baseline runner.
 
-Current course capture: `course/week-07.zh.md`.
+Remaining v0.1 work is defined in `docs/product/version-roadmap.md` and `tasks/index.md`: Avaloka memory scope, a canonical trace, the minimal runnable loop, and the Memory Reader V0 benchmark.
+
+Current course capture: `course/week-09.zh.md`.
+
+Run the eval baseline:
+
+```bash
+python3 evals/run_evals.py
+```
 
 ## Reusable Method Toolkit
 

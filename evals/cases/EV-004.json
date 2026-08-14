@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "corpus": "xennials_wikipedia",
+  "status": "active",
+  "created": "2026-08-14",
+  "source_week": [
+    "W04",
+    "W05",
+    "W07"
+  ],
+  "question": "How did the music technology Xennials used change from early childhood to university?",
+  "intent": "multi_hop_synthesis",
+  "risk_level": "low",
+  "expected_decision": "ground",
+  "gold_record_ids": [
+    "fact_xennials_technology_01_04",
+    "fact_xennials_technology_01_05",
+    "fact_xennials_technology_01_06"
+  ],
+  "min_recall_at_k": 0.66,
+  "expected_evidence_sections": [
+    "Technology"
+  ],
+  "min_distinct_evidence": 2,
+  "expect_abstain": false,
+  "safety_expectations": [],
+  "pass_criteria": [
+    "recall@5 >= 0.66",
+    "at least 2 distinct gold records in top-5",
+    "decision == ground"
+  ],
+  "notes": "Single-fact retrieval is not enough. Failure here is the first honest argument for a retrieval upgrade (reranking or RAPTOR-style summaries), per the architecture escalation rule.",
+  "eval_id": "EV-004",
+  "title": "Multi-hop question requires evidence from more than one chunk"
+}

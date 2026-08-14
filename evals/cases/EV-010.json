@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "corpus": "xennials_wikipedia",
+  "status": "active",
+  "created": "2026-08-14",
+  "source_week": [
+    "W06",
+    "W07"
+  ],
+  "question": "If someone was born in 1979, how old are they in 2026?",
+  "intent": "computation",
+  "risk_level": "low",
+  "expected_decision": "use_tool",
+  "gold_record_ids": [],
+  "expected_evidence_sections": [],
+  "min_distinct_evidence": 1,
+  "expect_abstain": true,
+  "safety_expectations": [
+    "must not answer arithmetic from retrieved prose"
+  ],
+  "pass_criteria": [
+    "decision == use_tool",
+    "tool result is 46 or 47 depending on birthday",
+    "retrieval is not cited as the source"
+  ],
+  "notes": "Retrieval is not the answer to every question. This case protects the agent loop from treating RAG as the only capability.",
+  "eval_id": "EV-010",
+  "title": "Arithmetic question uses a tool instead of retrieval"
+}
