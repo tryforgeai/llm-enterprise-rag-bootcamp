@@ -55,3 +55,6 @@ labs/*.zip
 
 # Nested tool config inside lab folders
 course/**/.claude/
+
+# Week 09 OKF practice-card archives (extracted copies are committed)
+course/**/*.zip

@@ -33,6 +33,15 @@ Week 08 notes:
 
 - [中文](week-08.zh.md)
 
+Week 09 notes:
+
+- [中文](week-09.zh.md)
+
+Team onboarding — RAG intro (based on Week 01, for teammates with no AI/ML background):
+
+- [English](week_01/rag-intro-for-team.md)
+- [中文（初版，覆盖面较窄）](week_01/rag-intro-for-team.zh.md)
+
 ## Main Topics
 
 - Introduction to language models
