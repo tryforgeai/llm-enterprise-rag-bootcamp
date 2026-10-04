@@ -2,11 +2,11 @@
 type: Metric
 title: FActScore
 description: Breaks an answer into atomic, no-further-decomposable facts and verifies each one independently, reporting factual precision — finer-grained than RAGAS Faithfulness.
-resource: course/week-08.zh.md
+resource: course/week_08/week-08.zh.md
 tags: [generation, hallucination, week-08, claim-level]
 sources:
   - id: week08-notes
-    resource: course/week-08.zh.md
+    resource: course/week_08/week-08.zh.md
     author: agent-generated-notes
   - id: factscore-paper
     resource: "Min et al. 2023, FActScore (EMNLP)"

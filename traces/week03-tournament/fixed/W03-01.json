@@ -1,0 +1,122 @@
+{
+  "run": "fixed",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-01",
+    "family": "definitional",
+    "title": "EM algorithm definition",
+    "question": "What is the expectation maximization algorithm?",
+    "intent": "factual_definition",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "9.3 AnAlternative View of EM",
+      "9.4 The EM Algorithm in General"
+    ],
+    "min_recall_at_k": 0.1,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "recall@k >= 0.1"
+    ],
+    "notes": "Baseline sanity. Prose-heavy exposition; every arm should clear this. A miss here means the pipeline is broken, not that chunking is interesting."
+  },
+  "gold_pages": [
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471
+  ],
+  "result": {
+    "eval_id": "W03-01",
+    "family": "definitional",
+    "question": "What is the expectation maximization algorithm?",
+    "passed": false,
+    "error_type": "ok",
+    "abstained": false,
+    "retrieved_pages": [
+      467,
+      185,
+      745,
+      452,
+      742
+    ],
+    "retrieved_sections": [
+      "9.3 AnAlternative View of EM",
+      "3.5 The Evidence Approximation",
+      "back-matter Index",
+      "9.2 Mixtures of Gaussians",
+      "back-matter Index"
+    ],
+    "recall_at_k": 0.0625,
+    "hit_at_k": true,
+    "mrr": 1.0,
+    "ndcg_at_k": 0.3392,
+    "gold_pages": 16,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 2,
+    "units_read": 5,
+    "confidence": 1.0
+  },
+  "evidence": [
+    {
+      "chunk_id": "fixed-01819",
+      "pages": [
+        467
+      ],
+      "section": "9.3 AnAlternative View of EM",
+      "score": 11.1266,
+      "preview": "450 9.MIXTURE MODELS AND EM\n1\nαnew = (9.67)\ni m2\ni\n+Σii\n(cid:5)\n(βnew)−1\n=\n(cid:5)t−ΦmN(cid:5)2+β−1 iγi\n(9.68)\nN\nThese re-estimation equations are formally equivalent to those obtained by direct\nExercise 9.23 maxmization"
+    },
+    {
+      "chunk_id": "fixed-00704",
+      "pages": [
+        185
+      ],
+      "section": "3.5 The Evidence Approximation",
+      "score": 10.6422,
+      "preview": "ndasafunctionofwtypicallyhasastronglyskewedmodesothattheLaplace\napproximationfailstocapturethebulkoftheprobabilitymass,leading to poor er re-\nsultsthanthoseobtainedbymaximizingtheevidence(MacKay,1999).\nReturn ing to the "
+    },
+    {
+      "chunk_id": "fixed-02930",
+      "pages": [
+        745
+      ],
+      "section": "back-matter Index",
+      "score": 10.0368,
+      "preview": "see maximization step Metropolis-Hastings algorithm,541"
+    },
+    {
+      "chunk_id": "fixed-01761",
+      "pages": [
+        452
+      ],
+      "section": "9.2 Mixtures of Gaussians",
+      "score": 9.6864,
+      "preview": "icability and which will lay  er ence techniques in Chapter10.\n9.2.2 EM for Gaussian mixtures\nAn ele ga nt and powerful method for finding maximum likelihood solutions for\nmodels with latent variables is called the expec"
+    },
+    {
+      "chunk_id": "fixed-02916",
+      "pages": [
+        742
+      ],
+      "section": "back-matter Index",
+      "score": 9.6823,
+      "preview": "ive model,43,203 expectation step,437\ndistortion measure,424 explainingaway,378\ndistributivelawofmultiplication,396 exploitation,3\nDNA,610 exploration,3\nd  les,490\ndynamicprogramming,411\ndynamical system,548 facedetectio"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "run": "contextual",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-03",
+    "family": "definitional",
+    "title": "Gaussian processes",
+    "question": "What is a Gaussian process and how is it used for regression?",
+    "intent": "factual_definition",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "6.4 Gaussian Processes"
+    ],
+    "min_recall_at_k": 0.1,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "recall@k >= 0.1"
+    ],
+    "notes": "Long section (23 pages). Recall is structurally capped by gold size; read hit@k and MRR alongside it."
+  },
+  "gold_pages": [
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338
+  ],
+  "result": {
+    "eval_id": "W03-03",
+    "family": "definitional",
+    "question": "What is a Gaussian process and how is it used for regression?",
+    "passed": true,
+    "error_type": "ok",
+    "abstained": false,
+    "retrieved_pages": [
+      322,
+      326,
+      328,
+      365,
+      329
+    ],
+    "retrieved_sections": [
+      "6.4 Gaussian Processes",
+      "6.4 Gaussian Processes",
+      "6.4 Gaussian Processes",
+      "7.2 Relevance Vector Machines",
+      "6.4 Gaussian Processes"
+    ],
+    "recall_at_k": 0.2222,
+    "hit_at_k": true,
+    "mrr": 1.0,
+    "ndcg_at_k": 0.8539,
+    "gold_pages": 18,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 6,
+    "confidence": 1.0
+  },
+  "evidence": [
+    {
+      "chunk_id": "contextual-01234",
+      "pages": [
+        322
+      ],
+      "section": "6.4 Gaussian Processes",
+      "score": 13.0052,
+      "preview": "ent to Gaussian processes have be  np ro ce ss regression\nisknownaskriging(Cressie,1993). Similarly,ARMA(autoregressivemovingaver-\nage)models,Kalmanfilters,and radial basis function networks can all be viewed as\nforms of"
+    },
+    {
+      "chunk_id": "contextual-01249",
+      "pages": [
+        326
+      ],
+      "section": "6.4 Gaussian Processes",
+      "score": 11.634,
+      "preview": "ion with mean and covariance\ngivenby\nm(xN+1) =k TC− N1 t (6.66)\nσ2(xN+1) =c −kTC− N1k. (6.67)\nThese are the key results that define Gaussian process regres  onisaGaussianwhosemeanandvariancebothdependonxN+1. Anexampleof\n"
+    },
+    {
+      "chunk_id": "contextual-01255",
+      "pages": [
+        328
+      ],
+      "section": "6.4 Gaussian Processes",
+      "score": 11.4695,
+      "preview": "310 6.KERNELMETHODS\nFigure6.7 Illustration of the mechanism of\nGaussian process regression for t2\nthe case of one training point and\none test point, in which the red el-\nlipsesshowcontoursofthejointdis-\ntribution p(t 1,t"
+    },
+    {
+      "chunk_id": "contextual-01403",
+      "pages": [
+        365
+      ],
+      "section": "7.2 Relevance Vector Machines",
+      "score": 11.3872,
+      "preview": "egr  ecome increasingly certain of its predictions when extrapolating outside\nthe do ma in of the data(RasmussenandQuin˜onero-Candela,2005),whichofcourse\nSection6.4.2 is undesirable. The predictive distribution in Gaussi"
+    },
+    {
+      "chunk_id": "contextual-01258",
+      "pages": [
+        329
+      ],
+      "section": "6.4 Gaussian Processes",
+      "score": 11.2973,
+      "preview": "6.4.Gaussian Processes 311\nsian process regression have also been considered, for purposes such as modelling\nthe distribution over low-dimensional manifolds for unsupervised learning (Bishop\netal.,1998a)and the solution "
+    }
+  ]
+}

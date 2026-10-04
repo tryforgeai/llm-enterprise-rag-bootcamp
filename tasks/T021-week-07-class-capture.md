@@ -10,7 +10,7 @@ Capture Week 07 material on evaluating RAG systems from retrieval to reasoning: 
 
 ## Working File
 
-`course/week-07.zh.md`
+`course/week_07/week-07.zh.md`
 
 ## Source
 

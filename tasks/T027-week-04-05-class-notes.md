@@ -22,7 +22,7 @@ Week 05 matters for the opposite reason: it is the graph week, and `PROJECT_PLAN
 
 ## Done Criteria
 
-- `course/week-04.zh.md` and `course/week-05.zh.md` exist and follow `templates/weekly-note.md`.
+- `course/week_04/week-04.zh.md` and `course/week_05/week-05.zh.md` exist and follow `templates/weekly-note.md`.
 - Each answers the five README questions, especially "what agent capability does this unlock".
 - Week 04's note states the artifact-comparison hypothesis and links to the EV-001 result as the first measurement of it.
 - `course/00-course-overview.md` links both.

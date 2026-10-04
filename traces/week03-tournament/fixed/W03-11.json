@@ -1,0 +1,126 @@
+{
+  "run": "fixed",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-11",
+    "family": "equation_dependent",
+    "title": "EM update equations",
+    "question": "Write the E step and M step update equations for a Gaussian mixture model",
+    "intent": "equation_lookup",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "9.2 Mixtures of Gaussians",
+      "9.3 AnAlternative View of EM"
+    ],
+    "min_recall_at_k": 0.1,
+    "min_distinct_evidence": 2,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "distinct gold sections covered >= 2"
+    ],
+    "notes": "Equation-dense pages parse to near-garbage ('MstepEvaluate', '(cid:2)'). Measures how much of the text arms' loss is chunking and how much is extraction."
+  },
+  "gold_pages": [
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467
+  ],
+  "result": {
+    "eval_id": "W03-11",
+    "family": "equation_dependent",
+    "question": "Write the E step and M step update equations for a Gaussian mixture model",
+    "passed": false,
+    "error_type": "partial_coverage",
+    "abstained": false,
+    "retrieved_pages": [
+      567,
+      476,
+      473,
+      595,
+      455
+    ],
+    "retrieved_sections": [
+      "11.5 The Hybrid Monte Carlo Algorithm",
+      "back-matter Exercises",
+      "back-matter Exercises",
+      "12.2 Probabilistic PCA",
+      "9.2 Mixtures of Gaussians"
+    ],
+    "recall_at_k": 0.05,
+    "hit_at_k": true,
+    "mrr": 0.2,
+    "ndcg_at_k": 0.1312,
+    "gold_pages": 20,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 2,
+    "units_read": 5,
+    "confidence": 0.8333
+  },
+  "evidence": [
+    {
+      "chunk_id": "fixed-02219",
+      "pages": [
+        567
+      ],
+      "section": "11.5 The Hybrid Monte Carlo Algorithm",
+      "score": 19.4143,
+      "preview": "(τ +(cid:14)/2)− ((cid:1)z(τ +(cid:14))). (11.66)\n2∂zi\nWeseethatthistakestheformofahalf-step update of the moment um variables with\nstepsize(cid:14)/2,followedbyafull-step update of the position variables with step size("
+    },
+    {
+      "chunk_id": "fixed-01857",
+      "pages": [
+        476
+      ],
+      "section": "back-matter Exercises",
+      "score": 17.4974,
+      "preview": "Exercises 459\n9.25 ((cid:12)) www Show that the lower bound L(q,θ) given by (9.71), with q(Z) =\np(Z|X,θ(old) ),has the same gradient withrespecttoθas the log likelihood function\nlnp(X|θ)atthepointθ =θ(old) .\n9.26 ((cid:1"
+    },
+    {
+      "chunk_id": "fixed-01845",
+      "pages": [
+        473
+      ],
+      "section": "back-matter Exercises",
+      "score": 14.3094,
+      "preview": "456 9.MIXTURE MODELS AND EM\n9.3 ((cid:12)) www Con side ra Gaussian mixture model in which the marginal distribution\np(z)for the latent variable isgivenby(9.10),and the conditional distributionp(x|z)\nfor the observed var"
+    },
+    {
+      "chunk_id": "fixed-02333",
+      "pages": [
+        595
+      ],
+      "section": "12.2 Probabilistic PCA",
+      "score": 14.1975,
+      "preview": "CA then becomes\nΩ=(  These equations have as im ple\ninterpretation asfollows. From our earlier discussion,we see that th eE step involves\nan orthogonal projection of the data points on to the current estimate for the pri"
+    },
+    {
+      "chunk_id": "fixed-01771",
+      "pages": [
+        455
+      ],
+      "section": "9.2 Mixtures of Gaussians",
+      "score": 13.8762,
+      "preview": "438 9.MIXTURE MODELS AND EM\nGaussian components are shown as blue and red circles. Plot (b) shows the result\nof the in it ia lE step, inwhicheachdatapointisdepictedusingaproportionofblue\nink equal to the posterior probab"
+    }
+  ]
+}

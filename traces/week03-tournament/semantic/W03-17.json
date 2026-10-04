@@ -1,0 +1,113 @@
+{
+  "run": "semantic",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-17",
+    "family": "definition_use_chain",
+    "title": "Kernel functions",
+    "question": "What is a kernel function and what rules let you construct new kernels from existing ones?",
+    "intent": "definition_use_chain",
+    "risk_level": "medium",
+    "expected_decision": "ground",
+    "gold_sections": [
+      "6.1 Dual Represent at ions",
+      "6.2 Construct ing Kernels"
+    ],
+    "min_recall_at_k": 0.2,
+    "min_distinct_evidence": 2,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "distinct gold sections covered >= 2"
+    ],
+    "notes": "Both gold sections are tiny (2 and 4 pages) and both titles are parser-damaged. Tests whether small gold spans are findable at all."
+  },
+  "gold_pages": [
+    311,
+    312,
+    313,
+    314,
+    315,
+    316
+  ],
+  "result": {
+    "eval_id": "W03-17",
+    "family": "definition_use_chain",
+    "question": "What is a kernel function and what rules let you construct new kernels from existing ones?",
+    "passed": true,
+    "error_type": "ok",
+    "abstained": false,
+    "retrieved_pages": [
+      312,
+      338,
+      313,
+      314,
+      315
+    ],
+    "retrieved_sections": [
+      "6.1 Dual Represent at ions",
+      "6.4 Gaussian Processes",
+      "6.2 Construct ing Kernels",
+      "6.2 Construct ing Kernels",
+      "6.2 Construct ing Kernels"
+    ],
+    "recall_at_k": 0.6667,
+    "hit_at_k": true,
+    "mrr": 1.0,
+    "ndcg_at_k": 0.786,
+    "gold_pages": 6,
+    "gold_sections_covered": 2,
+    "gold_sections_total": 2,
+    "units_read": 5,
+    "confidence": 0.625
+  },
+  "evidence": [
+    {
+      "chunk_id": "semantic-00590",
+      "pages": [
+        312
+      ],
+      "section": "6.1 Dual Represent at ions",
+      "score": 18.8035,
+      "preview": "Constructing Kernels\nIn order to exploit kernel substitution, we need to be able to construct valid kernel\nfunctions. One approach is to choose a feature space map  x,x(cid:4) )=φ(x)Tφ(x(cid:4)\n)=\nφi(x)φi(x(cid:4)\n) (6.1"
+    },
+    {
+      "chunk_id": "semantic-00642",
+      "pages": [
+        338
+      ],
+      "section": "6.4 Gaussian Processes",
+      "score": 17.9152,
+      "preview": "Exercises\n6.1 ((cid:12)(cid:12)) www Consider the dual formulation of the least squares linear regression\nproblem given in Section 6.1. Show that the solution for the components an of\nthe vector a can be expressed as a l"
+    },
+    {
+      "chunk_id": "semantic-00592",
+      "pages": [
+        313
+      ],
+      "section": "6.2 Construct ing Kernels",
+      "score": 17.3431,
+      "preview": "6.2.Construct ing Kernels 295\n1 1 1\n0.5 0.75 0.75\n0 0.5 0.5\n−0.5 0.25 0.25\n−1 0 0\n−1 0 1 −1 0 1 −1 0 1\n0.04 0.04 0.04\n0.02 0.02 0.02\n0 0 0\n−1 0 1 −1 0 1 −1 0 1\nFigure 6.1 Illustration of the construction of kernel functi"
+    },
+    {
+      "chunk_id": "semantic-00594",
+      "pages": [
+        313,
+        314
+      ],
+      "section": "6.2 Construct ing Kernels",
+      "score": 14.4255,
+      "preview": "A\nnecessaryandsufficientconditionforafunctionk(x,x(cid:4))to be av al id kernel(Shawe-\nTaylor and Cristianini,2004)isthattheGrammatrixK,whose elements are givenby\nk(xn,xm), should be positive semidefinite for all possibl"
+    },
+    {
+      "chunk_id": "semantic-00595",
+      "pages": [
+        314,
+        315
+      ],
+      "section": "6.2 Construct ing Kernels",
+      "score": 13.4268,
+      "preview": "Similarly,k(x,x(cid:4))= xTx(cid:4) M\ncontains all monomials of order M. For instance, if x and x(cid:4) are two images, then\nthekernelrepresentsaparticularweightedsumofallpossibleproductsofM pixe  :4)) = xTx(cid:4)+c M\n"
+    }
+  ]
+}

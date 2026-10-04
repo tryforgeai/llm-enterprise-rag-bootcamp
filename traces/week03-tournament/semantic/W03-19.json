@@ -1,0 +1,94 @@
+{
+  "run": "semantic",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-19",
+    "family": "scope_condition",
+    "title": "When Laplace approximation fails",
+    "question": "When does the Laplace approximation give a poor approximation to the posterior?",
+    "intent": "conditional_claim",
+    "risk_level": "high",
+    "expected_decision": "ground",
+    "gold_sections": [
+      "4.4 The Laplace Approximation"
+    ],
+    "min_recall_at_k": 0.25,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "recall@k >= 0.25"
+    ],
+    "notes": "Four-page gold section. The limitations are stated as qualifications on an otherwise positive presentation, so a chunk that keeps only the method description inverts the answer."
+  },
+  "gold_pages": [
+    231,
+    232,
+    233,
+    234
+  ],
+  "result": {
+    "eval_id": "W03-19",
+    "family": "scope_condition",
+    "question": "When does the Laplace approximation give a poor approximation to the posterior?",
+    "passed": true,
+    "error_type": "weak_ranking",
+    "abstained": false,
+    "retrieved_pages": [
+      235,
+      236,
+      371,
+      372,
+      232
+    ],
+    "retrieved_sections": [
+      "4.5 Bayesian Logistic Regression",
+      "4.5 Bayesian Logistic Regression",
+      "7.2 Relevance Vector Machines",
+      "7.2 Relevance Vector Machines",
+      "4.4 The Laplace Approximation"
+    ],
+    "recall_at_k": 0.25,
+    "hit_at_k": true,
+    "mrr": 0.2,
+    "ndcg_at_k": 0.151,
+    "gold_pages": 4,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 3,
+    "confidence": 0.75
+  },
+  "evidence": [
+    {
+      "chunk_id": "semantic-00446",
+      "pages": [
+        235,
+        236
+      ],
+      "section": "4.5 Bayesian Logistic Regression",
+      "score": 17.7011,
+      "preview": "We can use the result(4.137)toobtainamoreaccuratees  on\nWe now turn to a Bayesian treatment of logistic regression. Exact Bayesian infer-\nence for logistic regression is intractable. In particular, evaluation of the post"
+    },
+    {
+      "chunk_id": "semantic-00706",
+      "pages": [
+        371,
+        372
+      ],
+      "section": "7.2 Relevance Vector Machines",
+      "score": 17.4052,
+      "preview": "We begin by initializing the hyperparameter vector α. For this given value of\nα,wethenbuildaGaussianapproximationtotheposterior  α,and the process is\nrepeated until convergence. Let us consider the Laplace approximation "
+    },
+    {
+      "chunk_id": "semantic-00438",
+      "pages": [
+        232,
+        233
+      ],
+      "section": "4.4 The Laplace Approximation",
+      "score": 16.5249,
+      "preview": "her words the\nstationary point z 0 must be a local maximum, so that the second derivative off(z)\natthepointz 0 isnegative. 4.4.The Laplace Approximation 215\n0.8 40\n0.6 30\n0.4 20\n0.2 10\n0 0\n−2 −1 0 1 2 3 4 −2 −1 0 1 2 3 4"
+    }
+  ]
+}

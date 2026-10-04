@@ -1,0 +1,111 @@
+{
+  "run": "fixed",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-06",
+    "family": "definitional",
+    "title": "Curse of dimensionality",
+    "question": "What is the curse of dimensionality?",
+    "intent": "factual_definition",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "1.4 TheCurseofDimensionality"
+    ],
+    "min_recall_at_k": 0.2,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "recall@k >= 0.2"
+    ],
+    "notes": "Six-page gold section, distinctive vocabulary. Should be the easiest case in the set for every arm."
+  },
+  "gold_pages": [
+    52,
+    53,
+    54,
+    55,
+    56,
+    57
+  ],
+  "result": {
+    "eval_id": "W03-06",
+    "family": "definitional",
+    "question": "What is the curse of dimensionality?",
+    "passed": false,
+    "error_type": "ok",
+    "abstained": false,
+    "retrieved_pages": [
+      56,
+      609,
+      149,
+      581,
+      577
+    ],
+    "retrieved_sections": [
+      "1.4 TheCurseofDimensionality",
+      "12.4 Nonlinear Latent Variable Models",
+      "back-matter Exercises",
+      "12.1 Principal Component Analysis",
+      "12.1 Principal Component Analysis"
+    ],
+    "recall_at_k": 0.1667,
+    "hit_at_k": true,
+    "mrr": 1.0,
+    "ndcg_at_k": 0.3392,
+    "gold_pages": 6,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 5,
+    "confidence": 1.0
+  },
+  "evidence": [
+    {
+      "chunk_id": "fixed-00207",
+      "pages": [
+        56
+      ],
+      "section": "1.4 TheCurseofDimensionality",
+      "score": 11.5026,
+      "preview": "1.4.TheCurseofDimensionality 37\nFigure1.22 Plot of the fraction of the volume of\nas ph er el yi ng in the ra ng er=1−(cid:7)\nto r = 1 for various values of the\ndimensionalityD.\n(cid:9)\nnoitcarf\nemulov\n1\nD=20\n0.8 D=5\nD=2\n"
+    },
+    {
+      "chunk_id": "fixed-02387",
+      "pages": [
+        609
+      ],
+      "section": "12.4 Nonlinear Latent Variable Models",
+      "score": 5.3658,
+      "preview": "of weights which lead in to the hidden units in Figure12.18\nformabasissetwhichspanstheprincipalsubspace. Note,however,thatthesevec-\ntors need not be orthogonalor normalized. This result is unsurprising, since both\nprinci"
+    },
+    {
+      "chunk_id": "fixed-00561",
+      "pages": [
+        149
+      ],
+      "section": "back-matter Exercises",
+      "score": 5.3508,
+      "preview": "ria  sgivenbytheGaussian(2.43).\n2.15 ((cid:12)(cid:12)) Show that the entropy of the multivariate Gauss ia nN(x|µ,Σ)isgivenby\n1 D\nH[x]= ln|Σ|+ (1+ln(2π)) (2.283)\n2 2\nwhere Dis the dimensionality ofx."
+    },
+    {
+      "chunk_id": "fixed-02275",
+      "pages": [
+        581
+      ],
+      "section": "12.1 Principal Component Analysis",
+      "score": 5.235,
+      "preview": "s no dimensionality reduction but simply a rotation of the\ncoordinateaxestoalignwithprincipalcomponents.\nFinally,it is worth noting that there exist sa close ly related linear dimensionality\nreduction technique  ariables"
+    },
+    {
+      "chunk_id": "fixed-02260",
+      "pages": [
+        577
+      ],
+      "section": "12.1 Principal Component Analysis",
+      "score": 5.1788,
+      "preview": " variance formulation\nConsider a data set of observations {xn} where n = 1,...,N, and xn is a\nEuclidean variable with dimensionality D. Our goal is to project the  assume that the value of M is given. Later in this"
+    }
+  ]
+}

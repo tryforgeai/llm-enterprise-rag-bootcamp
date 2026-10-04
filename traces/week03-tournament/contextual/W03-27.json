@@ -1,0 +1,101 @@
+{
+  "run": "contextual",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-27",
+    "family": "hard_negative",
+    "title": "Variational autoencoder",
+    "question": "What is a variational autoencoder and how is it trained with the reparameterization trick?",
+    "intent": "factual_definition",
+    "risk_level": "high",
+    "expected_decision": "refuse",
+    "gold_sections": [],
+    "min_recall_at_k": 0.0,
+    "min_distinct_evidence": 0,
+    "expect_abstain": true,
+    "pass_criteria": [
+      "decision == refuse"
+    ],
+    "notes": "Chapter 10 is entirely about variational methods, so this question looks answerable to any similarity-based gate. The distinguishing term is 'autoencoder', which PRML does not use in this sense."
+  },
+  "gold_pages": [],
+  "result": {
+    "eval_id": "W03-27",
+    "family": "hard_negative",
+    "question": "What is a variational autoencoder and how is it trained with the reparameterization trick?",
+    "passed": true,
+    "error_type": "ok",
+    "abstained": true,
+    "retrieved_pages": [
+      500,
+      672,
+      355,
+      295,
+      275
+    ],
+    "retrieved_sections": [
+      "10.2 Illustration: Variational Mixture of Gaussians",
+      "14.3 Boosting",
+      "7.1 Maximum Margin Classifiers",
+      "5.7 Bayesian NeuralNetworks",
+      "5.5 Regularization in NeuralNetworks"
+    ],
+    "recall_at_k": 0.0,
+    "hit_at_k": false,
+    "mrr": 0.0,
+    "ndcg_at_k": 0.0,
+    "gold_pages": 0,
+    "gold_sections_covered": 0,
+    "gold_sections_total": 0,
+    "units_read": 7,
+    "confidence": 0.4
+  },
+  "evidence": [
+    {
+      "chunk_id": "contextual-01950",
+      "pages": [
+        500
+      ],
+      "section": "10.2 Illustration: Variational Mixture of Gaussians",
+      "score": 8.7091,
+      "preview": "484 10.APPROXIMATE INFERENCE\nFigure10.7 Plot of the variational lowerbound\nL versus the number K of com-\nponents in the Gaussian mixture\nmodel, for the Old Faithful data,\nshowing a distinct peak at K =\n2 components. For "
+    },
+    {
+      "chunk_id": "contextual-02643",
+      "pages": [
+        672
+      ],
+      "section": "14.3 Boosting",
+      "score": 8.3151,
+      "preview": "t is only slightly better than random,andhence  The principal difference between boosting and the committee methods such as\nbagging discussed above, is that the base classifiers are trained in sequence, and\neach base cla"
+    },
+    {
+      "chunk_id": "contextual-01362",
+      "pages": [
+        355
+      ],
+      "section": "7.1 Maximum Margin Classifiers",
+      "score": 7.8941,
+      "preview": ". Variousme  ik,1998)istoconstructK separateSVMs,\ninwhichthekth modelyk(x)is trained using the data from classC k asthepositive\nexamplesandthedatafromtheremainingK −1classes as the negative examples.\nThis is known as the"
+    },
+    {
+      "chunk_id": "contextual-01125",
+      "pages": [
+        295
+      ],
+      "section": "5.7 Bayesian NeuralNetworks",
+      "score": 6.8518,
+      "preview": "5.7.Bayesian NeuralNetworks 277\nwhere we have used (5.148). Because a standard network trained by least squares\nis approximating the conditional mean, we see that a mixture density network can\nreproduce the conventional "
+    },
+    {
+      "chunk_id": "contextual-01046",
+      "pages": [
+        275
+      ],
+      "section": "5.5 Regularization in NeuralNetworks",
+      "score": 6.7402,
+      "preview": "5.5.Regularization in NeuralNetworks 257\n1 M =1 1 M =3 1 M =10\n0 0 0\n−1 −1 −1\n0 1 0 1 0 1\nFigure5.9 Examplesoftwo-layer networks trained on10data points drawn from the sinusoidal data set. The\ngraphs show the result of f"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "run": "semantic",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-06",
+    "family": "definitional",
+    "title": "Curse of dimensionality",
+    "question": "What is the curse of dimensionality?",
+    "intent": "factual_definition",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "1.4 TheCurseofDimensionality"
+    ],
+    "min_recall_at_k": 0.2,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "recall@k >= 0.2"
+    ],
+    "notes": "Six-page gold section, distinctive vocabulary. Should be the easiest case in the set for every arm."
+  },
+  "gold_pages": [
+    52,
+    53,
+    54,
+    55,
+    56,
+    57
+  ],
+  "result": {
+    "eval_id": "W03-06",
+    "family": "definitional",
+    "question": "What is the curse of dimensionality?",
+    "passed": true,
+    "error_type": "ok",
+    "abstained": false,
+    "retrieved_pages": [
+      55,
+      56,
+      553,
+      554,
+      581
+    ],
+    "retrieved_sections": [
+      "1.4 TheCurseofDimensionality",
+      "1.4 TheCurseofDimensionality",
+      "11.2 Markov Chain Monte Carlo",
+      "11.2 Markov Chain Monte Carlo",
+      "12.1 Principal Component Analysis"
+    ],
+    "recall_at_k": 0.3333,
+    "hit_at_k": true,
+    "mrr": 1.0,
+    "ndcg_at_k": 0.5531,
+    "gold_pages": 6,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 3,
+    "confidence": 1.0
+  },
+  "evidence": [
+    {
+      "chunk_id": "semantic-00102",
+      "pages": [
+        55,
+        56
+      ],
+      "section": "1.4 TheCurseofDimensionality",
+      "score": 11.7396,
+      "preview": "The severe difficulty that can arise in spaces of many dimensions is sometimes\ncalledthecurseofdimensionality(Bellman,1961). Inthisbook,weshallmakeex-\ntensiveuseofillustrativeexamplesinvolvinginputspacesofoneortwodimensi"
+    },
+    {
+      "chunk_id": "semantic-01055",
+      "pages": [
+        553,
+        554
+      ],
+      "section": "11.2 Markov Chain Monte Carlo",
+      "score": 5.1273,
+      "preview": "Markov Chain Monte Carlo\nIn the previous section, we discussed the rejection sampling and importance sam-\nplingstrategiesforevaluatingexpectationsoffunctions,and we saw that they suffer\nfrom severe limitations particular"
+    },
+    {
+      "chunk_id": "semantic-01115",
+      "pages": [
+        581
+      ],
+      "section": "12.1 Principal Component Analysis",
+      "score": 4.9547,
+      "preview": "Although we have considered M < D, the PCA analysis still holds if M =\nD, in which case there is no dimensionality reduction but simply a rotation of the\ncoordinateaxestoalignwithprincipalcomponents. Finally,it is worth "
+    }
+  ]
+}

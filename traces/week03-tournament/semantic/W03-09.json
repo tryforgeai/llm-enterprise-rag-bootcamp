@@ -1,0 +1,94 @@
+{
+  "run": "semantic",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-09",
+    "family": "figure_dependent",
+    "title": "K-means on Old Faithful",
+    "question": "Scatter plot of the Old Faithful data set coloured by K-means cluster assignment",
+    "intent": "figure_lookup",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "9.1 K-means Clustering"
+    ],
+    "min_recall_at_k": 0.15,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true"
+    ],
+    "notes": "The data set name appears in the caption and in Appendix A. A retriever that lands in the appendix instead of section 9.1 has found the word, not the figure."
+  },
+  "gold_pages": [
+    442,
+    443,
+    444,
+    445,
+    446,
+    447
+  ],
+  "result": {
+    "eval_id": "W03-09",
+    "family": "figure_dependent",
+    "question": "Scatter plot of the Old Faithful data set coloured by K-means cluster assignment",
+    "passed": true,
+    "error_type": "ok",
+    "abstained": false,
+    "retrieved_pages": [
+      442,
+      443,
+      444,
+      445,
+      460
+    ],
+    "retrieved_sections": [
+      "9.1 K-means Clustering",
+      "9.1 K-means Clustering",
+      "9.1 K-means Clustering",
+      "9.1 K-means Clustering",
+      "9.3 AnAlternative View of EM"
+    ],
+    "recall_at_k": 0.6667,
+    "hit_at_k": true,
+    "mrr": 1.0,
+    "ndcg_at_k": 0.8688,
+    "gold_pages": 6,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 3,
+    "confidence": 0.6
+  },
+  "evidence": [
+    {
+      "chunk_id": "semantic-00848",
+      "pages": [
+        442,
+        443,
+        444
+      ],
+      "section": "9.1 K-means Clustering",
+      "score": 26.5068,
+      "preview": "Forthisreason,theprocedure\nisknownastheK-meansalgorithm. The two ph as es of re-assigning data points to clusters and re-computingtheclus-\ntermeansarerepeatedinturnuntilthereisnofurtherchangeintheassignments(or\nuntil som"
+    },
+    {
+      "chunk_id": "semantic-00852",
+      "pages": [
+        445
+      ],
+      "section": "9.1 K-means Clustering",
+      "score": 22.4376,
+      "preview": "k\nOne notable feature of the K-means algorithm is that at each iteration, every\ndata  e may be other data points that lie roughly midway between cluster centres. In\nthe latter case, it is not clear that the hard assignme"
+    },
+    {
+      "chunk_id": "semantic-00881",
+      "pages": [
+        460
+      ],
+      "section": "9.3 AnAlternative View of EM",
+      "score": 22.1293,
+      "preview": "First we choose some initial values for the param-\netersµold,Σold andπold,andusethesetoevaluatetheresponsibilities(theEstep). Wethenkeeptheresponsibilitiesfixedandmaximize(9.40)withrespecttoµ k,Σk\nand πk (the M step). Th"
+    }
+  ]
+}

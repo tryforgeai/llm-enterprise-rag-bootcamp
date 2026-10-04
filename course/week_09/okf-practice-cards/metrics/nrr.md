@@ -2,11 +2,11 @@
 type: Metric
 title: NRR (Negative Rejection Rate)
 description: 用语料回答不了的问题去测系统会不会诚实地拒答，而不是从参数记忆里编一个听起来合理的答案。
-resource: course/week-08.zh.md
+resource: course/week_08/week-08.zh.md
 tags: [abstention, guardrail-adjacent, week-08, cognitive-humility]
 sources:
   - id: week08-notes
-    resource: course/week-08.zh.md
+    resource: course/week_08/week-08.zh.md
     author: agent-generated-notes
   - id: rgb-paper
     resource: "Chen et al. 2024, RGB (AAAI)"

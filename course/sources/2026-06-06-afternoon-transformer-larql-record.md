@@ -12,7 +12,7 @@ Source:
 
 Canonical synthesized notes:
 
-- [Week 01](../week-01.md)
+- [Week 01](../week_01/week-01.md)
 
 Related research note:
 

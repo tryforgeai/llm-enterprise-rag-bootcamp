@@ -1,0 +1,115 @@
+{
+  "run": "fixed",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-04",
+    "family": "definitional",
+    "title": "PCA",
+    "question": "What is principal component analysis?",
+    "intent": "factual_definition",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "12.1 Principal Component Analysis"
+    ],
+    "min_recall_at_k": 0.15,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "recall@k >= 0.15"
+    ],
+    "notes": "Short query, one dominant section. Closest analogue in this set to EV-001 in the main eval: few content words, so lexical ranking has little to work with."
+  },
+  "gold_pages": [
+    577,
+    578,
+    579,
+    580,
+    581,
+    582,
+    583,
+    584,
+    585,
+    586
+  ],
+  "result": {
+    "eval_id": "W03-04",
+    "family": "definitional",
+    "question": "What is principal component analysis?",
+    "passed": true,
+    "error_type": "ok",
+    "abstained": false,
+    "retrieved_pages": [
+      577,
+      609,
+      17,
+      579,
+      585
+    ],
+    "retrieved_sections": [
+      "12.1 Principal Component Analysis",
+      "12.4 Nonlinear Latent Variable Models",
+      "unmapped",
+      "12.1 Principal Component Analysis",
+      "12.1 Principal Component Analysis"
+    ],
+    "recall_at_k": 0.3,
+    "hit_at_k": true,
+    "mrr": 1.0,
+    "ndcg_at_k": 0.6164,
+    "gold_pages": 10,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 6,
+    "confidence": 1.0
+  },
+  "evidence": [
+    {
+      "chunk_id": "fixed-02258",
+      "pages": [
+        577
+      ],
+      "section": "12.1 Principal Component Analysis",
+      "score": 15.4327,
+      "preview": "as the use of EM for parameter estimation,\nprincipled extensions to mixtures of PCA models, and Bayesian formulations that\nallowthenumberofprincip  -Gaussian assumption including non-Gaussian latent vari-\nables, which le"
+    },
+    {
+      "chunk_id": "fixed-02388",
+      "pages": [
+        609
+      ],
+      "section": "12.4 Nonlinear Latent Variable Models",
+      "score": 14.6548,
+      "preview": " by using nonlinear(sigmoidal)a  s again given by the projection onto the principal component\nsubspace(BourlardandKamp,1988). There is therefore no advantage in using two-\nlayer neuralnetworks to perform dimensionality r"
+    },
+    {
+      "chunk_id": "fixed-00052",
+      "pages": [
+        17
+      ],
+      "section": "unmapped",
+      "score": 14.247,
+      "preview": ".  . . . . 556\n12 Continuous Latent Variables 559\n12.1 Principal Component Analysis . . . . . . . . . . . . . . . . . . . . 561\n12.1.1 Maximum variance formulation . . . . . . . . . . . . . . . 561\n12.1.2 Minimum-error f"
+    },
+    {
+      "chunk_id": "fixed-02264",
+      "pages": [
+        579
+      ],
+      "section": "12.1 Principal Component Analysis",
+      "score": 12.9386,
+      "preview": "12.1.Principal Component Analysis 563\namongst all possible directions orthogonal to those already considered. If we con-\nsiderthegeneralcaseofanM-dimensional projection space,the optimal linear pro-\njectionforwhichthevar"
+    },
+    {
+      "chunk_id": "fixed-02286",
+      "pages": [
+        585
+      ],
+      "section": "12.1 Principal Component Analysis",
+      "score": 12.0746,
+      "preview": "12.1.Principal Component Analysis 569\nFigure12.7 A comparison of principal compo-\nnent analysis with Fisher’s linear\n1.5\ndiscriminant for linear dimension-\nality reduction. Here the data in 1\ntwo dimensions, belonging to"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "run": "contextual",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-11",
+    "family": "equation_dependent",
+    "title": "EM update equations",
+    "question": "Write the E step and M step update equations for a Gaussian mixture model",
+    "intent": "equation_lookup",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "9.2 Mixtures of Gaussians",
+      "9.3 AnAlternative View of EM"
+    ],
+    "min_recall_at_k": 0.1,
+    "min_distinct_evidence": 2,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "distinct gold sections covered >= 2"
+    ],
+    "notes": "Equation-dense pages parse to near-garbage ('MstepEvaluate', '(cid:2)'). Measures how much of the text arms' loss is chunking and how much is extraction."
+  },
+  "gold_pages": [
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467
+  ],
+  "result": {
+    "eval_id": "W03-11",
+    "family": "equation_dependent",
+    "question": "Write the E step and M step update equations for a Gaussian mixture model",
+    "passed": false,
+    "error_type": "definition_orphan",
+    "abstained": false,
+    "retrieved_pages": [
+      567,
+      501,
+      476,
+      493,
+      595
+    ],
+    "retrieved_sections": [
+      "11.5 The Hybrid Monte Carlo Algorithm",
+      "10.2 Illustration: Variational Mixture of Gaussians",
+      "back-matter Exercises",
+      "10.2 Illustration: Variational Mixture of Gaussians",
+      "12.2 Probabilistic PCA"
+    ],
+    "recall_at_k": 0.0,
+    "hit_at_k": false,
+    "mrr": 0.0,
+    "ndcg_at_k": 0.0,
+    "gold_pages": 20,
+    "gold_sections_covered": 0,
+    "gold_sections_total": 2,
+    "units_read": 5,
+    "confidence": 0.8333
+  },
+  "evidence": [
+    {
+      "chunk_id": "contextual-02219",
+      "pages": [
+        567
+      ],
+      "section": "11.5 The Hybrid Monte Carlo Algorithm",
+      "score": 20.9221,
+      "preview": "(τ +(cid:14)/2)− ((cid:1)z(τ +(cid:14))). (11.66)\n2∂zi\nWeseethatthistakestheformofahalf-step update of the moment um variables with\nstepsize(cid:14)/2,followedbyafull-step update of the position variables with step size("
+    },
+    {
+      "chunk_id": "contextual-01955",
+      "pages": [
+        501
+      ],
+      "section": "10.2 Illustration: Variational Mixture of Gaussians",
+      "score": 19.4901,
+      "preview": ".5 Induced factorizations\nIn deriving these variational update equations for the Gaussian mixture model,\nwe assumed a particular factorization of the variational posterio  by the product of an\nindependent distributionq(c"
+    },
+    {
+      "chunk_id": "contextual-01857",
+      "pages": [
+        476
+      ],
+      "section": "back-matter Exercises",
+      "score": 18.0209,
+      "preview": "Exercises 459\n9.25 ((cid:12)) www Show that the lower bound L(q,θ) given by (9.71), with q(Z) =\np(Z|X,θ(old) ),has the same gradient withrespecttoθas the log likelihood function\nlnp(X|θ)atthepointθ =θ(old) .\n9.26 ((cid:1"
+    },
+    {
+      "chunk_id": "contextual-01922",
+      "pages": [
+        493
+      ],
+      "section": "10.2 Illustration: Variational Mixture of Gaussians",
+      "score": 17.6412,
+      "preview": "pect\nto the distributions of other variables, and so again the variational update equations\nare coupled and must be solved iteratively.\nAtthispoint,weshallfinditconvenienttodef  (10.52)\nNk\nn=1\n(cid:2)N\n1\nSk = rnk(xn−xk)("
+    },
+    {
+      "chunk_id": "contextual-02333",
+      "pages": [
+        595
+      ],
+      "section": "12.2 Probabilistic PCA",
+      "score": 16.8909,
+      "preview": "CA then becomes\nΩ=(  These equations have as im ple\ninterpretation asfollows. From our earlier discussion,we see that th eE step involves\nan orthogonal projection of the data points on to the current estimate for the pri"
+    }
+  ]
+}

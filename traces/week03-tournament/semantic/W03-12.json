@@ -1,0 +1,122 @@
+{
+  "run": "semantic",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-12",
+    "family": "equation_dependent",
+    "title": "Multivariate Gaussian density",
+    "question": "What is the form of the multivariate Gaussian density and its normalization constant?",
+    "intent": "equation_lookup",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "2.3 The Gaussian Distribution"
+    ],
+    "min_recall_at_k": 0.06,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true"
+    ],
+    "notes": "34-page gold section, the largest in the set. Recall is heavily capped; this case is about MRR and hit@k."
+  },
+  "gold_pages": [
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131
+  ],
+  "result": {
+    "eval_id": "W03-12",
+    "family": "equation_dependent",
+    "question": "What is the form of the multivariate Gaussian density and its normalization constant?",
+    "passed": true,
+    "error_type": "weak_ranking",
+    "abstained": false,
+    "retrieved_pages": [
+      155,
+      99,
+      100,
+      102,
+      103
+    ],
+    "retrieved_sections": [
+      "back-matter Exercises",
+      "2.3 The Gaussian Distribution",
+      "2.3 The Gaussian Distribution",
+      "2.3 The Gaussian Distribution",
+      "2.3 The Gaussian Distribution"
+    ],
+    "recall_at_k": 0.1176,
+    "hit_at_k": true,
+    "mrr": 0.5,
+    "ndcg_at_k": 0.6608,
+    "gold_pages": 34,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 3,
+    "confidence": 0.8333
+  },
+  "evidence": [
+    {
+      "chunk_id": "semantic-00281",
+      "pages": [
+        155
+      ],
+      "section": "back-matter Exercises",
+      "score": 16.516,
+      "preview": "2.56 ((cid:12)(cid:12)) www Express the beta d  ters. 2.57 ((cid:12)) Verify that the multivariate Gaussian distribution can be cast in exponential\nfamilyform(2.194)and derive expressions forη,u(x),h(x)andg(η)analogousto"
+    },
+    {
+      "chunk_id": "semantic-00189",
+      "pages": [
+        99,
+        100
+      ],
+      "section": "2.3 The Gaussian Distribution",
+      "score": 15.8335,
+      "preview": "Forming\nthevectory =(y 1,...,yD)T,wehave\ny =U(x−µ) (2.52) 2.3.The Gaussian Distribution 81\nFigure2.7 Theredcurveshowstheellip-\nx2\nu2\ntic al surface of constant proba-\nbility density fora Gaussian in\na two-dimensional spa"
+    },
+    {
+      "chunk_id": "semantic-00193",
+      "pages": [
+        102,
+        103
+      ],
+      "section": "2.3 The Gaussian Distribution",
+      "score": 13.0536,
+      "preview": "(2.64)\nBecause the parameter matrix Σ governs the covariance of x under the Gaussian\ndistribution,it is called the covariance matrix. Although the Gaussian distribution (2.43) is widely u  ariance matrix Σ will have D(D "
+    }
+  ]
+}

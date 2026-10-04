@@ -20,7 +20,7 @@ it passes that domain's own held-out evaluation.
 - Use when: onboarding a language/domain or diagnosing broken chunk boundaries.
 - Measure: token count, unknown/fragmentation rate, retrieval changes by language.
 - Failure signal: names, code, Tibetan, or domain terms split beyond usefulness.
-- Evidence: `resources/notebook-methods-kb.md`, `course/week-02.zh.md`.
+- Evidence: `resources/notebook-methods-kb.md`, `course/week_02/week-02.zh.md`.
 - Maturity: `demo`.
 
 ### F02 — Softmax and temperature
@@ -32,7 +32,7 @@ it passes that domain's own held-out evaluation.
 - Use when: explaining attention, sampling, or contrastive objectives.
 - Measure: entropy, calibration, factuality, answer variance.
 - Failure signal: treating decoding temperature as factual confidence.
-- Evidence: `resources/notebook-methods-kb.md`, `course/week-02.zh.md`.
+- Evidence: `resources/notebook-methods-kb.md`, `course/week_02/week-02.zh.md`.
 - Maturity: `demo`.
 
 ### F03 — Dense embeddings and similarity diagnostics
@@ -142,7 +142,7 @@ it passes that domain's own held-out evaluation.
   cross-section answers.
 - Measure: local/global query Recall and grounding against token/index cost.
 - Failure signal: recursive summaries compound omissions or unsupported claims.
-- Evidence: `course/week-01.md`, `course/week-01.zh.md`.
+- Evidence: `course/week_01/week-01.md`, `course/week_01/week-01.zh.md`.
 - Maturity: `concept`.
 
 ## Indexing and retrieval
@@ -205,7 +205,7 @@ it passes that domain's own held-out evaluation.
 - Measure: candidate Recall, post-rerank nDCG/MRR, latency and cost.
 - Failure signal: a reranker is blamed when the relevant document never entered
   the candidate set.
-- Evidence: `course/week-01.md`, `course/week_07/rerank_eval_demo.py`.
+- Evidence: `course/week_01/week-01.md`, `course/week_07/rerank_eval_demo.py`.
 - Maturity: `demo`.
 
 ### I06 — Semantic cache
@@ -217,7 +217,7 @@ it passes that domain's own held-out evaluation.
 - Use when: traffic analysis proves repeated safe requests.
 - Measure: hit rate, false-hit rate, latency/cost saved, stale-answer rate.
 - Failure signal: cross-user memory leakage or reuse after evidence/policy changes.
-- Evidence: `course/week-01.md`, `course/week-01.zh.md`.
+- Evidence: `course/week_01/week-01.md`, `course/week_01/week-01.zh.md`.
 - Maturity: `concept`.
 
 ## Query processing
@@ -270,7 +270,7 @@ it passes that domain's own held-out evaluation.
 - Measure: Recall/nDCG lift, drift rate, duplicate candidates, added cost.
 - Failure signal: generated queries introduce assumptions not present in the
   user's request.
-- Evidence: `course/week-01.md`, `course/week-01.zh.md`.
+- Evidence: `course/week_01/week-01.md`, `course/week_01/week-01.zh.md`.
 - Maturity: `concept`.
 
 ## Graph retrieval
@@ -404,7 +404,7 @@ it passes that domain's own held-out evaluation.
 - Failure signal: a single arbitrary similarity threshold is called
   "confidence."
 - Evidence: `course/week_06/guardrailed_rag_pipeline_demo.py`,
-  `course/week-06.zh.md`.
+  `course/week_06/week-06.zh.md`.
 - Maturity: `demo`.
 
 ## Evaluation
@@ -417,7 +417,7 @@ it passes that domain's own held-out evaluation.
 - Use when: before upgrading retrieval or generation.
 - Measure: coverage by intent, difficulty, risk, source and time.
 - Failure signal: generated test questions mirror the system that will be tested.
-- Evidence: `course/week-07.zh.md`, `templates/eval-case.md`.
+- Evidence: `course/week_07/week-07.zh.md`, `templates/eval-case.md`.
 - Maturity: `concept`.
 
 ### E02 — Precision@K and Recall@K
@@ -429,7 +429,7 @@ it passes that domain's own held-out evaluation.
 - Use when: diagnosing first-stage retrieval.
 - Measure: both metrics by query slice; never report one alone.
 - Failure signal: incomplete relevance judgments make Recall meaningless.
-- Evidence: `course/week-07.zh.md`.
+- Evidence: `course/week_07/week-07.zh.md`.
 - Maturity: `demo`.
 
 ### E03 — MRR and MAP
@@ -442,7 +442,7 @@ it passes that domain's own held-out evaluation.
 - Measure: MRR/MAP with confidence intervals.
 - Failure signal: MRR hides all relevant documents after the first.
 - Evidence: `course/week_07/rerank_eval_demo.py`,
-  `course/week-07.zh.md`.
+  `course/week_07/week-07.zh.md`.
 - Maturity: `demo`.
 
 ### E04 — DCG and nDCG
@@ -486,7 +486,7 @@ it passes that domain's own held-out evaluation.
 - Use when: choosing between retrieval variants.
 - Measure: statistical confidence, nDCG/Recall delta, latency and cost delta.
 - Failure signal: declaring victory from an unpaired average increase.
-- Evidence: `course/week-07.zh.md`.
+- Evidence: `course/week_07/week-07.zh.md`.
 - Maturity: `concept`.
 
 ### E08 — Grounding, citation, and judge evaluation
@@ -497,7 +497,7 @@ it passes that domain's own held-out evaluation.
 - Use when: generated answers are evaluated.
 - Measure: claim precision/recall, citation correctness, Cohen's kappa.
 - Failure signal: the same model generates and judges without calibration.
-- Evidence: `course/week-07.zh.md`,
+- Evidence: `course/week_07/week-07.zh.md`,
   `labs/beyond_rag_week_6_lab_1/response_grounding/`.
 - Maturity: `integrated`.
 
@@ -510,7 +510,7 @@ it passes that domain's own held-out evaluation.
 - Use when: the application returns varied evidence or takes multiple actions.
 - Measure: diversity-aware relevance, ECE, abstention coverage, step success.
 - Failure signal: optimizing one aggregate score until behavior degrades.
-- Evidence: `course/week-07.zh.md`, `templates/agent-trace.json`.
+- Evidence: `course/week_07/week-07.zh.md`, `templates/agent-trace.json`.
 - Maturity: `concept`.
 
 ## Agent and adaptive-learning loops
@@ -564,7 +564,7 @@ it passes that domain's own held-out evaluation.
   latency.
 - Failure signal: arbitrary SQL, write access, or hidden tool errors are passed
   directly to the user.
-- Evidence: `course/week-01.md`, `course/week-01.zh.md`.
+- Evidence: `course/week_01/week-01.md`, `course/week_01/week-01.zh.md`.
 - Maturity: `concept`.
 
 ## Selection Ladder

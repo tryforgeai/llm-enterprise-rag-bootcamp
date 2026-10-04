@@ -1,0 +1,131 @@
+{
+  "run": "contextual",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-23",
+    "family": "cross_section",
+    "title": "Sum-product and max-sum",
+    "question": "How are the sum-product and max-sum algorithms related?",
+    "intent": "comparison",
+    "risk_level": "medium",
+    "expected_decision": "ground",
+    "gold_sections": [
+      "8.4 Inference in Graphical Models"
+    ],
+    "min_recall_at_k": 0.06,
+    "min_distinct_evidence": 2,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "at least 2 distinct gold pages"
+    ],
+    "notes": "Both algorithms live in one 32-page section, so this tests within-section dispersion rather than cross-section retrieval."
+  },
+  "gold_pages": [
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435
+  ],
+  "result": {
+    "eval_id": "W03-23",
+    "family": "cross_section",
+    "question": "How are the sum-product and max-sum algorithms related?",
+    "passed": true,
+    "error_type": "ok",
+    "abstained": false,
+    "retrieved_pages": [
+      430,
+      428,
+      76,
+      429,
+      419
+    ],
+    "retrieved_sections": [
+      "8.4 Inference in Graphical Models",
+      "8.4 Inference in Graphical Models",
+      "1.6 Information Theory",
+      "8.4 Inference in Graphical Models",
+      "8.4 Inference in Graphical Models"
+    ],
+    "recall_at_k": 0.1538,
+    "hit_at_k": true,
+    "mrr": 1.0,
+    "ndcg_at_k": 0.8304,
+    "gold_pages": 26,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 5,
+    "confidence": 0.8
+  },
+  "evidence": [
+    {
+      "chunk_id": "contextual-01666",
+      "pages": [
+        430
+      ],
+      "section": "8.4 Inference in Graphical Models",
+      "score": 22.3229,
+      "preview": "8.4.Inference in Graphical Models 413\nthe results (8.66) and (8.69) derived earlier for the sum-product algorithm, we can\nreadily write down the max-sum algorithm in terms of message passing simply by\nreplacing‘sum’with‘"
+    },
+    {
+      "chunk_id": "contextual-01658",
+      "pages": [
+        428
+      ],
+      "section": "8.4 Inference in Graphical Models",
+      "score": 20.4964,
+      "preview": "iently find marginals over the component variables. Two\nother common tasks are to find a setting of the variables that has the largest prob-\nab  f that probability. These can be addressed through a\nclose ly related algor"
+    },
+    {
+      "chunk_id": "contextual-00294",
+      "pages": [
+        76
+      ],
+      "section": "1.6 Information Theory",
+      "score": 20.0101,
+      "preview": "n the variables x and y. From the\nproperties o  t. Using the sum and product rules of\nprobability, we see that the mutual information is related to the conditional entropy\nExercise 1.41 through\nI[x,y]=H[x]−H[x|y]=H[y]−H["
+    },
+    {
+      "chunk_id": "contextual-01662",
+      "pages": [
+        429
+      ],
+      "section": "8.4 Inference in Graphical Models",
+      "score": 18.5442,
+      "preview": "412 8.GRAPHICAL MODELS\nwhere M is the total number of variables, and then substitute for p(x) using its\nexpansion in terms of a product of factors. In deriving the sum-product algorithm,\nwemadeuseofthedistributivelaw(8.5"
+    },
+    {
+      "chunk_id": "contextual-01625",
+      "pages": [
+        419
+      ],
+      "section": "8.4 Inference in Graphical Models",
+      "score": 17.7492,
+      "preview": "espond to any conditional\nindependence properties.\n8.4.4 The sum-product algorithm\nWeshallnowmakeuseofthefactorgraphframeworktoderiveapowerfulclass\nofe  ts of nodes, which will lead us to the sum-product algorithm. Later"
+    }
+  ]
+}

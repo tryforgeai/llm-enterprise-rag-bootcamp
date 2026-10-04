@@ -2,11 +2,11 @@
 type: Metric
 title: RAGAS Faithfulness
 description: Breaks a generated answer into individual claims and entailment-checks each one against the retrieved context, reporting the fraction of claims that are actually supported.
-resource: course/week-08.zh.md
+resource: course/week_08/week-08.zh.md
 tags: [generation, ragas, week-08, faithfulness]
 sources:
   - id: week08-notes
-    resource: course/week-08.zh.md
+    resource: course/week_08/week-08.zh.md
     author: agent-generated-notes
   - id: ragas-paper
     resource: "Es et al. 2023, RAGAS"

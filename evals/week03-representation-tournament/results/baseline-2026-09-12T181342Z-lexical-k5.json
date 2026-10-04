@@ -1,0 +1,2727 @@
+{
+  "run_id": "2026-09-12T181342Z",
+  "corpus": "PRML (749 pages)",
+  "encoder": "lexical",
+  "k": 5,
+  "abstain_threshold": 0.6,
+  "judge": false,
+  "cases": 27,
+  "arms": [
+    {
+      "arm": "fixed",
+      "encoder": "lexical-bm25",
+      "units": 2944,
+      "cases_passed": 14,
+      "cases_total": 27,
+      "mean_recall_at_k": 0.1766,
+      "hit_rate_at_k": 0.8696,
+      "mean_mrr": 0.6841,
+      "mean_ndcg_at_k": 0.4219,
+      "mean_units_read": 5.3333,
+      "negative_rejection_rate": 0.75,
+      "error_types": {
+        "ok": 14,
+        "over_abstain": 5,
+        "weak_ranking": 4,
+        "definition_orphan": 1,
+        "partial_coverage": 2,
+        "over_answer": 1
+      },
+      "by_family": {
+        "cross_section": {
+          "cases": 3,
+          "passed": 1,
+          "mean_recall_at_k": 0.2102,
+          "hit_rate_at_k": 1.0
+        },
+        "definition_use_chain": {
+          "cases": 3,
+          "passed": 1,
+          "mean_recall_at_k": 0.2667,
+          "hit_rate_at_k": 1.0
+        },
+        "definitional": {
+          "cases": 6,
+          "passed": 3,
+          "mean_recall_at_k": 0.1391,
+          "hit_rate_at_k": 0.8333
+        },
+        "equation_dependent": {
+          "cases": 4,
+          "passed": 2,
+          "mean_recall_at_k": 0.091,
+          "hit_rate_at_k": 1.0
+        },
+        "figure_dependent": {
+          "cases": 4,
+          "passed": 3,
+          "mean_recall_at_k": 0.2708,
+          "hit_rate_at_k": 0.75
+        },
+        "hard_negative": {
+          "cases": 4,
+          "passed": 3,
+          "mean_recall_at_k": 0.0,
+          "hit_rate_at_k": 0.0
+        },
+        "scope_condition": {
+          "cases": 3,
+          "passed": 1,
+          "mean_recall_at_k": 0.1167,
+          "hit_rate_at_k": 0.6667
+        }
+      },
+      "cases": [
+        {
+          "eval_id": "W03-01",
+          "family": "definitional",
+          "question": "What is the expectation maximization algorithm?",
+          "passed": false,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            467,
+            185,
+            745,
+            452,
+            742
+          ],
+          "retrieved_sections": [
+            "9.3 AnAlternative View of EM",
+            "3.5 The Evidence Approximation",
+            "back-matter Index",
+            "9.2 Mixtures of Gaussians",
+            "back-matter Index"
+          ],
+          "recall_at_k": 0.0625,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.3392,
+          "gold_pages": 16,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 2,
+          "units_read": 5,
+          "confidence": 1.0
+        },
+        {
+          "eval_id": "W03-02",
+          "family": "definitional",
+          "question": "How does error backpropagation compute gradients in a neural network?",
+          "passed": false,
+          "error_type": "over_abstain",
+          "abstained": true,
+          "retrieved_pages": [
+            277,
+            307,
+            302,
+            303,
+            293
+          ],
+          "retrieved_sections": [
+            "5.5 Regularization in NeuralNetworks",
+            "back-matter Exercises",
+            "5.7 Bayesian NeuralNetworks",
+            "back-matter Exercises",
+            "5.6 Mixture Density Networks"
+          ],
+          "recall_at_k": 0.0,
+          "hit_at_k": false,
+          "mrr": 0.0,
+          "ndcg_at_k": 0.0,
+          "gold_pages": 8,
+          "gold_sections_covered": 0,
+          "gold_sections_total": 1,
+          "units_read": 5,
+          "confidence": 0.5
+        },
+        {
+          "eval_id": "W03-03",
+          "family": "definitional",
+          "question": "What is a Gaussian process and how is it used for regression?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            322,
+            326,
+            328,
+            365,
+            324
+          ],
+          "retrieved_sections": [
+            "6.4 Gaussian Processes",
+            "6.4 Gaussian Processes",
+            "6.4 Gaussian Processes",
+            "7.2 Relevance Vector Machines",
+            "6.4 Gaussian Processes"
+          ],
+          "recall_at_k": 0.2222,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.8539,
+          "gold_pages": 18,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 5,
+          "confidence": 1.0
+        },
+        {
+          "eval_id": "W03-04",
+          "family": "definitional",
+          "question": "What is principal component analysis?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            577,
+            609,
+            17,
+            579,
+            585
+          ],
+          "retrieved_sections": [
+            "12.1 Principal Component Analysis",
+            "12.4 Nonlinear Latent Variable Models",
+            "unmapped",
+            "12.1 Principal Component Analysis",
+            "12.1 Principal Component Analysis"
+          ],
+          "recall_at_k": 0.3,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.6164,
+          "gold_pages": 10,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 6,
+          "confidence": 1.0
+        },
+        {
+          "eval_id": "W03-05",
+          "family": "definitional",
+          "question": "What is a hidden Markov model?",
+          "passed": true,
+          "error_type": "weak_ranking",
+          "abstained": false,
+          "retrieved_pages": [
+            663,
+            664,
+            659,
+            630,
+            644
+          ],
+          "retrieved_sections": [
+            "back-matter Exercises",
+            "back-matter Exercises",
+            "13.3 Linear Dynamical Systems",
+            "13.2 Hidden Markov Models",
+            "13.2 Hidden Markov Models"
+          ],
+          "recall_at_k": 0.0833,
+          "hit_at_k": true,
+          "mrr": 0.25,
+          "ndcg_at_k": 0.2773,
+          "gold_pages": 24,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 6,
+          "confidence": 1.0
+        },
+        {
+          "eval_id": "W03-06",
+          "family": "definitional",
+          "question": "What is the curse of dimensionality?",
+          "passed": false,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            56,
+            609,
+            149,
+            581,
+            577
+          ],
+          "retrieved_sections": [
+            "1.4 TheCurseofDimensionality",
+            "12.4 Nonlinear Latent Variable Models",
+            "back-matter Exercises",
+            "12.1 Principal Component Analysis",
+            "12.1 Principal Component Analysis"
+          ],
+          "recall_at_k": 0.1667,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.3392,
+          "gold_pages": 6,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 5,
+          "confidence": 1.0
+        },
+        {
+          "eval_id": "W03-07",
+          "family": "figure_dependent",
+          "question": "Show the graphical model plate diagram for a mixture of Gaussians with latent variables",
+          "passed": false,
+          "error_type": "definition_orphan",
+          "abstained": false,
+          "retrieved_pages": [
+            618,
+            491,
+            507,
+            575,
+            534
+          ],
+          "retrieved_sections": [
+            "back-matter Exercises",
+            "10.2 Illustration: Variational Mixture of Gaussians",
+            "10.4 Exponential Family Distributions",
+            "back-matter Exercises",
+            "back-matter Exercises"
+          ],
+          "recall_at_k": 0.0,
+          "hit_at_k": false,
+          "mrr": 0.0,
+          "ndcg_at_k": 0.0,
+          "gold_pages": 8,
+          "gold_sections_covered": 0,
+          "gold_sections_total": 1,
+          "units_read": 6,
+          "confidence": 0.75
+        },
+        {
+          "eval_id": "W03-08",
+          "family": "figure_dependent",
+          "question": "What does the trellis diagram for a hidden Markov model look like?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            629,
+            663,
+            626,
+            431,
+            749
+          ],
+          "retrieved_sections": [
+            "13.2 Hidden Markov Models",
+            "back-matter Exercises",
+            "13.2 Hidden Markov Models",
+            "8.4 Inference in Graphical Models",
+            "back-matter Index"
+          ],
+          "recall_at_k": 0.0833,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.5087,
+          "gold_pages": 24,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 5,
+          "confidence": 0.6667
+        },
+        {
+          "eval_id": "W03-09",
+          "family": "figure_dependent",
+          "question": "Scatter plot of the Old Faithful data set coloured by K-means cluster assignment",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            443,
+            444,
+            445,
+            454,
+            442
+          ],
+          "retrieved_sections": [
+            "9.1 K-means Clustering",
+            "9.1 K-means Clustering",
+            "9.1 K-means Clustering",
+            "9.2 Mixtures of Gaussians",
+            "9.1 K-means Clustering"
+          ],
+          "recall_at_k": 0.6667,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.8539,
+          "gold_pages": 6,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 5,
+          "confidence": 0.6
+        },
+        {
+          "eval_id": "W03-10",
+          "family": "figure_dependent",
+          "question": "Diagram of a two-layer feed-forward network showing input, hidden and output units",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            246,
+            249,
+            286,
+            275,
+            337
+          ],
+          "retrieved_sections": [
+            "5.1 Feed-forward Network Functions",
+            "5.1 Feed-forward Network Functions",
+            "5.5 Regularization in NeuralNetworks",
+            "5.5 Regularization in NeuralNetworks",
+            "6.4 Gaussian Processes"
+          ],
+          "recall_at_k": 0.3333,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.5531,
+          "gold_pages": 6,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 5,
+          "confidence": 0.8182
+        },
+        {
+          "eval_id": "W03-11",
+          "family": "equation_dependent",
+          "question": "Write the E step and M step update equations for a Gaussian mixture model",
+          "passed": false,
+          "error_type": "partial_coverage",
+          "abstained": false,
+          "retrieved_pages": [
+            567,
+            476,
+            473,
+            595,
+            455
+          ],
+          "retrieved_sections": [
+            "11.5 The Hybrid Monte Carlo Algorithm",
+            "back-matter Exercises",
+            "back-matter Exercises",
+            "12.2 Probabilistic PCA",
+            "9.2 Mixtures of Gaussians"
+          ],
+          "recall_at_k": 0.05,
+          "hit_at_k": true,
+          "mrr": 0.2,
+          "ndcg_at_k": 0.1312,
+          "gold_pages": 20,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 2,
+          "units_read": 5,
+          "confidence": 0.8333
+        },
+        {
+          "eval_id": "W03-12",
+          "family": "equation_dependent",
+          "question": "What is the form of the multivariate Gaussian density and its normalization constant?",
+          "passed": false,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            100,
+            137,
+            155,
+            537,
+            482
+          ],
+          "retrieved_sections": [
+            "2.3 The Gaussian Distribution",
+            "2.4 The Exponential Family",
+            "back-matter Exercises",
+            "back-matter Exercises",
+            "10.1 Variational Inference"
+          ],
+          "recall_at_k": 0.0294,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.3392,
+          "gold_pages": 34,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 5,
+          "confidence": 0.6667
+        },
+        {
+          "eval_id": "W03-13",
+          "family": "equation_dependent",
+          "question": "Give the dual representation of the maximum margin classifier and the KKT conditions",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            346,
+            350,
+            347,
+            359,
+            721
+          ],
+          "retrieved_sections": [
+            "7.1 Maximum Margin Classifiers",
+            "7.1 Maximum Margin Classifiers",
+            "7.1 Maximum Margin Classifiers",
+            "7.1 Maximum Margin Classifiers",
+            "back-matter E.Lagrange Multipliers"
+          ],
+          "recall_at_k": 0.2222,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.8688,
+          "gold_pages": 18,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 5,
+          "confidence": 0.7143
+        },
+        {
+          "eval_id": "W03-14",
+          "family": "equation_dependent",
+          "question": "What is the lower bound on the log marginal likelihood used in variational inference?",
+          "passed": true,
+          "error_type": "weak_ranking",
+          "abstained": false,
+          "retrieved_pages": [
+            514,
+            497,
+            505,
+            519,
+            470
+          ],
+          "retrieved_sections": [
+            "10.5 Local Variational Methods",
+            "10.2 Illustration: Variational Mixture of Gaussians",
+            "10.3 Variational Linear Regression",
+            "10.6 Variational Logistic Regression",
+            "9.4 The EM Algorithm in General"
+          ],
+          "recall_at_k": 0.0625,
+          "hit_at_k": true,
+          "mrr": 0.2,
+          "ndcg_at_k": 0.1312,
+          "gold_pages": 16,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 2,
+          "units_read": 5,
+          "confidence": 0.8571
+        },
+        {
+          "eval_id": "W03-15",
+          "family": "definition_use_chain",
+          "question": "What are responsibilities in a mixture model and how are they used in the M step?",
+          "passed": false,
+          "error_type": "partial_coverage",
+          "abstained": false,
+          "retrieved_pages": [
+            476,
+            683,
+            453,
+            473,
+            661
+          ],
+          "retrieved_sections": [
+            "back-matter Exercises",
+            "14.5 Conditional Mixture Models",
+            "9.2 Mixtures of Gaussians",
+            "back-matter Exercises",
+            "13.3 Linear Dynamical Systems"
+          ],
+          "recall_at_k": 0.05,
+          "hit_at_k": true,
+          "mrr": 0.3333,
+          "ndcg_at_k": 0.1696,
+          "gold_pages": 20,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 2,
+          "units_read": 6,
+          "confidence": 1.0
+        },
+        {
+          "eval_id": "W03-16",
+          "family": "definition_use_chain",
+          "question": "What is the design matrix and where does it appear in the normal equations for least squares?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            161,
+            226,
+            295,
+            318,
+            163
+          ],
+          "retrieved_sections": [
+            "3.1 Linear Basis Function Models",
+            "4.3 Probabilistic Discriminative Models",
+            "5.7 Bayesian NeuralNetworks",
+            "6.3 Radial Basis Function Networks",
+            "3.1 Linear Basis Function Models"
+          ],
+          "recall_at_k": 0.25,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.4704,
+          "gold_pages": 8,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 5,
+          "confidence": 0.7143
+        },
+        {
+          "eval_id": "W03-17",
+          "family": "definition_use_chain",
+          "question": "What is a kernel function and what rules let you construct new kernels from existing ones?",
+          "passed": false,
+          "error_type": "over_abstain",
+          "abstained": true,
+          "retrieved_pages": [
+            314,
+            312,
+            338,
+            342,
+            313
+          ],
+          "retrieved_sections": [
+            "6.2 Construct ing Kernels",
+            "6.1 Dual Represent at ions",
+            "6.4 Gaussian Processes",
+            "back-matter Exercises",
+            "6.2 Construct ing Kernels"
+          ],
+          "recall_at_k": 0.5,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.6844,
+          "gold_pages": 6,
+          "gold_sections_covered": 2,
+          "gold_sections_total": 2,
+          "units_read": 5,
+          "confidence": 0.5
+        },
+        {
+          "eval_id": "W03-18",
+          "family": "scope_condition",
+          "question": "Under what conditions does the EM algorithm guarantee that the likelihood does not decrease?",
+          "passed": false,
+          "error_type": "over_abstain",
+          "abstained": true,
+          "retrieved_pages": [
+            460,
+            591,
+            455,
+            652,
+            453
+          ],
+          "retrieved_sections": [
+            "9.3 AnAlternative View of EM",
+            "12.2 Probabilistic PCA",
+            "9.2 Mixtures of Gaussians",
+            "13.3 Linear Dynamical Systems",
+            "9.2 Mixtures of Gaussians"
+          ],
+          "recall_at_k": 0.0,
+          "hit_at_k": false,
+          "mrr": 0.0,
+          "ndcg_at_k": 0.0,
+          "gold_pages": 4,
+          "gold_sections_covered": 0,
+          "gold_sections_total": 1,
+          "units_read": 5,
+          "confidence": 0.4286
+        },
+        {
+          "eval_id": "W03-19",
+          "family": "scope_condition",
+          "question": "When does the Laplace approximation give a poor approximation to the posterior?",
+          "passed": true,
+          "error_type": "weak_ranking",
+          "abstained": false,
+          "retrieved_pages": [
+            526,
+            235,
+            371,
+            233,
+            530
+          ],
+          "retrieved_sections": [
+            "10.7 Expectation Propagation",
+            "4.5 Bayesian Logistic Regression",
+            "7.2 Relevance Vector Machines",
+            "4.4 The Laplace Approximation",
+            "10.7 Expectation Propagation"
+          ],
+          "recall_at_k": 0.25,
+          "hit_at_k": true,
+          "mrr": 0.25,
+          "ndcg_at_k": 0.1681,
+          "gold_pages": 4,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 6,
+          "confidence": 0.75
+        },
+        {
+          "eval_id": "W03-20",
+          "family": "scope_condition",
+          "question": "What conditional independence assumptions does the naive Bayes model make and when are they violated?",
+          "passed": false,
+          "error_type": "weak_ranking",
+          "abstained": false,
+          "retrieved_pages": [
+            65,
+            397,
+            587,
+            638,
+            413
+          ],
+          "retrieved_sections": [
+            "1.5 DecisionTheory",
+            "8.2 Conditional Independence",
+            "12.2 Probabilistic PCA",
+            "13.2 Hidden Markov Models",
+            "8.4 Inference in Graphical Models"
+          ],
+          "recall_at_k": 0.1,
+          "hit_at_k": true,
+          "mrr": 0.5,
+          "ndcg_at_k": 0.214,
+          "gold_pages": 10,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 5,
+          "confidence": 0.625
+        },
+        {
+          "eval_id": "W03-21",
+          "family": "cross_section",
+          "question": "How does probabilistic PCA differ from conventional principal component analysis?",
+          "passed": false,
+          "error_type": "over_abstain",
+          "abstained": true,
+          "retrieved_pages": [
+            577,
+            18,
+            17,
+            602,
+            616
+          ],
+          "retrieved_sections": [
+            "12.1 Principal Component Analysis",
+            "unmapped",
+            "unmapped",
+            "12.2 Probabilistic PCA",
+            "back-matter Exercises"
+          ],
+          "recall_at_k": 0.0769,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.4852,
+          "gold_pages": 26,
+          "gold_sections_covered": 2,
+          "gold_sections_total": 2,
+          "units_read": 5,
+          "confidence": 0.5714
+        },
+        {
+          "eval_id": "W03-22",
+          "family": "cross_section",
+          "question": "Compare the bias-variance decomposition with Bayesian model comparison as ways of controlling model complexity",
+          "passed": false,
+          "error_type": "over_abstain",
+          "abstained": true,
+          "retrieved_pages": [
+            171,
+            170,
+            169,
+            180,
+            740
+          ],
+          "retrieved_sections": [
+            "3.2 TheBias-Variance Decomposition",
+            "3.2 TheBias-Variance Decomposition",
+            "3.2 TheBias-Variance Decomposition",
+            "3.4 Bayesian Model Comparison",
+            "back-matter Index"
+          ],
+          "recall_at_k": 0.4,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.8688,
+          "gold_pages": 10,
+          "gold_sections_covered": 2,
+          "gold_sections_total": 2,
+          "units_read": 5,
+          "confidence": 0.5
+        },
+        {
+          "eval_id": "W03-23",
+          "family": "cross_section",
+          "question": "How are the sum-product and max-sum algorithms related?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            430,
+            428,
+            76,
+            429,
+            419
+          ],
+          "retrieved_sections": [
+            "8.4 Inference in Graphical Models",
+            "8.4 Inference in Graphical Models",
+            "1.6 Information Theory",
+            "8.4 Inference in Graphical Models",
+            "8.4 Inference in Graphical Models"
+          ],
+          "recall_at_k": 0.1538,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.8304,
+          "gold_pages": 26,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 5,
+          "confidence": 0.8
+        },
+        {
+          "eval_id": "W03-24",
+          "family": "hard_negative",
+          "question": "How does the transformer self-attention mechanism compute attention weights?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": true,
+          "retrieved_pages": [
+            125,
+            612,
+            264,
+            365,
+            259
+          ],
+          "retrieved_sections": [
+            "2.3 The Gaussian Distribution",
+            "12.4 Nonlinear Latent Variable Models",
+            "5.3 Error Back propagation",
+            "7.2 Relevance Vector Machines",
+            "5.3 Error Back propagation"
+          ],
+          "recall_at_k": 0.0,
+          "hit_at_k": false,
+          "mrr": 0.0,
+          "ndcg_at_k": 0.0,
+          "gold_pages": 0,
+          "gold_sections_covered": 0,
+          "gold_sections_total": 0,
+          "units_read": 6,
+          "confidence": 0.3333
+        },
+        {
+          "eval_id": "W03-25",
+          "family": "hard_negative",
+          "question": "What is dropout regularization in deep neural networks?",
+          "passed": false,
+          "error_type": "over_answer",
+          "abstained": false,
+          "retrieved_pages": [
+            274,
+            275,
+            724,
+            739,
+            737
+          ],
+          "retrieved_sections": [
+            "5.4 The Hessian Matrix",
+            "5.5 Regularization in NeuralNetworks",
+            "back-matter References",
+            "back-matter References",
+            "back-matter References"
+          ],
+          "recall_at_k": 0.0,
+          "hit_at_k": false,
+          "mrr": 0.0,
+          "ndcg_at_k": 0.0,
+          "gold_pages": 0,
+          "gold_sections_covered": 0,
+          "gold_sections_total": 0,
+          "units_read": 5,
+          "confidence": 0.6
+        },
+        {
+          "eval_id": "W03-26",
+          "family": "hard_negative",
+          "question": "How do batch normalization layers stabilize neural network training?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": true,
+          "retrieved_pages": [
+            247,
+            286,
+            609,
+            337,
+            244
+          ],
+          "retrieved_sections": [
+            "5.1 Feed-forward Network Functions",
+            "5.5 Regularization in NeuralNetworks",
+            "12.4 Nonlinear Latent Variable Models",
+            "6.4 Gaussian Processes",
+            "back-matter Exercises"
+          ],
+          "recall_at_k": 0.0,
+          "hit_at_k": false,
+          "mrr": 0.0,
+          "ndcg_at_k": 0.0,
+          "gold_pages": 0,
+          "gold_sections_covered": 0,
+          "gold_sections_total": 0,
+          "units_read": 5,
+          "confidence": 0.4286
+        },
+        {
+          "eval_id": "W03-27",
+          "family": "hard_negative",
+          "question": "What is a variational autoencoder and how is it trained with the reparameterization trick?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": true,
+          "retrieved_pages": [
+            500,
+            672,
+            355,
+            17,
+            481
+          ],
+          "retrieved_sections": [
+            "10.2 Illustration: Variational Mixture of Gaussians",
+            "14.3 Boosting",
+            "7.1 Maximum Margin Classifiers",
+            "unmapped",
+            "10.1 Variational Inference"
+          ],
+          "recall_at_k": 0.0,
+          "hit_at_k": false,
+          "mrr": 0.0,
+          "ndcg_at_k": 0.0,
+          "gold_pages": 0,
+          "gold_sections_covered": 0,
+          "gold_sections_total": 0,
+          "units_read": 8,
+          "confidence": 0.4
+        }
+      ]
+    },
+    {
+      "arm": "semantic",
+      "encoder": "lexical-bm25",
+      "units": 1403,
+      "cases_passed": 20,
+      "cases_total": 27,
+      "mean_recall_at_k": 0.2553,
+      "hit_rate_at_k": 0.913,
+      "mean_mrr": 0.637,
+      "mean_ndcg_at_k": 0.5387,
+      "mean_units_read": 3.7407,
+      "negative_rejection_rate": 0.75,
+      "error_types": {
+        "ok": 13,
+        "weak_ranking": 9,
+        "off_target": 1,
+        "partial_coverage": 2,
+        "over_abstain": 1,
+        "over_answer": 1
+      },
+      "by_family": {
+        "cross_section": {
+          "cases": 3,
+          "passed": 2,
+          "mean_recall_at_k": 0.2692,
+          "hit_rate_at_k": 1.0
+        },
+        "definition_use_chain": {
+          "cases": 3,
+          "passed": 3,
+          "mean_recall_at_k": 0.3972,
+          "hit_rate_at_k": 1.0
+        },
+        "definitional": {
+          "cases": 6,
+          "passed": 4,
+          "mean_recall_at_k": 0.197,
+          "hit_rate_at_k": 1.0
+        },
+        "equation_dependent": {
+          "cases": 4,
+          "passed": 3,
+          "mean_recall_at_k": 0.1395,
+          "hit_rate_at_k": 1.0
+        },
+        "figure_dependent": {
+          "cases": 4,
+          "passed": 3,
+          "mean_recall_at_k": 0.3958,
+          "hit_rate_at_k": 0.75
+        },
+        "hard_negative": {
+          "cases": 4,
+          "passed": 3,
+          "mean_recall_at_k": 0.0,
+          "hit_rate_at_k": 0.0
+        },
+        "scope_condition": {
+          "cases": 3,
+          "passed": 2,
+          "mean_recall_at_k": 0.1833,
+          "hit_rate_at_k": 0.6667
+        }
+      },
+      "cases": [
+        {
+          "eval_id": "W03-01",
+          "family": "definitional",
+          "question": "What is the expectation maximization algorithm?",
+          "passed": false,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            467,
+            442,
+            449,
+            631,
+            632
+          ],
+          "retrieved_sections": [
+            "9.3 AnAlternative View of EM",
+            "9.1 K-means Clustering",
+            "9.2 Mixtures of Gaussians",
+            "13.2 Hidden Markov Models",
+            "13.2 Hidden Markov Models"
+          ],
+          "recall_at_k": 0.0625,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.3392,
+          "gold_pages": 16,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 2,
+          "units_read": 5,
+          "confidence": 1.0
+        },
+        {
+          "eval_id": "W03-02",
+          "family": "definitional",
+          "question": "How does error backpropagation compute gradients in a neural network?",
+          "passed": false,
+          "error_type": "weak_ranking",
+          "abstained": false,
+          "retrieved_pages": [
+            277,
+            259,
+            307,
+            308,
+            303
+          ],
+          "retrieved_sections": [
+            "5.5 Regularization in NeuralNetworks",
+            "5.3 Error Back propagation",
+            "back-matter Exercises",
+            "back-matter Exercises",
+            "back-matter Exercises"
+          ],
+          "recall_at_k": 0.125,
+          "hit_at_k": true,
+          "mrr": 0.5,
+          "ndcg_at_k": 0.214,
+          "gold_pages": 8,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 4,
+          "confidence": 0.6667
+        },
+        {
+          "eval_id": "W03-03",
+          "family": "definitional",
+          "question": "What is a Gaussian process and how is it used for regression?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            328,
+            329,
+            325,
+            326,
+            322
+          ],
+          "retrieved_sections": [
+            "6.4 Gaussian Processes",
+            "6.4 Gaussian Processes",
+            "6.4 Gaussian Processes",
+            "6.4 Gaussian Processes",
+            "6.4 Gaussian Processes"
+          ],
+          "recall_at_k": 0.2778,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "gold_pages": 18,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 3,
+          "confidence": 1.0
+        },
+        {
+          "eval_id": "W03-04",
+          "family": "definitional",
+          "question": "What is principal component analysis?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            577,
+            610,
+            611,
+            578,
+            579
+          ],
+          "retrieved_sections": [
+            "12.1 Principal Component Analysis",
+            "12.4 Nonlinear Latent Variable Models",
+            "12.4 Nonlinear Latent Variable Models",
+            "12.1 Principal Component Analysis",
+            "12.1 Principal Component Analysis"
+          ],
+          "recall_at_k": 0.3,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.6164,
+          "gold_pages": 10,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 3,
+          "confidence": 1.0
+        },
+        {
+          "eval_id": "W03-05",
+          "family": "definitional",
+          "question": "What is a hidden Markov model?",
+          "passed": true,
+          "error_type": "weak_ranking",
+          "abstained": false,
+          "retrieved_pages": [
+            651,
+            629,
+            630,
+            663,
+            664
+          ],
+          "retrieved_sections": [
+            "13.3 Linear Dynamical Systems",
+            "13.2 Hidden Markov Models",
+            "13.2 Hidden Markov Models",
+            "back-matter Exercises",
+            "back-matter Exercises"
+          ],
+          "recall_at_k": 0.0833,
+          "hit_at_k": true,
+          "mrr": 0.5,
+          "ndcg_at_k": 0.3836,
+          "gold_pages": 24,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 3,
+          "confidence": 1.0
+        },
+        {
+          "eval_id": "W03-06",
+          "family": "definitional",
+          "question": "What is the curse of dimensionality?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            55,
+            56,
+            553,
+            554,
+            581
+          ],
+          "retrieved_sections": [
+            "1.4 TheCurseofDimensionality",
+            "1.4 TheCurseofDimensionality",
+            "11.2 Markov Chain Monte Carlo",
+            "11.2 Markov Chain Monte Carlo",
+            "12.1 Principal Component Analysis"
+          ],
+          "recall_at_k": 0.3333,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.5531,
+          "gold_pages": 6,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 3,
+          "confidence": 1.0
+        },
+        {
+          "eval_id": "W03-07",
+          "family": "figure_dependent",
+          "question": "Show the graphical model plate diagram for a mixture of Gaussians with latent variables",
+          "passed": false,
+          "error_type": "off_target",
+          "abstained": false,
+          "retrieved_pages": [
+            491,
+            492,
+            490,
+            447,
+            626
+          ],
+          "retrieved_sections": [
+            "10.2 Illustration: Variational Mixture of Gaussians",
+            "10.2 Illustration: Variational Mixture of Gaussians",
+            "10.1 Variational Inference",
+            "9.1 K-means Clustering",
+            "13.2 Hidden Markov Models"
+          ],
+          "recall_at_k": 0.0,
+          "hit_at_k": false,
+          "mrr": 0.0,
+          "ndcg_at_k": 0.0,
+          "gold_pages": 8,
+          "gold_sections_covered": 0,
+          "gold_sections_total": 1,
+          "units_read": 5,
+          "confidence": 0.75
+        },
+        {
+          "eval_id": "W03-08",
+          "family": "figure_dependent",
+          "question": "What does the trellis diagram for a hidden Markov model look like?",
+          "passed": true,
+          "error_type": "weak_ranking",
+          "abstained": false,
+          "retrieved_pages": [
+            430,
+            431,
+            629,
+            644,
+            749
+          ],
+          "retrieved_sections": [
+            "8.4 Inference in Graphical Models",
+            "8.4 Inference in Graphical Models",
+            "13.2 Hidden Markov Models",
+            "13.2 Hidden Markov Models",
+            "back-matter Index"
+          ],
+          "recall_at_k": 0.0833,
+          "hit_at_k": true,
+          "mrr": 0.3333,
+          "ndcg_at_k": 0.3156,
+          "gold_pages": 24,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 4,
+          "confidence": 0.6667
+        },
+        {
+          "eval_id": "W03-09",
+          "family": "figure_dependent",
+          "question": "Scatter plot of the Old Faithful data set coloured by K-means cluster assignment",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            442,
+            443,
+            444,
+            445,
+            460
+          ],
+          "retrieved_sections": [
+            "9.1 K-means Clustering",
+            "9.1 K-means Clustering",
+            "9.1 K-means Clustering",
+            "9.1 K-means Clustering",
+            "9.3 AnAlternative View of EM"
+          ],
+          "recall_at_k": 0.6667,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.8688,
+          "gold_pages": 6,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 3,
+          "confidence": 0.6
+        },
+        {
+          "eval_id": "W03-10",
+          "family": "figure_dependent",
+          "question": "Diagram of a two-layer feed-forward network showing input, hidden and output units",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            245,
+            246,
+            247,
+            248,
+            249
+          ],
+          "retrieved_sections": [
+            "5.1 Feed-forward Network Functions",
+            "5.1 Feed-forward Network Functions",
+            "5.1 Feed-forward Network Functions",
+            "5.1 Feed-forward Network Functions",
+            "5.1 Feed-forward Network Functions"
+          ],
+          "recall_at_k": 0.8333,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "gold_pages": 6,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 3,
+          "confidence": 0.8182
+        },
+        {
+          "eval_id": "W03-11",
+          "family": "equation_dependent",
+          "question": "Write the E step and M step update equations for a Gaussian mixture model",
+          "passed": false,
+          "error_type": "partial_coverage",
+          "abstained": false,
+          "retrieved_pages": [
+            475,
+            476,
+            567,
+            453,
+            454
+          ],
+          "retrieved_sections": [
+            "back-matter Exercises",
+            "back-matter Exercises",
+            "11.5 The Hybrid Monte Carlo Algorithm",
+            "9.2 Mixtures of Gaussians",
+            "9.2 Mixtures of Gaussians"
+          ],
+          "recall_at_k": 0.1,
+          "hit_at_k": true,
+          "mrr": 0.25,
+          "ndcg_at_k": 0.2773,
+          "gold_pages": 20,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 2,
+          "units_read": 3,
+          "confidence": 0.8333
+        },
+        {
+          "eval_id": "W03-12",
+          "family": "equation_dependent",
+          "question": "What is the form of the multivariate Gaussian density and its normalization constant?",
+          "passed": true,
+          "error_type": "weak_ranking",
+          "abstained": false,
+          "retrieved_pages": [
+            155,
+            99,
+            100,
+            102,
+            103
+          ],
+          "retrieved_sections": [
+            "back-matter Exercises",
+            "2.3 The Gaussian Distribution",
+            "2.3 The Gaussian Distribution",
+            "2.3 The Gaussian Distribution",
+            "2.3 The Gaussian Distribution"
+          ],
+          "recall_at_k": 0.1176,
+          "hit_at_k": true,
+          "mrr": 0.5,
+          "ndcg_at_k": 0.6608,
+          "gold_pages": 34,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 3,
+          "confidence": 0.8333
+        },
+        {
+          "eval_id": "W03-13",
+          "family": "equation_dependent",
+          "question": "Give the dual representation of the maximum margin classifier and the KKT conditions",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            345,
+            346,
+            349,
+            350,
+            347
+          ],
+          "retrieved_sections": [
+            "7.1 Maximum Margin Classifiers",
+            "7.1 Maximum Margin Classifiers",
+            "7.1 Maximum Margin Classifiers",
+            "7.1 Maximum Margin Classifiers",
+            "7.1 Maximum Margin Classifiers"
+          ],
+          "recall_at_k": 0.2778,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "gold_pages": 18,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 3,
+          "confidence": 0.7143
+        },
+        {
+          "eval_id": "W03-14",
+          "family": "equation_dependent",
+          "question": "What is the lower bound on the log marginal likelihood used in variational inference?",
+          "passed": true,
+          "error_type": "weak_ranking",
+          "abstained": false,
+          "retrieved_pages": [
+            514,
+            505,
+            506,
+            519,
+            469
+          ],
+          "retrieved_sections": [
+            "10.5 Local Variational Methods",
+            "10.3 Variational Linear Regression",
+            "10.3 Variational Linear Regression",
+            "10.6 Variational Logistic Regression",
+            "9.4 The EM Algorithm in General"
+          ],
+          "recall_at_k": 0.0625,
+          "hit_at_k": true,
+          "mrr": 0.2,
+          "ndcg_at_k": 0.1312,
+          "gold_pages": 16,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 2,
+          "units_read": 4,
+          "confidence": 1.0
+        },
+        {
+          "eval_id": "W03-15",
+          "family": "definition_use_chain",
+          "question": "What are responsibilities in a mixture model and how are they used in the M step?",
+          "passed": true,
+          "error_type": "weak_ranking",
+          "abstained": false,
+          "retrieved_pages": [
+            475,
+            476,
+            460,
+            461,
+            449
+          ],
+          "retrieved_sections": [
+            "back-matter Exercises",
+            "back-matter Exercises",
+            "9.3 AnAlternative View of EM",
+            "9.3 AnAlternative View of EM",
+            "9.2 Mixtures of Gaussians"
+          ],
+          "recall_at_k": 0.15,
+          "hit_at_k": true,
+          "mrr": 0.3333,
+          "ndcg_at_k": 0.4469,
+          "gold_pages": 20,
+          "gold_sections_covered": 2,
+          "gold_sections_total": 2,
+          "units_read": 3,
+          "confidence": 1.0
+        },
+        {
+          "eval_id": "W03-16",
+          "family": "definition_use_chain",
+          "question": "What is the design matrix and where does it appear in the normal equations for least squares?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            160,
+            161,
+            226,
+            295,
+            159
+          ],
+          "retrieved_sections": [
+            "3.1 Linear Basis Function Models",
+            "3.1 Linear Basis Function Models",
+            "4.3 Probabilistic Discriminative Models",
+            "5.7 Bayesian NeuralNetworks",
+            "3.1 Linear Basis Function Models"
+          ],
+          "recall_at_k": 0.375,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.6844,
+          "gold_pages": 8,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 4,
+          "confidence": 0.8571
+        },
+        {
+          "eval_id": "W03-17",
+          "family": "definition_use_chain",
+          "question": "What is a kernel function and what rules let you construct new kernels from existing ones?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            312,
+            338,
+            313,
+            314,
+            315
+          ],
+          "retrieved_sections": [
+            "6.1 Dual Represent at ions",
+            "6.4 Gaussian Processes",
+            "6.2 Construct ing Kernels",
+            "6.2 Construct ing Kernels",
+            "6.2 Construct ing Kernels"
+          ],
+          "recall_at_k": 0.6667,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.786,
+          "gold_pages": 6,
+          "gold_sections_covered": 2,
+          "gold_sections_total": 2,
+          "units_read": 5,
+          "confidence": 0.625
+        },
+        {
+          "eval_id": "W03-18",
+          "family": "scope_condition",
+          "question": "Under what conditions does the EM algorithm guarantee that the likelihood does not decrease?",
+          "passed": false,
+          "error_type": "over_abstain",
+          "abstained": true,
+          "retrieved_pages": [
+            467,
+            614,
+            460,
+            452,
+            453
+          ],
+          "retrieved_sections": [
+            "9.3 AnAlternative View of EM",
+            "12.4 Nonlinear Latent Variable Models",
+            "9.3 AnAlternative View of EM",
+            "9.2 Mixtures of Gaussians",
+            "9.2 Mixtures of Gaussians"
+          ],
+          "recall_at_k": 0.0,
+          "hit_at_k": false,
+          "mrr": 0.0,
+          "ndcg_at_k": 0.0,
+          "gold_pages": 4,
+          "gold_sections_covered": 0,
+          "gold_sections_total": 1,
+          "units_read": 4,
+          "confidence": 0.4286
+        },
+        {
+          "eval_id": "W03-19",
+          "family": "scope_condition",
+          "question": "When does the Laplace approximation give a poor approximation to the posterior?",
+          "passed": true,
+          "error_type": "weak_ranking",
+          "abstained": false,
+          "retrieved_pages": [
+            235,
+            236,
+            371,
+            372,
+            232
+          ],
+          "retrieved_sections": [
+            "4.5 Bayesian Logistic Regression",
+            "4.5 Bayesian Logistic Regression",
+            "7.2 Relevance Vector Machines",
+            "7.2 Relevance Vector Machines",
+            "4.4 The Laplace Approximation"
+          ],
+          "recall_at_k": 0.25,
+          "hit_at_k": true,
+          "mrr": 0.2,
+          "ndcg_at_k": 0.151,
+          "gold_pages": 4,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 3,
+          "confidence": 0.75
+        },
+        {
+          "eval_id": "W03-20",
+          "family": "scope_condition",
+          "question": "What conditional independence assumptions does the naive Bayes model make and when are they violated?",
+          "passed": true,
+          "error_type": "weak_ranking",
+          "abstained": false,
+          "retrieved_pages": [
+            65,
+            397,
+            398,
+            638,
+            396
+          ],
+          "retrieved_sections": [
+            "1.5 DecisionTheory",
+            "8.2 Conditional Independence",
+            "8.2 Conditional Independence",
+            "13.2 Hidden Markov Models",
+            "8.2 Conditional Independence"
+          ],
+          "recall_at_k": 0.3,
+          "hit_at_k": true,
+          "mrr": 0.5,
+          "ndcg_at_k": 0.5148,
+          "gold_pages": 10,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 4,
+          "confidence": 0.625
+        },
+        {
+          "eval_id": "W03-21",
+          "family": "cross_section",
+          "question": "How does probabilistic PCA differ from conventional principal component analysis?",
+          "passed": true,
+          "error_type": "weak_ranking",
+          "abstained": false,
+          "retrieved_pages": [
+            17,
+            18,
+            577,
+            602,
+            587
+          ],
+          "retrieved_sections": [
+            "unmapped",
+            "unmapped",
+            "12.1 Principal Component Analysis",
+            "12.2 Probabilistic PCA",
+            "12.2 Probabilistic PCA"
+          ],
+          "recall_at_k": 0.1154,
+          "hit_at_k": true,
+          "mrr": 0.3333,
+          "ndcg_at_k": 0.4469,
+          "gold_pages": 26,
+          "gold_sections_covered": 2,
+          "gold_sections_total": 2,
+          "units_read": 4,
+          "confidence": 0.7143
+        },
+        {
+          "eval_id": "W03-22",
+          "family": "cross_section",
+          "question": "Compare the bias-variance decomposition with Bayesian model comparison as ways of controlling model complexity",
+          "passed": false,
+          "error_type": "partial_coverage",
+          "abstained": false,
+          "retrieved_pages": [
+            171,
+            168,
+            169,
+            170,
+            166
+          ],
+          "retrieved_sections": [
+            "3.2 TheBias-Variance Decomposition",
+            "3.2 TheBias-Variance Decomposition",
+            "3.2 TheBias-Variance Decomposition",
+            "3.2 TheBias-Variance Decomposition",
+            "3.2 TheBias-Variance Decomposition"
+          ],
+          "recall_at_k": 0.5,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "gold_pages": 10,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 2,
+          "units_read": 3,
+          "confidence": 0.6
+        },
+        {
+          "eval_id": "W03-23",
+          "family": "cross_section",
+          "question": "How are the sum-product and max-sum algorithms related?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            429,
+            430,
+            419,
+            428,
+            432
+          ],
+          "retrieved_sections": [
+            "8.4 Inference in Graphical Models",
+            "8.4 Inference in Graphical Models",
+            "8.4 Inference in Graphical Models",
+            "8.4 Inference in Graphical Models",
+            "8.4 Inference in Graphical Models"
+          ],
+          "recall_at_k": 0.1923,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "gold_pages": 26,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 5,
+          "confidence": 0.6
+        },
+        {
+          "eval_id": "W03-24",
+          "family": "hard_negative",
+          "question": "How does the transformer self-attention mechanism compute attention weights?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": true,
+          "retrieved_pages": [
+            125,
+            126,
+            611,
+            612,
+            263
+          ],
+          "retrieved_sections": [
+            "2.3 The Gaussian Distribution",
+            "2.3 The Gaussian Distribution",
+            "12.4 Nonlinear Latent Variable Models",
+            "12.4 Nonlinear Latent Variable Models",
+            "5.3 Error Back propagation"
+          ],
+          "recall_at_k": 0.0,
+          "hit_at_k": false,
+          "mrr": 0.0,
+          "ndcg_at_k": 0.0,
+          "gold_pages": 0,
+          "gold_sections_covered": 0,
+          "gold_sections_total": 0,
+          "units_read": 3,
+          "confidence": 0.3333
+        },
+        {
+          "eval_id": "W03-25",
+          "family": "hard_negative",
+          "question": "What is dropout regularization in deep neural networks?",
+          "passed": false,
+          "error_type": "over_answer",
+          "abstained": false,
+          "retrieved_pages": [
+            15,
+            274,
+            651,
+            738,
+            739
+          ],
+          "retrieved_sections": [
+            "unmapped",
+            "5.4 The Hessian Matrix",
+            "13.3 Linear Dynamical Systems",
+            "back-matter References",
+            "back-matter References"
+          ],
+          "recall_at_k": 0.0,
+          "hit_at_k": false,
+          "mrr": 0.0,
+          "ndcg_at_k": 0.0,
+          "gold_pages": 0,
+          "gold_sections_covered": 0,
+          "gold_sections_total": 0,
+          "units_read": 4,
+          "confidence": 0.6
+        },
+        {
+          "eval_id": "W03-26",
+          "family": "hard_negative",
+          "question": "How do batch normalization layers stabilize neural network training?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": true,
+          "retrieved_pages": [
+            244,
+            247,
+            337,
+            608,
+            609
+          ],
+          "retrieved_sections": [
+            "back-matter Exercises",
+            "5.1 Feed-forward Network Functions",
+            "6.4 Gaussian Processes",
+            "12.4 Nonlinear Latent Variable Models",
+            "12.4 Nonlinear Latent Variable Models"
+          ],
+          "recall_at_k": 0.0,
+          "hit_at_k": false,
+          "mrr": 0.0,
+          "ndcg_at_k": 0.0,
+          "gold_pages": 0,
+          "gold_sections_covered": 0,
+          "gold_sections_total": 0,
+          "units_read": 6,
+          "confidence": 0.5714
+        },
+        {
+          "eval_id": "W03-27",
+          "family": "hard_negative",
+          "question": "What is a variational autoencoder and how is it trained with the reparameterization trick?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": true,
+          "retrieved_pages": [
+            672,
+            499,
+            500,
+            287,
+            16
+          ],
+          "retrieved_sections": [
+            "14.3 Boosting",
+            "10.2 Illustration: Variational Mixture of Gaussians",
+            "10.2 Illustration: Variational Mixture of Gaussians",
+            "5.5 Regularization in NeuralNetworks",
+            "unmapped"
+          ],
+          "recall_at_k": 0.0,
+          "hit_at_k": false,
+          "mrr": 0.0,
+          "ndcg_at_k": 0.0,
+          "gold_pages": 0,
+          "gold_sections_covered": 0,
+          "gold_sections_total": 0,
+          "units_read": 4,
+          "confidence": 0.4
+        }
+      ]
+    },
+    {
+      "arm": "contextual",
+      "encoder": "lexical-bm25",
+      "units": 2944,
+      "cases_passed": 16,
+      "cases_total": 27,
+      "mean_recall_at_k": 0.2475,
+      "hit_rate_at_k": 0.9565,
+      "mean_mrr": 0.7188,
+      "mean_ndcg_at_k": 0.5142,
+      "mean_units_read": 5.8148,
+      "negative_rejection_rate": 0.75,
+      "error_types": {
+        "weak_ranking": 5,
+        "over_abstain": 4,
+        "ok": 15,
+        "definition_orphan": 1,
+        "partial_coverage": 1,
+        "over_answer": 1
+      },
+      "by_family": {
+        "cross_section": {
+          "cases": 3,
+          "passed": 2,
+          "mean_recall_at_k": 0.2692,
+          "hit_rate_at_k": 1.0
+        },
+        "definition_use_chain": {
+          "cases": 3,
+          "passed": 1,
+          "mean_recall_at_k": 0.3222,
+          "hit_rate_at_k": 1.0
+        },
+        "definitional": {
+          "cases": 6,
+          "passed": 3,
+          "mean_recall_at_k": 0.1669,
+          "hit_rate_at_k": 1.0
+        },
+        "equation_dependent": {
+          "cases": 4,
+          "passed": 2,
+          "mean_recall_at_k": 0.0998,
+          "hit_rate_at_k": 0.75
+        },
+        "figure_dependent": {
+          "cases": 4,
+          "passed": 4,
+          "mean_recall_at_k": 0.3542,
+          "hit_rate_at_k": 1.0
+        },
+        "hard_negative": {
+          "cases": 4,
+          "passed": 3,
+          "mean_recall_at_k": 0.0,
+          "hit_rate_at_k": 0.0
+        },
+        "scope_condition": {
+          "cases": 3,
+          "passed": 1,
+          "mean_recall_at_k": 0.3667,
+          "hit_rate_at_k": 1.0
+        }
+      },
+      "cases": [
+        {
+          "eval_id": "W03-01",
+          "family": "definitional",
+          "question": "What is the expectation maximization algorithm?",
+          "passed": false,
+          "error_type": "weak_ranking",
+          "abstained": false,
+          "retrieved_pages": [
+            442,
+            467,
+            745,
+            452,
+            185
+          ],
+          "retrieved_sections": [
+            "9.1 K-means Clustering",
+            "9.3 AnAlternative View of EM",
+            "back-matter Index",
+            "9.2 Mixtures of Gaussians",
+            "3.5 The Evidence Approximation"
+          ],
+          "recall_at_k": 0.0625,
+          "hit_at_k": true,
+          "mrr": 0.5,
+          "ndcg_at_k": 0.214,
+          "gold_pages": 16,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 2,
+          "units_read": 5,
+          "confidence": 1.0
+        },
+        {
+          "eval_id": "W03-02",
+          "family": "definitional",
+          "question": "How does error backpropagation compute gradients in a neural network?",
+          "passed": false,
+          "error_type": "over_abstain",
+          "abstained": true,
+          "retrieved_pages": [
+            277,
+            302,
+            307,
+            264,
+            303
+          ],
+          "retrieved_sections": [
+            "5.5 Regularization in NeuralNetworks",
+            "5.7 Bayesian NeuralNetworks",
+            "back-matter Exercises",
+            "5.3 Error Back propagation",
+            "back-matter Exercises"
+          ],
+          "recall_at_k": 0.125,
+          "hit_at_k": true,
+          "mrr": 0.25,
+          "ndcg_at_k": 0.1461,
+          "gold_pages": 8,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 5,
+          "confidence": 0.5
+        },
+        {
+          "eval_id": "W03-03",
+          "family": "definitional",
+          "question": "What is a Gaussian process and how is it used for regression?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            322,
+            326,
+            328,
+            365,
+            329
+          ],
+          "retrieved_sections": [
+            "6.4 Gaussian Processes",
+            "6.4 Gaussian Processes",
+            "6.4 Gaussian Processes",
+            "7.2 Relevance Vector Machines",
+            "6.4 Gaussian Processes"
+          ],
+          "recall_at_k": 0.2222,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.8539,
+          "gold_pages": 18,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 6,
+          "confidence": 1.0
+        },
+        {
+          "eval_id": "W03-04",
+          "family": "definitional",
+          "question": "What is principal component analysis?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            577,
+            17,
+            579,
+            609,
+            584
+          ],
+          "retrieved_sections": [
+            "12.1 Principal Component Analysis",
+            "unmapped",
+            "12.1 Principal Component Analysis",
+            "12.4 Nonlinear Latent Variable Models",
+            "12.1 Principal Component Analysis"
+          ],
+          "recall_at_k": 0.3,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.6399,
+          "gold_pages": 10,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 6,
+          "confidence": 1.0
+        },
+        {
+          "eval_id": "W03-05",
+          "family": "definitional",
+          "question": "What is a hidden Markov model?",
+          "passed": true,
+          "error_type": "weak_ranking",
+          "abstained": false,
+          "retrieved_pages": [
+            663,
+            664,
+            627,
+            628,
+            648
+          ],
+          "retrieved_sections": [
+            "back-matter Exercises",
+            "back-matter Exercises",
+            "13.2 Hidden Markov Models",
+            "13.2 Hidden Markov Models",
+            "13.2 Hidden Markov Models"
+          ],
+          "recall_at_k": 0.125,
+          "hit_at_k": true,
+          "mrr": 0.3333,
+          "ndcg_at_k": 0.4469,
+          "gold_pages": 24,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 7,
+          "confidence": 1.0
+        },
+        {
+          "eval_id": "W03-06",
+          "family": "definitional",
+          "question": "What is the curse of dimensionality?",
+          "passed": false,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            56,
+            609,
+            149,
+            581,
+            593
+          ],
+          "retrieved_sections": [
+            "1.4 TheCurseofDimensionality",
+            "12.4 Nonlinear Latent Variable Models",
+            "back-matter Exercises",
+            "12.1 Principal Component Analysis",
+            "12.2 Probabilistic PCA"
+          ],
+          "recall_at_k": 0.1667,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.3392,
+          "gold_pages": 6,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 5,
+          "confidence": 1.0
+        },
+        {
+          "eval_id": "W03-07",
+          "family": "figure_dependent",
+          "question": "Show the graphical model plate diagram for a mixture of Gaussians with latent variables",
+          "passed": true,
+          "error_type": "weak_ranking",
+          "abstained": false,
+          "retrieved_pages": [
+            618,
+            491,
+            501,
+            507,
+            448
+          ],
+          "retrieved_sections": [
+            "back-matter Exercises",
+            "10.2 Illustration: Variational Mixture of Gaussians",
+            "10.2 Illustration: Variational Mixture of Gaussians",
+            "10.4 Exponential Family Distributions",
+            "9.2 Mixtures of Gaussians"
+          ],
+          "recall_at_k": 0.125,
+          "hit_at_k": true,
+          "mrr": 0.2,
+          "ndcg_at_k": 0.1312,
+          "gold_pages": 8,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 7,
+          "confidence": 0.75
+        },
+        {
+          "eval_id": "W03-08",
+          "family": "figure_dependent",
+          "question": "What does the trellis diagram for a hidden Markov model look like?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            629,
+            626,
+            431,
+            749,
+            631
+          ],
+          "retrieved_sections": [
+            "13.2 Hidden Markov Models",
+            "13.2 Hidden Markov Models",
+            "8.4 Inference in Graphical Models",
+            "back-matter Index",
+            "13.2 Hidden Markov Models"
+          ],
+          "recall_at_k": 0.125,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.6844,
+          "gold_pages": 24,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 7,
+          "confidence": 0.6667
+        },
+        {
+          "eval_id": "W03-09",
+          "family": "figure_dependent",
+          "question": "Scatter plot of the Old Faithful data set coloured by K-means cluster assignment",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            443,
+            444,
+            445,
+            454,
+            442
+          ],
+          "retrieved_sections": [
+            "9.1 K-means Clustering",
+            "9.1 K-means Clustering",
+            "9.1 K-means Clustering",
+            "9.2 Mixtures of Gaussians",
+            "9.1 K-means Clustering"
+          ],
+          "recall_at_k": 0.6667,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.8539,
+          "gold_pages": 6,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 5,
+          "confidence": 0.6
+        },
+        {
+          "eval_id": "W03-10",
+          "family": "figure_dependent",
+          "question": "Diagram of a two-layer feed-forward network showing input, hidden and output units",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            246,
+            249,
+            286,
+            248,
+            275
+          ],
+          "retrieved_sections": [
+            "5.1 Feed-forward Network Functions",
+            "5.1 Feed-forward Network Functions",
+            "5.5 Regularization in NeuralNetworks",
+            "5.1 Feed-forward Network Functions",
+            "5.5 Regularization in NeuralNetworks"
+          ],
+          "recall_at_k": 0.5,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.6992,
+          "gold_pages": 6,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 7,
+          "confidence": 0.8182
+        },
+        {
+          "eval_id": "W03-11",
+          "family": "equation_dependent",
+          "question": "Write the E step and M step update equations for a Gaussian mixture model",
+          "passed": false,
+          "error_type": "definition_orphan",
+          "abstained": false,
+          "retrieved_pages": [
+            567,
+            501,
+            476,
+            493,
+            595
+          ],
+          "retrieved_sections": [
+            "11.5 The Hybrid Monte Carlo Algorithm",
+            "10.2 Illustration: Variational Mixture of Gaussians",
+            "back-matter Exercises",
+            "10.2 Illustration: Variational Mixture of Gaussians",
+            "12.2 Probabilistic PCA"
+          ],
+          "recall_at_k": 0.0,
+          "hit_at_k": false,
+          "mrr": 0.0,
+          "ndcg_at_k": 0.0,
+          "gold_pages": 20,
+          "gold_sections_covered": 0,
+          "gold_sections_total": 2,
+          "units_read": 5,
+          "confidence": 0.8333
+        },
+        {
+          "eval_id": "W03-12",
+          "family": "equation_dependent",
+          "question": "What is the form of the multivariate Gaussian density and its normalization constant?",
+          "passed": false,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            100,
+            537,
+            524,
+            137,
+            103
+          ],
+          "retrieved_sections": [
+            "2.3 The Gaussian Distribution",
+            "back-matter Exercises",
+            "10.7 Expectation Propagation",
+            "2.4 The Exponential Family",
+            "2.3 The Gaussian Distribution"
+          ],
+          "recall_at_k": 0.0588,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.4704,
+          "gold_pages": 34,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 6,
+          "confidence": 0.6667
+        },
+        {
+          "eval_id": "W03-13",
+          "family": "equation_dependent",
+          "question": "Give the dual representation of the maximum margin classifier and the KKT conditions",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            346,
+            350,
+            359,
+            347,
+            358
+          ],
+          "retrieved_sections": [
+            "7.1 Maximum Margin Classifiers",
+            "7.1 Maximum Margin Classifiers",
+            "7.1 Maximum Margin Classifiers",
+            "7.1 Maximum Margin Classifiers",
+            "7.1 Maximum Margin Classifiers"
+          ],
+          "recall_at_k": 0.2778,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "gold_pages": 18,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 5,
+          "confidence": 0.7143
+        },
+        {
+          "eval_id": "W03-14",
+          "family": "equation_dependent",
+          "question": "What is the lower bound on the log marginal likelihood used in variational inference?",
+          "passed": true,
+          "error_type": "weak_ranking",
+          "abstained": false,
+          "retrieved_pages": [
+            505,
+            514,
+            497,
+            470,
+            519
+          ],
+          "retrieved_sections": [
+            "10.3 Variational Linear Regression",
+            "10.5 Local Variational Methods",
+            "10.2 Illustration: Variational Mixture of Gaussians",
+            "9.4 The EM Algorithm in General",
+            "10.6 Variational Logistic Regression"
+          ],
+          "recall_at_k": 0.0625,
+          "hit_at_k": true,
+          "mrr": 0.25,
+          "ndcg_at_k": 0.1461,
+          "gold_pages": 16,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 2,
+          "units_read": 5,
+          "confidence": 0.8571
+        },
+        {
+          "eval_id": "W03-15",
+          "family": "definition_use_chain",
+          "question": "What are responsibilities in a mixture model and how are they used in the M step?",
+          "passed": false,
+          "error_type": "partial_coverage",
+          "abstained": false,
+          "retrieved_pages": [
+            476,
+            683,
+            473,
+            453,
+            661
+          ],
+          "retrieved_sections": [
+            "back-matter Exercises",
+            "14.5 Conditional Mixture Models",
+            "back-matter Exercises",
+            "9.2 Mixtures of Gaussians",
+            "13.3 Linear Dynamical Systems"
+          ],
+          "recall_at_k": 0.05,
+          "hit_at_k": true,
+          "mrr": 0.25,
+          "ndcg_at_k": 0.1461,
+          "gold_pages": 20,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 2,
+          "units_read": 7,
+          "confidence": 1.0
+        },
+        {
+          "eval_id": "W03-16",
+          "family": "definition_use_chain",
+          "question": "What is the design matrix and where does it appear in the normal equations for least squares?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            161,
+            226,
+            295,
+            334,
+            163
+          ],
+          "retrieved_sections": [
+            "3.1 Linear Basis Function Models",
+            "4.3 Probabilistic Discriminative Models",
+            "5.7 Bayesian NeuralNetworks",
+            "6.4 Gaussian Processes",
+            "3.1 Linear Basis Function Models"
+          ],
+          "recall_at_k": 0.25,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.4704,
+          "gold_pages": 8,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 5,
+          "confidence": 0.7143
+        },
+        {
+          "eval_id": "W03-17",
+          "family": "definition_use_chain",
+          "question": "What is a kernel function and what rules let you construct new kernels from existing ones?",
+          "passed": false,
+          "error_type": "over_abstain",
+          "abstained": true,
+          "retrieved_pages": [
+            314,
+            312,
+            313,
+            315,
+            338
+          ],
+          "retrieved_sections": [
+            "6.2 Construct ing Kernels",
+            "6.1 Dual Represent at ions",
+            "6.2 Construct ing Kernels",
+            "6.2 Construct ing Kernels",
+            "6.4 Gaussian Processes"
+          ],
+          "recall_at_k": 0.6667,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.8688,
+          "gold_pages": 6,
+          "gold_sections_covered": 2,
+          "gold_sections_total": 2,
+          "units_read": 7,
+          "confidence": 0.5
+        },
+        {
+          "eval_id": "W03-18",
+          "family": "scope_condition",
+          "question": "Under what conditions does the EM algorithm guarantee that the likelihood does not decrease?",
+          "passed": false,
+          "error_type": "over_abstain",
+          "abstained": true,
+          "retrieved_pages": [
+            460,
+            470,
+            591,
+            462,
+            468
+          ],
+          "retrieved_sections": [
+            "9.3 AnAlternative View of EM",
+            "9.4 The EM Algorithm in General",
+            "12.2 Probabilistic PCA",
+            "9.3 AnAlternative View of EM",
+            "9.4 The EM Algorithm in General"
+          ],
+          "recall_at_k": 0.5,
+          "hit_at_k": true,
+          "mrr": 0.5,
+          "ndcg_at_k": 0.3973,
+          "gold_pages": 4,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 5,
+          "confidence": 0.4286
+        },
+        {
+          "eval_id": "W03-19",
+          "family": "scope_condition",
+          "question": "When does the Laplace approximation give a poor approximation to the posterior?",
+          "passed": true,
+          "error_type": "weak_ranking",
+          "abstained": false,
+          "retrieved_pages": [
+            526,
+            235,
+            371,
+            233,
+            234
+          ],
+          "retrieved_sections": [
+            "10.7 Expectation Propagation",
+            "4.5 Bayesian Logistic Regression",
+            "7.2 Relevance Vector Machines",
+            "4.4 The Laplace Approximation",
+            "4.4 The Laplace Approximation"
+          ],
+          "recall_at_k": 0.5,
+          "hit_at_k": true,
+          "mrr": 0.25,
+          "ndcg_at_k": 0.3191,
+          "gold_pages": 4,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 6,
+          "confidence": 0.75
+        },
+        {
+          "eval_id": "W03-20",
+          "family": "scope_condition",
+          "question": "What conditional independence assumptions does the naive Bayes model make and when are they violated?",
+          "passed": false,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            397,
+            65,
+            587,
+            413,
+            638
+          ],
+          "retrieved_sections": [
+            "8.2 Conditional Independence",
+            "1.5 DecisionTheory",
+            "12.2 Probabilistic PCA",
+            "8.4 Inference in Graphical Models",
+            "13.2 Hidden Markov Models"
+          ],
+          "recall_at_k": 0.1,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.3392,
+          "gold_pages": 10,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 8,
+          "confidence": 0.625
+        },
+        {
+          "eval_id": "W03-21",
+          "family": "cross_section",
+          "question": "How does probabilistic PCA differ from conventional principal component analysis?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            577,
+            602,
+            17,
+            585,
+            586
+          ],
+          "retrieved_sections": [
+            "12.1 Principal Component Analysis",
+            "12.2 Probabilistic PCA",
+            "unmapped",
+            "12.1 Principal Component Analysis",
+            "12.1 Principal Component Analysis"
+          ],
+          "recall_at_k": 0.1538,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.8304,
+          "gold_pages": 26,
+          "gold_sections_covered": 2,
+          "gold_sections_total": 2,
+          "units_read": 5,
+          "confidence": 0.7143
+        },
+        {
+          "eval_id": "W03-22",
+          "family": "cross_section",
+          "question": "Compare the bias-variance decomposition with Bayesian model comparison as ways of controlling model complexity",
+          "passed": false,
+          "error_type": "over_abstain",
+          "abstained": true,
+          "retrieved_pages": [
+            169,
+            171,
+            170,
+            180,
+            183
+          ],
+          "retrieved_sections": [
+            "3.2 TheBias-Variance Decomposition",
+            "3.2 TheBias-Variance Decomposition",
+            "3.2 TheBias-Variance Decomposition",
+            "3.4 Bayesian Model Comparison",
+            "3.4 Bayesian Model Comparison"
+          ],
+          "recall_at_k": 0.5,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "gold_pages": 10,
+          "gold_sections_covered": 2,
+          "gold_sections_total": 2,
+          "units_read": 5,
+          "confidence": 0.5
+        },
+        {
+          "eval_id": "W03-23",
+          "family": "cross_section",
+          "question": "How are the sum-product and max-sum algorithms related?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": false,
+          "retrieved_pages": [
+            430,
+            428,
+            76,
+            429,
+            419
+          ],
+          "retrieved_sections": [
+            "8.4 Inference in Graphical Models",
+            "8.4 Inference in Graphical Models",
+            "1.6 Information Theory",
+            "8.4 Inference in Graphical Models",
+            "8.4 Inference in Graphical Models"
+          ],
+          "recall_at_k": 0.1538,
+          "hit_at_k": true,
+          "mrr": 1.0,
+          "ndcg_at_k": 0.8304,
+          "gold_pages": 26,
+          "gold_sections_covered": 1,
+          "gold_sections_total": 1,
+          "units_read": 5,
+          "confidence": 0.8
+        },
+        {
+          "eval_id": "W03-24",
+          "family": "hard_negative",
+          "question": "How does the transformer self-attention mechanism compute attention weights?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": true,
+          "retrieved_pages": [
+            125,
+            612,
+            264,
+            365,
+            259
+          ],
+          "retrieved_sections": [
+            "2.3 The Gaussian Distribution",
+            "12.4 Nonlinear Latent Variable Models",
+            "5.3 Error Back propagation",
+            "7.2 Relevance Vector Machines",
+            "5.3 Error Back propagation"
+          ],
+          "recall_at_k": 0.0,
+          "hit_at_k": false,
+          "mrr": 0.0,
+          "ndcg_at_k": 0.0,
+          "gold_pages": 0,
+          "gold_sections_covered": 0,
+          "gold_sections_total": 0,
+          "units_read": 6,
+          "confidence": 0.3333
+        },
+        {
+          "eval_id": "W03-25",
+          "family": "hard_negative",
+          "question": "What is dropout regularization in deep neural networks?",
+          "passed": false,
+          "error_type": "over_answer",
+          "abstained": false,
+          "retrieved_pages": [
+            275,
+            739,
+            274,
+            8,
+            729
+          ],
+          "retrieved_sections": [
+            "5.5 Regularization in NeuralNetworks",
+            "back-matter References",
+            "5.4 The Hessian Matrix",
+            "unmapped",
+            "back-matter References"
+          ],
+          "recall_at_k": 0.0,
+          "hit_at_k": false,
+          "mrr": 0.0,
+          "ndcg_at_k": 0.0,
+          "gold_pages": 0,
+          "gold_sections_covered": 0,
+          "gold_sections_total": 0,
+          "units_read": 5,
+          "confidence": 0.6
+        },
+        {
+          "eval_id": "W03-26",
+          "family": "hard_negative",
+          "question": "How do batch normalization layers stabilize neural network training?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": true,
+          "retrieved_pages": [
+            609,
+            247,
+            267,
+            258,
+            259
+          ],
+          "retrieved_sections": [
+            "12.4 Nonlinear Latent Variable Models",
+            "5.1 Feed-forward Network Functions",
+            "5.4 The Hessian Matrix",
+            "5.2 Network Training",
+            "5.3 Error Back propagation"
+          ],
+          "recall_at_k": 0.0,
+          "hit_at_k": false,
+          "mrr": 0.0,
+          "ndcg_at_k": 0.0,
+          "gold_pages": 0,
+          "gold_sections_covered": 0,
+          "gold_sections_total": 0,
+          "units_read": 5,
+          "confidence": 0.4286
+        },
+        {
+          "eval_id": "W03-27",
+          "family": "hard_negative",
+          "question": "What is a variational autoencoder and how is it trained with the reparameterization trick?",
+          "passed": true,
+          "error_type": "ok",
+          "abstained": true,
+          "retrieved_pages": [
+            500,
+            672,
+            355,
+            295,
+            275
+          ],
+          "retrieved_sections": [
+            "10.2 Illustration: Variational Mixture of Gaussians",
+            "14.3 Boosting",
+            "7.1 Maximum Margin Classifiers",
+            "5.7 Bayesian NeuralNetworks",
+            "5.5 Regularization in NeuralNetworks"
+          ],
+          "recall_at_k": 0.0,
+          "hit_at_k": false,
+          "mrr": 0.0,
+          "ndcg_at_k": 0.0,
+          "gold_pages": 0,
+          "gold_sections_covered": 0,
+          "gold_sections_total": 0,
+          "units_read": 7,
+          "confidence": 0.4
+        }
+      ]
+    },
+    {
+      "arm": "page_image",
+      "skipped": "page-image units carry no text; this arm needs CLIP/SigLIP2. See README 'Adding the page-image arm'."
+    }
+  ]
+}

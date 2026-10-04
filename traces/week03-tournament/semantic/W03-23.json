@@ -1,0 +1,124 @@
+{
+  "run": "semantic",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-23",
+    "family": "cross_section",
+    "title": "Sum-product and max-sum",
+    "question": "How are the sum-product and max-sum algorithms related?",
+    "intent": "comparison",
+    "risk_level": "medium",
+    "expected_decision": "ground",
+    "gold_sections": [
+      "8.4 Inference in Graphical Models"
+    ],
+    "min_recall_at_k": 0.06,
+    "min_distinct_evidence": 2,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "at least 2 distinct gold pages"
+    ],
+    "notes": "Both algorithms live in one 32-page section, so this tests within-section dispersion rather than cross-section retrieval."
+  },
+  "gold_pages": [
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435
+  ],
+  "result": {
+    "eval_id": "W03-23",
+    "family": "cross_section",
+    "question": "How are the sum-product and max-sum algorithms related?",
+    "passed": true,
+    "error_type": "ok",
+    "abstained": false,
+    "retrieved_pages": [
+      429,
+      430,
+      419,
+      428,
+      432
+    ],
+    "retrieved_sections": [
+      "8.4 Inference in Graphical Models",
+      "8.4 Inference in Graphical Models",
+      "8.4 Inference in Graphical Models",
+      "8.4 Inference in Graphical Models",
+      "8.4 Inference in Graphical Models"
+    ],
+    "recall_at_k": 0.1923,
+    "hit_at_k": true,
+    "mrr": 1.0,
+    "ndcg_at_k": 1.0,
+    "gold_pages": 26,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 5,
+    "confidence": 0.6
+  },
+  "evidence": [
+    {
+      "chunk_id": "semantic-00820",
+      "pages": [
+        429,
+        430
+      ],
+      "section": "8.4 Inference in Graphical Models",
+      "score": 19.4423,
+      "preview": "In practice, products of many small probabilities can lead to numerical under-\nflowproblems,and so it is convenient to work with the logarithm of the joint distri-\nbution. T  (cid:17) (cid:18)\nln maxp(x) =maxlnp(x). (8.9"
+    },
+    {
+      "chunk_id": "semantic-00802",
+      "pages": [
+        419
+      ],
+      "section": "8.4 Inference in Graphical Models",
+      "score": 17.2131,
+      "preview": "8.4.4 The sum-product algorithm\nWeshallnowmakeuseofthefactorgraphframeworktoderiveapowerfulclass\nofe  ts of nodes, which will lead us to the sum-product algorithm. Later we shall\nmod ify the technique to allow the most p"
+    },
+    {
+      "chunk_id": "semantic-00817",
+      "pages": [
+        428,
+        429
+      ],
+      "section": "8.4 Inference in Graphical Models",
+      "score": 15.7739,
+      "preview": "We therefore seek an efficient algorithm for finding the value of x that maxi-\nmizes the joint distr  er at or in terms of its components\nmaxp(x)=max...maxp(x) (8.89)\nx x 1 x M 412 8.GRAPHICAL MODELS\nwhere M is the total"
+    },
+    {
+      "chunk_id": "semantic-00825",
+      "pages": [
+        432
+      ],
+      "section": "8.4 Inference in Graphical Models",
+      "score": 13.6729,
+      "preview": "If k = 2\nand k = 3 each represent possible values of xmax  uration. Note that if we had run a forward\npass of max-sum message passing followed by a backward pass and then applied\n(8.98)at each node separately,we could en"
+    }
+  ]
+}

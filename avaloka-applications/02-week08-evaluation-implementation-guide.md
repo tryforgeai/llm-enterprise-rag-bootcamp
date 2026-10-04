@@ -1,6 +1,6 @@
 # Avaloka AI — 评估落地实施指南（源自 Week 08《The Measure of All Things》）
 
-来源：`course/week-08.zh.md`（The Measure of All Things 五幕全量 + The Personal Equation 开场七实验）。
+来源：`course/week_08/week-08.zh.md`（The Measure of All Things 五幕全量 + The Personal Equation 开场七实验）。
 日期：2026-08-01。
 用途：把今天一整天的评估课，转成 Avaloka AI 可以**立刻照做**的、按优先级排序的实施清单。每一项标了 **必须/应该/以后**，并说明**为什么**、**检测点（哪个数 + 阈值）**、**具体步骤**。
 

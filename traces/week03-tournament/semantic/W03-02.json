@@ -1,0 +1,106 @@
+{
+  "run": "semantic",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-02",
+    "family": "definitional",
+    "title": "Backpropagation",
+    "question": "How does error backpropagation compute gradients in a neural network?",
+    "intent": "factual_definition",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "5.3 Error Back propagation"
+    ],
+    "min_recall_at_k": 0.15,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "recall@k >= 0.15"
+    ],
+    "notes": "Section title is itself mangled by the parser ('Error Back propagation'), so this case doubles as a check on whether whitespace repair rescued the heading."
+  },
+  "gold_pages": [
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266
+  ],
+  "result": {
+    "eval_id": "W03-02",
+    "family": "definitional",
+    "question": "How does error backpropagation compute gradients in a neural network?",
+    "passed": false,
+    "error_type": "weak_ranking",
+    "abstained": false,
+    "retrieved_pages": [
+      277,
+      259,
+      307,
+      308,
+      303
+    ],
+    "retrieved_sections": [
+      "5.5 Regularization in NeuralNetworks",
+      "5.3 Error Back propagation",
+      "back-matter Exercises",
+      "back-matter Exercises",
+      "back-matter Exercises"
+    ],
+    "recall_at_k": 0.125,
+    "hit_at_k": true,
+    "mrr": 0.5,
+    "ndcg_at_k": 0.214,
+    "gold_pages": 8,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 4,
+    "confidence": 0.6667
+  },
+  "evidence": [
+    {
+      "chunk_id": "semantic-00522",
+      "pages": [
+        277
+      ],
+      "section": "5.5 Regularization in NeuralNetworks",
+      "score": 14.0615,
+      "preview": "5.5.2 Early stopping\nAnalternativetoregularizationasawayofcontrollingtheef  nction defined with re-\nspect to a set of training data. For many of the optimization algorithms used for\nnetwork training, such as conjugate gr"
+    },
+    {
+      "chunk_id": "semantic-00489",
+      "pages": [
+        259
+      ],
+      "section": "5.3 Error Back propagation",
+      "score": 12.9639,
+      "preview": "Nonlinear optimization algorithms,and their practical application to neural net-\nworktraining,are discussed in detail in Bishop and Nabney(2008). 5.3. Error Back propagation\nOur goal in this section is to find an efficie"
+    },
+    {
+      "chunk_id": "semantic-00579",
+      "pages": [
+        307,
+        308
+      ],
+      "section": "back-matter Exercises",
+      "score": 12.5278,
+      "preview": "(5.208)\n∂ηj\n(cid:5)\nHence,bymakinguseof the constraint kπk =1,derive the result(5.147). 5.33 ((cid:12)) Writedownapai  L 1 and L 2 of the links. Assume the origin of the coordinate system is\ngivenbytheattachmentpointofth"
+    },
+    {
+      "chunk_id": "semantic-00575",
+      "pages": [
+        303,
+        304
+      ],
+      "section": "back-matter Exercises",
+      "score": 11.5966,
+      "preview": "Derive the correspond-\ning error function if we consider a network having an output −1 (cid:1) y(x,w) (cid:1) 1\nand target values t = 1  eigenvector equation (5.33). By\nsettingthevectorv in(5.39)equal to each of the eige"
+    }
+  ]
+}

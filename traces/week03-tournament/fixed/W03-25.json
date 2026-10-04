@@ -1,0 +1,101 @@
+{
+  "run": "fixed",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-25",
+    "family": "hard_negative",
+    "title": "Dropout",
+    "question": "What is dropout regularization in deep neural networks?",
+    "intent": "factual_definition",
+    "risk_level": "high",
+    "expected_decision": "refuse",
+    "gold_sections": [],
+    "min_recall_at_k": 0.0,
+    "min_distinct_evidence": 0,
+    "expect_abstain": true,
+    "pass_criteria": [
+      "decision == refuse"
+    ],
+    "notes": "Adversarial by construction: section 5.5 is literally titled 'Regularization in Neural Networks', so lexical overlap is near total while answerability is zero. The contextual arm is at extra risk here because its prefix repeats the section title."
+  },
+  "gold_pages": [],
+  "result": {
+    "eval_id": "W03-25",
+    "family": "hard_negative",
+    "question": "What is dropout regularization in deep neural networks?",
+    "passed": false,
+    "error_type": "over_answer",
+    "abstained": false,
+    "retrieved_pages": [
+      274,
+      275,
+      724,
+      739,
+      737
+    ],
+    "retrieved_sections": [
+      "5.4 The Hessian Matrix",
+      "5.5 Regularization in NeuralNetworks",
+      "back-matter References",
+      "back-matter References",
+      "back-matter References"
+    ],
+    "recall_at_k": 0.0,
+    "hit_at_k": false,
+    "mrr": 0.0,
+    "ndcg_at_k": 0.0,
+    "gold_pages": 0,
+    "gold_sections_covered": 0,
+    "gold_sections_total": 0,
+    "units_read": 5,
+    "confidence": 0.6
+  },
+  "evidence": [
+    {
+      "chunk_id": "fixed-01042",
+      "pages": [
+        274
+      ],
+      "section": "5.4 The Hessian Matrix",
+      "score": 11.2703,
+      "preview": "elythoseforstandardforwardandbackwardpropagation,andsothe\nextension of exist ing soft wa re to compute this product is typically straight forward.\nIf desired, the te  1,...,0) each of which picks out one column of the He"
+    },
+    {
+      "chunk_id": "fixed-01046",
+      "pages": [
+        275
+      ],
+      "section": "5.5 Regularization in NeuralNetworks",
+      "score": 11.1878,
+      "preview": "5.5.Regularization in NeuralNetworks 257\n1 M =1 1 M =3 1 M =10\n0 0 0\n−1 −1 −1\n0 1 0 1 0 1\nFigure5.9 Examplesoftwo-layer networks trained on10data points drawn from the sinusoidal data set. The\ngraphs show the result of f"
+    },
+    {
+      "chunk_id": "fixed-02826",
+      "pages": [
+        724
+      ],
+      "section": "back-matter References",
+      "score": 9.126,
+      "preview": "ordatavisualiza-\nfor Bayesian networks. In S. Becker, S. Thrun, tion.IEEE Transactions on Pattern Analysis and\nand K. Obermeyer (Eds  vances in Neural Machine Intelligence20(3),281–293."
+    },
+    {
+      "chunk_id": "fixed-02904",
+      "pages": [
+        739
+      ],
+      "section": "back-matter References",
+      "score": 8.861,
+      "preview": "728 REFERENCES\nWebb, A. R. (1994). Functional approximation by Williams, O., A. Blake, and R. Cipolla (2005).\nfeed-forward networks: aleast-squares approach Sparse Bayesian learning for efficient visual\nto generalisation"
+    },
+    {
+      "chunk_id": "fixed-02893",
+      "pages": [
+        737
+      ],
+      "section": "back-matter References",
+      "score": 8.0751,
+      "preview": "726 REFERENCES\nC.L.Giles(Eds.), Advances in Neural In for ma- Tarassenko, L. (1995). Novelty detection for the\ntion Processing Systems, Volume 5, pp. 50–58. identification of masses in mamograms. In Pro-\nMorganKaufmann. "
+    }
+  ]
+}

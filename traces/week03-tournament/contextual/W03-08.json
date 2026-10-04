@@ -1,0 +1,128 @@
+{
+  "run": "contextual",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-08",
+    "family": "figure_dependent",
+    "title": "HMM trellis",
+    "question": "What does the trellis diagram for a hidden Markov model look like?",
+    "intent": "figure_lookup",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "13.2 Hidden Markov Models"
+    ],
+    "min_recall_at_k": 0.08,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true"
+    ],
+    "notes": "Named in the lab README as image-only content. Kept verbatim so the tournament result can be compared against the lab's informal observation."
+  },
+  "gold_pages": [
+    626,
+    627,
+    628,
+    629,
+    630,
+    631,
+    632,
+    633,
+    634,
+    635,
+    636,
+    637,
+    638,
+    639,
+    640,
+    641,
+    642,
+    643,
+    644,
+    645,
+    646,
+    647,
+    648,
+    649
+  ],
+  "result": {
+    "eval_id": "W03-08",
+    "family": "figure_dependent",
+    "question": "What does the trellis diagram for a hidden Markov model look like?",
+    "passed": true,
+    "error_type": "ok",
+    "abstained": false,
+    "retrieved_pages": [
+      629,
+      626,
+      431,
+      749,
+      631
+    ],
+    "retrieved_sections": [
+      "13.2 Hidden Markov Models",
+      "13.2 Hidden Markov Models",
+      "8.4 Inference in Graphical Models",
+      "back-matter Index",
+      "13.2 Hidden Markov Models"
+    ],
+    "recall_at_k": 0.125,
+    "hit_at_k": true,
+    "mrr": 1.0,
+    "ndcg_at_k": 0.6844,
+    "gold_pages": 24,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 7,
+    "confidence": 0.6667
+  },
+  "evidence": [
+    {
+      "chunk_id": "contextual-02470",
+      "pages": [
+        629
+      ],
+      "section": "13.2 Hidden Markov Models",
+      "score": 16.8409,
+      "preview": "614 13.SEQUENTIALDATA\nFigure13.9 Example of the state transition diagram fora3-state A11 A22 A33\nleft-to-right hidden Markov model. Notethatoncea\nstatehasbeenvacated,it cannot later be re-entered.\nA12 A23\nk =1 k =2 k =3\n"
+    },
+    {
+      "chunk_id": "contextual-02459",
+      "pages": [
+        626
+      ],
+      "section": "13.2 Hidden Markov Models",
+      "score": 16.8053,
+      "preview": "13.2.Hidden Markov Models 611\nFigure13.6 Transition diagram show in ga model whose la- A22\ntent variables have three possible states corre-\nsponding to the three boxes. The black lines\ndenote the elements of the transiti"
+    },
+    {
+      "chunk_id": "contextual-01670",
+      "pages": [
+        431
+      ],
+      "section": "8.4 Inference in Graphical Models",
+      "score": 15.2211,
+      "preview": "414 8.GRAPHICAL MODELS\nFigure8.53 A lattice, or trellis, diagram show-\ning explicitly the K possible states (one per row\nofthediagram)for each of the variablesx n inthe k =1\nchain model. In this illustration K = 3. The a"
+    },
+    {
+      "chunk_id": "contextual-02942",
+      "pages": [
+        749
+      ],
+      "section": "back-matter Index",
+      "score": 14.015,
+      "preview": "738 INDEX\ntrellisdiagram,see lattice diagram\ntriangulatedgraph,416\ntype 2 maximum likelihood, see evidence approxi-\nmation\nun determined multiplier,see Lagrange multiplier\nundirected graph,see Markov random field\nuniform"
+    },
+    {
+      "chunk_id": "contextual-02478",
+      "pages": [
+        631
+      ],
+      "section": "13.2 Hidden Markov Models",
+      "score": 13.3034,
+      "preview": "616 13.SEQUENTIALDATA\nexponentially with the length of the chain. In fact, the summation in (13.11) cor-\nresponds to summing over exponentially many paths through the lattice diagram in\nFigure13.7.\nWe have already encoun"
+    }
+  ]
+}

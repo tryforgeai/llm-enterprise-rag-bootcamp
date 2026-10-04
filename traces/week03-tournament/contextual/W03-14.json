@@ -1,0 +1,121 @@
+{
+  "run": "contextual",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-14",
+    "family": "equation_dependent",
+    "title": "Variational lower bound",
+    "question": "What is the lower bound on the log marginal likelihood used in variational inference?",
+    "intent": "equation_lookup",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "9.4 The EM Algorithm in General",
+      "10.1 Variational Inference"
+    ],
+    "min_recall_at_k": 0.06,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true"
+    ],
+    "notes": "Gold corrected on 2026-09-12 after reading the source. The bound L(q,theta) is derived in section 9.4 (PDF pages 469-470) and reused for variational inference in 10.1; the original gold named 10.1 only, which scored a correct retrieval into 9.4 as a miss. Shares heavy vocabulary with 10.2 through 10.7, so a landing in a neighbouring variational section is still a miss."
+  },
+  "gold_pages": [
+    468,
+    469,
+    470,
+    471,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490
+  ],
+  "result": {
+    "eval_id": "W03-14",
+    "family": "equation_dependent",
+    "question": "What is the lower bound on the log marginal likelihood used in variational inference?",
+    "passed": true,
+    "error_type": "weak_ranking",
+    "abstained": false,
+    "retrieved_pages": [
+      505,
+      514,
+      497,
+      470,
+      519
+    ],
+    "retrieved_sections": [
+      "10.3 Variational Linear Regression",
+      "10.5 Local Variational Methods",
+      "10.2 Illustration: Variational Mixture of Gaussians",
+      "9.4 The EM Algorithm in General",
+      "10.6 Variational Logistic Regression"
+    ],
+    "recall_at_k": 0.0625,
+    "hit_at_k": true,
+    "mrr": 0.25,
+    "ndcg_at_k": 0.1461,
+    "gold_pages": 16,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 2,
+    "units_read": 5,
+    "confidence": 0.8571
+  },
+  "evidence": [
+    {
+      "chunk_id": "contextual-01971",
+      "pages": [
+        505
+      ],
+      "section": "10.3 Variational Linear Regression",
+      "score": 25.5466,
+      "preview": "ttoa\n0\n=  , the quantity L represents lower bound on the log marginal\nlikelihoodp(t|M)forthemodel. Ifweassignequalpriorprobabilitiesp(M)tothe\ndifferent values of M, then we can interpret L as an approximation to the post"
+    },
+    {
+      "chunk_id": "contextual-02006",
+      "pages": [
+        514
+      ],
+      "section": "10.5 Local Variational Methods",
+      "score": 24.7355,
+      "preview": "iational framework,weseektomaximizealowerboundonthemarginal\nlikelihood. For the Bayesian logistic regression model,the marginal likelihood takes\ntheform\n(cid:31)\n(cid:6) (cid:6)\n(cid:14)N\np(t)=  (cid:16)\nt 1−t\n1 1\n= 1−\n1"
+    },
+    {
+      "chunk_id": "contextual-01937",
+      "pages": [
+        497
+      ],
+      "section": "10.2 Illustration: Variational Mixture of Gaussians",
+      "score": 21.1068,
+      "preview": "10.2.Illustration: Variational Mixture of Gaussians 481\nIndeed,thesesingularitiesareremovedifwesimplyintroduceapriorandthenusea\nMAP estimate instead of maximum likelihood. Furthermore,thereisnoover-fitting\nif we choose a"
+    },
+    {
+      "chunk_id": "contextual-01831",
+      "pages": [
+        470
+      ],
+      "section": "9.4 The EM Algorithm in General",
+      "score": 18.2195,
+      "preview": "9.4.The EM Algorithm in General 453\nFigure9.14 The EM algorithm involves alter-\nnately computing a lower bound\non the log likelihood for the cur-\nrent parameter values and then lnp(X|θ)\nmaximizing this bound to obtain\nth"
+    },
+    {
+      "chunk_id": "contextual-02025",
+      "pages": [
+        519
+      ],
+      "section": "10.6 Variational Logistic Regression",
+      "score": 17.7418,
+      "preview": "t)\nL(q) = q(w,α)ln dwdα  tractable due to the form of the\nlikelihood factor p(t|w). We therefore apply the local variational bound to each of\nthe logistic sigmoid factors asbefore. This allows us to use the inequality(10"
+    }
+  ]
+}

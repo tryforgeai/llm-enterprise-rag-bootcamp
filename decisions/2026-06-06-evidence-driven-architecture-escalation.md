@@ -51,7 +51,7 @@ This order is guidance, not a requirement to install every layer.
 
 ## Affected Files
 
-- `course/week-01.md`
+- `course/week_01/week-01.md`
 - `avaloka-applications/01-avaloka-application-map.md`
 - `PROJECT_PLAN.md`
 - `docs/decisions/decision-log.md`

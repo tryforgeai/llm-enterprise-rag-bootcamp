@@ -2,11 +2,11 @@
 type: Metric
 title: RAGAS Faithfulness
 description: 把生成的答案拆成一条条声明，逐条对检索上下文做蕴含核验，报告有多大比例的声明被证据支持。
-resource: course/week-08.zh.md
+resource: course/week_08/week-08.zh.md
 tags: [generation, ragas, week-08, faithfulness]
 sources:
   - id: week08-notes
-    resource: course/week-08.zh.md
+    resource: course/week_08/week-08.zh.md
     author: agent-generated-notes
   - id: ragas-paper
     resource: "Es et al. 2023, RAGAS"

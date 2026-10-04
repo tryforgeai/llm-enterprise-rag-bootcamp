@@ -1,0 +1,110 @@
+{
+  "run": "semantic",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-11",
+    "family": "equation_dependent",
+    "title": "EM update equations",
+    "question": "Write the E step and M step update equations for a Gaussian mixture model",
+    "intent": "equation_lookup",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "9.2 Mixtures of Gaussians",
+      "9.3 AnAlternative View of EM"
+    ],
+    "min_recall_at_k": 0.1,
+    "min_distinct_evidence": 2,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "distinct gold sections covered >= 2"
+    ],
+    "notes": "Equation-dense pages parse to near-garbage ('MstepEvaluate', '(cid:2)'). Measures how much of the text arms' loss is chunking and how much is extraction."
+  },
+  "gold_pages": [
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467
+  ],
+  "result": {
+    "eval_id": "W03-11",
+    "family": "equation_dependent",
+    "question": "Write the E step and M step update equations for a Gaussian mixture model",
+    "passed": false,
+    "error_type": "partial_coverage",
+    "abstained": false,
+    "retrieved_pages": [
+      475,
+      476,
+      567,
+      453,
+      454
+    ],
+    "retrieved_sections": [
+      "back-matter Exercises",
+      "back-matter Exercises",
+      "11.5 The Hybrid Monte Carlo Algorithm",
+      "9.2 Mixtures of Gaussians",
+      "9.2 Mixtures of Gaussians"
+    ],
+    "recall_at_k": 0.1,
+    "hit_at_k": true,
+    "mrr": 0.25,
+    "ndcg_at_k": 0.2773,
+    "gold_pages": 20,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 2,
+    "units_read": 3,
+    "confidence": 0.8333
+  },
+  "evidence": [
+    {
+      "chunk_id": "semantic-00909",
+      "pages": [
+        475,
+        476
+      ],
+      "section": "back-matter Exercises",
+      "score": 18.5532,
+      "preview": "Given an observed data set {xn}, where n = 1,...,N, derive the E and M step\nequations of the EM algorithm for optimizing the mixing coefficients πk and the\ncomponent parametersµkij oft  yesian linear regression model lea"
+    },
+    {
+      "chunk_id": "semantic-01087",
+      "pages": [
+        567
+      ],
+      "section": "11.5 The Hybrid Monte Carlo Algorithm",
+      "score": 17.1201,
+      "preview": "Infact,it turn so ut that integration schemes can be de vi sed\nforwhichLiouville’st he or em still holds exactly. This property will be important in\nthehybridMonteCarloalg  (cid:1)z and(cid:1)r to the position and moment"
+    },
+    {
+      "chunk_id": "semantic-00870",
+      "pages": [
+        453,
+        454
+      ],
+      "section": "9.2 Mixtures of Gaussians",
+      "score": 14.2802,
+      "preview": "However,theseresultsdosuggestasimpleiterativeschemeforfindingasolutionto\nthe maximum likelihood problem,which asweshallsee turn so ut to be an instance\nof the EM algorithm for the par  ollowing two updates that we shall "
+    }
+  ]
+}

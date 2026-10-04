@@ -1,0 +1,110 @@
+{
+  "run": "contextual",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-09",
+    "family": "figure_dependent",
+    "title": "K-means on Old Faithful",
+    "question": "Scatter plot of the Old Faithful data set coloured by K-means cluster assignment",
+    "intent": "figure_lookup",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "9.1 K-means Clustering"
+    ],
+    "min_recall_at_k": 0.15,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true"
+    ],
+    "notes": "The data set name appears in the caption and in Appendix A. A retriever that lands in the appendix instead of section 9.1 has found the word, not the figure."
+  },
+  "gold_pages": [
+    442,
+    443,
+    444,
+    445,
+    446,
+    447
+  ],
+  "result": {
+    "eval_id": "W03-09",
+    "family": "figure_dependent",
+    "question": "Scatter plot of the Old Faithful data set coloured by K-means cluster assignment",
+    "passed": true,
+    "error_type": "ok",
+    "abstained": false,
+    "retrieved_pages": [
+      443,
+      444,
+      445,
+      454,
+      442
+    ],
+    "retrieved_sections": [
+      "9.1 K-means Clustering",
+      "9.1 K-means Clustering",
+      "9.1 K-means Clustering",
+      "9.2 Mixtures of Gaussians",
+      "9.1 K-means Clustering"
+    ],
+    "recall_at_k": 0.6667,
+    "hit_at_k": true,
+    "mrr": 1.0,
+    "ndcg_at_k": 0.8539,
+    "gold_pages": 6,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 5,
+    "confidence": 0.6
+  },
+  "evidence": [
+    {
+      "chunk_id": "contextual-01723",
+      "pages": [
+        443
+      ],
+      "section": "9.1 K-means Clustering",
+      "score": 28.4963,
+      "preview": "426 9.MIXTURE MODELS AND EM\n2 (a) 2 (b) 2 (c)\n0 0 0\n−2 −2 −2\n−2 0 2 −2 0 2 −2 0 2\n2 (d) 2 (e) 2 (f)\n0 0 0\n−2 −2 −2\n−2 0 2 −2 0 2 −2 0 2\n2 (g) 2 (h) 2 (i)\n0 0 0\n−2 −2 −2\n−2 0 2 −2 0 2 −2 0 2\nFigure 9.1 Illustration of the"
+    },
+    {
+      "chunk_id": "contextual-01725",
+      "pages": [
+        444
+      ],
+      "section": "9.1 K-means Clustering",
+      "score": 22.8818,
+      "preview": "9.1.K-means Clustering 427\nFigure9.2 PlotofthecostfunctionJ givenby\n(9.1)aftereachEstep(bluepoints) 1000\nand M step (red points) of the K-\nmeans algorithm for the example\nshown in Figure 9.1. The algo- J\nrithm has conver"
+    },
+    {
+      "chunk_id": "contextual-01732",
+      "pages": [
+        445
+      ],
+      "section": "9.1 K-means Clustering",
+      "score": 21.2523,
+      "preview": "m is that at each iteration, every\ndata  e may be other data points that lie roughly midway between cluster centres. In\nthe latter case, it is not clear that the hard assignment to the nearest cluster is the\nmost appropr"
+    },
+    {
+      "chunk_id": "contextual-01768",
+      "pages": [
+        454
+      ],
+      "section": "9.2 Mixtures of Gaussians",
+      "score": 19.6035,
+      "preview": "9.2.Mixtures of Gaussians 437\n2 2 2\nL=1\n0 0 0\n−2 −2 −2\n−2 0 (a) 2 −2 0 (b) 2 −2 0 (c) 2\n2 2 2\nL=2 L=5 L=20\n0 0 0\n−2 −2 −2\n−2 0 (d) 2 −2 0 (e) 2 −2 0 (f) 2\nFigure9.8 Illustration of the EM algorithm using the Old Faithful"
+    },
+    {
+      "chunk_id": "contextual-01721",
+      "pages": [
+        442
+      ],
+      "section": "9.1 K-means Clustering",
+      "score": 19.096,
+      "preview": " clusters and re-computingtheclus-\ntermeansarerepeatedinturnuntilthereisnofurtherchangeintheassignments(or\nuntil some maximum number of iteration sis exceed ed). Bec  r,itmayconvergetoalocalratherthanglobalminimumofJ. Th"
+    }
+  ]
+}

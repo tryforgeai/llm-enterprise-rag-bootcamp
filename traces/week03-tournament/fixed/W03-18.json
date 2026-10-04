@@ -1,0 +1,109 @@
+{
+  "run": "fixed",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-18",
+    "family": "scope_condition",
+    "title": "EM monotonicity conditions",
+    "question": "Under what conditions does the EM algorithm guarantee that the likelihood does not decrease?",
+    "intent": "conditional_claim",
+    "risk_level": "high",
+    "expected_decision": "ground",
+    "gold_sections": [
+      "9.4 The EM Algorithm in General"
+    ],
+    "min_recall_at_k": 0.15,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "recall@k >= 0.15"
+    ],
+    "notes": "The guarantee is conditional. Retrieving the claim without its conditions is the scope-inversion failure the week note flagged as the dangerous one, because nothing in the output looks wrong."
+  },
+  "gold_pages": [
+    468,
+    469,
+    470,
+    471
+  ],
+  "result": {
+    "eval_id": "W03-18",
+    "family": "scope_condition",
+    "question": "Under what conditions does the EM algorithm guarantee that the likelihood does not decrease?",
+    "passed": false,
+    "error_type": "over_abstain",
+    "abstained": true,
+    "retrieved_pages": [
+      460,
+      591,
+      455,
+      652,
+      453
+    ],
+    "retrieved_sections": [
+      "9.3 AnAlternative View of EM",
+      "12.2 Probabilistic PCA",
+      "9.2 Mixtures of Gaussians",
+      "13.3 Linear Dynamical Systems",
+      "9.2 Mixtures of Gaussians"
+    ],
+    "recall_at_k": 0.0,
+    "hit_at_k": false,
+    "mrr": 0.0,
+    "ndcg_at_k": 0.0,
+    "gold_pages": 4,
+    "gold_sections_covered": 0,
+    "gold_sections_total": 1,
+    "units_read": 5,
+    "confidence": 0.4286
+  },
+  "evidence": [
+    {
+      "chunk_id": "fixed-01793",
+      "pages": [
+        460
+      ],
+      "section": "9.3 AnAlternative View of EM",
+      "score": 11.1859,
+      "preview": "  he EM algorithm for\nGaussian mixtures as derived earlier. We shall gain more insight in to the role of the\nexpected complete-data log likelihood function when we give ap ro of of convergence\nof the EM algorithm in Sect"
+    },
+    {
+      "chunk_id": "fixed-02313",
+      "pages": [
+        591
+      ],
+      "section": "12.2 Probabilistic PCA",
+      "score": 10.2641,
+      "preview": "hood density model would simply be\nto find the eigenvectors and eig  wever, if the maximum likelihood solution is found by\nnumerical optimization of the likelihood function, for instance using an algorithm\nsuch as conjug"
+    },
+    {
+      "chunk_id": "fixed-01774",
+      "pages": [
+        455
+      ],
+      "section": "9.2 Mixtures of Gaussians",
+      "score": 9.8784,
+      "preview": "ma of the log likelihood\nfunction,and that EM is not guaranteed to find the largest of these maxima. Because\nthe EM algorithm for Gaussian mixtures plays such an important role,wesummarize\nitbelow.\nEM for Gaussian Mixtur"
+    },
+    {
+      "chunk_id": "fixed-02570",
+      "pages": [
+        652
+      ],
+      "section": "13.3 Linear Dynamical Systems",
+      "score": 9.7413,
+      "preview": "= {A,Γ,C,Σ,µ 0,V 0}, can be\ndetermined using maximum likelihood through the EM algorithm. IntheEstep,we\nneed to solve the inference problem of determining the local posterior marginals for\nthe latent variables,whichcanbe"
+    },
+    {
+      "chunk_id": "fixed-01767",
+      "pages": [
+        453
+      ],
+      "section": "9.2 Mixtures of Gaussians",
+      "score": 9.7398,
+      "preview": "heseresultsdosuggestasimpleiterativeschemeforfindingasolutionto\nthe maximum likelihood problem,which asweshallsee turn so ut to be an instance\nof the EM algorithm for the par  ollowing two updates that we shall call the "
+    }
+  ]
+}

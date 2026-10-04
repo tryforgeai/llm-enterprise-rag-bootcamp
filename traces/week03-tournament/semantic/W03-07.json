@@ -1,0 +1,114 @@
+{
+  "run": "semantic",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-07",
+    "family": "figure_dependent",
+    "title": "Mixture of Gaussians plate diagram",
+    "question": "Show the graphical model plate diagram for a mixture of Gaussians with latent variables",
+    "intent": "figure_lookup",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "9.2 Mixtures of Gaussians"
+    ],
+    "min_recall_at_k": 0.1,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true"
+    ],
+    "notes": "The answer is a diagram. Text arms can only reach it through the caption. This is where the page-image arm is expected to win, and the gap is the measurement the week note asked for."
+  },
+  "gold_pages": [
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455
+  ],
+  "result": {
+    "eval_id": "W03-07",
+    "family": "figure_dependent",
+    "question": "Show the graphical model plate diagram for a mixture of Gaussians with latent variables",
+    "passed": false,
+    "error_type": "off_target",
+    "abstained": false,
+    "retrieved_pages": [
+      491,
+      492,
+      490,
+      447,
+      626
+    ],
+    "retrieved_sections": [
+      "10.2 Illustration: Variational Mixture of Gaussians",
+      "10.2 Illustration: Variational Mixture of Gaussians",
+      "10.1 Variational Inference",
+      "9.1 K-means Clustering",
+      "13.2 Hidden Markov Models"
+    ],
+    "recall_at_k": 0.0,
+    "hit_at_k": false,
+    "mrr": 0.0,
+    "ndcg_at_k": 0.0,
+    "gold_pages": 8,
+    "gold_sections_covered": 0,
+    "gold_sections_total": 1,
+    "units_read": 5,
+    "confidence": 0.75
+  },
+  "evidence": [
+    {
+      "chunk_id": "semantic-00940",
+      "pages": [
+        491
+      ],
+      "section": "10.2 Illustration: Variational Mixture of Gaussians",
+      "score": 20.0283,
+      "preview": "10.2.Illustration: Variational Mixture of Gaussians 475\nFigure10.5 DirectedacyclicgraphrepresentingtheBayesianmix- π zn Λ\nture of Gaussians model, in which the box (plate) de-\nnotes a set of N i.i.d. observations. Here µ"
+    },
+    {
+      "chunk_id": "semantic-00942",
+      "pages": [
+        491,
+        492
+      ],
+      "section": "10.2 Illustration: Variational Mixture of Gaussians",
+      "score": 16.1997,
+      "preview": "Note that th er ei sa link fromΛtoµsince the variance of the distribution\noverµin(10.40)isafunctionofΛ. This example provides ani ce illustration of the distinct ion between latent vari-\nables and parameters. Variables s"
+    },
+    {
+      "chunk_id": "semantic-00938",
+      "pages": [
+        490
+      ],
+      "section": "10.1 Variational Inference",
+      "score": 15.3322,
+      "preview": "10.2. Illustration: Variational Mixture of Gaussians\nWenowreturntoourdiscussionoftheG  veloped in the previous section. This will provide a\ngood illustration of the application of variational methods and will also demons"
+    },
+    {
+      "chunk_id": "semantic-00858",
+      "pages": [
+        447
+      ],
+      "section": "9.1 K-means Clustering",
+      "score": 15.199,
+      "preview": "9.2. Mixtures of Gaussians\nInSection2.3.9we motivate dt he Gaussian mixture model asa simple linear su  Gaussian mixtures in\nterms of discrete latent variables. This will provide us with ad ee per insight in to this\nimpo"
+    },
+    {
+      "chunk_id": "semantic-01205",
+      "pages": [
+        626,
+        627
+      ],
+      "section": "13.2 Hidden Markov Models",
+      "score": 14.7436,
+      "preview": "13.2.Hidden Markov Models 611\nFigure13.6 Transition diagram show in ga model whose la- A22\ntent variables have three possible states corre-\nsponding to the three boxes. The black lines\ndenote the elements of the transiti"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "run": "semantic",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-10",
+    "family": "figure_dependent",
+    "title": "Feed-forward network diagram",
+    "question": "Diagram of a two-layer feed-forward network showing input, hidden and output units",
+    "intent": "figure_lookup",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "5.1 Feed-forward Network Functions"
+    ],
+    "min_recall_at_k": 0.15,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true"
+    ],
+    "notes": "Network topology is carried by the picture; the surrounding prose describes it only loosely."
+  },
+  "gold_pages": [
+    245,
+    246,
+    247,
+    248,
+    249,
+    250
+  ],
+  "result": {
+    "eval_id": "W03-10",
+    "family": "figure_dependent",
+    "question": "Diagram of a two-layer feed-forward network showing input, hidden and output units",
+    "passed": true,
+    "error_type": "ok",
+    "abstained": false,
+    "retrieved_pages": [
+      245,
+      246,
+      247,
+      248,
+      249
+    ],
+    "retrieved_sections": [
+      "5.1 Feed-forward Network Functions",
+      "5.1 Feed-forward Network Functions",
+      "5.1 Feed-forward Network Functions",
+      "5.1 Feed-forward Network Functions",
+      "5.1 Feed-forward Network Functions"
+    ],
+    "recall_at_k": 0.8333,
+    "hit_at_k": true,
+    "mrr": 1.0,
+    "ndcg_at_k": 1.0,
+    "gold_pages": 6,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 3,
+    "confidence": 0.8182
+  },
+  "evidence": [
+    {
+      "chunk_id": "semantic-00463",
+      "pages": [
+        245,
+        246
+      ],
+      "section": "5.1 Feed-forward Network Functions",
+      "score": 33.8529,
+      "preview": "j0\nThe quantities aj are known as activations. Each of them is then transformed using\nadifferentiable,nonlinearactivationfunctionh(·)togive\nzj =h(aj). (5.3)\nThese quantities correspond to the outputs of the basisfunction"
+    },
+    {
+      "chunk_id": "semantic-00468",
+      "pages": [
+        247,
+        248
+      ],
+      "section": "5.1 Feed-forward Network Functions",
+      "score": 29.4033,
+      "preview": "Anothergeneralizationofthenetworkarchitectureistoincludeskip-layer con-\nnections, eac  associated wi tha corresponding adaptive parameter. For 230 5.NEURALNETWORKS\nFigure5.2 Example of a neural network having a\ngeneralfe"
+    },
+    {
+      "chunk_id": "semantic-00469",
+      "pages": [
+        248,
+        249
+      ],
+      "section": "5.1 Feed-forward Network Functions",
+      "score": 27.5439,
+      "preview": "Although such theorem sa re re as su ri ng,the key problem is how to find suitable\nparameter values given as et of training data,and in later sections of this chapter we 5.1.Feed-forward Network Functions 231\nFigure5.3 I"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "run": "contextual",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-02",
+    "family": "definitional",
+    "title": "Backpropagation",
+    "question": "How does error backpropagation compute gradients in a neural network?",
+    "intent": "factual_definition",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "5.3 Error Back propagation"
+    ],
+    "min_recall_at_k": 0.15,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "recall@k >= 0.15"
+    ],
+    "notes": "Section title is itself mangled by the parser ('Error Back propagation'), so this case doubles as a check on whether whitespace repair rescued the heading."
+  },
+  "gold_pages": [
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266
+  ],
+  "result": {
+    "eval_id": "W03-02",
+    "family": "definitional",
+    "question": "How does error backpropagation compute gradients in a neural network?",
+    "passed": false,
+    "error_type": "over_abstain",
+    "abstained": true,
+    "retrieved_pages": [
+      277,
+      302,
+      307,
+      264,
+      303
+    ],
+    "retrieved_sections": [
+      "5.5 Regularization in NeuralNetworks",
+      "5.7 Bayesian NeuralNetworks",
+      "back-matter Exercises",
+      "5.3 Error Back propagation",
+      "back-matter Exercises"
+    ],
+    "recall_at_k": 0.125,
+    "hit_at_k": true,
+    "mrr": 0.25,
+    "ndcg_at_k": 0.1461,
+    "gold_pages": 8,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 5,
+    "confidence": 0.5
+  },
+  "evidence": [
+    {
+      "chunk_id": "contextual-01055",
+      "pages": [
+        277
+      ],
+      "section": "5.5 Regularization in NeuralNetworks",
+      "score": 14.4561,
+      "preview": "rk training, such as conjugate gradients, the error is a nonincreasing function\nof the iteration index. However,the error measured withrespectto independent data,\ngenerally called a validation set,  of smallest error wit"
+    },
+    {
+      "chunk_id": "contextual-01155",
+      "pages": [
+        302
+      ],
+      "section": "5.7 Bayesian NeuralNetworks",
+      "score": 14.3321,
+      "preview": "284 5.NEURALNETWORKS\n3 3\n2 2\n1 1\n0 0\n−1 −1\n−2 −2\n−2 −1 0 1 2 −2 −1 0 1 2\nFigure5.23 An illustration of the Laplace approximation fora Bayesian neural network having8hiddenunits\nwith‘tanh’activation functions anda single "
+    },
+    {
+      "chunk_id": "contextual-01178",
+      "pages": [
+        307
+      ],
+      "section": "back-matter Exercises",
+      "score": 12.7193,
+      "preview": "t(5.157)for the derivative of the error function withrespectto\nthe network output activations controlling the component variances in the mixture\ndensitynetwork.\n5.37 ((cid:12)  2.115), derive the predictive distribution "
+    },
+    {
+      "chunk_id": "contextual-01003",
+      "pages": [
+        264
+      ],
+      "section": "5.3 Error Back propagation",
+      "score": 12.6862,
+      "preview": "246 5.NEURALNETWORKS\nNext we compute theδ’sforeachoutputunitusing\nδk =yk−tk. (5.65)\nThen we back propagate these to obtainδsforthehiddenunitsusing\n(cid:2)K\nδj =(1−z j2) wkjδk. (5.66)\nk=1\nFinally, the derivatives with res"
+    },
+    {
+      "chunk_id": "contextual-01161",
+      "pages": [
+        303
+      ],
+      "section": "back-matter Exercises",
+      "score": 12.3241,
+      "preview": "function corresponding  ,in contrast to the usual error function.\n5.5 ((cid:12)) www Show that maximizing likelihood fora multiclass neural network model\nin which the network outputs have the interpretation yk(x,w) =p(t "
+    }
+  ]
+}

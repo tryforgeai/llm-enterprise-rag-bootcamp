@@ -1,0 +1,9 @@
+# Derived artifacts. Rebuilt in about three seconds by:
+#   python3 evals/week03-representation-tournament/build_representations.py
+# Committing them would add ~12 MB of data that is fully determined by the
+# committed source parse plus the build script.
+data/
+__pycache__/
+
+# results/ and traces/ are NOT ignored: a baseline you cannot diff against
+# later is not a baseline.

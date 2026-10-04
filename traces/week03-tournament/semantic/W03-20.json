@@ -1,0 +1,108 @@
+{
+  "run": "semantic",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-20",
+    "family": "scope_condition",
+    "title": "Conditional independence assumptions",
+    "question": "What conditional independence assumptions does the naive Bayes model make and when are they violated?",
+    "intent": "conditional_claim",
+    "risk_level": "high",
+    "expected_decision": "ground",
+    "gold_sections": [
+      "8.2 Conditional Independence"
+    ],
+    "min_recall_at_k": 0.15,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "recall@k >= 0.15"
+    ],
+    "notes": "'When are they violated' is the half most likely to be chunked away from the half that states the assumption."
+  },
+  "gold_pages": [
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399
+  ],
+  "result": {
+    "eval_id": "W03-20",
+    "family": "scope_condition",
+    "question": "What conditional independence assumptions does the naive Bayes model make and when are they violated?",
+    "passed": true,
+    "error_type": "weak_ranking",
+    "abstained": false,
+    "retrieved_pages": [
+      65,
+      397,
+      398,
+      638,
+      396
+    ],
+    "retrieved_sections": [
+      "1.5 DecisionTheory",
+      "8.2 Conditional Independence",
+      "8.2 Conditional Independence",
+      "13.2 Hidden Markov Models",
+      "8.2 Conditional Independence"
+    ],
+    "recall_at_k": 0.3,
+    "hit_at_k": true,
+    "mrr": 0.5,
+    "ndcg_at_k": 0.5148,
+    "gold_pages": 10,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 4,
+    "confidence": 0.625
+  },
+  "evidence": [
+    {
+      "chunk_id": "semantic-00122",
+      "pages": [
+        65
+      ],
+      "section": "1.5 DecisionTheory",
+      "score": 18.0541,
+      "preview": "46 1.INTRODUCTION\nindependent,sothat\np(x I,x B|C k)=p(x I|C k)p(x B|C k). (1.84)\nSection8.2 This is an example of conditional independence property,because the indepen-\nden ce holds when the distribution is conditioned o"
+    },
+    {
+      "chunk_id": "semantic-00754",
+      "pages": [
+        397,
+        398
+      ],
+      "section": "8.2 Conditional Independence",
+      "score": 17.1842,
+      "preview": "A related graphical st  urobservedvariableconsistsofaD-dimensional\nvectorx = (x 1,...,xD)T,andwewishtoassignobservedvaluesofxtooneofK\nclasses. Usingthe1-of-K encodingscheme,we can represent these classes by aK-\ndimension"
+    },
+    {
+      "chunk_id": "semantic-01225",
+      "pages": [
+        638
+      ],
+      "section": "13.2 Hidden Markov Models",
+      "score": 14.6733,
+      "preview": "Using the definition of ξ(zn−1,zn), and applying Bayes’\ntheorem,wehave\nξ(zn−1,zn)=p(zn−1,zn|X)\np(X|zn−1,zn)p(zn−1,zn)\n=\np(X)\np(x 1,...,xn−1|zn−1)p(xn|zn)p(xn+1,...,xN|zn)p(zn|zn−1)p(zn−1)\n=\np(X)\nα(zn−1)p(xn|zn)p(zn|zn−1)"
+    },
+    {
+      "chunk_id": "semantic-00752",
+      "pages": [
+        396,
+        397
+      ],
+      "section": "8.2 Conditional Independence",
+      "score": 14.0915,
+      "preview": "x1 xN\nxn\nN\n(a) (b) 380 8.GRAPHICAL MODELS\nFigure8.24 A graphical representation of the ‘naive Bayes’ z\nmodel for classification. Conditioned on the\nclass label z, the components of the observed\nvector x = (x 1,...,x D)T "
+    }
+  ]
+}

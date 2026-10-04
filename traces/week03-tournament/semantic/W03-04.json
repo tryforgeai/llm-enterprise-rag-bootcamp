@@ -1,0 +1,99 @@
+{
+  "run": "semantic",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-04",
+    "family": "definitional",
+    "title": "PCA",
+    "question": "What is principal component analysis?",
+    "intent": "factual_definition",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "12.1 Principal Component Analysis"
+    ],
+    "min_recall_at_k": 0.15,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "recall@k >= 0.15"
+    ],
+    "notes": "Short query, one dominant section. Closest analogue in this set to EV-001 in the main eval: few content words, so lexical ranking has little to work with."
+  },
+  "gold_pages": [
+    577,
+    578,
+    579,
+    580,
+    581,
+    582,
+    583,
+    584,
+    585,
+    586
+  ],
+  "result": {
+    "eval_id": "W03-04",
+    "family": "definitional",
+    "question": "What is principal component analysis?",
+    "passed": true,
+    "error_type": "ok",
+    "abstained": false,
+    "retrieved_pages": [
+      577,
+      610,
+      611,
+      578,
+      579
+    ],
+    "retrieved_sections": [
+      "12.1 Principal Component Analysis",
+      "12.4 Nonlinear Latent Variable Models",
+      "12.4 Nonlinear Latent Variable Models",
+      "12.1 Principal Component Analysis",
+      "12.1 Principal Component Analysis"
+    ],
+    "recall_at_k": 0.3,
+    "hit_at_k": true,
+    "mrr": 1.0,
+    "ndcg_at_k": 0.6164,
+    "gold_pages": 10,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 3,
+    "confidence": 1.0
+  },
+  "evidence": [
+    {
+      "chunk_id": "semantic-01106",
+      "pages": [
+        577
+      ],
+      "section": "12.1 Principal Component Analysis",
+      "score": 16.4101,
+      "preview": "12.1.Principal Component Analysis 561\nFigure12.2 Principal component analysis seeks a space u1\nof lower dimensionality, known as the princi-\npal subspace and denoted by the magenta\nx2\nline, such that the orthogonal proje"
+    },
+    {
+      "chunk_id": "semantic-01168",
+      "pages": [
+        610,
+        611
+      ],
+      "section": "12.4 Nonlinear Latent Variable Models",
+      "score": 14.5182,
+      "preview": "Similarly,thesecondhalfofthenetworkdefinesanarbitraryfunctional\nmapping from theM-dime  network effectively performs a nonlinear principal component analysis. x3 z2 x3\nF1\nF2\nS\nx1 z1 x1\nx2 x2\nFigure12.20 Geometricalinterp"
+    },
+    {
+      "chunk_id": "semantic-01110",
+      "pages": [
+        578,
+        579
+      ],
+      "section": "12.1 Principal Component Analysis",
+      "score": 14.1134,
+      "preview": "Ifweleft-multiplybyuT 1 andmake\nuseofuT 1u\n1\n=1,we see that the variance isgivenby\nuT 1Su 1 =λ 1 (12.6)\nand so the variance will be a maximum when we set u 1 equal to the eigenvector\nhaving the largest eigenvalue λ 1. Th"
+    }
+  ]
+}

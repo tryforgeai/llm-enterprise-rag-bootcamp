@@ -1,0 +1,138 @@
+{
+  "run": "fixed",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-12",
+    "family": "equation_dependent",
+    "title": "Multivariate Gaussian density",
+    "question": "What is the form of the multivariate Gaussian density and its normalization constant?",
+    "intent": "equation_lookup",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "2.3 The Gaussian Distribution"
+    ],
+    "min_recall_at_k": 0.06,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true"
+    ],
+    "notes": "34-page gold section, the largest in the set. Recall is heavily capped; this case is about MRR and hit@k."
+  },
+  "gold_pages": [
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131
+  ],
+  "result": {
+    "eval_id": "W03-12",
+    "family": "equation_dependent",
+    "question": "What is the form of the multivariate Gaussian density and its normalization constant?",
+    "passed": false,
+    "error_type": "ok",
+    "abstained": false,
+    "retrieved_pages": [
+      100,
+      137,
+      155,
+      537,
+      482
+    ],
+    "retrieved_sections": [
+      "2.3 The Gaussian Distribution",
+      "2.4 The Exponential Family",
+      "back-matter Exercises",
+      "back-matter Exercises",
+      "10.1 Variational Inference"
+    ],
+    "recall_at_k": 0.0294,
+    "hit_at_k": true,
+    "mrr": 1.0,
+    "ndcg_at_k": 0.3392,
+    "gold_pages": 34,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 5,
+    "confidence": 0.6667
+  },
+  "evidence": [
+    {
+      "chunk_id": "fixed-00378",
+      "pages": [
+        100
+      ],
+      "section": "2.3 The Gaussian Distribution",
+      "score": 15.5144,
+      "preview": "2.3.The Gaussian Distribution 81\nFigure2.7 Theredcurveshowstheellip-\nx2\nu2\ntic al surface of constant proba-\nbility density fora Gaussian in\na two-dimensional space x = u1\n(x 1,x 2) on which the density\nis exp(−1/2) of i"
+    },
+    {
+      "chunk_id": "fixed-00512",
+      "pages": [
+        137
+      ],
+      "section": "2.4 The Exponential Family",
+      "score": 12.9251,
+      "preview": " ity\ndensity under a nonlinear change of variables, given by (1.27). If a function h(λ)\nis constant, and we change variables to λ = η2, then (cid:1) h(η) = h(η2) will also be\nconstant. However, if we choose the density p"
+    },
+    {
+      "chunk_id": "fixed-00586",
+      "pages": [
+        155
+      ],
+      "section": "back-matter Exercises",
+      "score": 12.5138,
+      "preview": ":12)) www Consider a histogram-like density model in which the space x is di-\nvidedintofixedregionsforwhichthedensityp(x)takes the constant value hi over\ntheith region,andthatthe  t ni of these observations fall in regio"
+    },
+    {
+      "chunk_id": "fixed-02097",
+      "pages": [
+        537
+      ],
+      "section": "back-matter Exercises",
+      "score": 12.3368,
+      "preview": "n\nthe likelihood functio  integral, which can then be evaluated by invoking the standard\nresult for the normalization coefficient of a multivariate Gaussian. Finally take the\nlogarithm to obtain(10.164).\n10.36 ((cid:12)("
+    },
+    {
+      "chunk_id": "fixed-01881",
+      "pages": [
+        482
+      ],
+      "section": "10.1 Variational Inference",
+      "score": 11.1714,
+      "preview": "entakingtheexpectationwithrespectto\nall of the other factors{qi}fori(cid:9)=j.\nThe additive constant in (10.9) is set by normalizing the distribution q j(cid:1  [lnp(X,Z)])\nq j(Zj)= .\nexp(E i(cid:9)=j[lnp(X,Z)]) dZj\nInpr"
+    }
+  ]
+}

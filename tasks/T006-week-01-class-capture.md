@@ -10,7 +10,7 @@ Capture the first live class while the material is fresh.
 
 ## Working File
 
-`course/week-01.md`
+`course/week_01/week-01.md`
 
 ## Done Criteria
 
@@ -26,7 +26,7 @@ Capture the first live class while the material is fresh.
 
 Captured in:
 
-- `course/week-01.md`
+- `course/week_01/week-01.md`
 - `course/sources/2026-06-06-shared-chat-record.md`
 - `course/sources/2026-06-06-afternoon-transformer-larql-record.md`
 - `resources/glossary.md`

@@ -2,11 +2,11 @@
 type: Metric
 title: FActScore
 description: 把答案拆成不可再分的原子事实，逐条核实真伪，报告事实精度——比 RAGAS Faithfulness 粒度更细。
-resource: course/week-08.zh.md
+resource: course/week_08/week-08.zh.md
 tags: [generation, hallucination, week-08, claim-level]
 sources:
   - id: week08-notes
-    resource: course/week-08.zh.md
+    resource: course/week_08/week-08.zh.md
     author: agent-generated-notes
   - id: factscore-paper
     resource: "Min et al. 2023, FActScore (EMNLP)"

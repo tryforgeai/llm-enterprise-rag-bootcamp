@@ -9,7 +9,7 @@ sources:
     resource: course/week_07/summer-week-7-lesson-plan.pdf
     author: Asif Qamar
   - id: week08-notes
-    resource: course/week-08.zh.md
+    resource: course/week_08/week-08.zh.md
     author: agent-generated-notes
 generated:
   by: claude-code/2.1.226

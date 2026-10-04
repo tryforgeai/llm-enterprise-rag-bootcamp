@@ -2,11 +2,11 @@
 type: Metric
 title: NRR (Negative Rejection Rate)
 description: Tests a system with questions the corpus genuinely cannot answer, measuring whether it abstains honestly rather than fabricating a plausible-sounding answer from parametric memory.
-resource: course/week-08.zh.md
+resource: course/week_08/week-08.zh.md
 tags: [abstention, guardrail-adjacent, week-08, cognitive-humility]
 sources:
   - id: week08-notes
-    resource: course/week-08.zh.md
+    resource: course/week_08/week-08.zh.md
     author: agent-generated-notes
   - id: rgb-paper
     resource: "Chen et al. 2024, RGB (AAAI)"

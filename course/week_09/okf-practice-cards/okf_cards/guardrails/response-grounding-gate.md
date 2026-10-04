@@ -9,7 +9,7 @@ sources:
     resource: course/week_06/guardrailed_rag_pipeline_demo.py
     author: Asif Qamar
   - id: week08-notes
-    resource: course/week-08.zh.md
+    resource: course/week_08/week-08.zh.md
     author: agent-generated-notes
 generated:
   by: claude-code/2.1.226

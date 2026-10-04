@@ -1,0 +1,115 @@
+{
+  "run": "fixed",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-22",
+    "family": "cross_section",
+    "title": "Two routes to complexity control",
+    "question": "Compare the bias-variance decomposition with Bayesian model comparison as ways of controlling model complexity",
+    "intent": "comparison",
+    "risk_level": "medium",
+    "expected_decision": "ground",
+    "gold_sections": [
+      "3.2 TheBias-Variance Decomposition",
+      "3.4 Bayesian Model Comparison"
+    ],
+    "min_recall_at_k": 0.1,
+    "min_distinct_evidence": 2,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "distinct gold sections covered >= 2"
+    ],
+    "notes": "The two sections are not adjacent and share little vocabulary with each other. Hardest multi-hop case in the set."
+  },
+  "gold_pages": [
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    180,
+    181,
+    182,
+    183
+  ],
+  "result": {
+    "eval_id": "W03-22",
+    "family": "cross_section",
+    "question": "Compare the bias-variance decomposition with Bayesian model comparison as ways of controlling model complexity",
+    "passed": false,
+    "error_type": "over_abstain",
+    "abstained": true,
+    "retrieved_pages": [
+      171,
+      170,
+      169,
+      180,
+      740
+    ],
+    "retrieved_sections": [
+      "3.2 TheBias-Variance Decomposition",
+      "3.2 TheBias-Variance Decomposition",
+      "3.2 TheBias-Variance Decomposition",
+      "3.4 Bayesian Model Comparison",
+      "back-matter Index"
+    ],
+    "recall_at_k": 0.4,
+    "hit_at_k": true,
+    "mrr": 1.0,
+    "ndcg_at_k": 0.8688,
+    "gold_pages": 10,
+    "gold_sections_covered": 2,
+    "gold_sections_total": 2,
+    "units_read": 5,
+    "confidence": 0.5
+  },
+  "evidence": [
+    {
+      "chunk_id": "fixed-00645",
+      "pages": [
+        171
+      ],
+      "section": "3.2 TheBias-Variance Decomposition",
+      "score": 19.0506,
+      "preview": "152 3.LINEAR MODELS FOR REGRESSION\ndata set leading to large variance. Conversely, a large value of λ pulls the weight\nparameters towards zero leading to large bias.\nAlthough the bias-variance decomposition may provide s"
+    },
+    {
+      "chunk_id": "fixed-00641",
+      "pages": [
+        170
+      ],
+      "section": "3.2 TheBias-Variance Decomposition",
+      "score": 18.9512,
+      "preview": "3.2.TheBias-Variance Decomposition 151\nFigure3.6 Plot of squared bias and variance,\n0.15\ntogetherwith their sum,correspond-\ning to the results shown in Fig- (bias)2\nure 3.5. Also shown is the average 0.12 variance\ntest s"
+    },
+    {
+      "chunk_id": "fixed-00639",
+      "pages": [
+        169
+      ],
+      "section": "3.2 TheBias-Variance Decomposition",
+      "score": 18.1773,
+      "preview": "150 3.LINEAR MODELS FOR REGRESSION\n1 1\nlnλ=2.6\nt t\n0 0\n−1 −1\n0 1 0 1\nx x\n1 1\nlnλ=−0.31\nt t\n0 0\n−1 −1\n0 1 0 1\nx x\n1 1\nlnλ=−2.4\nt t\n0 0\n−1 −1\n0 1 0 1\nx x\nFigure3.5 Illustration of the dependence of bias and variance on mod"
+    },
+    {
+      "chunk_id": "fixed-00681",
+      "pages": [
+        180
+      ],
+      "section": "3.4 Bayesian Model Comparison",
+      "score": 17.2673,
+      "preview": "the over-fitting  eir values. Models can then be compared di-\nrectly on the training data, without the need for a validation set. This allows all\navailable data to be used for training and avoids the multiple training ru"
+    },
+    {
+      "chunk_id": "fixed-02909",
+      "pages": [
+        740
+      ],
+      "section": "back-matter Index",
+      "score": 17.0018,
+      "preview": "an information criterion,33,216\nαrecursion,620 Bayesian model comparison,161,473,483\nancestral sampling,365,525,613 Bayesian network,360\nannularflow,679 B  xturemodel,444\nARMA,seeautoregressivemovingaverage Bernoulli,Jac"
+    }
+  ]
+}

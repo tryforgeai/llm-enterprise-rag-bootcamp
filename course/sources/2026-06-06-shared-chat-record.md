@@ -14,7 +14,7 @@ This file preserves the durable learning content from the shared conversation an
 
 Canonical synthesized notes:
 
-- [Week 01](../week-01.md)
+- [Week 01](../week_01/week-01.md)
 
 Avaloka implementation comparison:
 

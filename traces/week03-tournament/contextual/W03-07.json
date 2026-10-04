@@ -1,0 +1,112 @@
+{
+  "run": "contextual",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-07",
+    "family": "figure_dependent",
+    "title": "Mixture of Gaussians plate diagram",
+    "question": "Show the graphical model plate diagram for a mixture of Gaussians with latent variables",
+    "intent": "figure_lookup",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "9.2 Mixtures of Gaussians"
+    ],
+    "min_recall_at_k": 0.1,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true"
+    ],
+    "notes": "The answer is a diagram. Text arms can only reach it through the caption. This is where the page-image arm is expected to win, and the gap is the measurement the week note asked for."
+  },
+  "gold_pages": [
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455
+  ],
+  "result": {
+    "eval_id": "W03-07",
+    "family": "figure_dependent",
+    "question": "Show the graphical model plate diagram for a mixture of Gaussians with latent variables",
+    "passed": true,
+    "error_type": "weak_ranking",
+    "abstained": false,
+    "retrieved_pages": [
+      618,
+      491,
+      501,
+      507,
+      448
+    ],
+    "retrieved_sections": [
+      "back-matter Exercises",
+      "10.2 Illustration: Variational Mixture of Gaussians",
+      "10.2 Illustration: Variational Mixture of Gaussians",
+      "10.4 Exponential Family Distributions",
+      "9.2 Mixtures of Gaussians"
+    ],
+    "recall_at_k": 0.125,
+    "hit_at_k": true,
+    "mrr": 0.2,
+    "ndcg_at_k": 0.1312,
+    "gold_pages": 8,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 7,
+    "confidence": 0.75
+  },
+  "evidence": [
+    {
+      "chunk_id": "contextual-02429",
+      "pages": [
+        618
+      ],
+      "section": "back-matter Exercises",
+      "score": 18.2798,
+      "preview": "602 12.CONTINUOUS LATENT VARIABLES\n12.22 ((cid:12)(cid:12)) Write down an expression for the expected complete-data log likelihood func-\ntion for the factor analysis model,and hence derive the corresponding Mstep equa-\nt"
+    },
+    {
+      "chunk_id": "contextual-01914",
+      "pages": [
+        491
+      ],
+      "section": "10.2 Illustration: Variational Mixture of Gaussians",
+      "score": 17.0485,
+      "preview": "10.2.Illustration: Variational Mixture of Gaussians 475\nFigure10.5 DirectedacyclicgraphrepresentingtheBayesianmix- π zn Λ\nture of Gaussians model, in which the box (plate) de-\nnotes a set of N i.i.d. observations. Here µ"
+    },
+    {
+      "chunk_id": "contextual-01957",
+      "pages": [
+        501
+      ],
+      "section": "10.2 Illustration: Variational Mixture of Gaussians",
+      "score": 14.9395,
+      "preview": "ent to maintain a full precision matrix for the Gaussian distribution\nover a set of variables if the optimal form for that distribution always had a diago-\nnal precision matrix(correspondingtoafac  as im ple graphical te"
+    },
+    {
+      "chunk_id": "contextual-01978",
+      "pages": [
+        507
+      ],
+      "section": "10.4 Exponential Family Distributions",
+      "score": 14.6743,
+      "preview": "o we solve the mit er-\nativelyinatwo-stageprocedure. InthevariationalEstep,we evaluate the expected\nsufficient statistics E[u(xn,zn)] using the current posterior distribution q(zn) over\nthe latent variables and use this "
+    },
+    {
+      "chunk_id": "contextual-01743",
+      "pages": [
+        448
+      ],
+      "section": "9.2 Mixtures of Gaussians",
+      "score": 13.5017,
+      "preview": "9.2.Mixtures of Gaussians 431\nFigure9.4 Graphical representation of a mixture model, in which z\nthe joint distribution is expressed in the form p(x,z) =\np(z)p(x|z).\nx\nwhere the parameters{πk}mustsatisfy\n0(cid:1)πk (cid:1"
+    }
+  ]
+}

@@ -121,7 +121,7 @@ Weeks 07 through 09 taught retrieval evaluation, generator evaluation, and gover
 
 Remaining v0.1 work is defined in `docs/product/version-roadmap.md` and `tasks/index.md`: Avaloka memory scope, a canonical trace, the minimal runnable loop, and the Memory Reader V0 benchmark.
 
-Current course capture: `course/week-09.zh.md`.
+Current course capture: `course/week_09/week-09.zh.md`.
 
 Run the eval baseline:
 

@@ -1,0 +1,108 @@
+{
+  "run": "semantic",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-13",
+    "family": "equation_dependent",
+    "title": "SVM dual and KKT",
+    "question": "Give the dual representation of the maximum margin classifier and the KKT conditions",
+    "intent": "equation_lookup",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "7.1 Maximum Margin Classifiers"
+    ],
+    "min_recall_at_k": 0.1,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "recall@k >= 0.1"
+    ],
+    "notes": "KKT conditions are also stated in Appendix E (Lagrange multipliers). Retrieving only the appendix is a definition-orphan style failure and is classified as such by the runner."
+  },
+  "gold_pages": [
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361
+  ],
+  "result": {
+    "eval_id": "W03-13",
+    "family": "equation_dependent",
+    "question": "Give the dual representation of the maximum margin classifier and the KKT conditions",
+    "passed": true,
+    "error_type": "ok",
+    "abstained": false,
+    "retrieved_pages": [
+      345,
+      346,
+      349,
+      350,
+      347
+    ],
+    "retrieved_sections": [
+      "7.1 Maximum Margin Classifiers",
+      "7.1 Maximum Margin Classifiers",
+      "7.1 Maximum Margin Classifiers",
+      "7.1 Maximum Margin Classifiers",
+      "7.1 Maximum Margin Classifiers"
+    ],
+    "recall_at_k": 0.2778,
+    "hit_at_k": true,
+    "mrr": 1.0,
+    "ndcg_at_k": 1.0,
+    "gold_pages": 18,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 3,
+    "confidence": 0.7143
+  },
+  "evidence": [
+    {
+      "chunk_id": "semantic-00653",
+      "pages": [
+        345,
+        346
+      ],
+      "section": "7.1 Maximum Margin Classifiers",
+      "score": 23.0794,
+      "preview": "Thisisanexampleofaquadraticprogrammingprobleminwhich\nwe are trying to minimize a quadratic function subject to a set of linear inequality\nconstraints. Itappearsthatthebiasparameterbhasdisappearedfromtheoptimiza-\ntion. Ho"
+    },
+    {
+      "chunk_id": "semantic-00662",
+      "pages": [
+        349,
+        350
+      ],
+      "section": "7.1 Maximum Margin Classifiers",
+      "score": 19.9297,
+      "preview": "We therefore minimize\n(cid:2)N\n1\nC ξn+ (cid:5)w(cid:5)2 (7.21)\n2\nn=1\n  point that is misclassified has ξn > 1, it follows that\nnξnisanupperboundonthenumberofmisclassifiedpoints. TheparameterC is\ntherefore analogous to(th"
+    },
+    {
+      "chunk_id": "semantic-00657",
+      "pages": [
+        347,
+        348
+      ],
+      "section": "7.1 Maximum Margin Classifiers",
+      "score": 13.2697,
+      "preview": "Although we can solve\nthisequationforbusinganarbitrarilychosensupportvectorxn,an ume ri cally more\nst able solution is obtained by first multiplying through by tn,makinguseoft2\nn\n=1,\nandthenaveragingtheseequationsoverall"
+    }
+  ]
+}

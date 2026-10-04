@@ -1,0 +1,120 @@
+{
+  "run": "semantic",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-08",
+    "family": "figure_dependent",
+    "title": "HMM trellis",
+    "question": "What does the trellis diagram for a hidden Markov model look like?",
+    "intent": "figure_lookup",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "13.2 Hidden Markov Models"
+    ],
+    "min_recall_at_k": 0.08,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true"
+    ],
+    "notes": "Named in the lab README as image-only content. Kept verbatim so the tournament result can be compared against the lab's informal observation."
+  },
+  "gold_pages": [
+    626,
+    627,
+    628,
+    629,
+    630,
+    631,
+    632,
+    633,
+    634,
+    635,
+    636,
+    637,
+    638,
+    639,
+    640,
+    641,
+    642,
+    643,
+    644,
+    645,
+    646,
+    647,
+    648,
+    649
+  ],
+  "result": {
+    "eval_id": "W03-08",
+    "family": "figure_dependent",
+    "question": "What does the trellis diagram for a hidden Markov model look like?",
+    "passed": true,
+    "error_type": "weak_ranking",
+    "abstained": false,
+    "retrieved_pages": [
+      430,
+      431,
+      629,
+      644,
+      749
+    ],
+    "retrieved_sections": [
+      "8.4 Inference in Graphical Models",
+      "8.4 Inference in Graphical Models",
+      "13.2 Hidden Markov Models",
+      "13.2 Hidden Markov Models",
+      "back-matter Index"
+    ],
+    "recall_at_k": 0.0833,
+    "hit_at_k": true,
+    "mrr": 0.3333,
+    "ndcg_at_k": 0.3156,
+    "gold_pages": 24,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 4,
+    "confidence": 0.6667
+  },
+  "evidence": [
+    {
+      "chunk_id": "semantic-00822",
+      "pages": [
+        430,
+        431
+      ],
+      "section": "8.4 Inference in Graphical Models",
+      "score": 15.9926,
+      "preview": "To see how this works, let us retur  exampleofN variablesx 1,...,xN eachhavingK states, 414 8.GRAPHICAL MODELS\nFigure8.53 A lattice, or trellis, diagram show-\ning explicitly the K possible states (one per row\nofthediagra"
+    },
+    {
+      "chunk_id": "semantic-01209",
+      "pages": [
+        629
+      ],
+      "section": "13.2 Hidden Markov Models",
+      "score": 14.5857,
+      "preview": "614 13.SEQUENTIALDATA\nFigure13.9 Example of the state transition diagram fora3-state A11 A22 A33\nleft-to-right hidden Markov model. Notethatoncea\nstatehasbeenvacated,it cannot later be re-entered. A12 A23\nk =1 k =2 k =3\n"
+    },
+    {
+      "chunk_id": "semantic-01236",
+      "pages": [
+        644
+      ],
+      "section": "13.2 Hidden Markov Models",
+      "score": 13.2446,
+      "preview": "Although these two algorithms have\ncom par able computational cost,theα–β version is the most common ly encountered\nSection13.3 one in the case of hidden Markov models, whereas for linear dynamical systems a\nrecursion an"
+    },
+    {
+      "chunk_id": "semantic-01402",
+      "pages": [
+        749
+      ],
+      "section": "back-matter Index",
+      "score": 12.7486,
+      "preview": "738 INDEX\ntrellisdiagram,see lattice diagram\ntriangulatedgraph,416\ntype 2 maximum likelihood, see evidence approxi-\nmation\nun determined multiplier,see Lagrange multiplier\nundirected graph,see Markov random field\nuniform"
+    }
+  ]
+}

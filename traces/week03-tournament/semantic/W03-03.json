@@ -1,0 +1,107 @@
+{
+  "run": "semantic",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-03",
+    "family": "definitional",
+    "title": "Gaussian processes",
+    "question": "What is a Gaussian process and how is it used for regression?",
+    "intent": "factual_definition",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "6.4 Gaussian Processes"
+    ],
+    "min_recall_at_k": 0.1,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "recall@k >= 0.1"
+    ],
+    "notes": "Long section (23 pages). Recall is structurally capped by gold size; read hit@k and MRR alongside it."
+  },
+  "gold_pages": [
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338
+  ],
+  "result": {
+    "eval_id": "W03-03",
+    "family": "definitional",
+    "question": "What is a Gaussian process and how is it used for regression?",
+    "passed": true,
+    "error_type": "ok",
+    "abstained": false,
+    "retrieved_pages": [
+      328,
+      329,
+      325,
+      326,
+      322
+    ],
+    "retrieved_sections": [
+      "6.4 Gaussian Processes",
+      "6.4 Gaussian Processes",
+      "6.4 Gaussian Processes",
+      "6.4 Gaussian Processes",
+      "6.4 Gaussian Processes"
+    ],
+    "recall_at_k": 0.2778,
+    "hit_at_k": true,
+    "mrr": 1.0,
+    "ndcg_at_k": 1.0,
+    "gold_pages": 18,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 3,
+    "confidence": 1.0
+  },
+  "evidence": [
+    {
+      "chunk_id": "semantic-00623",
+      "pages": [
+        328,
+        329
+      ],
+      "section": "6.4 Gaussian Processes",
+      "score": 11.3816,
+      "preview": "For large training datasets,however,the direct application of Gaussian process\nmethodscanbecomeinfeasible,andsoarangeofapproximationschemeshavebeen\ndeveloped  ´ and Opper, 2002; Seeger et al., 2003). Practical issues in "
+    },
+    {
+      "chunk_id": "semantic-00619",
+      "pages": [
+        325,
+        326
+      ],
+      "section": "6.4 Gaussian Processes",
+      "score": 11.3135,
+      "preview": "To do this, we partition\nthe covariance matrix asfollows\n(ci  khaselementsk(xn,xN+1)forn = 1,...,N, andthescalar 308 6.KERNELMETHODS\n(1.00,4.00,0.00,0.00) (9.00,4.00,0.00,0.00) (1.00,64.00,0.00,0.00)\n3 9 3\n1.5 4.5 1.5\n0 "
+    },
+    {
+      "chunk_id": "semantic-00611",
+      "pages": [
+        322
+      ],
+      "section": "6.4 Gaussian Processes",
+      "score": 10.7998,
+      "preview": "304 6.KERNELMETHODS\ntic discriminative models,leading to the framework of Gaussian processes. Weshall\ntherebyseehowkernelsarisenaturallyinaBayesiansetting. In Chapter 3, we considered linear regression models of the form"
+    }
+  ]
+}

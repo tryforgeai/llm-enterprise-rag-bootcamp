@@ -2,11 +2,11 @@
 type: Metric
 title: ECE (Expected Calibration Error)
 description: Bins predictions and compares the model's stated confidence against actual accuracy in each bin, weighted across bins — measures whether a model is "confident when it should be, hesitant when it should be."
-resource: course/week-08.zh.md
+resource: course/week_08/week-08.zh.md
 tags: [calibration, week-08, cognitive-humility]
 sources:
   - id: week08-notes
-    resource: course/week-08.zh.md
+    resource: course/week_08/week-08.zh.md
     author: agent-generated-notes
   - id: guo-calibration
     resource: "Guo et al. 2017, On Calibration of Modern Neural Networks (ICML)"

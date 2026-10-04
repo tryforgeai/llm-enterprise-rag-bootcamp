@@ -1,0 +1,123 @@
+{
+  "run": "fixed",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-13",
+    "family": "equation_dependent",
+    "title": "SVM dual and KKT",
+    "question": "Give the dual representation of the maximum margin classifier and the KKT conditions",
+    "intent": "equation_lookup",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "7.1 Maximum Margin Classifiers"
+    ],
+    "min_recall_at_k": 0.1,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "recall@k >= 0.1"
+    ],
+    "notes": "KKT conditions are also stated in Appendix E (Lagrange multipliers). Retrieving only the appendix is a definition-orphan style failure and is classified as such by the runner."
+  },
+  "gold_pages": [
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361
+  ],
+  "result": {
+    "eval_id": "W03-13",
+    "family": "equation_dependent",
+    "question": "Give the dual representation of the maximum margin classifier and the KKT conditions",
+    "passed": true,
+    "error_type": "ok",
+    "abstained": false,
+    "retrieved_pages": [
+      346,
+      350,
+      347,
+      359,
+      721
+    ],
+    "retrieved_sections": [
+      "7.1 Maximum Margin Classifiers",
+      "7.1 Maximum Margin Classifiers",
+      "7.1 Maximum Margin Classifiers",
+      "7.1 Maximum Margin Classifiers",
+      "back-matter E.Lagrange Multipliers"
+    ],
+    "recall_at_k": 0.2222,
+    "hit_at_k": true,
+    "mrr": 1.0,
+    "ndcg_at_k": 0.8688,
+    "gold_pages": 18,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 5,
+    "confidence": 0.7143
+  },
+  "evidence": [
+    {
+      "chunk_id": "fixed-01325",
+      "pages": [
+        346
+      ],
+      "section": "7.1 Maximum Margin Classifiers",
+      "score": 26.1549,
+      "preview": "7.1.Maximum Margin Classifiers 329\nEliminating w and b from L(w,b,a) using these conditions then gives the dual\nrepresentation of the maximum margin problem in which we maximize\n(cid:2)N (cid:2)N (cid:2)N\nL(cid:4) (a)= a"
+    },
+    {
+      "chunk_id": "fixed-01341",
+      "pages": [
+        350
+      ],
+      "section": "7.1 Maximum Margin Classifiers",
+      "score": 23.997,
+      "preview": "7.1.Maximum Margin Classifiers 333\nwhere{an (cid:2) 0}and{µn (cid:2) 0}are Lagrange multipliers. The corresponding set of\nAppendixE KKT conditions are givenby\nan (cid:2) 0 (7.23)\ntny(xn)−1+ξn (cid:2) 0 (7.24)\nan(tny(xn)−"
+    },
+    {
+      "chunk_id": "fixed-01330",
+      "pages": [
+        347
+      ],
+      "section": "7.1 Maximum Margin Classifiers",
+      "score": 15.6742,
+      "preview": "330 7.SPARSE KERNEL MACHINES\nInAppendixE,we show th ata constrained optimization of this form satisfies the\nKarush-Kuhn-Tucker(KKT)conditions,which inthiscase require that the following\nthree properties hold\nan (cid:2) 0"
+    },
+    {
+      "chunk_id": "fixed-01377",
+      "pages": [
+        359
+      ],
+      "section": "7.1 Maximum Margin Classifiers",
+      "score": 15.3601,
+      "preview": "he box constraints\n0(cid:1)an (cid:1)C (7.62)\n0(cid:1)(cid:1)an (cid:1)C (7.63)\ntogetherwith the condition(7.58).\nSubstituting(7.57)into(7.1),weseethat  ush-Kuhn-Tucker (KKT) conditions, which state that at\nthe solution "
+    },
+    {
+      "chunk_id": "fixed-02809",
+      "pages": [
+        721
+      ],
+      "section": "back-matter E.Lagrange Multipliers",
+      "score": 13.4683,
+      "preview": "710 E.LAGRANGE MULTIPLIERS\nproblem of maximizing f(x) subject to g(x) (cid:2) 0 is obtained by optimizing the\nLagrange function(E.4)with respect tox andλsubject to the conditions\ng(x) (cid:2) 0 (E.9)\nλ (cid:2) 0 (E.10)\nλ"
+    }
+  ]
+}

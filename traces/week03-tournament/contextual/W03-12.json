@@ -1,0 +1,138 @@
+{
+  "run": "contextual",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-12",
+    "family": "equation_dependent",
+    "title": "Multivariate Gaussian density",
+    "question": "What is the form of the multivariate Gaussian density and its normalization constant?",
+    "intent": "equation_lookup",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "2.3 The Gaussian Distribution"
+    ],
+    "min_recall_at_k": 0.06,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true"
+    ],
+    "notes": "34-page gold section, the largest in the set. Recall is heavily capped; this case is about MRR and hit@k."
+  },
+  "gold_pages": [
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131
+  ],
+  "result": {
+    "eval_id": "W03-12",
+    "family": "equation_dependent",
+    "question": "What is the form of the multivariate Gaussian density and its normalization constant?",
+    "passed": false,
+    "error_type": "ok",
+    "abstained": false,
+    "retrieved_pages": [
+      100,
+      537,
+      524,
+      137,
+      103
+    ],
+    "retrieved_sections": [
+      "2.3 The Gaussian Distribution",
+      "back-matter Exercises",
+      "10.7 Expectation Propagation",
+      "2.4 The Exponential Family",
+      "2.3 The Gaussian Distribution"
+    ],
+    "recall_at_k": 0.0588,
+    "hit_at_k": true,
+    "mrr": 1.0,
+    "ndcg_at_k": 0.4704,
+    "gold_pages": 34,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 6,
+    "confidence": 0.6667
+  },
+  "evidence": [
+    {
+      "chunk_id": "contextual-00378",
+      "pages": [
+        100
+      ],
+      "section": "2.3 The Gaussian Distribution",
+      "score": 17.015,
+      "preview": "2.3.The Gaussian Distribution 81\nFigure2.7 Theredcurveshowstheellip-\nx2\nu2\ntic al surface of constant proba-\nbility density fora Gaussian in\na two-dimensional space x = u1\n(x 1,x 2) on which the density\nis exp(−1/2) of i"
+    },
+    {
+      "chunk_id": "contextual-02097",
+      "pages": [
+        537
+      ],
+      "section": "back-matter Exercises",
+      "score": 13.8269,
+      "preview": "n\nthe likelihood functio  integral, which can then be evaluated by invoking the standard\nresult for the normalization coefficient of a multivariate Gaussian. Finally take the\nlogarithm to obtain(10.164).\n10.36 ((cid:12)("
+    },
+    {
+      "chunk_id": "contextual-02041",
+      "pages": [
+        524
+      ],
+      "section": "10.7 Expectation Propagation",
+      "score": 13.6648,
+      "preview": "fferent form of KL divergence.\nwhereZj is the normalization constant givenby\n(cid:6)\nZj = fj(θ)q\\j (θ)dθ. (10.197)\n(cid:4)\nWe now determine are vi sed factor fj(θ)by minimizing theK  e (cid:15) ’ (cid:16)\nKL\nfj(θ)q\\j(θ)’"
+    },
+    {
+      "chunk_id": "contextual-00512",
+      "pages": [
+        137
+      ],
+      "section": "2.4 The Exponential Family",
+      "score": 13.4972,
+      "preview": " ity\ndensity under a nonlinear change of variables, given by (1.27). If a function h(λ)\nis constant, and we change variables to λ = η2, then (cid:1) h(η) = h(η2) will also be\nconstant. However, if we choose the density p"
+    },
+    {
+      "chunk_id": "contextual-00389",
+      "pages": [
+        103
+      ],
+      "section": "2.3 The Gaussian Distribution",
+      "score": 13.1353,
+      "preview": "84 2.PROBABILITY DISTRIBUTIONS\nFigure2.8 Contours of constant x2 x2 x2\nprobability density for a Gaussian\ndistribution in two dimensions in\nwhich the covariance matrix is(a)of\ngeneral form, (b) diagonal, in which\nthe ell"
+    }
+  ]
+}

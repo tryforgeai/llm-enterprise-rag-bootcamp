@@ -1,0 +1,114 @@
+{
+  "run": "semantic",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-14",
+    "family": "equation_dependent",
+    "title": "Variational lower bound",
+    "question": "What is the lower bound on the log marginal likelihood used in variational inference?",
+    "intent": "equation_lookup",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "9.4 The EM Algorithm in General",
+      "10.1 Variational Inference"
+    ],
+    "min_recall_at_k": 0.06,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true"
+    ],
+    "notes": "Gold corrected on 2026-09-12 after reading the source. The bound L(q,theta) is derived in section 9.4 (PDF pages 469-470) and reused for variational inference in 10.1; the original gold named 10.1 only, which scored a correct retrieval into 9.4 as a miss. Shares heavy vocabulary with 10.2 through 10.7, so a landing in a neighbouring variational section is still a miss."
+  },
+  "gold_pages": [
+    468,
+    469,
+    470,
+    471,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    489,
+    490
+  ],
+  "result": {
+    "eval_id": "W03-14",
+    "family": "equation_dependent",
+    "question": "What is the lower bound on the log marginal likelihood used in variational inference?",
+    "passed": true,
+    "error_type": "weak_ranking",
+    "abstained": false,
+    "retrieved_pages": [
+      514,
+      505,
+      506,
+      519,
+      469
+    ],
+    "retrieved_sections": [
+      "10.5 Local Variational Methods",
+      "10.3 Variational Linear Regression",
+      "10.3 Variational Linear Regression",
+      "10.6 Variational Logistic Regression",
+      "9.4 The EM Algorithm in General"
+    ],
+    "recall_at_k": 0.0625,
+    "hit_at_k": true,
+    "mrr": 0.2,
+    "ndcg_at_k": 0.1312,
+    "gold_pages": 16,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 2,
+    "units_read": 4,
+    "confidence": 1.0
+  },
+  "evidence": [
+    {
+      "chunk_id": "semantic-00982",
+      "pages": [
+        514
+      ],
+      "section": "10.5 Local Variational Methods",
+      "score": 22.9226,
+      "preview": "For the Bayesian logistic regression model,the marginal likelihood takes\ntheform\n(cid:31)\n(cid:6) (cid:6)\n(cid:14)N\np(t)=  (cid:16)\nt 1−t\n1 1\n= 1−\n1+e−a 1+e−a\ne−a\n= eat =eat σ(−a) (10.148)\n1+e−a\nwhere a = wTφ. In order t"
+    },
+    {
+      "chunk_id": "semantic-00964",
+      "pages": [
+        505,
+        506
+      ],
+      "section": "10.3 Variational Linear Regression",
+      "score": 22.5044,
+      "preview": "(10.112)\nFigure10.9showsaplotofthelowerboundL(q)versusthedegreeofapolynomial\nmodel for a synthetic data set generated from a degree three polynomial. Here the\npriorparametershavebeensettoa\n0\n=  , the quantity L represent"
+    },
+    {
+      "chunk_id": "semantic-00991",
+      "pages": [
+        519
+      ],
+      "section": "10.6 Variational Logistic Regression",
+      "score": 21.9858,
+      "preview": "The marginal likelihood for this model now takestheform\n(cid:6)(cid:6)\np(t)= p(w,α,t)dwdα (10.167)\nwhere the joint distribution isgivenby\np(w,α,t)=p(t|w )p(w|α)p(α). (10.168)\nWe are now faced with an analytically intract"
+    },
+    {
+      "chunk_id": "semantic-00899",
+      "pages": [
+        469,
+        470
+      ],
+      "section": "9.4 The EM Algorithm in General",
+      "score": 18.5569,
+      "preview": "The distribution q(Z) KL(q||p)\nis held fixed and the lower bound\nL(q,θ) is maximized with respect\nto the parameter vector θ to give\na revised value θnew. Because the\nKL divergence is nonnegative, this\ncauses the log like"
+    }
+  ]
+}

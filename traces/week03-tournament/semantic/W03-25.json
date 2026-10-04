@@ -1,0 +1,93 @@
+{
+  "run": "semantic",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-25",
+    "family": "hard_negative",
+    "title": "Dropout",
+    "question": "What is dropout regularization in deep neural networks?",
+    "intent": "factual_definition",
+    "risk_level": "high",
+    "expected_decision": "refuse",
+    "gold_sections": [],
+    "min_recall_at_k": 0.0,
+    "min_distinct_evidence": 0,
+    "expect_abstain": true,
+    "pass_criteria": [
+      "decision == refuse"
+    ],
+    "notes": "Adversarial by construction: section 5.5 is literally titled 'Regularization in Neural Networks', so lexical overlap is near total while answerability is zero. The contextual arm is at extra risk here because its prefix repeats the section title."
+  },
+  "gold_pages": [],
+  "result": {
+    "eval_id": "W03-25",
+    "family": "hard_negative",
+    "question": "What is dropout regularization in deep neural networks?",
+    "passed": false,
+    "error_type": "over_answer",
+    "abstained": false,
+    "retrieved_pages": [
+      15,
+      274,
+      651,
+      738,
+      739
+    ],
+    "retrieved_sections": [
+      "unmapped",
+      "5.4 The Hessian Matrix",
+      "13.3 Linear Dynamical Systems",
+      "back-matter References",
+      "back-matter References"
+    ],
+    "recall_at_k": 0.0,
+    "hit_at_k": false,
+    "mrr": 0.0,
+    "ndcg_at_k": 0.0,
+    "gold_pages": 0,
+    "gold_sections_covered": 0,
+    "gold_sections_total": 0,
+    "units_read": 4,
+    "confidence": 0.6
+  },
+  "evidence": [
+    {
+      "chunk_id": "semantic-00019",
+      "pages": [
+        15
+      ],
+      "section": "unmapped",
+      "score": 10.4481,
+      "preview": "252\n5.4.5 Exact evaluation of the Hessian . 253\n5.4.6 FastmultiplicationbytheHessian . 254\n5.5 Regularization in NeuralNetworks . 256\n5.5  . 261\n5.5.4 Tangent propagation . 263\n5.5.5 Training with transformed data . 265\n"
+    },
+    {
+      "chunk_id": "semantic-00517",
+      "pages": [
+        274
+      ],
+      "section": "5.4 The Hessian Matrix",
+      "score": 9.9262,
+      "preview": "5.5. Regularization in Neural Networks\nThe number of input a  at can be ad just ed togive the best predictive performance. NotethatM\ncontrols the number of parameters (weights and biases) in the network, and so we\nmight "
+    },
+    {
+      "chunk_id": "semantic-01251",
+      "pages": [
+        651
+      ],
+      "section": "13.3 Linear Dynamical Systems",
+      "score": 9.9096,
+      "preview": "The general form of the inference algorithms will, however, be\nthe same as for the hidden Markov model. It is interesting to note that,historically,\nhidden Markov models and lin  h expressed as graphical models, however,"
+    },
+    {
+      "chunk_id": "semantic-01395",
+      "pages": [
+        738,
+        739
+      ],
+      "section": "back-matter References",
+      "score": 8.9226,
+      "preview": "36,823– (with discussion). Journal of the Royal Statisti-\n84  Com mu ni ca tions of the Association for Com put- Sankhya¯: The In di an Journal of Statistics.Series\ningMachinery 27,1134–1142. A 26,359–372. 728 REFERENCES"
+    }
+  ]
+}

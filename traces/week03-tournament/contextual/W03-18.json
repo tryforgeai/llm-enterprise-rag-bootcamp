@@ -1,0 +1,109 @@
+{
+  "run": "contextual",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-18",
+    "family": "scope_condition",
+    "title": "EM monotonicity conditions",
+    "question": "Under what conditions does the EM algorithm guarantee that the likelihood does not decrease?",
+    "intent": "conditional_claim",
+    "risk_level": "high",
+    "expected_decision": "ground",
+    "gold_sections": [
+      "9.4 The EM Algorithm in General"
+    ],
+    "min_recall_at_k": 0.15,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "recall@k >= 0.15"
+    ],
+    "notes": "The guarantee is conditional. Retrieving the claim without its conditions is the scope-inversion failure the week note flagged as the dangerous one, because nothing in the output looks wrong."
+  },
+  "gold_pages": [
+    468,
+    469,
+    470,
+    471
+  ],
+  "result": {
+    "eval_id": "W03-18",
+    "family": "scope_condition",
+    "question": "Under what conditions does the EM algorithm guarantee that the likelihood does not decrease?",
+    "passed": false,
+    "error_type": "over_abstain",
+    "abstained": true,
+    "retrieved_pages": [
+      460,
+      470,
+      591,
+      462,
+      468
+    ],
+    "retrieved_sections": [
+      "9.3 AnAlternative View of EM",
+      "9.4 The EM Algorithm in General",
+      "12.2 Probabilistic PCA",
+      "9.3 AnAlternative View of EM",
+      "9.4 The EM Algorithm in General"
+    ],
+    "recall_at_k": 0.5,
+    "hit_at_k": true,
+    "mrr": 0.5,
+    "ndcg_at_k": 0.3973,
+    "gold_pages": 4,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 5,
+    "confidence": 0.4286
+  },
+  "evidence": [
+    {
+      "chunk_id": "contextual-01793",
+      "pages": [
+        460
+      ],
+      "section": "9.3 AnAlternative View of EM",
+      "score": 11.4232,
+      "preview": "  he EM algorithm for\nGaussian mixtures as derived earlier. We shall gain more insight in to the role of the\nexpected complete-data log likelihood function when we give ap ro of of convergence\nof the EM algorithm in Sect"
+    },
+    {
+      "chunk_id": "contextual-01831",
+      "pages": [
+        470
+      ],
+      "section": "9.4 The EM Algorithm in General",
+      "score": 11.1354,
+      "preview": "9.4.The EM Algorithm in General 453\nFigure9.14 The EM algorithm involves alter-\nnately computing a lower bound\non the log likelihood for the cur-\nrent parameter values and then lnp(X|θ)\nmaximizing this bound to obtain\nth"
+    },
+    {
+      "chunk_id": "contextual-02313",
+      "pages": [
+        591
+      ],
+      "section": "12.2 Probabilistic PCA",
+      "score": 11.0541,
+      "preview": "hood density model would simply be\nto find the eigenvectors and eig  wever, if the maximum likelihood solution is found by\nnumerical optimization of the likelihood function, for instance using an algorithm\nsuch as conjug"
+    },
+    {
+      "chunk_id": "contextual-01802",
+      "pages": [
+        462
+      ],
+      "section": "9.3 AnAlternative View of EM",
+      "score": 10.5391,
+      "preview": "r  M algorithm for maximizing the likelihood function for\nthe mixture of Bernoulli distributions. Todothis,we first introduce an explicit latent"
+    },
+    {
+      "chunk_id": "contextual-01825",
+      "pages": [
+        468
+      ],
+      "section": "9.4 The EM Algorithm in General",
+      "score": 10.3525,
+      "preview": "from(9.70)thatL  s a two-stage iterative optimization technique for finding\nmaximum likelihood solutions. We can use the decomposition (9.70) to define the\nEM algorithm and to demonstrate that it does indeed maximize the"
+    }
+  ]
+}

@@ -359,7 +359,7 @@ Weekly notes, labs, evals, and application maps should identify agent behavior, 
 
 - `README.md`
 - `PROJECT_PLAN.md`
-- `course/week-01.md`
+- `course/week_01/week-01.md`
 - `labs/01-minimal-rag-demo-plan.md`
 - `avaloka-applications/01-avaloka-application-map.md`
 - `decisions/2026-06-01-agent-first-project.md`
@@ -468,7 +468,7 @@ The highest-value work now is converting each live class into durable notes, que
 
 ### Consequences
 
-- `course/week-01.md` becomes the immediate working document.
+- `course/week_01/week-01.md` becomes the immediate working document.
 - The roadmap stage changes to active course / Week 01.
 - Pre-class preparation remains historical reference and is not deleted.
 
@@ -477,7 +477,7 @@ The highest-value work now is converting each live class into durable notes, que
 - `README.md`
 - `PROJECT_PLAN.md`
 - `course/00-course-overview.md`
-- `course/week-01.md`
+- `course/week_01/week-01.md`
 - `docs/product/version-roadmap.md`
 - `tasks/index.md`
 
@@ -507,7 +507,7 @@ Scale changes which architecture is appropriate, but anticipated future scale is
 
 ### Affected Docs
 
-- `course/week-01.md`
+- `course/week_01/week-01.md`
 - `avaloka-applications/01-avaloka-application-map.md`
 - `decisions/2026-06-06-evidence-driven-architecture-escalation.md`
 

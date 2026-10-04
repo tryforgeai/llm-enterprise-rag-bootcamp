@@ -1,0 +1,123 @@
+{
+  "run": "semantic",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-01",
+    "family": "definitional",
+    "title": "EM algorithm definition",
+    "question": "What is the expectation maximization algorithm?",
+    "intent": "factual_definition",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "9.3 AnAlternative View of EM",
+      "9.4 The EM Algorithm in General"
+    ],
+    "min_recall_at_k": 0.1,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "recall@k >= 0.1"
+    ],
+    "notes": "Baseline sanity. Prose-heavy exposition; every arm should clear this. A miss here means the pipeline is broken, not that chunking is interesting."
+  },
+  "gold_pages": [
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471
+  ],
+  "result": {
+    "eval_id": "W03-01",
+    "family": "definitional",
+    "question": "What is the expectation maximization algorithm?",
+    "passed": false,
+    "error_type": "ok",
+    "abstained": false,
+    "retrieved_pages": [
+      467,
+      442,
+      449,
+      631,
+      632
+    ],
+    "retrieved_sections": [
+      "9.3 AnAlternative View of EM",
+      "9.1 K-means Clustering",
+      "9.2 Mixtures of Gaussians",
+      "13.2 Hidden Markov Models",
+      "13.2 Hidden Markov Models"
+    ],
+    "recall_at_k": 0.0625,
+    "hit_at_k": true,
+    "mrr": 1.0,
+    "ndcg_at_k": 0.3392,
+    "gold_pages": 16,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 2,
+    "units_read": 5,
+    "confidence": 1.0
+  },
+  "evidence": [
+    {
+      "chunk_id": "semantic-00894",
+      "pages": [
+        467
+      ],
+      "section": "9.3 AnAlternative View of EM",
+      "score": 11.8866,
+      "preview": "9.4. The EM Algorithm in General\nThe expectation maximization algorithm,orEMalgorith  1997). Herewegiveavery\ngeneral treatment of the EM algorithm and in the process provide a proof that the\nEM algorithm derived heuristi"
+    },
+    {
+      "chunk_id": "semantic-00846",
+      "pages": [
+        442
+      ],
+      "section": "9.1 K-means Clustering",
+      "score": 11.1425,
+      "preview": "This two-stage\noptimization is then repeated until convergence. We shall see that these two stages\nofupdatingrnk andupdatingµ\nk\ncorrespond respectively to th eE(expectation)and\nSection9.4 M(maximization)steps of the EM a"
+    },
+    {
+      "chunk_id": "semantic-00861",
+      "pages": [
+        449
+      ],
+      "section": "9.2 Mixtures of Gaussians",
+      "score": 9.7413,
+      "preview": "432 9.MIXTURE MODELS AND EM\ninstead of the marginal distributionp(x),andthiswillleadtosignificantsimplifica-\ntions, most not ab ly through the introduction of the expectation-maximization(EM)\nalgorithm. Another quantity "
+    },
+    {
+      "chunk_id": "semantic-01213",
+      "pages": [
+        631
+      ],
+      "section": "13.2 Hidden Markov Models",
+      "score": 7.6629,
+      "preview": "We shall apply as im il ar technique to the\nhidden Markov model. Afurtherdifficultywiththeexpression(13.11)for the likelihood function is that,\nbecause it corresponds to a generalization of a mixture distribution, it rep"
+    },
+    {
+      "chunk_id": "semantic-01216",
+      "pages": [
+        632,
+        633
+      ],
+      "section": "13.2 Hidden Markov Models",
+      "score": 7.6125,
+      "preview": "Hereweshall\nsuppose that this maximization can be done efficiently 618 13.SEQUENTIALDATA\nGaussian emission densities we have p(x|φ k) =N (x|µ k,Σk), and maximization\nofthefunctionQ(θ,θold\n)thengives\n(cid:2)N\nγ(znk)xn\nµ ="
+    }
+  ]
+}

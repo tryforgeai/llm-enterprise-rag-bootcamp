@@ -1,0 +1,99 @@
+{
+  "run": "semantic",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-22",
+    "family": "cross_section",
+    "title": "Two routes to complexity control",
+    "question": "Compare the bias-variance decomposition with Bayesian model comparison as ways of controlling model complexity",
+    "intent": "comparison",
+    "risk_level": "medium",
+    "expected_decision": "ground",
+    "gold_sections": [
+      "3.2 TheBias-Variance Decomposition",
+      "3.4 Bayesian Model Comparison"
+    ],
+    "min_recall_at_k": 0.1,
+    "min_distinct_evidence": 2,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "distinct gold sections covered >= 2"
+    ],
+    "notes": "The two sections are not adjacent and share little vocabulary with each other. Hardest multi-hop case in the set."
+  },
+  "gold_pages": [
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    180,
+    181,
+    182,
+    183
+  ],
+  "result": {
+    "eval_id": "W03-22",
+    "family": "cross_section",
+    "question": "Compare the bias-variance decomposition with Bayesian model comparison as ways of controlling model complexity",
+    "passed": false,
+    "error_type": "partial_coverage",
+    "abstained": false,
+    "retrieved_pages": [
+      171,
+      168,
+      169,
+      170,
+      166
+    ],
+    "retrieved_sections": [
+      "3.2 TheBias-Variance Decomposition",
+      "3.2 TheBias-Variance Decomposition",
+      "3.2 TheBias-Variance Decomposition",
+      "3.2 TheBias-Variance Decomposition",
+      "3.2 TheBias-Variance Decomposition"
+    ],
+    "recall_at_k": 0.5,
+    "hit_at_k": true,
+    "mrr": 1.0,
+    "ndcg_at_k": 1.0,
+    "gold_pages": 10,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 2,
+    "units_read": 3,
+    "confidence": 0.6
+  },
+  "evidence": [
+    {
+      "chunk_id": "semantic-00316",
+      "pages": [
+        171
+      ],
+      "section": "3.2 TheBias-Variance Decomposition",
+      "score": 21.0953,
+      "preview": "152 3.LINEAR MODELS FOR REGRESSION\ndata set leading to large variance. Conversely, a large value of λ pulls the weight\nparameters towards zero leading to large bias. Although the bias-variance decomposition may provide s"
+    },
+    {
+      "chunk_id": "semantic-00314",
+      "pages": [
+        168,
+        169,
+        170
+      ],
+      "section": "3.2 TheBias-Variance Decomposition",
+      "score": 20.2752,
+      "preview": "Asweshallsee,there\nis a trade-off between bias and variance, with ve  predictive capability is the one that leads to the best\nbalance between bias and variance. This is illustrated by considering the sinusoidal\nAppendixA"
+    },
+    {
+      "chunk_id": "semantic-00307",
+      "pages": [
+        166
+      ],
+      "section": "3.2 TheBias-Variance Decomposition",
+      "score": 17.7138,
+      "preview": "From now on, we shall therefore consider a\nsingletargetvariabletforsimplicity. 3.2. The Bias-Variance Decomposition\nSo far in our discussion of linear models for regression, we have assumed that the\nform and number of ba"
+    }
+  ]
+}

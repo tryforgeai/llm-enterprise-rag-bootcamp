@@ -10,11 +10,11 @@ Capture Week 03 material on chunking as an irreversible representation decision,
 
 ## Working File
 
-`course/week-03.zh.md`
+`course/week_03/week-03.zh.md`
 
 ## Source
 
-`course/week-3-summer-lesson-plan.pdf`
+`course/week_03/week-3-summer-lesson-plan.pdf`
 
 ## Done Criteria
 
@@ -44,7 +44,7 @@ Created the first Week 03 record from the lesson-plan PDF:
 
 ## 2026-06-20 Classroom / Video Additions
 
-Added today's discussion notes to `course/week-03.zh.md`:
+Added today's discussion notes to `course/week_03/week-03.zh.md`:
 
 - why small chunks are pure but can forget referents, conditions, scope, and safety boundaries
 - examples from screenshots: broken endophora, discourse relation failure, negation/scope traps, bridging inference, genre blindness, centroid delusion, query-chunk asymmetry, and punctuation-sensitive meaning
@@ -85,7 +85,7 @@ Refined `course/week_03/punctuation_embedding_test.py` after reviewing the class
 
 ## 2026-06-20 Punctuation API Result
 
-Recorded the SupportVectors API run in `course/week-03.zh.md`:
+Recorded the SupportVectors API run in `course/week_03/week-03.zh.md`:
 
 - BERT: `cos(1,2)=0.9041`, `cos(1,3)=0.7610`, `cos(2,3)=0.7908`
 - MiniLM: `cos(1,2)=0.9231`, `cos(1,3)=0.4605`, `cos(2,3)=0.5065`
@@ -182,7 +182,7 @@ Created `course/week_03/contextual_chunk_pdf.py` and processed a local capstone 
 
 ## 2026-06-22 Progress Summary
 
-Added a `本周进度总览` section to `course/week-03.zh.md`:
+Added a `本周进度总览` section to `course/week_03/week-03.zh.md`:
 
 - summarized the Week 03 learning arc from naive chunking to representation design
 - listed mastered concepts: small chunk amnesia, centroid delusion, semantic/neural chunking, contextual chunking, late chunking, page-image retrieval, and representation tournaments

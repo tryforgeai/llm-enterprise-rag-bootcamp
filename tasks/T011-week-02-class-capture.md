@@ -10,7 +10,7 @@ Capture Week 02 material on softmax, negative log-likelihood, attention, context
 
 ## Working File
 
-`course/week-02.zh.md`
+`course/week_02/week-02.zh.md`
 
 ## Done Criteria
 

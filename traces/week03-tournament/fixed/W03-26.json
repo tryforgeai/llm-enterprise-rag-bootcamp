@@ -1,0 +1,101 @@
+{
+  "run": "fixed",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-26",
+    "family": "hard_negative",
+    "title": "Batch normalization",
+    "question": "How do batch normalization layers stabilize neural network training?",
+    "intent": "factual_definition",
+    "risk_level": "high",
+    "expected_decision": "refuse",
+    "gold_sections": [],
+    "min_recall_at_k": 0.0,
+    "min_distinct_evidence": 0,
+    "expect_abstain": true,
+    "pass_criteria": [
+      "decision == refuse"
+    ],
+    "notes": "Every content word except 'batch normalization' appears throughout chapter 5."
+  },
+  "gold_pages": [],
+  "result": {
+    "eval_id": "W03-26",
+    "family": "hard_negative",
+    "question": "How do batch normalization layers stabilize neural network training?",
+    "passed": true,
+    "error_type": "ok",
+    "abstained": true,
+    "retrieved_pages": [
+      247,
+      286,
+      609,
+      337,
+      244
+    ],
+    "retrieved_sections": [
+      "5.1 Feed-forward Network Functions",
+      "5.5 Regularization in NeuralNetworks",
+      "12.4 Nonlinear Latent Variable Models",
+      "6.4 Gaussian Processes",
+      "back-matter Exercises"
+    ],
+    "recall_at_k": 0.0,
+    "hit_at_k": false,
+    "mrr": 0.0,
+    "ndcg_at_k": 0.0,
+    "gold_pages": 0,
+    "gold_sections_covered": 0,
+    "gold_sections_total": 0,
+    "units_read": 5,
+    "confidence": 0.4286
+  },
+  "evidence": [
+    {
+      "chunk_id": "fixed-00936",
+      "pages": [
+        247
+      ],
+      "section": "5.1 Feed-forward Network Functions",
+      "score": 11.93,
+      "preview": " Thus the network in Figure5.1\nmaybedescrib  twork(which\nco un ts the number of layers of hidden units). Werecommendaterminologyinwhich\nFigure5.1iscalledatwo-layernetwork,because it is the number of layers of ad ap-\ntive"
+    },
+    {
+      "chunk_id": "fixed-01088",
+      "pages": [
+        286
+      ],
+      "section": "5.5 Regularization in NeuralNetworks",
+      "score": 11.4469,
+      "preview": "268 5.NEURALNETWORKS\nSub-sampling\nInput image Convolutional layer\nlayer\nFigure 5.17 Diagram illustrating part of a convolutional neural network, showing a layer of convolu-\ntional units followed by a layer of subsampling"
+    },
+    {
+      "chunk_id": "fixed-02384",
+      "pages": [
+        609
+      ],
+      "section": "12.4 Nonlinear Latent Variable Models",
+      "score": 11.2606,
+      "preview": "12.4.Nonlinear Latent Variable Models 593\nFigure12.18 An autoassociative multilayer perceptron having\ntwo layers of weights.Such an et work is trained to xD zM xD\nmap input vectors onto themselves by minimiza-\ntion of a "
+    },
+    {
+      "chunk_id": "fixed-01291",
+      "pages": [
+        337
+      ],
+      "section": "6.4 Gaussian Processes",
+      "score": 11.094,
+      "preview": "\nlarge M, a two-layer network can approximate any given function with arbitrary\naccuracy. In the framework of maximum likelihood, the number of hi  kes little sense to\nlimit the number of parameters in the network accord"
+    },
+    {
+      "chunk_id": "fixed-00920",
+      "pages": [
+        244
+      ],
+      "section": "back-matter Exercises",
+      "score": 9.9965,
+      "preview": "act,\n‘multilayer perceptron’ is really a misnomer, because the model comprises multi-\nple layers of logistic regression models(withcontinuousnonlinearities) ratherthan\nmultiplep  ct or machine having the same generalizat"
+    }
+  ]
+}

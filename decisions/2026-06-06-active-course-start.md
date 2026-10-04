@@ -14,7 +14,7 @@ Switch the active operating rhythm to live class capture and weekly capability e
 
 ## Consequences
 
-- `course/week-01.md` is the current working document.
+- `course/week_01/week-01.md` is the current working document.
 - The project stage is active course / Week 01.
 - Pre-class materials remain available as reference.
 - Each class should produce notes, questions, an agent capability, an Avaloka mapping, and a next task or eval.
@@ -30,5 +30,5 @@ Switch the active operating rhythm to live class capture and weekly capability e
 
 ## Follow-Up Checks
 
-- Complete `course/week-01.md` after the first class.
+- Complete `course/week_01/week-01.md` after the first class.
 - Add at least one eval case based on Week 01 material.

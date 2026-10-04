@@ -1,0 +1,101 @@
+{
+  "run": "fixed",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-27",
+    "family": "hard_negative",
+    "title": "Variational autoencoder",
+    "question": "What is a variational autoencoder and how is it trained with the reparameterization trick?",
+    "intent": "factual_definition",
+    "risk_level": "high",
+    "expected_decision": "refuse",
+    "gold_sections": [],
+    "min_recall_at_k": 0.0,
+    "min_distinct_evidence": 0,
+    "expect_abstain": true,
+    "pass_criteria": [
+      "decision == refuse"
+    ],
+    "notes": "Chapter 10 is entirely about variational methods, so this question looks answerable to any similarity-based gate. The distinguishing term is 'autoencoder', which PRML does not use in this sense."
+  },
+  "gold_pages": [],
+  "result": {
+    "eval_id": "W03-27",
+    "family": "hard_negative",
+    "question": "What is a variational autoencoder and how is it trained with the reparameterization trick?",
+    "passed": true,
+    "error_type": "ok",
+    "abstained": true,
+    "retrieved_pages": [
+      500,
+      672,
+      355,
+      17,
+      481
+    ],
+    "retrieved_sections": [
+      "10.2 Illustration: Variational Mixture of Gaussians",
+      "14.3 Boosting",
+      "7.1 Maximum Margin Classifiers",
+      "unmapped",
+      "10.1 Variational Inference"
+    ],
+    "recall_at_k": 0.0,
+    "hit_at_k": false,
+    "mrr": 0.0,
+    "ndcg_at_k": 0.0,
+    "gold_pages": 0,
+    "gold_sections_covered": 0,
+    "gold_sections_total": 0,
+    "units_read": 8,
+    "confidence": 0.4
+  },
+  "evidence": [
+    {
+      "chunk_id": "fixed-01950",
+      "pages": [
+        500
+      ],
+      "section": "10.2 Illustration: Variational Mixture of Gaussians",
+      "score": 8.6651,
+      "preview": "484 10.APPROXIMATE INFERENCE\nFigure10.7 Plot of the variational lowerbound\nL versus the number K of com-\nponents in the Gaussian mixture\nmodel, for the Old Faithful data,\nshowing a distinct peak at K =\n2 components. For "
+    },
+    {
+      "chunk_id": "fixed-02643",
+      "pages": [
+        672
+      ],
+      "section": "14.3 Boosting",
+      "score": 7.3548,
+      "preview": "t is only slightly better than random,andhence  The principal difference between boosting and the committee methods such as\nbagging discussed above, is that the base classifiers are trained in sequence, and\neach base cla"
+    },
+    {
+      "chunk_id": "fixed-01362",
+      "pages": [
+        355
+      ],
+      "section": "7.1 Maximum Margin Classifiers",
+      "score": 6.7891,
+      "preview": ". Variousme  ik,1998)istoconstructK separateSVMs,\ninwhichthekth modelyk(x)is trained using the data from classC k asthepositive\nexamplesandthedatafromtheremainingK −1classes as the negative examples.\nThis is known as the"
+    },
+    {
+      "chunk_id": "fixed-00048",
+      "pages": [
+        17
+      ],
+      "section": "unmapped",
+      "score": 5.3858,
+      "preview": "xviii CONTENTS\n10.2.1 Variational distribution . . . . . . . . . . . . . . . . . . . . 475\n10.2.2 Variational lowerbound . . . . . . . . . . . . . . . . . . . 481\n10.2.3 Predictive density . . . . . . . . . . . . . . . ."
+    },
+    {
+      "chunk_id": "fixed-01876",
+      "pages": [
+        481
+      ],
+      "section": "10.1 Variational Inference",
+      "score": 5.2464,
+      "preview": "10.1.Variational Inference 465\nItshouldbeemphasizedthatwearemakingnofurtherassumptionsaboutthedistri-\nbution. Inparticular,we place no restriction on the functional forms of the individual\nfactors qi(Zi). This factorized"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "run": "fixed",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-19",
+    "family": "scope_condition",
+    "title": "When Laplace approximation fails",
+    "question": "When does the Laplace approximation give a poor approximation to the posterior?",
+    "intent": "conditional_claim",
+    "risk_level": "high",
+    "expected_decision": "ground",
+    "gold_sections": [
+      "4.4 The Laplace Approximation"
+    ],
+    "min_recall_at_k": 0.25,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "recall@k >= 0.25"
+    ],
+    "notes": "Four-page gold section. The limitations are stated as qualifications on an otherwise positive presentation, so a chunk that keeps only the method description inverts the answer."
+  },
+  "gold_pages": [
+    231,
+    232,
+    233,
+    234
+  ],
+  "result": {
+    "eval_id": "W03-19",
+    "family": "scope_condition",
+    "question": "When does the Laplace approximation give a poor approximation to the posterior?",
+    "passed": true,
+    "error_type": "weak_ranking",
+    "abstained": false,
+    "retrieved_pages": [
+      526,
+      235,
+      371,
+      233,
+      530
+    ],
+    "retrieved_sections": [
+      "10.7 Expectation Propagation",
+      "4.5 Bayesian Logistic Regression",
+      "7.2 Relevance Vector Machines",
+      "4.4 The Laplace Approximation",
+      "10.7 Expectation Propagation"
+    ],
+    "recall_at_k": 0.25,
+    "hit_at_k": true,
+    "mrr": 0.25,
+    "ndcg_at_k": 0.1681,
+    "gold_pages": 4,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 6,
+    "confidence": 0.75
+  },
+  "evidence": [
+    {
+      "chunk_id": "fixed-02051",
+      "pages": [
+        526
+      ],
+      "section": "10.7 Expectation Propagation",
+      "score": 21.015,
+      "preview": " modes of the posterior  and the Laplace approximation(KussandRasmussen,2006)."
+    },
+    {
+      "chunk_id": "fixed-00890",
+      "pages": [
+        235
+      ],
+      "section": "4.5 Bayesian Logistic Regression",
+      "score": 20.6727,
+      "preview": "90;MacKay,1992b).\n4.5.1 Laplace approximation\nRecall from Section 4.4 that the Laplace approximation is obtained by finding\nthe mode of the posterior distribution and then fitting a Gaussian  representation for the poste"
+    },
+    {
+      "chunk_id": "fixed-01427",
+      "pages": [
+        371
+      ],
+      "section": "7.2 Relevance Vector Machines",
+      "score": 20.1433,
+      "preview": "mode of the resulting approximation to the posterior distribution, corre-\nsponding tothemeanof the Gaussian approximation, isobtained setting (7.110) to\nzero,givingthe  1ΦT(t−y)\n(7.112)\n(cid:10) (cid:11)\nΣ = ΦTBΦ+A −1 . "
+    },
+    {
+      "chunk_id": "fixed-00880",
+      "pages": [
+        233
+      ],
+      "section": "4.4 The Laplace Approximation",
+      "score": 15.8134,
+      "preview": "4.4.The Laplace Approximation 215\n0.8 40\n0.6 30\n0.4 20\n0.2 10\n0 0\n−2 −1 0 1 2 3 4 −2 −1 0 1 2 3 4\nFigure4.14 Illustration of the Laplace approximation applied to the distributionp(z) ∝ exp(−z2/2)σ(20z+4)\nwhereσ(z)is the "
+    },
+    {
+      "chunk_id": "fixed-02062",
+      "pages": [
+        530
+      ],
+      "section": "10.7 Expectation Propagation",
+      "score": 15.2145,
+      "preview": "514 10.APPROXIMATE INFERENCE\nPosterior mean\nlaplace vb\nep\nFLOPS\nrorrE\nEvidence\n100\nvb\n10−5 laplace\nep\n104 106\nFLOPS\nrorrE\n10−200\n10−202\n10−204\n104 106\nFigure10.17 Comparison of expectation propagation,variational inferen"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "run": "contextual",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-24",
+    "family": "hard_negative",
+    "title": "Transformer self-attention",
+    "question": "How does the transformer self-attention mechanism compute attention weights?",
+    "intent": "factual_definition",
+    "risk_level": "high",
+    "expected_decision": "refuse",
+    "gold_sections": [],
+    "min_recall_at_k": 0.0,
+    "min_distinct_evidence": 0,
+    "expect_abstain": true,
+    "pass_criteria": [
+      "decision == refuse"
+    ],
+    "notes": "PRML is from 2006. Answering at all is the failure. Included because the same trap caught the main eval at EV-006."
+  },
+  "gold_pages": [],
+  "result": {
+    "eval_id": "W03-24",
+    "family": "hard_negative",
+    "question": "How does the transformer self-attention mechanism compute attention weights?",
+    "passed": true,
+    "error_type": "ok",
+    "abstained": true,
+    "retrieved_pages": [
+      125,
+      612,
+      264,
+      365,
+      259
+    ],
+    "retrieved_sections": [
+      "2.3 The Gaussian Distribution",
+      "12.4 Nonlinear Latent Variable Models",
+      "5.3 Error Back propagation",
+      "7.2 Relevance Vector Machines",
+      "5.3 Error Back propagation"
+    ],
+    "recall_at_k": 0.0,
+    "hit_at_k": false,
+    "mrr": 0.0,
+    "ndcg_at_k": 0.0,
+    "gold_pages": 0,
+    "gold_sections_covered": 0,
+    "gold_sections_total": 0,
+    "units_read": 6,
+    "confidence": 0.3333
+  },
+  "evidence": [
+    {
+      "chunk_id": "contextual-00471",
+      "pages": [
+        125
+      ],
+      "section": "2.3 The Gaussian Distribution",
+      "score": 15.9221,
+      "preview": "e shall limit our attention to  ibutions,seeMardiaandJupp(2000).\nBy convention, we will consider distributions p(θ) that have period 2π. Any\nprobability density p(θ) defined over θ must not only be nonnegative and integr"
+    },
+    {
+      "chunk_id": "contextual-02398",
+      "pages": [
+        612
+      ],
+      "section": "12.4 Nonlinear Latent Variable Models",
+      "score": 12.7254,
+      "preview": "596 12.CONTINUOUS LATENT VARIABLES\nλ = g f(x) because it depends on the particular curve f(λ). For a continuous data\ndensityp(x),aprincipalcurveisdefinedasoneforwhicheverypointonthecurve\nis the mean of all those points i"
+    },
+    {
+      "chunk_id": "contextual-01003",
+      "pages": [
+        264
+      ],
+      "section": "5.3 Error Back propagation",
+      "score": 12.7046,
+      "preview": "246 5.NEURALNETWORKS\nNext we compute theδ’sforeachoutputunitusing\nδk =yk−tk. (5.65)\nThen we back propagate these to obtainδsforthehiddenunitsusing\n(cid:2)K\nδj =(1−z j2) wkjδk. (5.66)\nk=1\nFinally, the derivatives with res"
+    },
+    {
+      "chunk_id": "contextual-01401",
+      "pages": [
+        365
+      ],
+      "section": "7.2 Relevance Vector Machines",
+      "score": 10.1837,
+      "preview": "le in ma  use they are iden-\ntified through the mechanism of automatic relevance determination, and are analo-\ngous to the support vectors of an SVM. It is worth emphasizing, however, that this\nmechanism for achieving sp"
+    },
+    {
+      "chunk_id": "contextual-00986",
+      "pages": [
+        259
+      ],
+      "section": "5.3 Error Back propagation",
+      "score": 9.9382,
+      "preview": "thod for evaluating such derivatives. Because\nit is at this stage that errors are  atives are then used to compute the adjustments to be\nmade to the weights. The simplest such technique,and the one original ly considered"
+    }
+  ]
+}

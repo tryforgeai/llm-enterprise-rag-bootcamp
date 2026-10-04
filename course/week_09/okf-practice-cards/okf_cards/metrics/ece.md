@@ -2,11 +2,11 @@
 type: Metric
 title: ECE (Expected Calibration Error)
 description: 分桶比较模型陈述的置信度与实际准确率之间的加权差异——衡量模型是否"该有把握的时候有把握，该犹豫的时候犹豫"。
-resource: course/week-08.zh.md
+resource: course/week_08/week-08.zh.md
 tags: [calibration, week-08, cognitive-humility]
 sources:
   - id: week08-notes
-    resource: course/week-08.zh.md
+    resource: course/week_08/week-08.zh.md
     author: agent-generated-notes
   - id: guo-calibration
     resource: "Guo et al. 2017, On Calibration of Modern Neural Networks (ICML)"

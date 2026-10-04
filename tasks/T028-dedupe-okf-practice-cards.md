@@ -27,7 +27,7 @@ Week 09 taught that a knowledge unit's identity is its file path, and that a gov
 
 1. Diff the four copies per card and pick or merge the best version.
 2. Keep one canonical layout, ideally `okf_cards/zh/` and `okf_cards/en/` with one shared `index.md`.
-3. Validate the surviving cards against the OKF fields taught in `course/week-09.zh.md`: `type` is the only required field, but `title`, `description`, and provenance are what make a card findable.
+3. Validate the surviving cards against the OKF fields taught in `course/week_09/week-09.zh.md`: `type` is the only required field, but `title`, `description`, and provenance are what make a card findable.
 4. Add `generated` and `verified` timestamps to each card, since that distinction is the week's central mechanism.
 5. Delete the redundant trees in one commit that names what was kept and why.
 

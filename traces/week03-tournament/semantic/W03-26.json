@@ -1,0 +1,93 @@
+{
+  "run": "semantic",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-26",
+    "family": "hard_negative",
+    "title": "Batch normalization",
+    "question": "How do batch normalization layers stabilize neural network training?",
+    "intent": "factual_definition",
+    "risk_level": "high",
+    "expected_decision": "refuse",
+    "gold_sections": [],
+    "min_recall_at_k": 0.0,
+    "min_distinct_evidence": 0,
+    "expect_abstain": true,
+    "pass_criteria": [
+      "decision == refuse"
+    ],
+    "notes": "Every content word except 'batch normalization' appears throughout chapter 5."
+  },
+  "gold_pages": [],
+  "result": {
+    "eval_id": "W03-26",
+    "family": "hard_negative",
+    "question": "How do batch normalization layers stabilize neural network training?",
+    "passed": true,
+    "error_type": "ok",
+    "abstained": true,
+    "retrieved_pages": [
+      244,
+      247,
+      337,
+      608,
+      609
+    ],
+    "retrieved_sections": [
+      "back-matter Exercises",
+      "5.1 Feed-forward Network Functions",
+      "6.4 Gaussian Processes",
+      "12.4 Nonlinear Latent Variable Models",
+      "12.4 Nonlinear Latent Variable Models"
+    ],
+    "recall_at_k": 0.0,
+    "hit_at_k": false,
+    "mrr": 0.0,
+    "ndcg_at_k": 0.0,
+    "gold_pages": 0,
+    "gold_sections_covered": 0,
+    "gold_sections_total": 0,
+    "units_read": 6,
+    "confidence": 0.5714
+  },
+  "evidence": [
+    {
+      "chunk_id": "semantic-00458",
+      "pages": [
+        244
+      ],
+      "section": "back-matter Exercises",
+      "score": 14.3248,
+      "preview": "226 5.NEURALNETWORKS\nsparsermodels. UnliketheSVMitalsoproducesprobabilisticoutputs,althoughthis\nis at the exp en se of an on convex optimization during training. An alternative approach is to fix the number of basis func"
+    },
+    {
+      "chunk_id": "semantic-00467",
+      "pages": [
+        247
+      ],
+      "section": "5.1 Feed-forward Network Functions",
+      "score": 13.371,
+      "preview": "Thus the network in Figure5.1\nmaybedescrib  twork(which\nco un ts the number of layers of hidden units). Werecommendaterminologyinwhich\nFigure5.1iscalledatwo-layernetwork,because it is the number of layers of ad ap-\ntive "
+    },
+    {
+      "chunk_id": "semantic-00640",
+      "pages": [
+        337
+      ],
+      "section": "6.4 Gaussian Processes",
+      "score": 13.0705,
+      "preview": "On the right is  have seen that the range of functions which can be represented by a neural\nnetwork is governed by the number M of hidden units, and that, for sufficiently\nlarge M, a two-layer network can approximate any"
+    },
+    {
+      "chunk_id": "semantic-01166",
+      "pages": [
+        608,
+        609
+      ],
+      "section": "12.4 Nonlinear Latent Variable Models",
+      "score": 11.1105,
+      "preview": "12.4.2 Autoassociative neural networks\nInChapter5we considered neuralnetworks in the context of sup er vi sed learn-\ning, where the role of the network is to predict the output variables given values 12.4.Nonlinear Laten"
+    }
+  ]
+}

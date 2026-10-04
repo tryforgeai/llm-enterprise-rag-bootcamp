@@ -1,0 +1,131 @@
+{
+  "run": "contextual",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-21",
+    "family": "cross_section",
+    "title": "PCA versus probabilistic PCA",
+    "question": "How does probabilistic PCA differ from conventional principal component analysis?",
+    "intent": "comparison",
+    "risk_level": "medium",
+    "expected_decision": "ground",
+    "gold_sections": [
+      "12.1 Principal Component Analysis",
+      "12.2 Probabilistic PCA"
+    ],
+    "min_recall_at_k": 0.1,
+    "min_distinct_evidence": 2,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "distinct gold sections covered >= 2"
+    ],
+    "notes": "A comparison cannot be answered from one side of it. Coverage of both sections matters more than raw recall."
+  },
+  "gold_pages": [
+    577,
+    578,
+    579,
+    580,
+    581,
+    582,
+    583,
+    584,
+    585,
+    586,
+    587,
+    588,
+    589,
+    590,
+    591,
+    592,
+    593,
+    594,
+    595,
+    596,
+    597,
+    598,
+    599,
+    600,
+    601,
+    602
+  ],
+  "result": {
+    "eval_id": "W03-21",
+    "family": "cross_section",
+    "question": "How does probabilistic PCA differ from conventional principal component analysis?",
+    "passed": true,
+    "error_type": "ok",
+    "abstained": false,
+    "retrieved_pages": [
+      577,
+      602,
+      17,
+      585,
+      586
+    ],
+    "retrieved_sections": [
+      "12.1 Principal Component Analysis",
+      "12.2 Probabilistic PCA",
+      "unmapped",
+      "12.1 Principal Component Analysis",
+      "12.1 Principal Component Analysis"
+    ],
+    "recall_at_k": 0.1538,
+    "hit_at_k": true,
+    "mrr": 1.0,
+    "ndcg_at_k": 0.8304,
+    "gold_pages": 26,
+    "gold_sections_covered": 2,
+    "gold_sections_total": 2,
+    "units_read": 5,
+    "confidence": 0.7143
+  },
+  "evidence": [
+    {
+      "chunk_id": "contextual-02258",
+      "pages": [
+        577
+      ],
+      "section": "12.1 Principal Component Analysis",
+      "score": 21.743,
+      "preview": "as the use of EM for parameter estimation,\nprincipled extensions to mixtures of PCA models, and Bayesian formulations that\nallowthenumberofprincip  -Gaussian assumption including non-Gaussian latent vari-\nables, which le"
+    },
+    {
+      "chunk_id": "contextual-02359",
+      "pages": [
+        602
+      ],
+      "section": "12.2 Probabilistic PCA",
+      "score": 21.5965,
+      "preview": " PCA\nIn Chapter  at algorithm by replacing the scalar products with a nonlinear kernel. Here we\napply this technique of kernel substitution to principal component analysis,thereby\nobtain ing an on linear generalization c"
+    },
+    {
+      "chunk_id": "contextual-00052",
+      "pages": [
+        17
+      ],
+      "section": "unmapped",
+      "score": 19.9151,
+      "preview": ".  . . . . 556\n12 Continuous Latent Variables 559\n12.1 Principal Component Analysis . . . . . . . . . . . . . . . . . . . . 561\n12.1.1 Maximum variance formulation . . . . . . . . . . . . . . . 561\n12.1.2 Minimum-error f"
+    },
+    {
+      "chunk_id": "contextual-02287",
+      "pages": [
+        585
+      ],
+      "section": "12.1 Principal Component Analysis",
+      "score": 18.302,
+      "preview": "zation of the oil flow data set obtained\nbyprojectingthedataontothefirsttwoprin-\ncipalcomponents. Thered,blue,andgreen\npoints correspond to the ‘lamin  ions\nrespectively.\n12.1.4 PCA for high-dimensional data\nIn some appl"
+    },
+    {
+      "chunk_id": "contextual-02292",
+      "pages": [
+        586
+      ],
+      "section": "12.1 Principal Component Analysis",
+      "score": 18.2973,
+      "preview": "2XTvi. (12.30)\nIn summary, t  0).\n12.2. Probabilistic PCA\nThe formulation of PCA discussed in the previous section was based on a linear\nprojectionofthedataontoasubspaceoflowerdimensionalitythantheoriginaldata\nspace. We "
+    }
+  ]
+}

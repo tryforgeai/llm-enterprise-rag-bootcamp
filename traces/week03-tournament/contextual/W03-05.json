@@ -1,0 +1,129 @@
+{
+  "run": "contextual",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-05",
+    "family": "definitional",
+    "title": "Hidden Markov models",
+    "question": "What is a hidden Markov model?",
+    "intent": "factual_definition",
+    "risk_level": "low",
+    "expected_decision": "answer",
+    "gold_sections": [
+      "13.2 Hidden Markov Models"
+    ],
+    "min_recall_at_k": 0.08,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "recall@k >= 0.08"
+    ],
+    "notes": "24-page gold section. Deliberately included to show how gold-span size distorts recall and why hit@k is reported next to it."
+  },
+  "gold_pages": [
+    626,
+    627,
+    628,
+    629,
+    630,
+    631,
+    632,
+    633,
+    634,
+    635,
+    636,
+    637,
+    638,
+    639,
+    640,
+    641,
+    642,
+    643,
+    644,
+    645,
+    646,
+    647,
+    648,
+    649
+  ],
+  "result": {
+    "eval_id": "W03-05",
+    "family": "definitional",
+    "question": "What is a hidden Markov model?",
+    "passed": true,
+    "error_type": "weak_ranking",
+    "abstained": false,
+    "retrieved_pages": [
+      663,
+      664,
+      627,
+      628,
+      648
+    ],
+    "retrieved_sections": [
+      "back-matter Exercises",
+      "back-matter Exercises",
+      "13.2 Hidden Markov Models",
+      "13.2 Hidden Markov Models",
+      "13.2 Hidden Markov Models"
+    ],
+    "recall_at_k": 0.125,
+    "hit_at_k": true,
+    "mrr": 0.3333,
+    "ndcg_at_k": 0.4469,
+    "gold_pages": 24,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 7,
+    "confidence": 1.0
+  },
+  "evidence": [
+    {
+      "chunk_id": "contextual-02611",
+      "pages": [
+        663
+      ],
+      "section": "back-matter Exercises",
+      "score": 12.4691,
+      "preview": " that the condi-\ntional independence properties(13.24)–(13.31)are satisfied by the joint distribution\nfor the hidden Markov model definedby(13.6).\n13.11 ((cid:12)(cid:12)) Startingfrom the expression(8.72)forthemarg  on "
+    },
+    {
+      "chunk_id": "contextual-02614",
+      "pages": [
+        664
+      ],
+      "section": "back-matter Exercises",
+      "score": 11.6109,
+      "preview": "M-step equation for re-estimation of the means of Gaussian\nemission models isgivenby\n(cid:2)R (cid:2)N\nγ(z(r) )x(r)\nnk n\nµ = r=1n=1 . (13.126)\nk (cid:2)R (ci  he definition (8.64) of the messages passed from a factor nod"
+    },
+    {
+      "chunk_id": "contextual-02465",
+      "pages": [
+        627
+      ],
+      "section": "13.2 Hidden Markov Models",
+      "score": 11.0607,
+      "preview": "m(Bishop\netal.,2004).\nWe can gain ab et ter understand ing of the hidden Markov model by considering\nit from age ne ra tive point of view. Recallthattogeneratesamplesfromamixtureof"
+    },
+    {
+      "chunk_id": "contextual-02466",
+      "pages": [
+        628
+      ],
+      "section": "13.2 Hidden Markov Models",
+      "score": 10.7295,
+      "preview": "13.2.Hidden Markov Models 613\n1 1\n0.5 0.5\nk=1\nk=3\nk=2\n0 0\n0 0.5 1 0 0.5 1\nFigure 13.8 Illustration of sampling from a hidden Markov model having a 3-state latent variable z and a\nGaussianemissionmodelp(x|z)wherexis2-dime"
+    },
+    {
+      "chunk_id": "contextual-02547",
+      "pages": [
+        648
+      ],
+      "section": "13.2 Hidden Markov Models",
+      "score": 10.6391,
+      "preview": "13.2.Hidden Markov Models 633\nFigure13.18 Example of an input-output hidden un−1 un un+1\nMarkov model. In this case, both the\nemission probabilities and the transition\nprobabilities depend on the values of a\nsequence of "
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "run": "contextual",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-26",
+    "family": "hard_negative",
+    "title": "Batch normalization",
+    "question": "How do batch normalization layers stabilize neural network training?",
+    "intent": "factual_definition",
+    "risk_level": "high",
+    "expected_decision": "refuse",
+    "gold_sections": [],
+    "min_recall_at_k": 0.0,
+    "min_distinct_evidence": 0,
+    "expect_abstain": true,
+    "pass_criteria": [
+      "decision == refuse"
+    ],
+    "notes": "Every content word except 'batch normalization' appears throughout chapter 5."
+  },
+  "gold_pages": [],
+  "result": {
+    "eval_id": "W03-26",
+    "family": "hard_negative",
+    "question": "How do batch normalization layers stabilize neural network training?",
+    "passed": true,
+    "error_type": "ok",
+    "abstained": true,
+    "retrieved_pages": [
+      609,
+      247,
+      267,
+      258,
+      259
+    ],
+    "retrieved_sections": [
+      "12.4 Nonlinear Latent Variable Models",
+      "5.1 Feed-forward Network Functions",
+      "5.4 The Hessian Matrix",
+      "5.2 Network Training",
+      "5.3 Error Back propagation"
+    ],
+    "recall_at_k": 0.0,
+    "hit_at_k": false,
+    "mrr": 0.0,
+    "ndcg_at_k": 0.0,
+    "gold_pages": 0,
+    "gold_sections_covered": 0,
+    "gold_sections_total": 0,
+    "units_read": 5,
+    "confidence": 0.4286
+  },
+  "evidence": [
+    {
+      "chunk_id": "contextual-02384",
+      "pages": [
+        609
+      ],
+      "section": "12.4 Nonlinear Latent Variable Models",
+      "score": 14.5306,
+      "preview": "12.4.Nonlinear Latent Variable Models 593\nFigure12.18 An autoassociative multilayer perceptron having\ntwo layers of weights.Such an et work is trained to xD zM xD\nmap input vectors onto themselves by minimiza-\ntion of a "
+    },
+    {
+      "chunk_id": "contextual-00936",
+      "pages": [
+        247
+      ],
+      "section": "5.1 Feed-forward Network Functions",
+      "score": 13.6293,
+      "preview": " Thus the network in Figure5.1\nmaybedescrib  twork(which\nco un ts the number of layers of hidden units). Werecommendaterminologyinwhich\nFigure5.1iscalledatwo-layernetwork,because it is the number of layers of ad ap-\ntive"
+    },
+    {
+      "chunk_id": "contextual-01017",
+      "pages": [
+        267
+      ],
+      "section": "5.4 The Hessian Matrix",
+      "score": 12.9634,
+      "preview": "j oftheHessi  Several nonlinear optimization algorithms used for training neural networks\nare based on consider at ions of the second-order properties of the error surface,\nwhich are co nt ro ll ed by the Hessian matrix("
+    },
+    {
+      "chunk_id": "contextual-00978",
+      "pages": [
+        258
+      ],
+      "section": "5.2 Network Training",
+      "score": 12.1266,
+      "preview": " training neuralnetworks.\n5.2.4 Gradient descent optimization\nThe simplest approach to using gradient information is to choose the weight\nupdatein(5.27)to comprise as ma ll step  aluatedforthenewweightvectorandtheprocess"
+    },
+    {
+      "chunk_id": "contextual-00984",
+      "pages": [
+        259
+      ],
+      "section": "5.3 Error Back propagation",
+      "score": 11.7287,
+      "preview": "n this section is to find an efficient techni  w) for a feed-forward neural network. We shall see that\nthis can be achieved us in ga local message passing scheme in which information is\nsentalternatelyforwardsandbackward"
+    }
+  ]
+}

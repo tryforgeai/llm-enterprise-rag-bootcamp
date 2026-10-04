@@ -2,9 +2,9 @@
 
 日期：2026-06-20
 
-状态：课前讲义、课堂讨论、视频补充、代码实验和 contextual chunking baseline 已记录；Week 03 eval artifact 待创建
+状态：课前讲义、课堂讨论、视频补充、代码实验和 contextual chunking baseline 已记录；Week 03 eval artifact 已完成（`evals/week03-representation-tournament/`，2026-09-12）
 
-来源：`course/week-3-summer-lesson-plan.pdf`
+来源：`course/week_03/week-3-summer-lesson-plan.pdf`
 
 ## 本周进度总览
 
@@ -87,17 +87,32 @@ PDF -> 512-token chunks -> embedding -> top-k
 fixed / recursive / semantic / contextual / late / page-image / hybrid
 ```
 
-### 当前还缺什么
+### Representation tournament（已完成，2026-09-12）
 
-Week 03 还缺一个真正的 eval artifact。下一步应该做一个小型 representation tournament，例如：
+Week 03 的 eval artifact 已经建好：`evals/week03-representation-tournament/`。
 
 ```text
-同一批 capstone 或 PRML 问题
--> fixed chunk retrieval
--> contextual chunk retrieval
--> page-image retrieval
--> 比较 Recall@k / answer grounding / 错误类型
+PRML 749 页，27 个 query
+-> fixed / semantic / contextual 三个文本臂（page-image 已搭好骨架，待接 CLIP）
+-> 页级 gold（从 PRML running header 反推 65 个 section，可审计、非循环）
+-> Recall@k / Hit@k / MRR / NDCG@k / NRR / units read + 错误类型
 ```
+
+baseline 结论（BM25，k=5）：
+
+| 臂 | Recall@5 | Hit@5 | NDCG@5 | units read |
+| --- | ---: | ---: | ---: | ---: |
+| semantic | 0.255 | 0.913 | 0.539 | 3.7 |
+| contextual | 0.247 | 0.957 | 0.514 | 5.8 |
+| fixed | 0.177 | 0.870 | 0.422 | 5.3 |
+
+三个发现：
+
+1. fixed chunking 在 k=3/5/10 上全部垫底，而且主要输在排序（NDCG 最低）而不是找不到 —— 和 centroid delusion 的预测一致。
+2. contextual 在 scope_condition 和 figure_dependent 两族上是唯一打满的臂，正是"chunk 需要知道自己属于什么"的两种场景。
+3. **最重要的一条，而且不是本来要测的**：关掉空格修复后跑 ablation，contextual 的优势完全消失（recall 0.166 vs fixed 0.165）。抽取质量决定了 chunking 策略能不能兑现。在 PDF 语料上选 chunking 方案之前，应该先量自己的 parser。
+
+未解决：三个臂都在 W03-25（dropout，与 5.5 节 "Regularization in Neural Networks" 词面几乎全覆盖）上过度回答，NRR 停在 0.750。这和主 eval 的 EV-006 是同一个失败，说明问题出在 abstention gate 而不是语料。
 
 ## 一句话总结
 
@@ -829,7 +844,9 @@ Loop Engineer 解决的是工作节奏和持续记忆；RAG / context engineerin
 
 ## 后续行动
 
-- 为 Week 03 创建一个 eval case：比较 fixed chunk、semantic chunk、contextual chunk 或 page-image retrieval 的证据召回。
+- ~~为 Week 03 创建一个 eval case：比较 fixed chunk、semantic chunk、contextual chunk 或 page-image retrieval 的证据召回。~~ 已完成，见 `evals/week03-representation-tournament/`。
+- 接上 page-image 臂：在 Mac 上装好 lab 依赖后，给 `run_tournament.py` 加一个 CLIP/SigLIP2 encoder 类（接口只有 `build()` 和 `score()` 两个方法，下游全部已经和 unit 类型无关）。
+- 修 abstention gate：term coverage 挡不住 W03-25 这类词面全覆盖但不可回答的 query，需要 answer-type 或 entailment 检查。
 - 为 Avaloka Memory Reader V0 benchmark 增加 chunking/representation 维度。
 - 在 capstone 计划里明确语料类型、用户问题、检索挑战、候选表示和成功指标。
 - 课堂后补充本周实际代码、实验或 instructor 反馈。

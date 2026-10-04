@@ -1,0 +1,115 @@
+{
+  "run": "contextual",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-20",
+    "family": "scope_condition",
+    "title": "Conditional independence assumptions",
+    "question": "What conditional independence assumptions does the naive Bayes model make and when are they violated?",
+    "intent": "conditional_claim",
+    "risk_level": "high",
+    "expected_decision": "ground",
+    "gold_sections": [
+      "8.2 Conditional Independence"
+    ],
+    "min_recall_at_k": 0.15,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "recall@k >= 0.15"
+    ],
+    "notes": "'When are they violated' is the half most likely to be chunked away from the half that states the assumption."
+  },
+  "gold_pages": [
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399
+  ],
+  "result": {
+    "eval_id": "W03-20",
+    "family": "scope_condition",
+    "question": "What conditional independence assumptions does the naive Bayes model make and when are they violated?",
+    "passed": false,
+    "error_type": "ok",
+    "abstained": false,
+    "retrieved_pages": [
+      397,
+      65,
+      587,
+      413,
+      638
+    ],
+    "retrieved_sections": [
+      "8.2 Conditional Independence",
+      "1.5 DecisionTheory",
+      "12.2 Probabilistic PCA",
+      "8.4 Inference in Graphical Models",
+      "13.2 Hidden Markov Models"
+    ],
+    "recall_at_k": 0.1,
+    "hit_at_k": true,
+    "mrr": 1.0,
+    "ndcg_at_k": 0.3392,
+    "gold_pages": 10,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 1,
+    "units_read": 8,
+    "confidence": 0.625
+  },
+  "evidence": [
+    {
+      "chunk_id": "contextual-01531",
+      "pages": [
+        397
+      ],
+      "section": "8.2 Conditional Independence",
+      "score": 26.5968,
+      "preview": "no sis in Section1.5.\nIfwearegivenalabell  can fit the naive Bayes model to the training data"
+    },
+    {
+      "chunk_id": "contextual-00248",
+      "pages": [
+        65
+      ],
+      "section": "1.5 DecisionTheory",
+      "score": 18.6108,
+      "preview": "eedtonormalize\nthe resulting posterior probabilities so they sum to one. The particular condi-\nSection8.2.2 tional independence assumption(1.84)is an example of the naive Bayes model.\nNote t  combining data that do not r"
+    },
+    {
+      "chunk_id": "contextual-02296",
+      "pages": [
+        587
+      ],
+      "section": "12.2 Probabilistic PCA",
+      "score": 15.2937,
+      "preview": "ionoverzisgivenbyazero-meanunit-covariance Gaussian\np(z)=N (z|0,I). (12.31)\nSimilarly,the conditional distribution of the observed variabl ex,conditioned on the\nvalueofthelatentvariablez,is again Gaussian,oftheform\np(x|z"
+    },
+    {
+      "chunk_id": "contextual-01600",
+      "pages": [
+        413
+      ],
+      "section": "8.4 Inference in Graphical Models",
+      "score": 14.8492,
+      "preview": "ndso  ngthofthechain,in contrast to the exponential cost\nof a naive approach. We have therefore been able to exploit the many conditional\nindependencepropertiesofthissimplegraphinordertoobtainanefficientcalcula-\ntion. If"
+    },
+    {
+      "chunk_id": "contextual-02506",
+      "pages": [
+        638
+      ],
+      "section": "13.2 Hidden Markov Models",
+      "score": 14.7022,
+      "preview": " of the quantitiesξ(zn−1,zn),which correspond\nt  . Using the definition of ξ(zn−1,zn), and applying Bayes’\ntheorem,wehave\nξ(zn−1,zn)=p(zn−1,zn|X)\np(X|zn−1,zn)p(zn−1,zn)\n=\np(X)\np(x 1,...,xn−1|zn−1)p(xn|zn)p(xn+1,...,xN|zn"
+    }
+  ]
+}

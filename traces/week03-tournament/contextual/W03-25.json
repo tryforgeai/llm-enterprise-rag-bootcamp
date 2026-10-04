@@ -1,0 +1,101 @@
+{
+  "run": "contextual",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-25",
+    "family": "hard_negative",
+    "title": "Dropout",
+    "question": "What is dropout regularization in deep neural networks?",
+    "intent": "factual_definition",
+    "risk_level": "high",
+    "expected_decision": "refuse",
+    "gold_sections": [],
+    "min_recall_at_k": 0.0,
+    "min_distinct_evidence": 0,
+    "expect_abstain": true,
+    "pass_criteria": [
+      "decision == refuse"
+    ],
+    "notes": "Adversarial by construction: section 5.5 is literally titled 'Regularization in Neural Networks', so lexical overlap is near total while answerability is zero. The contextual arm is at extra risk here because its prefix repeats the section title."
+  },
+  "gold_pages": [],
+  "result": {
+    "eval_id": "W03-25",
+    "family": "hard_negative",
+    "question": "What is dropout regularization in deep neural networks?",
+    "passed": false,
+    "error_type": "over_answer",
+    "abstained": false,
+    "retrieved_pages": [
+      275,
+      739,
+      274,
+      8,
+      729
+    ],
+    "retrieved_sections": [
+      "5.5 Regularization in NeuralNetworks",
+      "back-matter References",
+      "5.4 The Hessian Matrix",
+      "unmapped",
+      "back-matter References"
+    ],
+    "recall_at_k": 0.0,
+    "hit_at_k": false,
+    "mrr": 0.0,
+    "ndcg_at_k": 0.0,
+    "gold_pages": 0,
+    "gold_sections_covered": 0,
+    "gold_sections_total": 0,
+    "units_read": 5,
+    "confidence": 0.6
+  },
+  "evidence": [
+    {
+      "chunk_id": "contextual-01046",
+      "pages": [
+        275
+      ],
+      "section": "5.5 Regularization in NeuralNetworks",
+      "score": 10.7353,
+      "preview": "5.5.Regularization in NeuralNetworks 257\n1 M =1 1 M =3 1 M =10\n0 0 0\n−1 −1 −1\n0 1 0 1 0 1\nFigure5.9 Examplesoftwo-layer networks trained on10data points drawn from the sinusoidal data set. The\ngraphs show the result of f"
+    },
+    {
+      "chunk_id": "contextual-02904",
+      "pages": [
+        739
+      ],
+      "section": "back-matter References",
+      "score": 9.894,
+      "preview": "728 REFERENCES\nWebb, A. R. (1994). Functional approximation by Williams, O., A. Blake, and R. Cipolla (2005).\nfeed-forward networks: aleast-squares approach Sparse Bayesian learning for efficient visual\nto generalisation"
+    },
+    {
+      "chunk_id": "contextual-01042",
+      "pages": [
+        274
+      ],
+      "section": "5.4 The Hessian Matrix",
+      "score": 9.8306,
+      "preview": "elythoseforstandardforwardandbackwardpropagation,andsothe\nextension of exist ing soft wa re to compute this product is typically straight forward.\nIf desired, the te  1,...,0) each of which picks out one column of the He"
+    },
+    {
+      "chunk_id": "contextual-00016",
+      "pages": [
+        8
+      ],
+      "section": "unmapped",
+      "score": 9.6467,
+      "preview": "on phase.  m an earlier textbook, Neural Networks for Pattern Recognition (Bishop,\n1995a). The images of the Mark 1 perceptron and of Frank Rosenblatt are repro-\nducedwiththepermissionofArvinCalspanAdvancedTechnologyCent"
+    },
+    {
+      "chunk_id": "contextual-02853",
+      "pages": [
+        729
+      ],
+      "section": "back-matter References",
+      "score": 9.5626,
+      "preview": " M. and A. Blake (1998). CONDENSATION\nHinton, G. E. and D. van Camp (1993). Keeping – conditional density propagation for visual\nneural networks simple by minimizing the de- tracking. International Journal of Computer Vi"
+    }
+  ]
+}

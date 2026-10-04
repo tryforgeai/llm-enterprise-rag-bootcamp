@@ -1,0 +1,101 @@
+{
+  "run": "semantic",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-18",
+    "family": "scope_condition",
+    "title": "EM monotonicity conditions",
+    "question": "Under what conditions does the EM algorithm guarantee that the likelihood does not decrease?",
+    "intent": "conditional_claim",
+    "risk_level": "high",
+    "expected_decision": "ground",
+    "gold_sections": [
+      "9.4 The EM Algorithm in General"
+    ],
+    "min_recall_at_k": 0.15,
+    "min_distinct_evidence": 1,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "hit@k == true",
+      "recall@k >= 0.15"
+    ],
+    "notes": "The guarantee is conditional. Retrieving the claim without its conditions is the scope-inversion failure the week note flagged as the dangerous one, because nothing in the output looks wrong."
+  },
+  "gold_pages": [
+    468,
+    469,
+    470,
+    471
+  ],
+  "result": {
+    "eval_id": "W03-18",
+    "family": "scope_condition",
+    "question": "Under what conditions does the EM algorithm guarantee that the likelihood does not decrease?",
+    "passed": false,
+    "error_type": "over_abstain",
+    "abstained": true,
+    "retrieved_pages": [
+      467,
+      614,
+      460,
+      452,
+      453
+    ],
+    "retrieved_sections": [
+      "9.3 AnAlternative View of EM",
+      "12.4 Nonlinear Latent Variable Models",
+      "9.3 AnAlternative View of EM",
+      "9.2 Mixtures of Gaussians",
+      "9.2 Mixtures of Gaussians"
+    ],
+    "recall_at_k": 0.0,
+    "hit_at_k": false,
+    "mrr": 0.0,
+    "ndcg_at_k": 0.0,
+    "gold_pages": 4,
+    "gold_sections_covered": 0,
+    "gold_sections_total": 1,
+    "units_read": 4,
+    "confidence": 0.4286
+  },
+  "evidence": [
+    {
+      "chunk_id": "semantic-00894",
+      "pages": [
+        467
+      ],
+      "section": "9.3 AnAlternative View of EM",
+      "score": 10.4984,
+      "preview": "9.4. The EM Algorithm in General\nThe expectation maximization algorithm,orEMalgorith  1997). Herewegiveavery\ngeneral treatment of the EM algorithm and in the process provide a proof that the\nEM algorithm derived heuristi"
+    },
+    {
+      "chunk_id": "semantic-01181",
+      "pages": [
+        614
+      ],
+      "section": "12.4 Nonlinear Latent Variable Models",
+      "score": 10.2117,
+      "preview": "Thereisalso\nno guarantee that the ‘self-organization’ will take place as this is dependent on the\nchoice of appropriate parameter values for any particular data set. Bycontrast,GTM optimize st he log likelihood function,"
+    },
+    {
+      "chunk_id": "semantic-00881",
+      "pages": [
+        460
+      ],
+      "section": "9.3 AnAlternative View of EM",
+      "score": 10.1637,
+      "preview": "First we choose some initial values for the param-\netersµold,Σold andπold,andusethesetoevaluatetheresponsibilities(theEstep). Wethenkeeptheresponsibilitiesfixedandmaximize(9.40)withrespecttoµ k,Σk\nand πk (the M step). Th"
+    },
+    {
+      "chunk_id": "semantic-00867",
+      "pages": [
+        452,
+        453
+      ],
+      "section": "9.2 Mixtures of Gaussians",
+      "score": 10.1181,
+      "preview": "Let us begin by writing down the conditions that must be satisfied ata maximum\nof the likelihood function. Sett  jk πN jN(x (n )x| *µ n|k µ, jΣ ,Σk)\nj)\n+Σk(xn−µ k) (9.16)\nγ(znk)\nwhere we have made use of the form(2.43)fo"
+    }
+  ]
+}

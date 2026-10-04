@@ -10,7 +10,7 @@ Close the open follow-ups on the two most recent class captures. Both notes were
 
 ## Week 08 — Generator Evaluation (2026-08-01)
 
-`course/week-08.zh.md` covers *The Personal Equation* opening experiments and the five-act *Measure of All Things*, focused on the generator half: judge bias, FActScore, ECE, NRR, RAGAS faithfulness.
+`course/week_08/week-08.zh.md` covers *The Personal Equation* opening experiments and the five-act *Measure of All Things*, focused on the generator half: judge bias, FActScore, ECE, NRR, RAGAS faithfulness.
 
 Open:
 
@@ -20,7 +20,7 @@ Open:
 
 ## Week 09 — Open Knowledge Format (2026-08-08)
 
-`course/week-09.zh.md` covers the OKF specification, the governed corpus, and the enterprise entitlement pipeline (ACL, RBAC, ABAC, ReBAC, permission propagation through chunking, the two synchronized pipelines).
+`course/week_09/week-09.zh.md` covers the OKF specification, the governed corpus, and the enterprise entitlement pipeline (ACL, RBAC, ABAC, ReBAC, permission propagation through chunking, the two synchronized pipelines).
 
 Open:
 

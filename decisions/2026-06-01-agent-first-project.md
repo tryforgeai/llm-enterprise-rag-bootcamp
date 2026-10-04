@@ -33,7 +33,7 @@ Every meaningful course note, lab, and application mapping should identify what 
 
 - `README.md`
 - `course/00-course-overview.md`
-- `course/week-01.md`
+- `course/week_01/week-01.md`
 - `prep/01-before-class-plan.md`
 - `labs/01-minimal-rag-demo-plan.md`
 - `avaloka-applications/01-avaloka-application-map.md`

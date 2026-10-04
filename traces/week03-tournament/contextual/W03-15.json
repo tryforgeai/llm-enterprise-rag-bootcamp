@@ -1,0 +1,125 @@
+{
+  "run": "contextual",
+  "encoder": "lexical-bm25",
+  "k": 5,
+  "case": {
+    "eval_id": "W03-15",
+    "family": "definition_use_chain",
+    "title": "Responsibilities defined then used",
+    "question": "What are responsibilities in a mixture model and how are they used in the M step?",
+    "intent": "definition_use_chain",
+    "risk_level": "medium",
+    "expected_decision": "ground",
+    "gold_sections": [
+      "9.2 Mixtures of Gaussians",
+      "9.3 AnAlternative View of EM"
+    ],
+    "min_recall_at_k": 0.1,
+    "min_distinct_evidence": 2,
+    "expect_abstain": false,
+    "pass_criteria": [
+      "distinct gold sections covered >= 2"
+    ],
+    "notes": "The term is defined in 9.2 and used in 9.3/9.4. Retrieving only the use site is exactly the definition-orphan failure from the week note, made measurable."
+  },
+  "gold_pages": [
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    467
+  ],
+  "result": {
+    "eval_id": "W03-15",
+    "family": "definition_use_chain",
+    "question": "What are responsibilities in a mixture model and how are they used in the M step?",
+    "passed": false,
+    "error_type": "partial_coverage",
+    "abstained": false,
+    "retrieved_pages": [
+      476,
+      683,
+      473,
+      453,
+      661
+    ],
+    "retrieved_sections": [
+      "back-matter Exercises",
+      "14.5 Conditional Mixture Models",
+      "back-matter Exercises",
+      "9.2 Mixtures of Gaussians",
+      "13.3 Linear Dynamical Systems"
+    ],
+    "recall_at_k": 0.05,
+    "hit_at_k": true,
+    "mrr": 0.25,
+    "ndcg_at_k": 0.1461,
+    "gold_pages": 20,
+    "gold_sections_covered": 1,
+    "gold_sections_total": 2,
+    "units_read": 7,
+    "confidence": 1.0
+  },
+  "evidence": [
+    {
+      "chunk_id": "contextual-01857",
+      "pages": [
+        476
+      ],
+      "section": "back-matter Exercises",
+      "score": 13.8162,
+      "preview": "Exercises 459\n9.25 ((cid:12)) www Show that the lower bound L(q,θ) given by (9.71), with q(Z) =\np(Z|X,θ(old) ),has the same gradient withrespecttoθas the log likelihood function\nlnp(X|θ)atthepointθ =θ(old) .\n9.26 ((cid:1"
+    },
+    {
+      "chunk_id": "contextual-02687",
+      "pages": [
+        683
+      ],
+      "section": "14.5 Conditional Mixture Models",
+      "score": 13.6639,
+      "preview": "668 14.COMBINING MODELS\nFigure14.7 Probabilistic directed graph representing a mixture of zn φ\nlinear regression models,definedby(14.35). π n\nβ\ntn\nW N\nTheEMalgorithmbeginsbyfirstchoosinganinitialvalueθold\nfor the model p"
+    },
+    {
+      "chunk_id": "contextual-01845",
+      "pages": [
+        473
+      ],
+      "section": "back-matter Exercises",
+      "score": 10.1402,
+      "preview": "456 9.MIXTURE MODELS AND EM\n9.3 ((cid:12)) www Con side ra Gaussian mixture model in which the marginal distribution\np(z)for the latent variable isgivenby(9.10),and the conditional distributionp(x|z)\nfor the observed var"
+    },
+    {
+      "chunk_id": "contextual-01766",
+      "pages": [
+        453
+      ],
+      "section": "9.2 Mixtures of Gaussians",
+      "score": 9.5934,
+      "preview": "qu  whereagainweseetheappearanceoftheresponsibilities. If we now multiply both\nsides by πk and sum over k making use of the constraint (9.9), we find λ = −N.\nUsingthistoeliminateλand re ar ra ng ing weobtain\nNk\nπk = (9.2"
+    },
+    {
+      "chunk_id": "contextual-02603",
+      "pages": [
+        661
+      ],
+      "section": "13.3 Linear Dynamical Systems",
+      "score": 9.4438,
+      "preview": "nentlwithprobabilitygivenbythemixingcoef-\nficientsw(l) and then drawing as ample from the corresponding component.\nInsummary,we can view each step of the part  terior dis-\ntributionp(zn|Xn)expressed as samples{z( nl)}wit"
+    }
+  ]
+}
